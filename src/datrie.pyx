@@ -180,16 +180,16 @@ cdef class BaseTrie:
             free(c_key)
 
     @staticmethod
-    cdef int len_enumerator(cdatrie.AlphaChar *key, cdatrie.TrieData key_data,
+    cdef cdatrie.Bool len_enumerator(const cdatrie.AlphaChar *key, cdatrie.TrieData key_data,
                             void *counter_ptr):
         (<int *>counter_ptr)[0] += 1
-        return True
+        return cdatrie.TRUE
 
     def __len__(self):
         cdef int counter = 0
         cdatrie.trie_enumerate(self._c_trie,
-                               <cdatrie.TrieEnumFunc>(self.len_enumerator),
-                               &counter);
+                               self.len_enumerator,
+                               <void *>&counter);
         return counter
 
     def setdefault(self, unicode key, cdatrie.TrieData value):

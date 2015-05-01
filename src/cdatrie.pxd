@@ -1,17 +1,24 @@
 # cython: profile=False
 from libc cimport stdio
 
+cdef extern from "../libdatrie/datrie/typedefs.h":
+    ctypedef enum Bool:
+        FALSE = 0
+        TRUE = 1
+
 cdef extern from "../libdatrie/datrie/triedefs.h":
-    ctypedef int AlphaChar # it should be utf32 letter
+    ctypedef unsigned int AlphaChar # it should be utf32 letter
     ctypedef unsigned char TrieChar  # 1 byte
     ctypedef int TrieIndex
     ctypedef int TrieData  # int
 
 cdef extern from "../libdatrie/datrie/alpha-map.h":
 
-    struct AlphaMap:
+    struct AlphaMap_:
         pass
 
+    ctypedef AlphaMap_ AlphaMap
+    
     AlphaMap * alpha_map_new()
     void alpha_map_free (AlphaMap *alpha_map)
     AlphaMap * alpha_map_clone (AlphaMap *a_map)
@@ -33,7 +40,7 @@ cdef extern from "../libdatrie/datrie/trie.h":
 
     ctypedef int TrieData
 
-    ctypedef bint (*TrieEnumFunc) (AlphaChar *key,
+    ctypedef Bool (*TrieEnumFunc) (const AlphaChar *key,
                                    TrieData key_data,
                                    void *user_data)
 
@@ -42,32 +49,32 @@ cdef extern from "../libdatrie/datrie/trie.h":
 
     # ========== GENERAL FUNCTIONS ==========
 
-    Trie * trie_new (AlphaMap *alpha_map)
+    Trie * trie_new (const AlphaMap *alpha_map)
 
-    Trie * trie_new_from_file (char *path)
+    Trie * trie_new_from_file (const char *path)
 
     Trie * trie_fread (stdio.FILE *file)
 
     void trie_free (Trie *trie)
 
-    int trie_save (Trie *trie, char *path)
+    int trie_save (Trie *trie, const char *path)
 
     int trie_fwrite (Trie *trie, stdio.FILE *file)
 
-    bint trie_is_dirty (Trie *trie)
+    bint trie_is_dirty (const Trie *trie)
 
 
     # =========== GENERAL QUERY OPERATIONS =========
 
-    bint trie_retrieve (Trie *trie, AlphaChar *key, TrieData *o_data)
+    bint trie_retrieve (const Trie *trie, const AlphaChar *key, TrieData *o_data)
 
-    bint trie_store (Trie *trie, AlphaChar *key, TrieData data)
+    bint trie_store (Trie *trie, const AlphaChar *key, TrieData data)
 
-    bint trie_store_if_absent (Trie *trie, AlphaChar *key, TrieData data)
+    bint trie_store_if_absent (Trie *trie, const AlphaChar *key, TrieData data)
 
-    bint trie_delete (Trie *trie, AlphaChar *key)
+    bint trie_delete (Trie *trie, const AlphaChar *key)
 
-    bint trie_enumerate (Trie *trie, TrieEnumFunc enum_func, void *user_data);
+    bint trie_enumerate (const Trie *trie, TrieEnumFunc enum_func, void *user_data);
 
     # ======== STEPWISE QUERY OPERATIONS ========
 
