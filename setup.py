@@ -5,7 +5,7 @@ import os
 import sys
 
 from setuptools import setup, Extension
-from setuptools.command.test import test as TestCommand
+from setuptools.command.build_ext import build_ext
 
 LIBDATRIE_DIR = 'libdatrie/datrie'
 LIBDATRIE_FILE_NAMES = [
@@ -38,25 +38,24 @@ CLASSIFIERS = [
     'Topic :: Text Processing :: Linguistic'
 ]
 
-
-class PyTest(TestCommand):
-    """Unfortunately :mod:`setuptools` support only :mod:`unittest`
-    based tests, thus, we have to overider build-in ``test`` command
-    to run :mod:`pytest`.
-    """
-    def finalize_options(self):
-        TestCommand.finalize_options(self)
-        self.test_args = []
-        self.test_suite = True
-
-    def run_tests(self):
-        import pytest
-        sys.exit(pytest.main(self.test_args + ["./tests"]))
-
+define_macros = dict(
+    msvc=[
+        ('_CRT_SECURE_NO_WARNINGS', None), 
+        ('_CRT_NONSTDC_NO_DEPRECATE', None)
+    ],
+)
+ 
+class BuildExtSubclass(build_ext):
+    def build_extensions(self):
+        c = self.compiler.compiler_type
+        if c in define_macros.keys():
+            for e in self.extensions:
+                e.define_macros += define_macros[c]
+        build_ext.build_extensions(self)
 
 setup(
     name="datrie",
-    version="0.7",
+    version="0.7.1.dev0",
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
     author='Mikhail Korobov',
@@ -65,10 +64,10 @@ setup(
     url='https://github.com/kmike/datrie',
     classifiers=CLASSIFIERS,
     ext_modules=[
-        Extension("datrie", [
-            'src/datrie.c',
-            include_dirs=['libdatrie'],
+        Extension("datrie", ['src/datrie.c'] + LIBDATRIE_FILES,            
+            include_dirs=['libdatrie'])
     ],
-    tests_require=["pytest", "hypothesis"],
-    cmdclass={"test": PyTest}
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest-runner', 'pytest', 'hypothesis'],
+    cmdclass={'build_ext': BuildExtSubclass}
 )

@@ -463,8 +463,8 @@ struct __pyx_opt_args_6datrie_4Trie_items;
 struct __pyx_opt_args_6datrie_4Trie_values;
 struct __pyx_opt_args_6datrie_unicode_from_alpha_char;
 
-/* "datrie.pyx":281
- * 
+/* "datrie.pyx":293
+ *             cdatrie.trie_state_free(state)
  * 
  *     cpdef suffixes(self, unicode prefix=u''):             # <<<<<<<<<<<<<<
  *         """
@@ -475,7 +475,7 @@ struct __pyx_opt_args_6datrie_8BaseTrie_suffixes {
   PyObject *prefix;
 };
 
-/* "datrie.pyx":403
+/* "datrie.pyx":411
  *         return self._longest_prefix_item(key, default)
  * 
  *     cdef _longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -487,7 +487,7 @@ struct __pyx_opt_args_6datrie_8BaseTrie__longest_prefix_item {
   PyObject *__pyx_default;
 };
 
-/* "datrie.pyx":443
+/* "datrie.pyx":450
  *         return self._longest_prefix_value(key, default)
  * 
  *     cdef _longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -499,7 +499,7 @@ struct __pyx_opt_args_6datrie_8BaseTrie__longest_prefix_value {
   PyObject *__pyx_default;
 };
 
-/* "datrie.pyx":488
+/* "datrie.pyx":493
  *             cdatrie.trie_state_free(state)
  * 
  *     cpdef items(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -511,8 +511,8 @@ struct __pyx_opt_args_6datrie_8BaseTrie_items {
   PyObject *prefix;
 };
 
-/* "datrie.pyx":516
- * 
+/* "datrie.pyx":520
+ *         return res
  * 
  *     cpdef keys(self, unicode prefix=None):             # <<<<<<<<<<<<<<
  *         """
@@ -523,7 +523,7 @@ struct __pyx_opt_args_6datrie_8BaseTrie_keys {
   PyObject *prefix;
 };
 
-/* "datrie.pyx":542
+/* "datrie.pyx":546
  *         return res
  * 
  *     cpdef values(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -535,8 +535,8 @@ struct __pyx_opt_args_6datrie_8BaseTrie_values {
   PyObject *prefix;
 };
 
-/* "datrie.pyx":635
- * 
+/* "datrie.pyx":654
+ *         return trie
  * 
  *     cpdef items(self, unicode prefix=None):             # <<<<<<<<<<<<<<
  *         """
@@ -547,7 +547,7 @@ struct __pyx_opt_args_6datrie_4Trie_items {
   PyObject *prefix;
 };
 
-/* "datrie.pyx":669
+/* "datrie.pyx":688
  *         return res
  * 
  *     cpdef values(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -559,8 +559,8 @@ struct __pyx_opt_args_6datrie_4Trie_values {
   PyObject *prefix;
 };
 
-/* "datrie.pyx":1008
- *     return data
+/* "datrie.pyx":1027
+ * 
  * 
  * cdef unicode unicode_from_alpha_char(cdatrie.AlphaChar* key, int len=0):             # <<<<<<<<<<<<<<
  *     """
@@ -571,7 +571,7 @@ struct __pyx_opt_args_6datrie_unicode_from_alpha_char {
   int len;
 };
 
-/* "datrie.pyx":30
+/* "datrie.pyx":31
  * 
  * 
  * cdef class BaseTrie:             # <<<<<<<<<<<<<<
@@ -585,7 +585,7 @@ struct __pyx_obj_6datrie_BaseTrie {
 };
 
 
-/* "datrie.pyx":567
+/* "datrie.pyx":571
  * 
  * 
  * cdef class Trie(BaseTrie):             # <<<<<<<<<<<<<<
@@ -598,7 +598,7 @@ struct __pyx_obj_6datrie_Trie {
 };
 
 
-/* "datrie.pyx":761
+/* "datrie.pyx":779
  * 
  * 
  * cdef class _TrieState:             # <<<<<<<<<<<<<<
@@ -613,7 +613,7 @@ struct __pyx_obj_6datrie__TrieState {
 };
 
 
-/* "datrie.pyx":820
+/* "datrie.pyx":837
  * 
  * 
  * cdef class BaseState(_TrieState):             # <<<<<<<<<<<<<<
@@ -625,7 +625,7 @@ struct __pyx_obj_6datrie_BaseState {
 };
 
 
-/* "datrie.pyx":828
+/* "datrie.pyx":845
  * 
  * 
  * cdef class State(_TrieState):             # <<<<<<<<<<<<<<
@@ -637,7 +637,7 @@ struct __pyx_obj_6datrie_State {
 };
 
 
-/* "datrie.pyx":841
+/* "datrie.pyx":858
  * 
  * 
  * cdef class _TrieIterator:             # <<<<<<<<<<<<<<
@@ -652,7 +652,7 @@ struct __pyx_obj_6datrie__TrieIterator {
 };
 
 
-/* "datrie.pyx":866
+/* "datrie.pyx":883
  * 
  * 
  * cdef class BaseIterator(_TrieIterator):             # <<<<<<<<<<<<<<
@@ -664,7 +664,7 @@ struct __pyx_obj_6datrie_BaseIterator {
 };
 
 
-/* "datrie.pyx":875
+/* "datrie.pyx":892
  * 
  * 
  * cdef class Iterator(_TrieIterator):             # <<<<<<<<<<<<<<
@@ -676,7 +676,7 @@ struct __pyx_obj_6datrie_Iterator {
 };
 
 
-/* "datrie.pyx":917
+/* "datrie.pyx":934
  * # ============================ AlphaMap & utils ================================
  * 
  * cdef class AlphaMap:             # <<<<<<<<<<<<<<
@@ -690,7 +690,7 @@ struct __pyx_obj_6datrie_AlphaMap {
 };
 
 
-/* "datrie.pyx":198
+/* "datrie.pyx":212
  *             free(c_key)
  * 
  *     def iter_prefixes(self, unicode key):             # <<<<<<<<<<<<<<
@@ -713,7 +713,7 @@ struct __pyx_obj_6datrie___pyx_scope_struct__iter_prefixes {
 };
 
 
-/* "datrie.pyx":218
+/* "datrie.pyx":232
  *             cdatrie.trie_state_free(state)
  * 
  *     def iter_prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -736,7 +736,7 @@ struct __pyx_obj_6datrie___pyx_scope_struct_1_iter_prefix_items {
 };
 
 
-/* "datrie.pyx":239
+/* "datrie.pyx":253
  *             cdatrie.trie_state_free(state)
  * 
  *     def iter_prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -758,7 +758,7 @@ struct __pyx_obj_6datrie___pyx_scope_struct_2_iter_prefix_values {
 };
 
 
-/* "datrie.pyx":742
+/* "datrie.pyx":760
  *         return [(k, self._values[v]) for (k, v) in self._prefix_items(key)]
  * 
  *     def iter_prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -777,7 +777,7 @@ struct __pyx_obj_6datrie___pyx_scope_struct_3_iter_prefix_items {
 };
 
 
-/* "datrie.pyx":753
+/* "datrie.pyx":771
  *         return [self._values[v] for v in self._prefix_values(key)]
  * 
  *     def iter_prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -795,7 +795,7 @@ struct __pyx_obj_6datrie___pyx_scope_struct_4_iter_prefix_values {
 };
 
 
-/* "datrie.pyx":1019
+/* "datrie.pyx":1038
  * 
  * 
  * def to_ranges(lst):             # <<<<<<<<<<<<<<
@@ -813,7 +813,7 @@ struct __pyx_obj_6datrie___pyx_scope_struct_5_to_ranges {
 };
 
 
-/* "datrie.pyx":1032
+/* "datrie.pyx":1051
  * 
  * 
  * def alphabet_to_ranges(alphabet):             # <<<<<<<<<<<<<<
@@ -832,7 +832,7 @@ struct __pyx_obj_6datrie___pyx_scope_struct_6_alphabet_to_ranges {
 
 
 
-/* "datrie.pyx":30
+/* "datrie.pyx":31
  * 
  * 
  * cdef class BaseTrie:             # <<<<<<<<<<<<<<
@@ -860,7 +860,7 @@ struct __pyx_vtabstruct_6datrie_BaseTrie {
 static struct __pyx_vtabstruct_6datrie_BaseTrie *__pyx_vtabptr_6datrie_BaseTrie;
 
 
-/* "datrie.pyx":567
+/* "datrie.pyx":571
  * 
  * 
  * cdef class Trie(BaseTrie):             # <<<<<<<<<<<<<<
@@ -874,7 +874,7 @@ struct __pyx_vtabstruct_6datrie_Trie {
 static struct __pyx_vtabstruct_6datrie_Trie *__pyx_vtabptr_6datrie_Trie;
 
 
-/* "datrie.pyx":761
+/* "datrie.pyx":779
  * 
  * 
  * cdef class _TrieState:             # <<<<<<<<<<<<<<
@@ -894,7 +894,7 @@ struct __pyx_vtabstruct_6datrie__TrieState {
 static struct __pyx_vtabstruct_6datrie__TrieState *__pyx_vtabptr_6datrie__TrieState;
 
 
-/* "datrie.pyx":820
+/* "datrie.pyx":837
  * 
  * 
  * cdef class BaseState(_TrieState):             # <<<<<<<<<<<<<<
@@ -909,7 +909,7 @@ struct __pyx_vtabstruct_6datrie_BaseState {
 static struct __pyx_vtabstruct_6datrie_BaseState *__pyx_vtabptr_6datrie_BaseState;
 
 
-/* "datrie.pyx":828
+/* "datrie.pyx":845
  * 
  * 
  * cdef class State(_TrieState):             # <<<<<<<<<<<<<<
@@ -924,7 +924,7 @@ struct __pyx_vtabstruct_6datrie_State {
 static struct __pyx_vtabstruct_6datrie_State *__pyx_vtabptr_6datrie_State;
 
 
-/* "datrie.pyx":841
+/* "datrie.pyx":858
  * 
  * 
  * cdef class _TrieIterator:             # <<<<<<<<<<<<<<
@@ -939,7 +939,7 @@ struct __pyx_vtabstruct_6datrie__TrieIterator {
 static struct __pyx_vtabstruct_6datrie__TrieIterator *__pyx_vtabptr_6datrie__TrieIterator;
 
 
-/* "datrie.pyx":866
+/* "datrie.pyx":883
  * 
  * 
  * cdef class BaseIterator(_TrieIterator):             # <<<<<<<<<<<<<<
@@ -954,7 +954,7 @@ struct __pyx_vtabstruct_6datrie_BaseIterator {
 static struct __pyx_vtabstruct_6datrie_BaseIterator *__pyx_vtabptr_6datrie_BaseIterator;
 
 
-/* "datrie.pyx":875
+/* "datrie.pyx":892
  * 
  * 
  * cdef class Iterator(_TrieIterator):             # <<<<<<<<<<<<<<
@@ -969,7 +969,7 @@ struct __pyx_vtabstruct_6datrie_Iterator {
 static struct __pyx_vtabstruct_6datrie_Iterator *__pyx_vtabptr_6datrie_Iterator;
 
 
-/* "datrie.pyx":917
+/* "datrie.pyx":934
  * # ============================ AlphaMap & utils ================================
  * 
  * cdef class AlphaMap:             # <<<<<<<<<<<<<<
@@ -1133,6 +1133,8 @@ static int __Pyx_GetException(PyObject **type, PyObject **value, PyObject **tb);
 
 static CYTHON_INLINE int __Pyx_TypeTest(PyObject *obj, PyTypeObject *type);
 
+static CYTHON_INLINE PyObject *__Pyx_GetModuleGlobalName(PyObject *name);
+
 static CYTHON_INLINE int __Pyx_init_unicode_iteration(
     PyObject* ustring, Py_ssize_t *length, void** data, int *kind);
 
@@ -1156,8 +1158,6 @@ static CYTHON_INLINE int __Pyx_PyList_Append(PyObject* list, PyObject* x) {
 #else
 #define __Pyx_PyList_Append(L,x) PyList_Append(L,x)
 #endif
-
-static CYTHON_INLINE PyObject *__Pyx_GetModuleGlobalName(PyObject *name);
 
 #define __Pyx_GetItemInt(o, i, type, is_signed, to_py_func, is_list, wraparound, boundscheck) \
     (__Pyx_fits_Py_ssize_t(i, type, is_signed) ? \
@@ -1454,42 +1454,46 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
 static PyObject *__pyx_pf_6datrie_8BaseTrie_8write(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_f); /* proto */
 static PyObject *__pyx_pf_6datrie_8BaseTrie_10load(PyObject *__pyx_v_cls, PyObject *__pyx_v_path); /* proto */
 static PyObject *__pyx_pf_6datrie_8BaseTrie_12read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f); /* proto */
-static int __pyx_pf_6datrie_8BaseTrie_14__setitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_16__getitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static int __pyx_pf_6datrie_8BaseTrie_20__delitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_22_delitem(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_24__len__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_26setdefault(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_28iter_prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_31iter_prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_34iter_prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_39suffixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_41prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_43prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_47longest_prefix_item(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix_value(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_53items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_55keys(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
-static PyObject *__pyx_pf_6datrie_8BaseTrie_57values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_14__reduce__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_16__setstate__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_state); /* proto */
+static int __pyx_pf_6datrie_8BaseTrie_18__setitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_20__getitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static int __pyx_pf_6datrie_8BaseTrie_22__contains__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static int __pyx_pf_6datrie_8BaseTrie_24__delitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_26_delitem(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_28__len__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_30setdefault(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_32iter_prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_35iter_prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_38iter_prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_41prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_43suffixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_45prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_47prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_51longest_prefix_item(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_53longest_prefix_value(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_55has_keys_with_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_57items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_59keys(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
+static PyObject *__pyx_pf_6datrie_8BaseTrie_61values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
 static int __pyx_pf_6datrie_4Trie___init__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_alphabet, PyObject *__pyx_v_ranges, struct __pyx_obj_6datrie_AlphaMap *__pyx_v_alpha_map, PyObject *__pyx_v__create); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_2__getitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static int __pyx_pf_6datrie_4Trie_4__setitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value); /* proto */
-static int __pyx_pf_6datrie_4Trie_8__delitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_f); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_12read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_14items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_16values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_20longest_prefix_value(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_24iter_prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_27prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_6datrie_4Trie_29iter_prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_2__reduce__(struct __pyx_obj_6datrie_Trie *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_4__setstate__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_state); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_6__getitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static int __pyx_pf_6datrie_4Trie_8__setitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_10setdefault(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value); /* proto */
+static int __pyx_pf_6datrie_4Trie_12__delitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_14write(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_f); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_16read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_18items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_20values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_22longest_prefix_item(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_24longest_prefix_value(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_26prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_28iter_prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_31prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_6datrie_4Trie_33iter_prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
 static int __pyx_pf_6datrie_10_TrieState___cinit__(struct __pyx_obj_6datrie__TrieState *__pyx_v_self, struct __pyx_obj_6datrie_BaseTrie *__pyx_v_trie); /* proto */
 static void __pyx_pf_6datrie_10_TrieState_2__dealloc__(struct __pyx_obj_6datrie__TrieState *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_6datrie_10_TrieState_4walk(struct __pyx_obj_6datrie__TrieState *__pyx_v_self, PyObject *__pyx_v_to); /* proto */
@@ -1540,9 +1544,9 @@ static char __pyx_k_a[] = "a";
 static char __pyx_k_b[] = "b";
 static char __pyx_k_r[] = "r";
 static char __pyx_k_w[] = "w";
-static char __pyx_k__7[] = "";
 static char __pyx_k_rb[] = "rb";
 static char __pyx_k_wb[] = "wb";
+static char __pyx_k__13[] = "";
 static char __pyx_k_doc[] = "__doc__";
 static char __pyx_k_end[] = "end";
 static char __pyx_k_key[] = "key";
@@ -1604,6 +1608,7 @@ static char __pyx_k_is_dirty[] = "is_dirty";
 static char __pyx_k_protocol[] = "protocol";
 static char __pyx_k_qualname[] = "__qualname__";
 static char __pyx_k_suffixes[] = "suffixes";
+static char __pyx_k_tempfile[] = "tempfile";
 static char __pyx_k_warnings[] = "warnings";
 static char __pyx_k_Exception[] = "Exception";
 static char __pyx_k_add_range[] = "add_range";
@@ -1629,10 +1634,11 @@ static char __pyx_k_range_begin_end[] = "range begin > end";
 static char __pyx_k_RERAISE_KEY_ERROR[] = "RERAISE_KEY_ERROR";
 static char __pyx_k_iter_prefix_items[] = "iter_prefix_items";
 static char __pyx_k_DeprecationWarning[] = "DeprecationWarning";
+static char __pyx_k_NamedTemporaryFile[] = "NamedTemporaryFile";
 static char __pyx_k_alphabet_to_ranges[] = "alphabet_to_ranges";
 static char __pyx_k_iter_prefix_values[] = "iter_prefix_values";
 static char __pyx_k_Can_t_write_to_file[] = "Can't write to file";
-static char __pyx_k_to_ranges_line_1019[] = "to_ranges (line 1019)";
+static char __pyx_k_to_ranges_line_1038[] = "to_ranges (line 1038)";
 static char __pyx_k_BaseTrie_iter_prefixes[] = "BaseTrie.iter_prefixes";
 static char __pyx_k_Trie_iter_prefix_items[] = "Trie.iter_prefix_items";
 static char __pyx_k_Trie_iter_prefix_values[] = "Trie.iter_prefix_values";
@@ -1663,13 +1669,14 @@ static PyObject *__pyx_n_s_ImportError;
 static PyObject *__pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s;
 static PyObject *__pyx_n_s_KeyError;
 static PyObject *__pyx_n_s_MemoryError;
+static PyObject *__pyx_n_s_NamedTemporaryFile;
 static PyObject *__pyx_kp_s_Please_provide_alphabet_ranges_o;
 static PyObject *__pyx_n_s_RAISE_KEY_ERROR;
 static PyObject *__pyx_n_s_RERAISE_KEY_ERROR;
 static PyObject *__pyx_n_s_Trie_iter_prefix_items;
 static PyObject *__pyx_n_s_Trie_iter_prefix_values;
 static PyObject *__pyx_n_s_ValueError;
-static PyObject *__pyx_kp_u__7;
+static PyObject *__pyx_kp_u__13;
 static PyObject *__pyx_n_s_a;
 static PyObject *__pyx_n_s_add_alphabet;
 static PyObject *__pyx_n_s_add_range;
@@ -1740,10 +1747,11 @@ static PyObject *__pyx_n_s_state;
 static PyObject *__pyx_n_s_suffixes;
 static PyObject *__pyx_n_s_super;
 static PyObject *__pyx_n_s_sys;
+static PyObject *__pyx_n_s_tempfile;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_throw;
 static PyObject *__pyx_n_s_to_ranges;
-static PyObject *__pyx_kp_u_to_ranges_line_1019;
+static PyObject *__pyx_kp_u_to_ranges_line_1038;
 static PyObject *__pyx_n_s_to_ranges_locals_lambda;
 static PyObject *__pyx_n_s_trie;
 static PyObject *__pyx_n_s_unicode;
@@ -1756,29 +1764,41 @@ static PyObject *__pyx_n_s_wb;
 static PyObject *__pyx_n_s_write;
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_2;
-static PyObject *__pyx_k__8;
-static PyObject *__pyx_k__9;
-static PyObject *__pyx_k__10;
-static PyObject *__pyx_k__11;
-static PyObject *__pyx_k__12;
-static PyObject *__pyx_k__13;
 static PyObject *__pyx_k__14;
+static PyObject *__pyx_k__15;
+static PyObject *__pyx_k__16;
+static PyObject *__pyx_k__17;
+static PyObject *__pyx_k__18;
+static PyObject *__pyx_k__25;
+static PyObject *__pyx_k__26;
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 static PyObject *__pyx_tuple__3;
 static PyObject *__pyx_tuple__4;
 static PyObject *__pyx_tuple__5;
 static PyObject *__pyx_tuple__6;
-static PyObject *__pyx_tuple__15;
-static PyObject *__pyx_tuple__16;
-static PyObject *__pyx_tuple__17;
+static PyObject *__pyx_tuple__7;
+static PyObject *__pyx_tuple__8;
+static PyObject *__pyx_tuple__9;
+static PyObject *__pyx_tuple__10;
+static PyObject *__pyx_tuple__11;
+static PyObject *__pyx_tuple__12;
 static PyObject *__pyx_tuple__19;
+static PyObject *__pyx_tuple__20;
 static PyObject *__pyx_tuple__21;
-static PyObject *__pyx_codeobj__18;
-static PyObject *__pyx_codeobj__20;
-static PyObject *__pyx_codeobj__22;
+static PyObject *__pyx_tuple__22;
+static PyObject *__pyx_tuple__23;
+static PyObject *__pyx_tuple__24;
+static PyObject *__pyx_tuple__27;
+static PyObject *__pyx_tuple__28;
+static PyObject *__pyx_tuple__29;
+static PyObject *__pyx_tuple__31;
+static PyObject *__pyx_tuple__33;
+static PyObject *__pyx_codeobj__30;
+static PyObject *__pyx_codeobj__32;
+static PyObject *__pyx_codeobj__34;
 
-/* "datrie.pyx":39
+/* "datrie.pyx":40
  *     cdef cdatrie.Trie *_c_trie
  * 
  *     def __init__(self, alphabet=None, ranges=None, AlphaMap alpha_map=None, _create=True):             # <<<<<<<<<<<<<<
@@ -1845,7 +1865,7 @@ static int __pyx_pw_6datrie_8BaseTrie_1__init__(PyObject *__pyx_v_self, PyObject
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 39; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 40; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1864,13 +1884,13 @@ static int __pyx_pw_6datrie_8BaseTrie_1__init__(PyObject *__pyx_v_self, PyObject
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 39; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 40; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_alpha_map), __pyx_ptype_6datrie_AlphaMap, 1, "alpha_map", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 39; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_alpha_map), __pyx_ptype_6datrie_AlphaMap, 1, "alpha_map", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 40; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_8BaseTrie___init__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_alphabet, __pyx_v_ranges, __pyx_v_alpha_map, __pyx_v__create);
 
   /* function exit code */
@@ -1896,7 +1916,7 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
   __Pyx_RefNannySetupContext("__init__", 0);
   __Pyx_INCREF((PyObject *)__pyx_v_alpha_map);
 
-  /* "datrie.pyx":47
+  /* "datrie.pyx":48
  *         or ``alpha_map`` (:class:`datrie.AlphaMap` instance).
  *         """
  *         if self._c_trie is not NULL:             # <<<<<<<<<<<<<<
@@ -1906,7 +1926,7 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
   __pyx_t_1 = ((__pyx_v_self->_c_trie != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":48
+    /* "datrie.pyx":49
  *         """
  *         if self._c_trie is not NULL:
  *             return             # <<<<<<<<<<<<<<
@@ -1917,18 +1937,18 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
     goto __pyx_L0;
   }
 
-  /* "datrie.pyx":50
+  /* "datrie.pyx":51
  *             return
  * 
  *         if not _create:             # <<<<<<<<<<<<<<
  *             return
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v__create); if (unlikely(__pyx_t_1 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 50; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v__create); if (unlikely(__pyx_t_1 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 51; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_t_2 = ((!__pyx_t_1) != 0);
   if (__pyx_t_2) {
 
-    /* "datrie.pyx":51
+    /* "datrie.pyx":52
  * 
  *         if not _create:
  *             return             # <<<<<<<<<<<<<<
@@ -1939,7 +1959,7 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
     goto __pyx_L0;
   }
 
-  /* "datrie.pyx":53
+  /* "datrie.pyx":54
  *             return
  * 
  *         if alphabet is None and ranges is None and alpha_map is None:             # <<<<<<<<<<<<<<
@@ -1966,21 +1986,21 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
   __pyx_L6_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "datrie.pyx":54
+    /* "datrie.pyx":55
  * 
  *         if alphabet is None and ranges is None and alpha_map is None:
  *             raise ValueError("Please provide alphabet, ranges or alpha_map argument.")             # <<<<<<<<<<<<<<
  * 
  *         if alpha_map is None:
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 55; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 55; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":56
+  /* "datrie.pyx":57
  *             raise ValueError("Please provide alphabet, ranges or alpha_map argument.")
  * 
  *         if alpha_map is None:             # <<<<<<<<<<<<<<
@@ -1991,14 +2011,14 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "datrie.pyx":57
+    /* "datrie.pyx":58
  * 
  *         if alpha_map is None:
  *             alpha_map = AlphaMap(alphabet, ranges)             # <<<<<<<<<<<<<<
  * 
  *         self._c_trie = cdatrie.trie_new(alpha_map._c_alpha_map)
  */
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_alphabet);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_alphabet);
@@ -2006,7 +2026,7 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
     __Pyx_INCREF(__pyx_v_ranges);
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_v_ranges);
     __Pyx_GIVEREF(__pyx_v_ranges);
-    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_AlphaMap)), __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 57; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_5 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_AlphaMap)), __pyx_t_4, NULL); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 58; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF_SET(__pyx_v_alpha_map, ((struct __pyx_obj_6datrie_AlphaMap *)__pyx_t_5));
@@ -2015,7 +2035,7 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
   }
   __pyx_L9:;
 
-  /* "datrie.pyx":59
+  /* "datrie.pyx":60
  *             alpha_map = AlphaMap(alphabet, ranges)
  * 
  *         self._c_trie = cdatrie.trie_new(alpha_map._c_alpha_map)             # <<<<<<<<<<<<<<
@@ -2024,7 +2044,7 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
  */
   __pyx_v_self->_c_trie = trie_new(__pyx_v_alpha_map->_c_alpha_map);
 
-  /* "datrie.pyx":60
+  /* "datrie.pyx":61
  * 
  *         self._c_trie = cdatrie.trie_new(alpha_map._c_alpha_map)
  *         if self._c_trie is NULL:             # <<<<<<<<<<<<<<
@@ -2034,17 +2054,17 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
   __pyx_t_3 = ((__pyx_v_self->_c_trie == NULL) != 0);
   if (__pyx_t_3) {
 
-    /* "datrie.pyx":61
+    /* "datrie.pyx":62
  *         self._c_trie = cdatrie.trie_new(alpha_map._c_alpha_map)
  *         if self._c_trie is NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(self):
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 62; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":39
+  /* "datrie.pyx":40
  *     cdef cdatrie.Trie *_c_trie
  * 
  *     def __init__(self, alphabet=None, ranges=None, AlphaMap alpha_map=None, _create=True):             # <<<<<<<<<<<<<<
@@ -2066,7 +2086,7 @@ static int __pyx_pf_6datrie_8BaseTrie___init__(struct __pyx_obj_6datrie_BaseTrie
   return __pyx_r;
 }
 
-/* "datrie.pyx":63
+/* "datrie.pyx":64
  *             raise MemoryError()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -2090,7 +2110,7 @@ static void __pyx_pf_6datrie_8BaseTrie_2__dealloc__(struct __pyx_obj_6datrie_Bas
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "datrie.pyx":64
+  /* "datrie.pyx":65
  * 
  *     def __dealloc__(self):
  *         if self._c_trie is not NULL:             # <<<<<<<<<<<<<<
@@ -2100,7 +2120,7 @@ static void __pyx_pf_6datrie_8BaseTrie_2__dealloc__(struct __pyx_obj_6datrie_Bas
   __pyx_t_1 = ((__pyx_v_self->_c_trie != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":65
+    /* "datrie.pyx":66
  *     def __dealloc__(self):
  *         if self._c_trie is not NULL:
  *             cdatrie.trie_free(self._c_trie)             # <<<<<<<<<<<<<<
@@ -2112,7 +2132,7 @@ static void __pyx_pf_6datrie_8BaseTrie_2__dealloc__(struct __pyx_obj_6datrie_Bas
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":63
+  /* "datrie.pyx":64
  *             raise MemoryError()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -2124,7 +2144,7 @@ static void __pyx_pf_6datrie_8BaseTrie_2__dealloc__(struct __pyx_obj_6datrie_Bas
   __Pyx_RefNannyFinishContext();
 }
 
-/* "datrie.pyx":67
+/* "datrie.pyx":68
  *             cdatrie.trie_free(self._c_trie)
  * 
  *     cpdef bint is_dirty(self):             # <<<<<<<<<<<<<<
@@ -2149,7 +2169,7 @@ static int __pyx_f_6datrie_8BaseTrie_is_dirty(struct __pyx_obj_6datrie_BaseTrie 
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_dirty); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 67; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_dirty); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 68; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_5is_dirty)) {
       __Pyx_INCREF(__pyx_t_1);
@@ -2164,14 +2184,14 @@ static int __pyx_f_6datrie_8BaseTrie_is_dirty(struct __pyx_obj_6datrie_BaseTrie 
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 67; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 68; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 67; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 68; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 67; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 68; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_5;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2180,7 +2200,7 @@ static int __pyx_f_6datrie_8BaseTrie_is_dirty(struct __pyx_obj_6datrie_BaseTrie 
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":72
+  /* "datrie.pyx":73
  *         and needs saving to synchronize with the file.
  *         """
  *         return cdatrie.trie_is_dirty(self._c_trie)             # <<<<<<<<<<<<<<
@@ -2190,7 +2210,7 @@ static int __pyx_f_6datrie_8BaseTrie_is_dirty(struct __pyx_obj_6datrie_BaseTrie 
   __pyx_r = trie_is_dirty(__pyx_v_self->_c_trie);
   goto __pyx_L0;
 
-  /* "datrie.pyx":67
+  /* "datrie.pyx":68
  *             cdatrie.trie_free(self._c_trie)
  * 
  *     cpdef bint is_dirty(self):             # <<<<<<<<<<<<<<
@@ -2234,7 +2254,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_4is_dirty(struct __pyx_obj_6datrie_B
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_dirty", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_8BaseTrie_is_dirty(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 67; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_8BaseTrie_is_dirty(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 68; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -2251,7 +2271,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_4is_dirty(struct __pyx_obj_6datrie_B
   return __pyx_r;
 }
 
-/* "datrie.pyx":74
+/* "datrie.pyx":75
  *         return cdatrie.trie_is_dirty(self._c_trie)
  * 
  *     def save(self, path):             # <<<<<<<<<<<<<<
@@ -2293,7 +2313,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("save", 0);
 
-  /* "datrie.pyx":78
+  /* "datrie.pyx":79
  *         Saves this trie.
  *         """
  *         with open(path, "wb", 0) as f:             # <<<<<<<<<<<<<<
@@ -2301,7 +2321,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
  * 
  */
   /*with:*/ {
-    __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_v_path);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_path);
@@ -2312,12 +2332,12 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
     __Pyx_INCREF(__pyx_int_0);
     PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_4))) {
@@ -2330,10 +2350,10 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
       }
     }
     if (__pyx_t_5) {
-      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else {
-      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
     }
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2350,14 +2370,14 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
           __pyx_v_f = __pyx_t_4;
           __pyx_t_4 = 0;
 
-          /* "datrie.pyx":79
+          /* "datrie.pyx":80
  *         """
  *         with open(path, "wb", 0) as f:
  *             self.write(f)             # <<<<<<<<<<<<<<
  * 
  *     def write(self, f):
  */
-          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_write); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_write); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
           __Pyx_GOTREF(__pyx_t_2);
           __pyx_t_1 = NULL;
           if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2370,16 +2390,16 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
             }
           }
           if (!__pyx_t_1) {
-            __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_f); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_f); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
             __Pyx_GOTREF(__pyx_t_4);
           } else {
-            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
             __Pyx_GOTREF(__pyx_t_5);
             PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1); __Pyx_GIVEREF(__pyx_t_1); __pyx_t_1 = NULL;
             __Pyx_INCREF(__pyx_v_f);
             PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_f);
             __Pyx_GIVEREF(__pyx_v_f);
-            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 80; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           }
@@ -2396,7 +2416,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
         __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "datrie.pyx":78
+        /* "datrie.pyx":79
  *         Saves this trie.
  *         """
  *         with open(path, "wb", 0) as f:             # <<<<<<<<<<<<<<
@@ -2405,20 +2425,20 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
  */
         /*except:*/ {
           __Pyx_AddTraceback("datrie.BaseTrie.save", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_2, &__pyx_t_5) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          if (__Pyx_GetException(&__pyx_t_4, &__pyx_t_2, &__pyx_t_5) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_GOTREF(__pyx_t_5);
-          __pyx_t_1 = PyTuple_Pack(3, __pyx_t_4, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __pyx_t_1 = PyTuple_Pack(3, __pyx_t_4, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, NULL);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
           __Pyx_GOTREF(__pyx_t_9);
           __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          if (__pyx_t_10 < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          if (__pyx_t_10 < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
           __pyx_t_11 = ((!(__pyx_t_10 != 0)) != 0);
           if (__pyx_t_11) {
             __Pyx_GIVEREF(__pyx_t_4);
@@ -2426,7 +2446,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
             __Pyx_XGIVEREF(__pyx_t_5);
             __Pyx_ErrRestore(__pyx_t_4, __pyx_t_2, __pyx_t_5);
             __pyx_t_4 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0; 
-            {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+            {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
           }
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2452,7 +2472,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
         if (__pyx_t_3) {
           __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__2, NULL);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         }
@@ -2467,7 +2487,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
     __pyx_L18:;
   }
 
-  /* "datrie.pyx":74
+  /* "datrie.pyx":75
  *         return cdatrie.trie_is_dirty(self._c_trie)
  * 
  *     def save(self, path):             # <<<<<<<<<<<<<<
@@ -2492,7 +2512,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_6save(struct __pyx_obj_6datrie_BaseT
   return __pyx_r;
 }
 
-/* "datrie.pyx":81
+/* "datrie.pyx":82
  *             self.write(f)
  * 
  *     def write(self, f):             # <<<<<<<<<<<<<<
@@ -2529,14 +2549,14 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_8write(struct __pyx_obj_6datrie_Base
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("write", 0);
 
-  /* "datrie.pyx":86
+  /* "datrie.pyx":87
  *         file descriptors are not supported.
  *         """
  *         f.flush()             # <<<<<<<<<<<<<<
  * 
  *         cdef stdio.FILE* f_ptr = stdio_ext.fdopen(f.fileno(), "w")
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_flush); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 86; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_flush); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 87; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2549,23 +2569,23 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_8write(struct __pyx_obj_6datrie_Base
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 86; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 87; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 86; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 87; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "datrie.pyx":88
+  /* "datrie.pyx":89
  *         f.flush()
  * 
  *         cdef stdio.FILE* f_ptr = stdio_ext.fdopen(f.fileno(), "w")             # <<<<<<<<<<<<<<
  *         if f_ptr == NULL:
  *             raise IOError("Can't open file descriptor")
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_fileno); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_fileno); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
@@ -2578,18 +2598,18 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_8write(struct __pyx_obj_6datrie_Base
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 88; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 89; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_f_ptr = fdopen(__pyx_t_4, __pyx_k_w);
 
-  /* "datrie.pyx":89
+  /* "datrie.pyx":90
  * 
  *         cdef stdio.FILE* f_ptr = stdio_ext.fdopen(f.fileno(), "w")
  *         if f_ptr == NULL:             # <<<<<<<<<<<<<<
@@ -2599,21 +2619,21 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_8write(struct __pyx_obj_6datrie_Base
   __pyx_t_5 = ((__pyx_v_f_ptr == NULL) != 0);
   if (__pyx_t_5) {
 
-    /* "datrie.pyx":90
+    /* "datrie.pyx":91
  *         cdef stdio.FILE* f_ptr = stdio_ext.fdopen(f.fileno(), "w")
  *         if f_ptr == NULL:
  *             raise IOError("Can't open file descriptor")             # <<<<<<<<<<<<<<
  * 
  *         cdef int res = cdatrie.trie_fwrite(self._c_trie, f_ptr)
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_IOError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 90; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_IOError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 90; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":92
+  /* "datrie.pyx":93
  *             raise IOError("Can't open file descriptor")
  * 
  *         cdef int res = cdatrie.trie_fwrite(self._c_trie, f_ptr)             # <<<<<<<<<<<<<<
@@ -2622,7 +2642,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_8write(struct __pyx_obj_6datrie_Base
  */
   __pyx_v_res = trie_fwrite(__pyx_v_self->_c_trie, __pyx_v_f_ptr);
 
-  /* "datrie.pyx":93
+  /* "datrie.pyx":94
  * 
  *         cdef int res = cdatrie.trie_fwrite(self._c_trie, f_ptr)
  *         if res == -1:             # <<<<<<<<<<<<<<
@@ -2632,30 +2652,30 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_8write(struct __pyx_obj_6datrie_Base
   __pyx_t_5 = ((__pyx_v_res == -1) != 0);
   if (__pyx_t_5) {
 
-    /* "datrie.pyx":94
+    /* "datrie.pyx":95
  *         cdef int res = cdatrie.trie_fwrite(self._c_trie, f_ptr)
  *         if res == -1:
  *             raise IOError("Can't write to file")             # <<<<<<<<<<<<<<
  * 
  *         stdio.fflush(f_ptr)
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_IOError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 94; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_IOError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 94; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":96
+  /* "datrie.pyx":97
  *             raise IOError("Can't write to file")
  * 
  *         stdio.fflush(f_ptr)             # <<<<<<<<<<<<<<
  * 
- * 
+ *     @classmethod
  */
   fflush(__pyx_v_f_ptr);
 
-  /* "datrie.pyx":81
+  /* "datrie.pyx":82
  *             self.write(f)
  * 
  *     def write(self, f):             # <<<<<<<<<<<<<<
@@ -3003,7 +3023,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_12read(PyObject *__pyx_v_cls, PyObje
  *         trie._c_trie = _load_from_file(f)
  *         return trie             # <<<<<<<<<<<<<<
  * 
- *     def __setitem__(self, unicode key, cdatrie.TrieData value):
+ *     def __reduce__(self):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v_trie));
@@ -3034,14 +3054,674 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_12read(PyObject *__pyx_v_cls, PyObje
 /* "datrie.pyx":119
  *         return trie
  * 
+ *     def __reduce__(self):             # <<<<<<<<<<<<<<
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_6datrie_8BaseTrie_15__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_15__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_14__reduce__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_6datrie_8BaseTrie_14__reduce__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self) {
+  PyObject *__pyx_v_f = NULL;
+  PyObject *__pyx_v_state = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
+  PyObject *__pyx_t_9 = NULL;
+  int __pyx_t_10;
+  int __pyx_t_11;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("__reduce__", 0);
+
+  /* "datrie.pyx":120
+ * 
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             self.write(f)
+ *             f.seek(0)
+ */
+  /*with:*/ {
+    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_tempfile); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_NamedTemporaryFile); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_2)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_2);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    if (__pyx_t_2) {
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    } else {
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    if (__pyx_t_5) {
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    } else {
+      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __pyx_t_3;
+    __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    /*try:*/ {
+      {
+        __Pyx_ExceptionSave(&__pyx_t_6, &__pyx_t_7, &__pyx_t_8);
+        __Pyx_XGOTREF(__pyx_t_6);
+        __Pyx_XGOTREF(__pyx_t_7);
+        __Pyx_XGOTREF(__pyx_t_8);
+        /*try:*/ {
+          __pyx_v_f = __pyx_t_2;
+          __pyx_t_2 = 0;
+
+          /* "datrie.pyx":121
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)             # <<<<<<<<<<<<<<
+ *             f.seek(0)
+ *             state = f.read()
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_write); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 121; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_3 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_3)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_3);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          if (!__pyx_t_3) {
+            __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_f); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 121; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+          } else {
+            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 121; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_5);
+            PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
+            __Pyx_INCREF(__pyx_v_f);
+            PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_f);
+            __Pyx_GIVEREF(__pyx_v_f);
+            __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 121; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          }
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+          /* "datrie.pyx":122
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             state = f.read()
+ *             return BaseTrie, (None, None, None, False), state
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_seek); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 122; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 122; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+          /* "datrie.pyx":123
+ *             self.write(f)
+ *             f.seek(0)
+ *             state = f.read()             # <<<<<<<<<<<<<<
+ *             return BaseTrie, (None, None, None, False), state
+ * 
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 123; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_5 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+            __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+            if (likely(__pyx_t_5)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+              __Pyx_INCREF(__pyx_t_5);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_2, function);
+            }
+          }
+          if (__pyx_t_5) {
+            __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 123; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          } else {
+            __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 123; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          }
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __pyx_v_state = __pyx_t_1;
+          __pyx_t_1 = 0;
+
+          /* "datrie.pyx":124
+ *             f.seek(0)
+ *             state = f.read()
+ *             return BaseTrie, (None, None, None, False), state             # <<<<<<<<<<<<<<
+ * 
+ *     def __setstate__(self, bytes state):
+ */
+          __Pyx_XDECREF(__pyx_r);
+          __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 124; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_INCREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseTrie)));
+          PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseTrie)));
+          __Pyx_GIVEREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseTrie)));
+          __Pyx_INCREF(__pyx_tuple__8);
+          PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_tuple__8);
+          __Pyx_GIVEREF(__pyx_tuple__8);
+          __Pyx_INCREF(__pyx_v_state);
+          PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_v_state);
+          __Pyx_GIVEREF(__pyx_v_state);
+          __pyx_r = __pyx_t_1;
+          __pyx_t_1 = 0;
+          goto __pyx_L11_try_return;
+        }
+        __pyx_L7_error:;
+        __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+        /* "datrie.pyx":120
+ * 
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             self.write(f)
+ *             f.seek(0)
+ */
+        /*except:*/ {
+          __Pyx_AddTraceback("datrie.BaseTrie.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_2, &__pyx_t_5) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_3 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_9);
+          __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_9);
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+          if (__pyx_t_10 < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __pyx_t_11 = ((!(__pyx_t_10 != 0)) != 0);
+          if (__pyx_t_11) {
+            __Pyx_GIVEREF(__pyx_t_1);
+            __Pyx_GIVEREF(__pyx_t_2);
+            __Pyx_XGIVEREF(__pyx_t_5);
+            __Pyx_ErrRestore(__pyx_t_1, __pyx_t_2, __pyx_t_5);
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0; 
+            {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          }
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          goto __pyx_L8_exception_handled;
+        }
+        __pyx_L9_except_error:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        goto __pyx_L1_error;
+        __pyx_L11_try_return:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        goto __pyx_L4_return;
+        __pyx_L8_exception_handled:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+      }
+    }
+    /*finally:*/ {
+      /*normal exit:*/{
+        if (__pyx_t_4) {
+          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__9, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __Pyx_GOTREF(__pyx_t_8);
+          __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+        }
+        goto __pyx_L6;
+      }
+      __pyx_L4_return: {
+        __pyx_t_8 = __pyx_r;
+        __pyx_r = 0;
+        if (__pyx_t_4) {
+          __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__10, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __Pyx_GOTREF(__pyx_t_7);
+          __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+        }
+        __pyx_r = __pyx_t_8;
+        __pyx_t_8 = 0;
+        goto __pyx_L0;
+      }
+      __pyx_L6:;
+    }
+    goto __pyx_L18;
+    __pyx_L3_error:;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    goto __pyx_L1_error;
+    __pyx_L18:;
+  }
+
+  /* "datrie.pyx":119
+ *         return trie
+ * 
+ *     def __reduce__(self):             # <<<<<<<<<<<<<<
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_AddTraceback("datrie.BaseTrie.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_f);
+  __Pyx_XDECREF(__pyx_v_state);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "datrie.pyx":126
+ *             return BaseTrie, (None, None, None, False), state
+ * 
+ *     def __setstate__(self, bytes state):             # <<<<<<<<<<<<<<
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_6datrie_8BaseTrie_17__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_state); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_17__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_state) {
+  CYTHON_UNUSED int __pyx_lineno = 0;
+  CYTHON_UNUSED const char *__pyx_filename = NULL;
+  CYTHON_UNUSED int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__setstate__ (wrapper)", 0);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), (&PyBytes_Type), 1, "state", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 126; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_16__setstate__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_state));
+
+  /* function exit code */
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_6datrie_8BaseTrie_16__setstate__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_state) {
+  PyObject *__pyx_v_f = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
+  Trie *__pyx_t_9;
+  PyObject *__pyx_t_10 = NULL;
+  int __pyx_t_11;
+  int __pyx_t_12;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("__setstate__", 0);
+
+  /* "datrie.pyx":127
+ * 
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL             # <<<<<<<<<<<<<<
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             f.write(state)
+ */
+  #ifndef CYTHON_WITHOUT_ASSERTIONS
+  if (unlikely(!Py_OptimizeFlag)) {
+    if (unlikely(!((__pyx_v_self->_c_trie == NULL) != 0))) {
+      PyErr_SetNone(PyExc_AssertionError);
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 127; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    }
+  }
+  #endif
+
+  /* "datrie.pyx":128
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             f.write(state)
+ *             f.flush()
+ */
+  /*with:*/ {
+    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_tempfile); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_NamedTemporaryFile); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_2)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_2);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    if (__pyx_t_2) {
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    } else {
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    if (__pyx_t_5) {
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    } else {
+      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __pyx_t_3;
+    __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    /*try:*/ {
+      {
+        __Pyx_ExceptionSave(&__pyx_t_6, &__pyx_t_7, &__pyx_t_8);
+        __Pyx_XGOTREF(__pyx_t_6);
+        __Pyx_XGOTREF(__pyx_t_7);
+        __Pyx_XGOTREF(__pyx_t_8);
+        /*try:*/ {
+          __pyx_v_f = __pyx_t_2;
+          __pyx_t_2 = 0;
+
+          /* "datrie.pyx":129
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             f.write(state)             # <<<<<<<<<<<<<<
+ *             f.flush()
+ *             f.seek(0)
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 129; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_3 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_3)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_3);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          if (!__pyx_t_3) {
+            __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_state); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 129; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+          } else {
+            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 129; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_5);
+            PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
+            __Pyx_INCREF(__pyx_v_state);
+            PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_state);
+            __Pyx_GIVEREF(__pyx_v_state);
+            __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 129; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          }
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+          /* "datrie.pyx":130
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             f.write(state)
+ *             f.flush()             # <<<<<<<<<<<<<<
+ *             f.seek(0)
+ *             self._c_trie = _load_from_file(f)
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_flush); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_5 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_5)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_5);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          if (__pyx_t_5) {
+            __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          } else {
+            __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          }
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+          /* "datrie.pyx":131
+ *             f.write(state)
+ *             f.flush()
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             self._c_trie = _load_from_file(f)
+ * 
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_seek); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 131; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 131; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+          /* "datrie.pyx":132
+ *             f.flush()
+ *             f.seek(0)
+ *             self._c_trie = _load_from_file(f)             # <<<<<<<<<<<<<<
+ * 
+ *     def __setitem__(self, unicode key, cdatrie.TrieData value):
+ */
+          __pyx_t_9 = __pyx_f_6datrie__load_from_file(__pyx_v_f); if (unlikely(__pyx_t_9 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 132; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __pyx_v_self->_c_trie = __pyx_t_9;
+        }
+        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+        __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+        __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
+        goto __pyx_L14_try_end;
+        __pyx_L7_error:;
+        __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+        /* "datrie.pyx":128
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             f.write(state)
+ *             f.flush()
+ */
+        /*except:*/ {
+          __Pyx_AddTraceback("datrie.BaseTrie.__setstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_2, &__pyx_t_5) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_GOTREF(__pyx_t_5);
+          __pyx_t_3 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          if (unlikely(!__pyx_t_10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_10);
+          __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_10);
+          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+          if (__pyx_t_11 < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __pyx_t_12 = ((!(__pyx_t_11 != 0)) != 0);
+          if (__pyx_t_12) {
+            __Pyx_GIVEREF(__pyx_t_1);
+            __Pyx_GIVEREF(__pyx_t_2);
+            __Pyx_XGIVEREF(__pyx_t_5);
+            __Pyx_ErrRestore(__pyx_t_1, __pyx_t_2, __pyx_t_5);
+            __pyx_t_1 = 0; __pyx_t_2 = 0; __pyx_t_5 = 0; 
+            {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          }
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          goto __pyx_L8_exception_handled;
+        }
+        __pyx_L9_except_error:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        goto __pyx_L1_error;
+        __pyx_L8_exception_handled:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        __pyx_L14_try_end:;
+      }
+    }
+    /*finally:*/ {
+      /*normal exit:*/{
+        if (__pyx_t_4) {
+          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__12, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __Pyx_GOTREF(__pyx_t_8);
+          __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+        }
+        goto __pyx_L6;
+      }
+      __pyx_L6:;
+    }
+    goto __pyx_L18;
+    __pyx_L3_error:;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    goto __pyx_L1_error;
+    __pyx_L18:;
+  }
+
+  /* "datrie.pyx":126
+ *             return BaseTrie, (None, None, None, False), state
+ * 
+ *     def __setstate__(self, bytes state):             # <<<<<<<<<<<<<<
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_AddTraceback("datrie.BaseTrie.__setstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_f);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "datrie.pyx":134
+ *             self._c_trie = _load_from_file(f)
+ * 
  *     def __setitem__(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
  *         self._setitem(key, value)
  * 
  */
 
 /* Python wrapper */
-static int __pyx_pw_6datrie_8BaseTrie_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_arg_value); /*proto*/
-static int __pyx_pw_6datrie_8BaseTrie_15__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_arg_value) {
+static int __pyx_pw_6datrie_8BaseTrie_19__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_arg_value); /*proto*/
+static int __pyx_pw_6datrie_8BaseTrie_19__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_arg_value) {
   TrieData __pyx_v_value;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -3050,7 +3730,7 @@ static int __pyx_pw_6datrie_8BaseTrie_15__setitem__(PyObject *__pyx_v_self, PyOb
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setitem__ (wrapper)", 0);
   assert(__pyx_arg_value); {
-    __pyx_v_value = __Pyx_PyInt_As_TrieData(__pyx_arg_value); if (unlikely((__pyx_v_value == (TrieData)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 119; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_value = __Pyx_PyInt_As_TrieData(__pyx_arg_value); if (unlikely((__pyx_v_value == (TrieData)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3058,8 +3738,8 @@ static int __pyx_pw_6datrie_8BaseTrie_15__setitem__(PyObject *__pyx_v_self, PyOb
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 119; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_14__setitem__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key), ((TrieData)__pyx_v_value));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 134; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_18__setitem__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key), ((TrieData)__pyx_v_value));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3070,12 +3750,12 @@ static int __pyx_pw_6datrie_8BaseTrie_15__setitem__(PyObject *__pyx_v_self, PyOb
   return __pyx_r;
 }
 
-static int __pyx_pf_6datrie_8BaseTrie_14__setitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value) {
+static int __pyx_pf_6datrie_8BaseTrie_18__setitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setitem__", 0);
 
-  /* "datrie.pyx":120
+  /* "datrie.pyx":135
  * 
  *     def __setitem__(self, unicode key, cdatrie.TrieData value):
  *         self._setitem(key, value)             # <<<<<<<<<<<<<<
@@ -3084,8 +3764,8 @@ static int __pyx_pf_6datrie_8BaseTrie_14__setitem__(struct __pyx_obj_6datrie_Bas
  */
   ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_setitem(__pyx_v_self, __pyx_v_key, __pyx_v_value);
 
-  /* "datrie.pyx":119
- *         return trie
+  /* "datrie.pyx":134
+ *             self._c_trie = _load_from_file(f)
  * 
  *     def __setitem__(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
  *         self._setitem(key, value)
@@ -3098,7 +3778,7 @@ static int __pyx_pf_6datrie_8BaseTrie_14__setitem__(struct __pyx_obj_6datrie_Bas
   return __pyx_r;
 }
 
-/* "datrie.pyx":122
+/* "datrie.pyx":137
  *         self._setitem(key, value)
  * 
  *     cdef void _setitem(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
@@ -3111,7 +3791,7 @@ static void __pyx_f_6datrie_8BaseTrie__setitem(struct __pyx_obj_6datrie_BaseTrie
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_setitem", 0);
 
-  /* "datrie.pyx":123
+  /* "datrie.pyx":138
  * 
  *     cdef void _setitem(self, unicode key, cdatrie.TrieData value):
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)             # <<<<<<<<<<<<<<
@@ -3120,7 +3800,7 @@ static void __pyx_f_6datrie_8BaseTrie__setitem(struct __pyx_obj_6datrie_BaseTrie
  */
   __pyx_v_c_key = __pyx_f_6datrie_new_alpha_char_from_unicode(__pyx_v_key);
 
-  /* "datrie.pyx":124
+  /* "datrie.pyx":139
  *     cdef void _setitem(self, unicode key, cdatrie.TrieData value):
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
  *         try:             # <<<<<<<<<<<<<<
@@ -3129,7 +3809,7 @@ static void __pyx_f_6datrie_8BaseTrie__setitem(struct __pyx_obj_6datrie_BaseTrie
  */
   /*try:*/ {
 
-    /* "datrie.pyx":125
+    /* "datrie.pyx":140
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
  *         try:
  *             cdatrie.trie_store(self._c_trie, c_key, value)             # <<<<<<<<<<<<<<
@@ -3139,7 +3819,7 @@ static void __pyx_f_6datrie_8BaseTrie__setitem(struct __pyx_obj_6datrie_BaseTrie
     trie_store(__pyx_v_self->_c_trie, __pyx_v_c_key, __pyx_v_value);
   }
 
-  /* "datrie.pyx":127
+  /* "datrie.pyx":142
  *             cdatrie.trie_store(self._c_trie, c_key, value)
  *         finally:
  *             free(c_key)             # <<<<<<<<<<<<<<
@@ -3154,7 +3834,7 @@ static void __pyx_f_6datrie_8BaseTrie__setitem(struct __pyx_obj_6datrie_BaseTrie
     __pyx_L5:;
   }
 
-  /* "datrie.pyx":122
+  /* "datrie.pyx":137
  *         self._setitem(key, value)
  * 
  *     cdef void _setitem(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
@@ -3166,7 +3846,7 @@ static void __pyx_f_6datrie_8BaseTrie__setitem(struct __pyx_obj_6datrie_BaseTrie
   __Pyx_RefNannyFinishContext();
 }
 
-/* "datrie.pyx":129
+/* "datrie.pyx":144
  *             free(c_key)
  * 
  *     def __getitem__(self, unicode key):             # <<<<<<<<<<<<<<
@@ -3175,16 +3855,16 @@ static void __pyx_f_6datrie_8BaseTrie__setitem(struct __pyx_obj_6datrie_BaseTrie
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_17__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static PyObject *__pyx_pw_6datrie_8BaseTrie_17__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_21__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_21__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__getitem__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 129; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_16__getitem__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 144; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_20__getitem__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3195,7 +3875,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_17__getitem__(PyObject *__pyx_v_self
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_16__getitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_20__getitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   TrieData __pyx_t_1;
@@ -3205,7 +3885,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_16__getitem__(struct __pyx_obj_6datr
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__getitem__", 0);
 
-  /* "datrie.pyx":130
+  /* "datrie.pyx":145
  * 
  *     def __getitem__(self, unicode key):
  *         return self._getitem(key)             # <<<<<<<<<<<<<<
@@ -3213,14 +3893,14 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_16__getitem__(struct __pyx_obj_6datr
  *     cdef cdatrie.TrieData _getitem(self, unicode key) except -1:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_getitem(__pyx_v_self, __pyx_v_key); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_t_2 = __Pyx_PyInt_From_TrieData(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 130; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_getitem(__pyx_v_self, __pyx_v_key); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 145; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyInt_From_TrieData(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 145; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":129
+  /* "datrie.pyx":144
  *             free(c_key)
  * 
  *     def __getitem__(self, unicode key):             # <<<<<<<<<<<<<<
@@ -3239,7 +3919,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_16__getitem__(struct __pyx_obj_6datr
   return __pyx_r;
 }
 
-/* "datrie.pyx":132
+/* "datrie.pyx":147
  *         return self._getitem(key)
  * 
  *     cdef cdatrie.TrieData _getitem(self, unicode key) except -1:             # <<<<<<<<<<<<<<
@@ -3261,7 +3941,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_getitem", 0);
 
-  /* "datrie.pyx":134
+  /* "datrie.pyx":149
  *     cdef cdatrie.TrieData _getitem(self, unicode key) except -1:
  *         cdef cdatrie.TrieData data
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)             # <<<<<<<<<<<<<<
@@ -3270,7 +3950,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
  */
   __pyx_v_c_key = __pyx_f_6datrie_new_alpha_char_from_unicode(__pyx_v_key);
 
-  /* "datrie.pyx":136
+  /* "datrie.pyx":151
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
  * 
  *         try:             # <<<<<<<<<<<<<<
@@ -3279,7 +3959,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
  */
   /*try:*/ {
 
-    /* "datrie.pyx":137
+    /* "datrie.pyx":152
  * 
  *         try:
  *             found = cdatrie.trie_retrieve(self._c_trie, c_key, &data)             # <<<<<<<<<<<<<<
@@ -3289,7 +3969,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
     __pyx_v_found = trie_retrieve(__pyx_v_self->_c_trie, __pyx_v_c_key, (&__pyx_v_data));
   }
 
-  /* "datrie.pyx":139
+  /* "datrie.pyx":154
  *             found = cdatrie.trie_retrieve(self._c_trie, c_key, &data)
  *         finally:
  *             free(c_key)             # <<<<<<<<<<<<<<
@@ -3304,7 +3984,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
     __pyx_L5:;
   }
 
-  /* "datrie.pyx":141
+  /* "datrie.pyx":156
  *             free(c_key)
  * 
  *         if not found:             # <<<<<<<<<<<<<<
@@ -3314,37 +3994,37 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
   __pyx_t_1 = ((!(__pyx_v_found != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":142
+    /* "datrie.pyx":157
  * 
  *         if not found:
  *             raise KeyError(key)             # <<<<<<<<<<<<<<
  *         return data
  * 
  */
-    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 142; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_key);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_key);
     __Pyx_GIVEREF(__pyx_v_key);
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 142; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 142; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":143
+  /* "datrie.pyx":158
  *         if not found:
  *             raise KeyError(key)
  *         return data             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def __contains__(self, unicode key):
  */
   __pyx_r = __pyx_v_data;
   goto __pyx_L0;
 
-  /* "datrie.pyx":132
+  /* "datrie.pyx":147
  *         return self._getitem(key)
  * 
  *     cdef cdatrie.TrieData _getitem(self, unicode key) except -1:             # <<<<<<<<<<<<<<
@@ -3363,8 +4043,8 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
   return __pyx_r;
 }
 
-/* "datrie.pyx":146
- * 
+/* "datrie.pyx":160
+ *         return data
  * 
  *     def __contains__(self, unicode key):             # <<<<<<<<<<<<<<
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
@@ -3372,16 +4052,16 @@ static TrieData __pyx_f_6datrie_8BaseTrie__getitem(struct __pyx_obj_6datrie_Base
  */
 
 /* Python wrapper */
-static int __pyx_pw_6datrie_8BaseTrie_19__contains__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static int __pyx_pw_6datrie_8BaseTrie_19__contains__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static int __pyx_pw_6datrie_8BaseTrie_23__contains__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static int __pyx_pw_6datrie_8BaseTrie_23__contains__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__contains__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 146; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_18__contains__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 160; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_22__contains__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3392,14 +4072,14 @@ static int __pyx_pw_6datrie_8BaseTrie_19__contains__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static int __pyx_pf_6datrie_8BaseTrie_22__contains__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   AlphaChar *__pyx_v_c_key;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__contains__", 0);
 
-  /* "datrie.pyx":147
+  /* "datrie.pyx":161
  * 
  *     def __contains__(self, unicode key):
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)             # <<<<<<<<<<<<<<
@@ -3408,7 +4088,7 @@ static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_Ba
  */
   __pyx_v_c_key = __pyx_f_6datrie_new_alpha_char_from_unicode(__pyx_v_key);
 
-  /* "datrie.pyx":148
+  /* "datrie.pyx":162
  *     def __contains__(self, unicode key):
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
  *         try:             # <<<<<<<<<<<<<<
@@ -3417,7 +4097,7 @@ static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_Ba
  */
   /*try:*/ {
 
-    /* "datrie.pyx":149
+    /* "datrie.pyx":163
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
  *         try:
  *             return cdatrie.trie_retrieve(self._c_trie, c_key, NULL)             # <<<<<<<<<<<<<<
@@ -3428,7 +4108,7 @@ static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_Ba
     goto __pyx_L3_return;
   }
 
-  /* "datrie.pyx":151
+  /* "datrie.pyx":165
  *             return cdatrie.trie_retrieve(self._c_trie, c_key, NULL)
  *         finally:
  *             free(c_key)             # <<<<<<<<<<<<<<
@@ -3444,8 +4124,8 @@ static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_Ba
     }
   }
 
-  /* "datrie.pyx":146
- * 
+  /* "datrie.pyx":160
+ *         return data
  * 
  *     def __contains__(self, unicode key):             # <<<<<<<<<<<<<<
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
@@ -3458,7 +4138,7 @@ static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_Ba
   return __pyx_r;
 }
 
-/* "datrie.pyx":153
+/* "datrie.pyx":167
  *             free(c_key)
  * 
  *     def __delitem__(self, unicode key):             # <<<<<<<<<<<<<<
@@ -3467,16 +4147,16 @@ static int __pyx_pf_6datrie_8BaseTrie_18__contains__(struct __pyx_obj_6datrie_Ba
  */
 
 /* Python wrapper */
-static int __pyx_pw_6datrie_8BaseTrie_21__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static int __pyx_pw_6datrie_8BaseTrie_21__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static int __pyx_pw_6datrie_8BaseTrie_25__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static int __pyx_pw_6datrie_8BaseTrie_25__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__delitem__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 153; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_20__delitem__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 167; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_24__delitem__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3487,7 +4167,7 @@ static int __pyx_pw_6datrie_8BaseTrie_21__delitem__(PyObject *__pyx_v_self, PyOb
   return __pyx_r;
 }
 
-static int __pyx_pf_6datrie_8BaseTrie_20__delitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static int __pyx_pf_6datrie_8BaseTrie_24__delitem__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -3498,7 +4178,7 @@ static int __pyx_pf_6datrie_8BaseTrie_20__delitem__(struct __pyx_obj_6datrie_Bas
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__delitem__", 0);
 
-  /* "datrie.pyx":154
+  /* "datrie.pyx":168
  * 
  *     def __delitem__(self, unicode key):
  *         if not self._delitem(key):             # <<<<<<<<<<<<<<
@@ -3508,27 +4188,27 @@ static int __pyx_pf_6datrie_8BaseTrie_20__delitem__(struct __pyx_obj_6datrie_Bas
   __pyx_t_1 = ((!(((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_delitem(__pyx_v_self, __pyx_v_key, 0) != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":155
+    /* "datrie.pyx":169
  *     def __delitem__(self, unicode key):
  *         if not self._delitem(key):
  *             raise KeyError(key)             # <<<<<<<<<<<<<<
  * 
  *     cpdef bint _delitem(self, unicode key):
  */
-    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 155; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 169; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_key);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_key);
     __Pyx_GIVEREF(__pyx_v_key);
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 155; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 169; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 155; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 169; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":153
+  /* "datrie.pyx":167
  *             free(c_key)
  * 
  *     def __delitem__(self, unicode key):             # <<<<<<<<<<<<<<
@@ -3549,7 +4229,7 @@ static int __pyx_pf_6datrie_8BaseTrie_20__delitem__(struct __pyx_obj_6datrie_Bas
   return __pyx_r;
 }
 
-/* "datrie.pyx":157
+/* "datrie.pyx":171
  *             raise KeyError(key)
  * 
  *     cpdef bint _delitem(self, unicode key):             # <<<<<<<<<<<<<<
@@ -3557,7 +4237,7 @@ static int __pyx_pf_6datrie_8BaseTrie_20__delitem__(struct __pyx_obj_6datrie_Bas
  *         Deletes an entry for the given key from the trie. Returns
  */
 
-static PyObject *__pyx_pw_6datrie_8BaseTrie_23_delitem(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_27_delitem(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
 static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, int __pyx_skip_dispatch) {
   AlphaChar *__pyx_v_c_key;
   int __pyx_r;
@@ -3576,9 +4256,9 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_delitem); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_delitem); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_23_delitem)) {
+    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_27_delitem)) {
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
       if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -3591,21 +4271,21 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_key); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_key); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_key);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_key);
         __Pyx_GIVEREF(__pyx_v_key);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_6 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_6;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -3614,7 +4294,7 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":162
+  /* "datrie.pyx":176
  *         boolean value indicating whether the key exists and is removed.
  *         """
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)             # <<<<<<<<<<<<<<
@@ -3623,7 +4303,7 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
  */
   __pyx_v_c_key = __pyx_f_6datrie_new_alpha_char_from_unicode(__pyx_v_key);
 
-  /* "datrie.pyx":163
+  /* "datrie.pyx":177
  *         """
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
  *         try:             # <<<<<<<<<<<<<<
@@ -3632,7 +4312,7 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
  */
   /*try:*/ {
 
-    /* "datrie.pyx":164
+    /* "datrie.pyx":178
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)
  *         try:
  *             return cdatrie.trie_delete(self._c_trie, c_key)             # <<<<<<<<<<<<<<
@@ -3643,7 +4323,7 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
     goto __pyx_L3_return;
   }
 
-  /* "datrie.pyx":166
+  /* "datrie.pyx":180
  *             return cdatrie.trie_delete(self._c_trie, c_key)
  *         finally:
  *             free(c_key)             # <<<<<<<<<<<<<<
@@ -3659,7 +4339,7 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
     }
   }
 
-  /* "datrie.pyx":157
+  /* "datrie.pyx":171
  *             raise KeyError(key)
  * 
  *     cpdef bint _delitem(self, unicode key):             # <<<<<<<<<<<<<<
@@ -3682,17 +4362,17 @@ static int __pyx_f_6datrie_8BaseTrie__delitem(struct __pyx_obj_6datrie_BaseTrie 
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_23_delitem(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_22_delitem[] = "\n        Deletes an entry for the given key from the trie. Returns\n        boolean value indicating whether the key exists and is removed.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_23_delitem(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_27_delitem(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_26_delitem[] = "\n        Deletes an entry for the given key from the trie. Returns\n        boolean value indicating whether the key exists and is removed.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_27_delitem(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_delitem (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_22_delitem(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_26_delitem(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -3703,7 +4383,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_23_delitem(PyObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_22_delitem(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_26_delitem(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3712,7 +4392,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_22_delitem(struct __pyx_obj_6datrie_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_delitem", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_8BaseTrie__delitem(__pyx_v_self, __pyx_v_key, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_8BaseTrie__delitem(__pyx_v_self, __pyx_v_key, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 171; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -3729,7 +4409,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_22_delitem(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":169
+/* "datrie.pyx":183
  * 
  *     @staticmethod
  *     cdef cdatrie.Bool len_enumerator(const cdatrie.AlphaChar *key, cdatrie.TrieData key_data,             # <<<<<<<<<<<<<<
@@ -3744,7 +4424,7 @@ static Bool __pyx_f_6datrie_8BaseTrie_len_enumerator(CYTHON_UNUSED AlphaChar con
   long __pyx_t_2;
   __Pyx_RefNannySetupContext("len_enumerator", 0);
 
-  /* "datrie.pyx":171
+  /* "datrie.pyx":185
  *     cdef cdatrie.Bool len_enumerator(const cdatrie.AlphaChar *key, cdatrie.TrieData key_data,
  *                             void *counter_ptr):
  *         (<int *>counter_ptr)[0] += 1             # <<<<<<<<<<<<<<
@@ -3755,7 +4435,7 @@ static Bool __pyx_f_6datrie_8BaseTrie_len_enumerator(CYTHON_UNUSED AlphaChar con
   __pyx_t_2 = 0;
   (__pyx_t_1[__pyx_t_2]) = ((__pyx_t_1[__pyx_t_2]) + 1);
 
-  /* "datrie.pyx":172
+  /* "datrie.pyx":186
  *                             void *counter_ptr):
  *         (<int *>counter_ptr)[0] += 1
  *         return cdatrie.TRUE             # <<<<<<<<<<<<<<
@@ -3765,7 +4445,7 @@ static Bool __pyx_f_6datrie_8BaseTrie_len_enumerator(CYTHON_UNUSED AlphaChar con
   __pyx_r = TRUE;
   goto __pyx_L0;
 
-  /* "datrie.pyx":169
+  /* "datrie.pyx":183
  * 
  *     @staticmethod
  *     cdef cdatrie.Bool len_enumerator(const cdatrie.AlphaChar *key, cdatrie.TrieData key_data,             # <<<<<<<<<<<<<<
@@ -3779,7 +4459,7 @@ static Bool __pyx_f_6datrie_8BaseTrie_len_enumerator(CYTHON_UNUSED AlphaChar con
   return __pyx_r;
 }
 
-/* "datrie.pyx":174
+/* "datrie.pyx":188
  *         return cdatrie.TRUE
  * 
  *     def __len__(self):             # <<<<<<<<<<<<<<
@@ -3788,25 +4468,25 @@ static Bool __pyx_f_6datrie_8BaseTrie_len_enumerator(CYTHON_UNUSED AlphaChar con
  */
 
 /* Python wrapper */
-static Py_ssize_t __pyx_pw_6datrie_8BaseTrie_25__len__(PyObject *__pyx_v_self); /*proto*/
-static Py_ssize_t __pyx_pw_6datrie_8BaseTrie_25__len__(PyObject *__pyx_v_self) {
+static Py_ssize_t __pyx_pw_6datrie_8BaseTrie_29__len__(PyObject *__pyx_v_self); /*proto*/
+static Py_ssize_t __pyx_pw_6datrie_8BaseTrie_29__len__(PyObject *__pyx_v_self) {
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_24__len__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_28__len__(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_24__len__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self) {
+static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_28__len__(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self) {
   int __pyx_v_counter;
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__", 0);
 
-  /* "datrie.pyx":175
+  /* "datrie.pyx":189
  * 
  *     def __len__(self):
  *         cdef int counter = 0             # <<<<<<<<<<<<<<
@@ -3815,7 +4495,7 @@ static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_24__len__(struct __pyx_obj_6datrie_
  */
   __pyx_v_counter = 0;
 
-  /* "datrie.pyx":176
+  /* "datrie.pyx":190
  *     def __len__(self):
  *         cdef int counter = 0
  *         cdatrie.trie_enumerate(self._c_trie,             # <<<<<<<<<<<<<<
@@ -3824,7 +4504,7 @@ static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_24__len__(struct __pyx_obj_6datrie_
  */
   trie_enumerate(__pyx_v_self->_c_trie, ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->len_enumerator, ((void *)(&__pyx_v_counter)));
 
-  /* "datrie.pyx":179
+  /* "datrie.pyx":193
  *                                self.len_enumerator,
  *                                <void *>&counter);
  *         return counter             # <<<<<<<<<<<<<<
@@ -3834,7 +4514,7 @@ static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_24__len__(struct __pyx_obj_6datrie_
   __pyx_r = __pyx_v_counter;
   goto __pyx_L0;
 
-  /* "datrie.pyx":174
+  /* "datrie.pyx":188
  *         return cdatrie.TRUE
  * 
  *     def __len__(self):             # <<<<<<<<<<<<<<
@@ -3848,7 +4528,7 @@ static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_24__len__(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":181
+/* "datrie.pyx":195
  *         return counter
  * 
  *     def setdefault(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
@@ -3857,8 +4537,8 @@ static Py_ssize_t __pyx_pf_6datrie_8BaseTrie_24__len__(struct __pyx_obj_6datrie_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_27setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_6datrie_8BaseTrie_27setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_31setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_31setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_key = 0;
   TrieData __pyx_v_value;
   int __pyx_lineno = 0;
@@ -3887,11 +4567,11 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_27setdefault(PyObject *__pyx_v_self,
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 181; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "setdefault") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 181; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "setdefault") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3900,18 +4580,18 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_27setdefault(PyObject *__pyx_v_self,
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
     __pyx_v_key = ((PyObject*)values[0]);
-    __pyx_v_value = __Pyx_PyInt_As_TrieData(values[1]); if (unlikely((__pyx_v_value == (TrieData)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 181; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_value = __Pyx_PyInt_As_TrieData(values[1]); if (unlikely((__pyx_v_value == (TrieData)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 181; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.setdefault", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 181; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_26setdefault(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_value);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 195; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_30setdefault(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_value);
 
   /* function exit code */
   goto __pyx_L0;
@@ -3922,7 +4602,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_27setdefault(PyObject *__pyx_v_self,
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_26setdefault(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_30setdefault(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, TrieData __pyx_v_value) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3931,7 +4611,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_26setdefault(struct __pyx_obj_6datri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("setdefault", 0);
 
-  /* "datrie.pyx":182
+  /* "datrie.pyx":196
  * 
  *     def setdefault(self, unicode key, cdatrie.TrieData value):
  *         return self._setdefault(key, value)             # <<<<<<<<<<<<<<
@@ -3939,13 +4619,13 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_26setdefault(struct __pyx_obj_6datri
  *     cdef cdatrie.TrieData _setdefault(self, unicode key, cdatrie.TrieData value):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_setdefault(__pyx_v_self, __pyx_v_key, __pyx_v_value)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 182; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_setdefault(__pyx_v_self, __pyx_v_key, __pyx_v_value)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 196; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":181
+  /* "datrie.pyx":195
  *         return counter
  * 
  *     def setdefault(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
@@ -3964,7 +4644,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_26setdefault(struct __pyx_obj_6datri
   return __pyx_r;
 }
 
-/* "datrie.pyx":184
+/* "datrie.pyx":198
  *         return self._setdefault(key, value)
  * 
  *     cdef cdatrie.TrieData _setdefault(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
@@ -3982,7 +4662,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
   TrieData __pyx_t_2;
   __Pyx_RefNannySetupContext("_setdefault", 0);
 
-  /* "datrie.pyx":185
+  /* "datrie.pyx":199
  * 
  *     cdef cdatrie.TrieData _setdefault(self, unicode key, cdatrie.TrieData value):
  *         cdef cdatrie.AlphaChar* c_key = new_alpha_char_from_unicode(key)             # <<<<<<<<<<<<<<
@@ -3991,7 +4671,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
  */
   __pyx_v_c_key = __pyx_f_6datrie_new_alpha_char_from_unicode(__pyx_v_key);
 
-  /* "datrie.pyx":188
+  /* "datrie.pyx":202
  *         cdef cdatrie.TrieData data
  * 
  *         try:             # <<<<<<<<<<<<<<
@@ -4000,7 +4680,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
  */
   /*try:*/ {
 
-    /* "datrie.pyx":189
+    /* "datrie.pyx":203
  * 
  *         try:
  *             found = cdatrie.trie_retrieve(self._c_trie, c_key, &data)             # <<<<<<<<<<<<<<
@@ -4009,7 +4689,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
  */
     __pyx_v_found = trie_retrieve(__pyx_v_self->_c_trie, __pyx_v_c_key, (&__pyx_v_data));
 
-    /* "datrie.pyx":190
+    /* "datrie.pyx":204
  *         try:
  *             found = cdatrie.trie_retrieve(self._c_trie, c_key, &data)
  *             if found:             # <<<<<<<<<<<<<<
@@ -4019,7 +4699,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
     __pyx_t_1 = (__pyx_v_found != 0);
     if (__pyx_t_1) {
 
-      /* "datrie.pyx":191
+      /* "datrie.pyx":205
  *             found = cdatrie.trie_retrieve(self._c_trie, c_key, &data)
  *             if found:
  *                 return data             # <<<<<<<<<<<<<<
@@ -4031,7 +4711,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
     }
     /*else*/ {
 
-      /* "datrie.pyx":193
+      /* "datrie.pyx":207
  *                 return data
  *             else:
  *                 cdatrie.trie_store(self._c_trie, c_key, value)             # <<<<<<<<<<<<<<
@@ -4040,7 +4720,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
  */
       trie_store(__pyx_v_self->_c_trie, __pyx_v_c_key, __pyx_v_value);
 
-      /* "datrie.pyx":194
+      /* "datrie.pyx":208
  *             else:
  *                 cdatrie.trie_store(self._c_trie, c_key, value)
  *                 return value             # <<<<<<<<<<<<<<
@@ -4052,7 +4732,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
     }
   }
 
-  /* "datrie.pyx":196
+  /* "datrie.pyx":210
  *                 return value
  *         finally:
  *             free(c_key)             # <<<<<<<<<<<<<<
@@ -4068,7 +4748,7 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
     }
   }
 
-  /* "datrie.pyx":184
+  /* "datrie.pyx":198
  *         return self._setdefault(key, value)
  * 
  *     cdef cdatrie.TrieData _setdefault(self, unicode key, cdatrie.TrieData value):             # <<<<<<<<<<<<<<
@@ -4081,9 +4761,9 @@ static TrieData __pyx_f_6datrie_8BaseTrie__setdefault(struct __pyx_obj_6datrie_B
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_6datrie_8BaseTrie_34generator(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "datrie.pyx":198
+/* "datrie.pyx":212
  *             free(c_key)
  * 
  *     def iter_prefixes(self, unicode key):             # <<<<<<<<<<<<<<
@@ -4092,17 +4772,17 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_29iter_prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_28iter_prefixes[] = "\n        Returns an iterator over the keys of this trie that are prefixes\n        of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_29iter_prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_33iter_prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_32iter_prefixes[] = "\n        Returns an iterator over the keys of this trie that are prefixes\n        of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_33iter_prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("iter_prefixes (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_28iter_prefixes(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_32iter_prefixes(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -4113,7 +4793,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_29iter_prefixes(PyObject *__pyx_v_se
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_28iter_prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_32iter_prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   struct __pyx_obj_6datrie___pyx_scope_struct__iter_prefixes *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -4134,7 +4814,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_28iter_prefixes(struct __pyx_obj_6da
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_key);
   {
-    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_8BaseTrie_30generator, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefixes, __pyx_n_s_BaseTrie_iter_prefixes); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_8BaseTrie_34generator, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefixes, __pyx_n_s_BaseTrie_iter_prefixes); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -4150,7 +4830,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_28iter_prefixes(struct __pyx_obj_6da
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_6datrie_8BaseTrie_34generator(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
 {
   struct __pyx_obj_6datrie___pyx_scope_struct__iter_prefixes *__pyx_cur_scope = ((struct __pyx_obj_6datrie___pyx_scope_struct__iter_prefixes *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
@@ -4183,9 +4863,9 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":203
+  /* "datrie.pyx":217
  *         of ``key``.
  *         '''
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -4194,7 +4874,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
  */
   __pyx_cur_scope->__pyx_v_state = trie_root(__pyx_cur_scope->__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":204
+  /* "datrie.pyx":218
  *         '''
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -4204,17 +4884,17 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
   __pyx_t_1 = ((__pyx_cur_scope->__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":205
+    /* "datrie.pyx":219
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef int index = 1
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 205; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 219; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":207
+  /* "datrie.pyx":221
  *             raise MemoryError()
  * 
  *         cdef int index = 1             # <<<<<<<<<<<<<<
@@ -4223,7 +4903,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
  */
   __pyx_cur_scope->__pyx_v_index = 1;
 
-  /* "datrie.pyx":208
+  /* "datrie.pyx":222
  * 
  *         cdef int index = 1
  *         try:             # <<<<<<<<<<<<<<
@@ -4232,7 +4912,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
  */
   /*try:*/ {
 
-    /* "datrie.pyx":209
+    /* "datrie.pyx":223
  *         cdef int index = 1
  *         try:
  *             for char in key:             # <<<<<<<<<<<<<<
@@ -4241,16 +4921,16 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
  */
     if (unlikely(__pyx_cur_scope->__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 209; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 223; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
     }
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
     __pyx_t_2 = __pyx_cur_scope->__pyx_v_key;
-    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 209; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 223; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
       __pyx_t_3 = __pyx_t_8;
       __pyx_cur_scope->__pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_3);
 
-      /* "datrie.pyx":210
+      /* "datrie.pyx":224
  *         try:
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):             # <<<<<<<<<<<<<<
@@ -4260,7 +4940,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
       __pyx_t_1 = ((!(trie_state_walk(__pyx_cur_scope->__pyx_v_state, ((AlphaChar)__pyx_cur_scope->__pyx_v_char)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":211
+        /* "datrie.pyx":225
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return             # <<<<<<<<<<<<<<
@@ -4273,7 +4953,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
         goto __pyx_L5_return;
       }
 
-      /* "datrie.pyx":212
+      /* "datrie.pyx":226
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return
  *                 if cdatrie.trie_state_is_terminal(state):             # <<<<<<<<<<<<<<
@@ -4283,7 +4963,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
       __pyx_t_1 = (trie_state_is_terminal(__pyx_cur_scope->__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":213
+        /* "datrie.pyx":227
  *                     return
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     yield key[:index]             # <<<<<<<<<<<<<<
@@ -4292,9 +4972,9 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
  */
         if (unlikely(__pyx_cur_scope->__pyx_v_key == Py_None)) {
           PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 227; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         }
-        __pyx_t_9 = __Pyx_PyUnicode_Substring(__pyx_cur_scope->__pyx_v_key, 0, __pyx_cur_scope->__pyx_v_index); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        __pyx_t_9 = __Pyx_PyUnicode_Substring(__pyx_cur_scope->__pyx_v_key, 0, __pyx_cur_scope->__pyx_v_index); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 227; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         __Pyx_GOTREF(__pyx_t_9);
         __pyx_r = __pyx_t_9;
         __pyx_t_9 = 0;
@@ -4319,12 +4999,12 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
         __pyx_t_5 = __pyx_cur_scope->__pyx_t_3;
         __pyx_t_6 = __pyx_cur_scope->__pyx_t_4;
         __pyx_t_8 = __pyx_cur_scope->__pyx_t_5;
-        if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 213; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 227; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         goto __pyx_L11;
       }
       __pyx_L11:;
 
-      /* "datrie.pyx":214
+      /* "datrie.pyx":228
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     yield key[:index]
  *                 index += 1             # <<<<<<<<<<<<<<
@@ -4336,7 +5016,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
 
-  /* "datrie.pyx":216
+  /* "datrie.pyx":230
  *                 index += 1
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
@@ -4351,8 +5031,8 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
     /*exception exit:*/{
       __pyx_L6_error:;
       __pyx_t_11 = 0; __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
-      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13) < 0)) __Pyx_ErrFetch(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13);
       __Pyx_XGOTREF(__pyx_t_11);
@@ -4390,7 +5070,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
     __pyx_L7:;
   }
 
-  /* "datrie.pyx":198
+  /* "datrie.pyx":212
  *             free(c_key)
  * 
  *     def iter_prefixes(self, unicode key):             # <<<<<<<<<<<<<<
@@ -4412,9 +5092,9 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_30generator(__pyx_GeneratorObject *_
   __Pyx_RefNannyFinishContext();
   return NULL;
 }
-static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_6datrie_8BaseTrie_37generator1(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "datrie.pyx":218
+/* "datrie.pyx":232
  *             cdatrie.trie_state_free(state)
  * 
  *     def iter_prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -4423,17 +5103,17 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_32iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_31iter_prefix_items[] = "\n        Returns an iterator over the items (``(key,value)`` tuples)\n        of this trie that are associated with keys that are prefixes of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_32iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_36iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_35iter_prefix_items[] = "\n        Returns an iterator over the items (``(key,value)`` tuples)\n        of this trie that are associated with keys that are prefixes of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_36iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("iter_prefix_items (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_31iter_prefix_items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_35iter_prefix_items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -4444,7 +5124,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_32iter_prefix_items(PyObject *__pyx_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_31iter_prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_35iter_prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   struct __pyx_obj_6datrie___pyx_scope_struct_1_iter_prefix_items *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -4465,7 +5145,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_31iter_prefix_items(struct __pyx_obj
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_key);
   {
-    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_8BaseTrie_33generator1, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_items, __pyx_n_s_BaseTrie_iter_prefix_items); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_8BaseTrie_37generator1, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_items, __pyx_n_s_BaseTrie_iter_prefix_items); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -4481,7 +5161,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_31iter_prefix_items(struct __pyx_obj
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_6datrie_8BaseTrie_37generator1(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
 {
   struct __pyx_obj_6datrie___pyx_scope_struct_1_iter_prefix_items *__pyx_cur_scope = ((struct __pyx_obj_6datrie___pyx_scope_struct_1_iter_prefix_items *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
@@ -4516,9 +5196,9 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":223
+  /* "datrie.pyx":237
  *         of this trie that are associated with keys that are prefixes of ``key``.
  *         '''
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -4527,7 +5207,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
  */
   __pyx_cur_scope->__pyx_v_state = trie_root(__pyx_cur_scope->__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":225
+  /* "datrie.pyx":239
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -4537,17 +5217,17 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
   __pyx_t_1 = ((__pyx_cur_scope->__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":226
+    /* "datrie.pyx":240
  * 
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef int index = 1
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 226; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 240; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":228
+  /* "datrie.pyx":242
  *             raise MemoryError()
  * 
  *         cdef int index = 1             # <<<<<<<<<<<<<<
@@ -4556,7 +5236,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
  */
   __pyx_cur_scope->__pyx_v_index = 1;
 
-  /* "datrie.pyx":229
+  /* "datrie.pyx":243
  * 
  *         cdef int index = 1
  *         try:             # <<<<<<<<<<<<<<
@@ -4565,7 +5245,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
  */
   /*try:*/ {
 
-    /* "datrie.pyx":230
+    /* "datrie.pyx":244
  *         cdef int index = 1
  *         try:
  *             for char in key:             # <<<<<<<<<<<<<<
@@ -4574,16 +5254,16 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
  */
     if (unlikely(__pyx_cur_scope->__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 230; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 244; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
     }
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
     __pyx_t_2 = __pyx_cur_scope->__pyx_v_key;
-    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 230; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 244; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
       __pyx_t_3 = __pyx_t_8;
       __pyx_cur_scope->__pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_3);
 
-      /* "datrie.pyx":231
+      /* "datrie.pyx":245
  *         try:
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):             # <<<<<<<<<<<<<<
@@ -4593,7 +5273,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
       __pyx_t_1 = ((!(trie_state_walk(__pyx_cur_scope->__pyx_v_state, ((AlphaChar)__pyx_cur_scope->__pyx_v_char)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":232
+        /* "datrie.pyx":246
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return             # <<<<<<<<<<<<<<
@@ -4606,7 +5286,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
         goto __pyx_L5_return;
       }
 
-      /* "datrie.pyx":233
+      /* "datrie.pyx":247
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return
  *                 if cdatrie.trie_state_is_terminal(state): # word is found             # <<<<<<<<<<<<<<
@@ -4616,7 +5296,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
       __pyx_t_1 = (trie_state_is_terminal(__pyx_cur_scope->__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":234
+        /* "datrie.pyx":248
  *                     return
  *                 if cdatrie.trie_state_is_terminal(state): # word is found
  *                     yield key[:index], cdatrie.trie_state_get_terminal_data(state)             # <<<<<<<<<<<<<<
@@ -4625,13 +5305,13 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
  */
         if (unlikely(__pyx_cur_scope->__pyx_v_key == Py_None)) {
           PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 234; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 248; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         }
-        __pyx_t_9 = __Pyx_PyUnicode_Substring(__pyx_cur_scope->__pyx_v_key, 0, __pyx_cur_scope->__pyx_v_index); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 234; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        __pyx_t_9 = __Pyx_PyUnicode_Substring(__pyx_cur_scope->__pyx_v_key, 0, __pyx_cur_scope->__pyx_v_index); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 248; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_10 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_cur_scope->__pyx_v_state)); if (unlikely(!__pyx_t_10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 234; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        __pyx_t_10 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_cur_scope->__pyx_v_state)); if (unlikely(!__pyx_t_10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 248; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 234; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 248; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         __Pyx_GOTREF(__pyx_t_11);
         PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_9);
         __Pyx_GIVEREF(__pyx_t_9);
@@ -4662,12 +5342,12 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
         __pyx_t_5 = __pyx_cur_scope->__pyx_t_3;
         __pyx_t_6 = __pyx_cur_scope->__pyx_t_4;
         __pyx_t_8 = __pyx_cur_scope->__pyx_t_5;
-        if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 234; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 248; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         goto __pyx_L11;
       }
       __pyx_L11:;
 
-      /* "datrie.pyx":235
+      /* "datrie.pyx":249
  *                 if cdatrie.trie_state_is_terminal(state): # word is found
  *                     yield key[:index], cdatrie.trie_state_get_terminal_data(state)
  *                 index += 1             # <<<<<<<<<<<<<<
@@ -4679,7 +5359,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
 
-  /* "datrie.pyx":237
+  /* "datrie.pyx":251
  *                 index += 1
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
@@ -4694,10 +5374,10 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
     /*exception exit:*/{
       __pyx_L6_error:;
       __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0; __pyx_t_17 = 0; __pyx_t_18 = 0;
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_16, &__pyx_t_17, &__pyx_t_18);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_13, &__pyx_t_14, &__pyx_t_15) < 0)) __Pyx_ErrFetch(&__pyx_t_13, &__pyx_t_14, &__pyx_t_15);
       __Pyx_XGOTREF(__pyx_t_13);
@@ -4735,7 +5415,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
     __pyx_L7:;
   }
 
-  /* "datrie.pyx":218
+  /* "datrie.pyx":232
  *             cdatrie.trie_state_free(state)
  * 
  *     def iter_prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -4759,9 +5439,9 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_33generator1(__pyx_GeneratorObject *
   __Pyx_RefNannyFinishContext();
   return NULL;
 }
-static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_6datrie_8BaseTrie_40generator2(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "datrie.pyx":239
+/* "datrie.pyx":253
  *             cdatrie.trie_state_free(state)
  * 
  *     def iter_prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -4770,17 +5450,17 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_35iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_34iter_prefix_values[] = "\n        Returns an iterator over the values of this trie that are associated\n        with keys that are prefixes of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_35iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_39iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_38iter_prefix_values[] = "\n        Returns an iterator over the values of this trie that are associated\n        with keys that are prefixes of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_39iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("iter_prefix_values (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 239; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_34iter_prefix_values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 253; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_38iter_prefix_values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -4791,7 +5471,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_35iter_prefix_values(PyObject *__pyx
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_34iter_prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_38iter_prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   struct __pyx_obj_6datrie___pyx_scope_struct_2_iter_prefix_values *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -4812,7 +5492,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_34iter_prefix_values(struct __pyx_ob
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_key);
   {
-    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_8BaseTrie_36generator2, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_values, __pyx_n_s_BaseTrie_iter_prefix_values); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 239; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_8BaseTrie_40generator2, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_values, __pyx_n_s_BaseTrie_iter_prefix_values); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 253; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -4828,7 +5508,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_34iter_prefix_values(struct __pyx_ob
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_6datrie_8BaseTrie_40generator2(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
 {
   struct __pyx_obj_6datrie___pyx_scope_struct_2_iter_prefix_values *__pyx_cur_scope = ((struct __pyx_obj_6datrie___pyx_scope_struct_2_iter_prefix_values *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
@@ -4861,9 +5541,9 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 239; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 253; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":244
+  /* "datrie.pyx":258
  *         with keys that are prefixes of ``key``.
  *         '''
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -4872,7 +5552,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
  */
   __pyx_cur_scope->__pyx_v_state = trie_root(__pyx_cur_scope->__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":246
+  /* "datrie.pyx":260
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -4882,17 +5562,17 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
   __pyx_t_1 = ((__pyx_cur_scope->__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":247
+    /* "datrie.pyx":261
  * 
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         try:
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 247; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 261; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":249
+  /* "datrie.pyx":263
  *             raise MemoryError()
  * 
  *         try:             # <<<<<<<<<<<<<<
@@ -4901,7 +5581,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
  */
   /*try:*/ {
 
-    /* "datrie.pyx":250
+    /* "datrie.pyx":264
  * 
  *         try:
  *             for char in key:             # <<<<<<<<<<<<<<
@@ -4910,16 +5590,16 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
  */
     if (unlikely(__pyx_cur_scope->__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 250; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 264; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
     }
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
     __pyx_t_2 = __pyx_cur_scope->__pyx_v_key;
-    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 250; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 264; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
       __pyx_t_3 = __pyx_t_8;
       __pyx_cur_scope->__pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_3);
 
-      /* "datrie.pyx":251
+      /* "datrie.pyx":265
  *         try:
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):             # <<<<<<<<<<<<<<
@@ -4929,7 +5609,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
       __pyx_t_1 = ((!(trie_state_walk(__pyx_cur_scope->__pyx_v_state, ((AlphaChar)__pyx_cur_scope->__pyx_v_char)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":252
+        /* "datrie.pyx":266
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return             # <<<<<<<<<<<<<<
@@ -4942,7 +5622,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
         goto __pyx_L5_return;
       }
 
-      /* "datrie.pyx":253
+      /* "datrie.pyx":267
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return
  *                 if cdatrie.trie_state_is_terminal(state):             # <<<<<<<<<<<<<<
@@ -4952,14 +5632,14 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
       __pyx_t_1 = (trie_state_is_terminal(__pyx_cur_scope->__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":254
+        /* "datrie.pyx":268
  *                     return
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     yield cdatrie.trie_state_get_terminal_data(state)             # <<<<<<<<<<<<<<
  *         finally:
  *             cdatrie.trie_state_free(state)
  */
-        __pyx_t_9 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_cur_scope->__pyx_v_state)); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 254; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        __pyx_t_9 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_cur_scope->__pyx_v_state)); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 268; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         __Pyx_GOTREF(__pyx_t_9);
         __pyx_r = __pyx_t_9;
         __pyx_t_9 = 0;
@@ -4984,7 +5664,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
         __pyx_t_5 = __pyx_cur_scope->__pyx_t_3;
         __pyx_t_6 = __pyx_cur_scope->__pyx_t_4;
         __pyx_t_8 = __pyx_cur_scope->__pyx_t_5;
-        if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 254; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
+        if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 268; __pyx_clineno = __LINE__; goto __pyx_L6_error;}
         goto __pyx_L11;
       }
       __pyx_L11:;
@@ -4992,12 +5672,12 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
 
-  /* "datrie.pyx":256
+  /* "datrie.pyx":270
  *                     yield cdatrie.trie_state_get_terminal_data(state)
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def prefixes(self, unicode key):
  */
   /*finally:*/ {
     /*normal exit:*/{
@@ -5007,8 +5687,8 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
     /*exception exit:*/{
       __pyx_L6_error:;
       __pyx_t_11 = 0; __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0;
-      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+      __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13) < 0)) __Pyx_ErrFetch(&__pyx_t_11, &__pyx_t_12, &__pyx_t_13);
       __Pyx_XGOTREF(__pyx_t_11);
@@ -5046,7 +5726,7 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
     __pyx_L7:;
   }
 
-  /* "datrie.pyx":239
+  /* "datrie.pyx":253
  *             cdatrie.trie_state_free(state)
  * 
  *     def iter_prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -5069,8 +5749,8 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
   return NULL;
 }
 
-/* "datrie.pyx":259
- * 
+/* "datrie.pyx":272
+ *             cdatrie.trie_state_free(state)
  * 
  *     def prefixes(self, unicode key):             # <<<<<<<<<<<<<<
  *         '''
@@ -5078,17 +5758,17 @@ static PyObject *__pyx_gb_6datrie_8BaseTrie_36generator2(__pyx_GeneratorObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_38prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_37prefixes[] = "\n        Returns a list with keys of this trie that are prefixes of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_38prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_42prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_41prefixes[] = "\n        Returns a list with keys of this trie that are prefixes of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_42prefixes(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("prefixes (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 259; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_37prefixes(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 272; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_41prefixes(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -5099,7 +5779,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_38prefixes(PyObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_41prefixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   TrieState *__pyx_v_state;
   PyObject *__pyx_v_result = 0;
   int __pyx_v_index;
@@ -5128,7 +5808,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("prefixes", 0);
 
-  /* "datrie.pyx":263
+  /* "datrie.pyx":276
  *         Returns a list with keys of this trie that are prefixes of ``key``.
  *         '''
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -5137,7 +5817,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
  */
   __pyx_v_state = trie_root(__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":264
+  /* "datrie.pyx":277
  *         '''
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -5147,29 +5827,29 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
   __pyx_t_1 = ((__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":265
+    /* "datrie.pyx":278
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef list result = []
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 265; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 278; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":267
+  /* "datrie.pyx":280
  *             raise MemoryError()
  * 
  *         cdef list result = []             # <<<<<<<<<<<<<<
  *         cdef int index = 1
  *         try:
  */
-  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 267; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 280; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_result = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":268
+  /* "datrie.pyx":281
  * 
  *         cdef list result = []
  *         cdef int index = 1             # <<<<<<<<<<<<<<
@@ -5178,7 +5858,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
  */
   __pyx_v_index = 1;
 
-  /* "datrie.pyx":269
+  /* "datrie.pyx":282
  *         cdef list result = []
  *         cdef int index = 1
  *         try:             # <<<<<<<<<<<<<<
@@ -5187,7 +5867,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
  */
   /*try:*/ {
 
-    /* "datrie.pyx":270
+    /* "datrie.pyx":283
  *         cdef int index = 1
  *         try:
  *             for char in key:             # <<<<<<<<<<<<<<
@@ -5196,16 +5876,16 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
  */
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 270; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 283; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
     __Pyx_INCREF(__pyx_v_key);
     __pyx_t_3 = __pyx_v_key;
-    __pyx_t_8 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_5), (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 270; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_8 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_5), (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 283; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_5; __pyx_t_9++) {
       __pyx_t_4 = __pyx_t_9;
       __pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_7, __pyx_t_6, __pyx_t_4);
 
-      /* "datrie.pyx":271
+      /* "datrie.pyx":284
  *         try:
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):             # <<<<<<<<<<<<<<
@@ -5215,7 +5895,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
       __pyx_t_1 = ((!(trie_state_walk(__pyx_v_state, ((AlphaChar)__pyx_v_char)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":272
+        /* "datrie.pyx":285
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     break             # <<<<<<<<<<<<<<
@@ -5225,7 +5905,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
         goto __pyx_L8_break;
       }
 
-      /* "datrie.pyx":273
+      /* "datrie.pyx":286
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     break
  *                 if cdatrie.trie_state_is_terminal(state):             # <<<<<<<<<<<<<<
@@ -5235,7 +5915,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
       __pyx_t_1 = (trie_state_is_terminal(__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":274
+        /* "datrie.pyx":287
  *                     break
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     result.append(key[:index])             # <<<<<<<<<<<<<<
@@ -5244,17 +5924,17 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
  */
         if (unlikely(__pyx_v_key == Py_None)) {
           PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 274; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 287; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         }
-        __pyx_t_2 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_index); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 274; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_2 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_index); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 287; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_10 = __Pyx_PyList_Append(__pyx_v_result, __pyx_t_2); if (unlikely(__pyx_t_10 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 274; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_10 = __Pyx_PyList_Append(__pyx_v_result, __pyx_t_2); if (unlikely(__pyx_t_10 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 287; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         goto __pyx_L10;
       }
       __pyx_L10:;
 
-      /* "datrie.pyx":275
+      /* "datrie.pyx":288
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     result.append(key[:index])
  *                 index += 1             # <<<<<<<<<<<<<<
@@ -5266,7 +5946,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
     __pyx_L8_break:;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "datrie.pyx":276
+    /* "datrie.pyx":289
  *                     result.append(key[:index])
  *                 index += 1
  *             return result             # <<<<<<<<<<<<<<
@@ -5279,19 +5959,19 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
     goto __pyx_L4_return;
   }
 
-  /* "datrie.pyx":278
+  /* "datrie.pyx":291
  *             return result
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
  * 
- * 
+ *     cpdef suffixes(self, unicode prefix=u''):
  */
   /*finally:*/ {
     /*exception exit:*/{
       __pyx_L5_error:;
       __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0; __pyx_t_17 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_15, &__pyx_t_16, &__pyx_t_17);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_12, &__pyx_t_13, &__pyx_t_14) < 0)) __Pyx_ErrFetch(&__pyx_t_12, &__pyx_t_13, &__pyx_t_14);
       __Pyx_XGOTREF(__pyx_t_12);
@@ -5328,8 +6008,8 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
     }
   }
 
-  /* "datrie.pyx":259
- * 
+  /* "datrie.pyx":272
+ *             cdatrie.trie_state_free(state)
  * 
  *     def prefixes(self, unicode key):             # <<<<<<<<<<<<<<
  *         '''
@@ -5349,17 +6029,17 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_37prefixes(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":281
- * 
+/* "datrie.pyx":293
+ *             cdatrie.trie_state_free(state)
  * 
  *     cpdef suffixes(self, unicode prefix=u''):             # <<<<<<<<<<<<<<
  *         """
  *         Returns a list of this trie's suffixes.
  */
 
-static PyObject *__pyx_pw_6datrie_8BaseTrie_40suffixes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_44suffixes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_8BaseTrie_suffixes *__pyx_optional_args) {
-  PyObject *__pyx_v_prefix = ((PyObject*)__pyx_kp_u__7);
+  PyObject *__pyx_v_prefix = ((PyObject*)__pyx_kp_u__13);
   int __pyx_v_success;
   PyObject *__pyx_v_res = 0;
   struct __pyx_obj_6datrie_BaseState *__pyx_v_state = 0;
@@ -5387,9 +6067,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_suffixes); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_suffixes); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_40suffixes)) {
+    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_44suffixes)) {
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -5403,16 +6083,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_prefix);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_prefix);
         __Pyx_GIVEREF(__pyx_v_prefix);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -5425,37 +6105,37 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":287
+  /* "datrie.pyx":299
  *         """
  *         cdef bint success
  *         cdef list res = []             # <<<<<<<<<<<<<<
  *         cdef BaseState state = BaseState(self)
  * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 287; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 299; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_res = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":288
+  /* "datrie.pyx":300
  *         cdef bint success
  *         cdef list res = []
  *         cdef BaseState state = BaseState(self)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is not None:
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 288; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 300; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 288; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 300; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_state = ((struct __pyx_obj_6datrie_BaseState *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":290
+  /* "datrie.pyx":302
  *         cdef BaseState state = BaseState(self)
  * 
  *         if prefix is not None:             # <<<<<<<<<<<<<<
@@ -5466,20 +6146,20 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "datrie.pyx":291
+    /* "datrie.pyx":303
  * 
  *         if prefix is not None:
  *             success = state.walk(prefix)             # <<<<<<<<<<<<<<
  *             if not success:
  *                 return res
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 291; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 303; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 291; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 303; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_success = __pyx_t_7;
 
-    /* "datrie.pyx":292
+    /* "datrie.pyx":304
  *         if prefix is not None:
  *             success = state.walk(prefix)
  *             if not success:             # <<<<<<<<<<<<<<
@@ -5489,7 +6169,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
     __pyx_t_7 = ((!(__pyx_v_success != 0)) != 0);
     if (__pyx_t_7) {
 
-      /* "datrie.pyx":293
+      /* "datrie.pyx":305
  *             success = state.walk(prefix)
  *             if not success:
  *                 return res             # <<<<<<<<<<<<<<
@@ -5505,27 +6185,27 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":295
+  /* "datrie.pyx":307
  *                 return res
  * 
  *         cdef BaseIterator iter = BaseIterator(state)             # <<<<<<<<<<<<<<
- * 
  *         while iter.next():
+ *             res.append(iter.key())
  */
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 295; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 307; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_state));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_state));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_state));
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 295; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 307; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_iter = ((struct __pyx_obj_6datrie_BaseIterator *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":297
- *         cdef BaseIterator iter = BaseIterator(state)
+  /* "datrie.pyx":308
  * 
+ *         cdef BaseIterator iter = BaseIterator(state)
  *         while iter.next():             # <<<<<<<<<<<<<<
  *             res.append(iter.key())
  * 
@@ -5534,33 +6214,33 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
     __pyx_t_7 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
     if (!__pyx_t_7) break;
 
-    /* "datrie.pyx":298
- * 
+    /* "datrie.pyx":309
+ *         cdef BaseIterator iter = BaseIterator(state)
  *         while iter.next():
  *             res.append(iter.key())             # <<<<<<<<<<<<<<
  * 
  *         return res
  */
-    __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 298; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 309; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 298; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 309; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":300
+  /* "datrie.pyx":311
  *             res.append(iter.key())
  * 
  *         return res             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def prefix_items(self, unicode key):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_res);
   __pyx_r = __pyx_v_res;
   goto __pyx_L0;
 
-  /* "datrie.pyx":281
- * 
+  /* "datrie.pyx":293
+ *             cdatrie.trie_state_free(state)
  * 
  *     cpdef suffixes(self, unicode prefix=u''):             # <<<<<<<<<<<<<<
  *         """
@@ -5586,9 +6266,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_suffixes(struct __pyx_obj_6datrie_Bas
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_40suffixes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_39suffixes[] = "\n        Returns a list of this trie's suffixes.\n        If ``prefix`` is not empty, returns only the suffixes of words prefixed by ``prefix``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_40suffixes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_44suffixes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_43suffixes[] = "\n        Returns a list of this trie's suffixes.\n        If ``prefix`` is not empty, returns only the suffixes of words prefixed by ``prefix``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_44suffixes(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_prefix = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -5599,7 +6279,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_40suffixes(PyObject *__pyx_v_self, P
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_prefix,0};
     PyObject* values[1] = {0};
-    values[0] = ((PyObject*)__pyx_kp_u__7);
+    values[0] = ((PyObject*)__pyx_kp_u__13);
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -5617,7 +6297,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_40suffixes(PyObject *__pyx_v_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "suffixes") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "suffixes") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5630,14 +6310,14 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_40suffixes(PyObject *__pyx_v_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("suffixes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("suffixes", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.suffixes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_39suffixes(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_43suffixes(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5648,7 +6328,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_40suffixes(PyObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_39suffixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_43suffixes(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5660,7 +6340,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_39suffixes(struct __pyx_obj_6datrie_
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.prefix = __pyx_v_prefix;
-  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->suffixes(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 281; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->suffixes(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 293; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -5677,8 +6357,8 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_39suffixes(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":303
- * 
+/* "datrie.pyx":313
+ *         return res
  * 
  *     def prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
  *         '''
@@ -5686,17 +6366,17 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_39suffixes(struct __pyx_obj_6datrie_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_42prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_41prefix_items[] = "\n        Returns a list of the items (``(key,value)`` tuples)\n        of this trie that are associated with keys that are\n        prefixes of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_42prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_46prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_45prefix_items[] = "\n        Returns a list of the items (``(key,value)`` tuples)\n        of this trie that are associated with keys that are\n        prefixes of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_46prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("prefix_items (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 303; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_41prefix_items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 313; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_45prefix_items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -5707,7 +6387,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_42prefix_items(PyObject *__pyx_v_sel
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_41prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_45prefix_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -5716,7 +6396,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_41prefix_items(struct __pyx_obj_6dat
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("prefix_items", 0);
 
-  /* "datrie.pyx":309
+  /* "datrie.pyx":319
  *         prefixes of ``key``.
  *         '''
  *         return self._prefix_items(key)             # <<<<<<<<<<<<<<
@@ -5724,14 +6404,14 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_41prefix_items(struct __pyx_obj_6dat
  *     cdef list _prefix_items(self, unicode key):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_prefix_items(__pyx_v_self, __pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 309; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_prefix_items(__pyx_v_self, __pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 319; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":303
- * 
+  /* "datrie.pyx":313
+ *         return res
  * 
  *     def prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
  *         '''
@@ -5749,7 +6429,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_41prefix_items(struct __pyx_obj_6dat
   return __pyx_r;
 }
 
-/* "datrie.pyx":311
+/* "datrie.pyx":321
  *         return self._prefix_items(key)
  * 
  *     cdef list _prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -5789,7 +6469,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_prefix_items", 0);
 
-  /* "datrie.pyx":312
+  /* "datrie.pyx":322
  * 
  *     cdef list _prefix_items(self, unicode key):
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -5798,7 +6478,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
  */
   __pyx_v_state = trie_root(__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":314
+  /* "datrie.pyx":324
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -5808,29 +6488,29 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
   __pyx_t_1 = ((__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":315
+    /* "datrie.pyx":325
  * 
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef list result = []
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 315; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 325; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":317
+  /* "datrie.pyx":327
  *             raise MemoryError()
  * 
  *         cdef list result = []             # <<<<<<<<<<<<<<
  *         cdef int index = 1
  *         try:
  */
-  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 317; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 327; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_result = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":318
+  /* "datrie.pyx":328
  * 
  *         cdef list result = []
  *         cdef int index = 1             # <<<<<<<<<<<<<<
@@ -5839,7 +6519,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
  */
   __pyx_v_index = 1;
 
-  /* "datrie.pyx":319
+  /* "datrie.pyx":329
  *         cdef list result = []
  *         cdef int index = 1
  *         try:             # <<<<<<<<<<<<<<
@@ -5848,7 +6528,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
  */
   /*try:*/ {
 
-    /* "datrie.pyx":320
+    /* "datrie.pyx":330
  *         cdef int index = 1
  *         try:
  *             for char in key:             # <<<<<<<<<<<<<<
@@ -5857,16 +6537,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
  */
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 320; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 330; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
     __Pyx_INCREF(__pyx_v_key);
     __pyx_t_3 = __pyx_v_key;
-    __pyx_t_8 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_5), (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 320; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_8 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_5), (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 330; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_5; __pyx_t_9++) {
       __pyx_t_4 = __pyx_t_9;
       __pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_7, __pyx_t_6, __pyx_t_4);
 
-      /* "datrie.pyx":321
+      /* "datrie.pyx":331
  *         try:
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):             # <<<<<<<<<<<<<<
@@ -5876,7 +6556,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
       __pyx_t_1 = ((!(trie_state_walk(__pyx_v_state, ((AlphaChar)__pyx_v_char)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":322
+        /* "datrie.pyx":332
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     break             # <<<<<<<<<<<<<<
@@ -5886,7 +6566,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
         goto __pyx_L8_break;
       }
 
-      /* "datrie.pyx":323
+      /* "datrie.pyx":333
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     break
  *                 if cdatrie.trie_state_is_terminal(state): # word is found             # <<<<<<<<<<<<<<
@@ -5896,7 +6576,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
       __pyx_t_1 = (trie_state_is_terminal(__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":325
+        /* "datrie.pyx":335
  *                 if cdatrie.trie_state_is_terminal(state): # word is found
  *                     result.append(
  *                         (key[:index],             # <<<<<<<<<<<<<<
@@ -5905,29 +6585,29 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
  */
         if (unlikely(__pyx_v_key == Py_None)) {
           PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 325; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+          {__pyx_filename = __pyx_f[0]; __pyx_lineno = 335; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         }
-        __pyx_t_2 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_index); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 325; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_2 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_index); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 335; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_2);
 
-        /* "datrie.pyx":326
+        /* "datrie.pyx":336
  *                     result.append(
  *                         (key[:index],
  *                          cdatrie.trie_state_get_terminal_data(state))             # <<<<<<<<<<<<<<
  *                     )
  *                 index += 1
  */
-        __pyx_t_10 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_v_state)); if (unlikely(!__pyx_t_10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 326; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_10 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_v_state)); if (unlikely(!__pyx_t_10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 336; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_10);
 
-        /* "datrie.pyx":325
+        /* "datrie.pyx":335
  *                 if cdatrie.trie_state_is_terminal(state): # word is found
  *                     result.append(
  *                         (key[:index],             # <<<<<<<<<<<<<<
  *                          cdatrie.trie_state_get_terminal_data(state))
  *                     )
  */
-        __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 325; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 335; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_11);
         PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_2);
         __Pyx_GIVEREF(__pyx_t_2);
@@ -5936,20 +6616,20 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
         __pyx_t_2 = 0;
         __pyx_t_10 = 0;
 
-        /* "datrie.pyx":324
+        /* "datrie.pyx":334
  *                     break
  *                 if cdatrie.trie_state_is_terminal(state): # word is found
  *                     result.append(             # <<<<<<<<<<<<<<
  *                         (key[:index],
  *                          cdatrie.trie_state_get_terminal_data(state))
  */
-        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_result, __pyx_t_11); if (unlikely(__pyx_t_12 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 324; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_result, __pyx_t_11); if (unlikely(__pyx_t_12 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 334; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         goto __pyx_L10;
       }
       __pyx_L10:;
 
-      /* "datrie.pyx":328
+      /* "datrie.pyx":338
  *                          cdatrie.trie_state_get_terminal_data(state))
  *                     )
  *                 index += 1             # <<<<<<<<<<<<<<
@@ -5961,7 +6641,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
     __pyx_L8_break:;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "datrie.pyx":329
+    /* "datrie.pyx":339
  *                     )
  *                 index += 1
  *             return result             # <<<<<<<<<<<<<<
@@ -5974,7 +6654,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
     goto __pyx_L4_return;
   }
 
-  /* "datrie.pyx":331
+  /* "datrie.pyx":341
  *             return result
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
@@ -5985,10 +6665,10 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
     /*exception exit:*/{
       __pyx_L5_error:;
       __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0; __pyx_t_17 = 0; __pyx_t_18 = 0; __pyx_t_19 = 0;
+      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_17, &__pyx_t_18, &__pyx_t_19);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16) < 0)) __Pyx_ErrFetch(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16);
       __Pyx_XGOTREF(__pyx_t_14);
@@ -6025,7 +6705,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
     }
   }
 
-  /* "datrie.pyx":311
+  /* "datrie.pyx":321
  *         return self._prefix_items(key)
  * 
  *     cdef list _prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -6048,7 +6728,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
   return __pyx_r;
 }
 
-/* "datrie.pyx":333
+/* "datrie.pyx":343
  *             cdatrie.trie_state_free(state)
  * 
  *     def prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -6057,17 +6737,17 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_items(struct __pyx_obj_6datri
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_44prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_43prefix_values[] = "\n        Returns a list of the values of this trie that are associated\n        with keys that are prefixes of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_44prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_48prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_47prefix_values[] = "\n        Returns a list of the values of this trie that are associated\n        with keys that are prefixes of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_48prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("prefix_values (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 333; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_43prefix_values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 343; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_47prefix_values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -6078,7 +6758,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_44prefix_values(PyObject *__pyx_v_se
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_43prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_47prefix_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6087,7 +6767,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_43prefix_values(struct __pyx_obj_6da
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("prefix_values", 0);
 
-  /* "datrie.pyx":338
+  /* "datrie.pyx":348
  *         with keys that are prefixes of ``key``.
  *         '''
  *         return self._prefix_values(key)             # <<<<<<<<<<<<<<
@@ -6095,13 +6775,13 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_43prefix_values(struct __pyx_obj_6da
  *     cdef list _prefix_values(self, unicode key):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_prefix_values(__pyx_v_self, __pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 338; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_prefix_values(__pyx_v_self, __pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 348; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":333
+  /* "datrie.pyx":343
  *             cdatrie.trie_state_free(state)
  * 
  *     def prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -6120,7 +6800,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_43prefix_values(struct __pyx_obj_6da
   return __pyx_r;
 }
 
-/* "datrie.pyx":340
+/* "datrie.pyx":350
  *         return self._prefix_values(key)
  * 
  *     cdef list _prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -6157,7 +6837,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_prefix_values", 0);
 
-  /* "datrie.pyx":341
+  /* "datrie.pyx":351
  * 
  *     cdef list _prefix_values(self, unicode key):
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -6166,7 +6846,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
  */
   __pyx_v_state = trie_root(__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":343
+  /* "datrie.pyx":353
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -6176,29 +6856,29 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
   __pyx_t_1 = ((__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":344
+    /* "datrie.pyx":354
  * 
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef list result = []
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 344; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 354; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":346
+  /* "datrie.pyx":356
  *             raise MemoryError()
  * 
  *         cdef list result = []             # <<<<<<<<<<<<<<
  *         try:
  *             for char in key:
  */
-  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 346; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 356; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_result = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":347
+  /* "datrie.pyx":357
  * 
  *         cdef list result = []
  *         try:             # <<<<<<<<<<<<<<
@@ -6207,7 +6887,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
  */
   /*try:*/ {
 
-    /* "datrie.pyx":348
+    /* "datrie.pyx":358
  *         cdef list result = []
  *         try:
  *             for char in key:             # <<<<<<<<<<<<<<
@@ -6216,16 +6896,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
  */
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 348; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 358; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
     __Pyx_INCREF(__pyx_v_key);
     __pyx_t_3 = __pyx_v_key;
-    __pyx_t_8 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_5), (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 348; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_8 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_5), (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 358; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_5; __pyx_t_9++) {
       __pyx_t_4 = __pyx_t_9;
       __pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_7, __pyx_t_6, __pyx_t_4);
 
-      /* "datrie.pyx":349
+      /* "datrie.pyx":359
  *         try:
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):             # <<<<<<<<<<<<<<
@@ -6235,7 +6915,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
       __pyx_t_1 = ((!(trie_state_walk(__pyx_v_state, ((AlphaChar)__pyx_v_char)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":350
+        /* "datrie.pyx":360
  *             for char in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     break             # <<<<<<<<<<<<<<
@@ -6245,7 +6925,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
         goto __pyx_L8_break;
       }
 
-      /* "datrie.pyx":351
+      /* "datrie.pyx":361
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     break
  *                 if cdatrie.trie_state_is_terminal(state): # word is found             # <<<<<<<<<<<<<<
@@ -6255,16 +6935,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
       __pyx_t_1 = (trie_state_is_terminal(__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":352
+        /* "datrie.pyx":362
  *                     break
  *                 if cdatrie.trie_state_is_terminal(state): # word is found
  *                     result.append(cdatrie.trie_state_get_terminal_data(state))             # <<<<<<<<<<<<<<
  *             return result
  *         finally:
  */
-        __pyx_t_2 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_v_state)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 352; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_2 = __Pyx_PyInt_From_TrieData(trie_state_get_terminal_data(__pyx_v_state)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 362; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_10 = __Pyx_PyList_Append(__pyx_v_result, __pyx_t_2); if (unlikely(__pyx_t_10 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 352; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_10 = __Pyx_PyList_Append(__pyx_v_result, __pyx_t_2); if (unlikely(__pyx_t_10 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 362; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         goto __pyx_L10;
       }
@@ -6273,7 +6953,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
     __pyx_L8_break:;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "datrie.pyx":353
+    /* "datrie.pyx":363
  *                 if cdatrie.trie_state_is_terminal(state): # word is found
  *                     result.append(cdatrie.trie_state_get_terminal_data(state))
  *             return result             # <<<<<<<<<<<<<<
@@ -6286,19 +6966,19 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
     goto __pyx_L4_return;
   }
 
-  /* "datrie.pyx":355
+  /* "datrie.pyx":365
  *             return result
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def longest_prefix(self, unicode key, default=RAISE_KEY_ERROR):
  */
   /*finally:*/ {
     /*exception exit:*/{
       __pyx_L5_error:;
       __pyx_t_12 = 0; __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0; __pyx_t_17 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_15, &__pyx_t_16, &__pyx_t_17);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_12, &__pyx_t_13, &__pyx_t_14) < 0)) __Pyx_ErrFetch(&__pyx_t_12, &__pyx_t_13, &__pyx_t_14);
       __Pyx_XGOTREF(__pyx_t_12);
@@ -6335,7 +7015,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
     }
   }
 
-  /* "datrie.pyx":340
+  /* "datrie.pyx":350
  *         return self._prefix_values(key)
  * 
  *     cdef list _prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -6356,8 +7036,8 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
   return __pyx_r;
 }
 
-/* "datrie.pyx":358
- * 
+/* "datrie.pyx":367
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -6365,9 +7045,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__prefix_values(struct __pyx_obj_6datr
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_46longest_prefix(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_45longest_prefix[] = "\n        Returns the longest key in this trie that is a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, returns it,\n          - otherwise raises ``KeyError``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_46longest_prefix(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_49longest_prefix[] = "\n        Returns the longest key in this trie that is a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, returns it,\n          - otherwise raises ``KeyError``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_key = 0;
   PyObject *__pyx_v_default = 0;
   int __pyx_lineno = 0;
@@ -6379,7 +7059,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_46longest_prefix(PyObject *__pyx_v_s
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_key,&__pyx_n_s_default,0};
     PyObject* values[2] = {0,0};
-    values[1] = __pyx_k__8;
+    values[1] = __pyx_k__14;
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -6401,7 +7081,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_46longest_prefix(PyObject *__pyx_v_s
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 358; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 367; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6416,14 +7096,14 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_46longest_prefix(PyObject *__pyx_v_s
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("longest_prefix", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 358; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("longest_prefix", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 367; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.longest_prefix", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 358; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_45longest_prefix(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 367; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_49longest_prefix(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
 
   /* function exit code */
   goto __pyx_L0;
@@ -6434,7 +7114,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_46longest_prefix(PyObject *__pyx_v_s
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
   TrieState *__pyx_v_state;
   int __pyx_v_index;
   int __pyx_v_last_terminal_index;
@@ -6464,7 +7144,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("longest_prefix", 0);
 
-  /* "datrie.pyx":366
+  /* "datrie.pyx":375
  *           - otherwise raises ``KeyError``.
  *         """
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -6473,7 +7153,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
  */
   __pyx_v_state = trie_root(__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":368
+  /* "datrie.pyx":377
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -6483,17 +7163,17 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
   __pyx_t_1 = ((__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":369
+    /* "datrie.pyx":378
  * 
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef int index = 0, last_terminal_index = 0
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 369; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 378; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":371
+  /* "datrie.pyx":380
  *             raise MemoryError()
  * 
  *         cdef int index = 0, last_terminal_index = 0             # <<<<<<<<<<<<<<
@@ -6503,7 +7183,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
   __pyx_v_index = 0;
   __pyx_v_last_terminal_index = 0;
 
-  /* "datrie.pyx":373
+  /* "datrie.pyx":382
  *         cdef int index = 0, last_terminal_index = 0
  * 
  *         try:             # <<<<<<<<<<<<<<
@@ -6512,7 +7192,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
  */
   /*try:*/ {
 
-    /* "datrie.pyx":374
+    /* "datrie.pyx":383
  * 
  *         try:
  *             for ch in key:             # <<<<<<<<<<<<<<
@@ -6521,16 +7201,16 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
  */
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 374; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 383; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
     __Pyx_INCREF(__pyx_v_key);
     __pyx_t_2 = __pyx_v_key;
-    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 374; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 383; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
       __pyx_t_3 = __pyx_t_8;
       __pyx_v_ch = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_3);
 
-      /* "datrie.pyx":375
+      /* "datrie.pyx":384
  *         try:
  *             for ch in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> ch):             # <<<<<<<<<<<<<<
@@ -6540,7 +7220,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
       __pyx_t_1 = ((!(trie_state_walk(__pyx_v_state, ((AlphaChar)__pyx_v_ch)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":376
+        /* "datrie.pyx":385
  *             for ch in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> ch):
  *                     break             # <<<<<<<<<<<<<<
@@ -6550,7 +7230,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
         goto __pyx_L8_break;
       }
 
-      /* "datrie.pyx":378
+      /* "datrie.pyx":387
  *                     break
  * 
  *                 index += 1             # <<<<<<<<<<<<<<
@@ -6559,7 +7239,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
  */
       __pyx_v_index = (__pyx_v_index + 1);
 
-      /* "datrie.pyx":379
+      /* "datrie.pyx":388
  * 
  *                 index += 1
  *                 if cdatrie.trie_state_is_terminal(state):             # <<<<<<<<<<<<<<
@@ -6569,7 +7249,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
       __pyx_t_1 = (trie_state_is_terminal(__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":380
+        /* "datrie.pyx":389
  *                 index += 1
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     last_terminal_index = index             # <<<<<<<<<<<<<<
@@ -6584,7 +7264,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
     __pyx_L8_break:;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "datrie.pyx":382
+    /* "datrie.pyx":391
  *                     last_terminal_index = index
  * 
  *             if not last_terminal_index:             # <<<<<<<<<<<<<<
@@ -6594,41 +7274,41 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
     __pyx_t_1 = ((!(__pyx_v_last_terminal_index != 0)) != 0);
     if (__pyx_t_1) {
 
-      /* "datrie.pyx":383
+      /* "datrie.pyx":392
  * 
  *             if not last_terminal_index:
  *                 if default is RAISE_KEY_ERROR:             # <<<<<<<<<<<<<<
  *                     raise KeyError(key)
  *                 return default
  */
-      __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 383; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 392; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
       __Pyx_GOTREF(__pyx_t_9);
       __pyx_t_1 = (__pyx_v_default == __pyx_t_9);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = (__pyx_t_1 != 0);
       if (__pyx_t_10) {
 
-        /* "datrie.pyx":384
+        /* "datrie.pyx":393
  *             if not last_terminal_index:
  *                 if default is RAISE_KEY_ERROR:
  *                     raise KeyError(key)             # <<<<<<<<<<<<<<
  *                 return default
  * 
  */
-        __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 384; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 393; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_INCREF(__pyx_v_key);
         PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_v_key);
         __Pyx_GIVEREF(__pyx_v_key);
-        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_9, NULL); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 384; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_9, NULL); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 393; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_Raise(__pyx_t_11, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 384; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 393; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
       }
 
-      /* "datrie.pyx":385
+      /* "datrie.pyx":394
  *                 if default is RAISE_KEY_ERROR:
  *                     raise KeyError(key)
  *                 return default             # <<<<<<<<<<<<<<
@@ -6641,7 +7321,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
       goto __pyx_L4_return;
     }
 
-    /* "datrie.pyx":387
+    /* "datrie.pyx":396
  *                 return default
  * 
  *             return key[:last_terminal_index]             # <<<<<<<<<<<<<<
@@ -6651,29 +7331,29 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 387; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 396; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
-    __pyx_t_11 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_last_terminal_index); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 387; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_11 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_last_terminal_index); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 396; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     __Pyx_GOTREF(__pyx_t_11);
     __pyx_r = __pyx_t_11;
     __pyx_t_11 = 0;
     goto __pyx_L4_return;
   }
 
-  /* "datrie.pyx":389
+  /* "datrie.pyx":398
  *             return key[:last_terminal_index]
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):
  */
   /*finally:*/ {
     /*exception exit:*/{
       __pyx_L5_error:;
       __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0; __pyx_t_17 = 0; __pyx_t_18 = 0;
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_16, &__pyx_t_17, &__pyx_t_18);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_13, &__pyx_t_14, &__pyx_t_15) < 0)) __Pyx_ErrFetch(&__pyx_t_13, &__pyx_t_14, &__pyx_t_15);
       __Pyx_XGOTREF(__pyx_t_13);
@@ -6710,8 +7390,8 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
     }
   }
 
-  /* "datrie.pyx":358
- * 
+  /* "datrie.pyx":367
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -6731,8 +7411,8 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
   return __pyx_r;
 }
 
-/* "datrie.pyx":392
- * 
+/* "datrie.pyx":400
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -6740,9 +7420,9 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_45longest_prefix(struct __pyx_obj_6d
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_48longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_47longest_prefix_item[] = "\n        Returns the item (``(key,value)`` tuple) associated with the longest\n        key in this trie that is a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, returns it,\n          - otherwise raises ``KeyError``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_48longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_52longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_51longest_prefix_item[] = "\n        Returns the item (``(key,value)`` tuple) associated with the longest\n        key in this trie that is a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, returns it,\n          - otherwise raises ``KeyError``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_52longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_key = 0;
   PyObject *__pyx_v_default = 0;
   int __pyx_lineno = 0;
@@ -6754,7 +7434,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_48longest_prefix_item(PyObject *__py
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_key,&__pyx_n_s_default,0};
     PyObject* values[2] = {0,0};
-    values[1] = __pyx_k__9;
+    values[1] = __pyx_k__15;
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -6776,7 +7456,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_48longest_prefix_item(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_item") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 392; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_item") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 400; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6791,14 +7471,14 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_48longest_prefix_item(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("longest_prefix_item", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 392; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("longest_prefix_item", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 400; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.longest_prefix_item", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 392; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_47longest_prefix_item(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 400; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_51longest_prefix_item(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
 
   /* function exit code */
   goto __pyx_L0;
@@ -6809,7 +7489,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_48longest_prefix_item(PyObject *__py
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_47longest_prefix_item(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_51longest_prefix_item(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6819,7 +7499,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_47longest_prefix_item(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("longest_prefix_item", 0);
 
-  /* "datrie.pyx":401
+  /* "datrie.pyx":409
  *           - otherwise raises ``KeyError``.
  *         """
  *         return self._longest_prefix_item(key, default)             # <<<<<<<<<<<<<<
@@ -6829,14 +7509,14 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_47longest_prefix_item(struct __pyx_o
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.__pyx_default = __pyx_v_default;
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_longest_prefix_item(__pyx_v_self, __pyx_v_key, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 401; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_longest_prefix_item(__pyx_v_self, __pyx_v_key, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 409; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":392
- * 
+  /* "datrie.pyx":400
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -6854,7 +7534,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_47longest_prefix_item(struct __pyx_o
   return __pyx_r;
 }
 
-/* "datrie.pyx":403
+/* "datrie.pyx":411
  *         return self._longest_prefix_item(key, default)
  * 
  *     cdef _longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -6863,7 +7543,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_47longest_prefix_item(struct __pyx_o
  */
 
 static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, struct __pyx_opt_args_6datrie_8BaseTrie__longest_prefix_item *__pyx_optional_args) {
-  PyObject *__pyx_v_default = __pyx_k__10;
+  PyObject *__pyx_v_default = __pyx_k__16;
   TrieState *__pyx_v_state;
   int __pyx_v_index;
   int __pyx_v_last_terminal_index;
@@ -6900,7 +7580,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
     }
   }
 
-  /* "datrie.pyx":404
+  /* "datrie.pyx":412
  * 
  *     cdef _longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -6909,7 +7589,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
  */
   __pyx_v_state = trie_root(__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":406
+  /* "datrie.pyx":414
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -6919,17 +7599,17 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
   __pyx_t_1 = ((__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":407
+    /* "datrie.pyx":415
  * 
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef int index = 0, last_terminal_index = 0, data
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 407; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 415; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":409
+  /* "datrie.pyx":417
  *             raise MemoryError()
  * 
  *         cdef int index = 0, last_terminal_index = 0, data             # <<<<<<<<<<<<<<
@@ -6939,7 +7619,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
   __pyx_v_index = 0;
   __pyx_v_last_terminal_index = 0;
 
-  /* "datrie.pyx":411
+  /* "datrie.pyx":419
  *         cdef int index = 0, last_terminal_index = 0, data
  * 
  *         try:             # <<<<<<<<<<<<<<
@@ -6948,7 +7628,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
  */
   /*try:*/ {
 
-    /* "datrie.pyx":412
+    /* "datrie.pyx":420
  * 
  *         try:
  *             for ch in key:             # <<<<<<<<<<<<<<
@@ -6957,16 +7637,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
  */
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 412; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 420; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
     __Pyx_INCREF(__pyx_v_key);
     __pyx_t_2 = __pyx_v_key;
-    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 412; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 420; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
       __pyx_t_3 = __pyx_t_8;
       __pyx_v_ch = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_3);
 
-      /* "datrie.pyx":413
+      /* "datrie.pyx":421
  *         try:
  *             for ch in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> ch):             # <<<<<<<<<<<<<<
@@ -6976,7 +7656,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
       __pyx_t_1 = ((!(trie_state_walk(__pyx_v_state, ((AlphaChar)__pyx_v_ch)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":414
+        /* "datrie.pyx":422
  *             for ch in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> ch):
  *                     break             # <<<<<<<<<<<<<<
@@ -6986,7 +7666,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
         goto __pyx_L8_break;
       }
 
-      /* "datrie.pyx":416
+      /* "datrie.pyx":424
  *                     break
  * 
  *                 index += 1             # <<<<<<<<<<<<<<
@@ -6995,7 +7675,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
  */
       __pyx_v_index = (__pyx_v_index + 1);
 
-      /* "datrie.pyx":417
+      /* "datrie.pyx":425
  * 
  *                 index += 1
  *                 if cdatrie.trie_state_is_terminal(state):             # <<<<<<<<<<<<<<
@@ -7005,7 +7685,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
       __pyx_t_1 = (trie_state_is_terminal(__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":418
+        /* "datrie.pyx":426
  *                 index += 1
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     last_terminal_index = index             # <<<<<<<<<<<<<<
@@ -7014,7 +7694,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
  */
         __pyx_v_last_terminal_index = __pyx_v_index;
 
-        /* "datrie.pyx":419
+        /* "datrie.pyx":427
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     last_terminal_index = index
  *                     data = cdatrie.trie_state_get_terminal_data(state)             # <<<<<<<<<<<<<<
@@ -7029,7 +7709,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
     __pyx_L8_break:;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "datrie.pyx":421
+    /* "datrie.pyx":429
  *                     data = cdatrie.trie_state_get_terminal_data(state)
  * 
  *             if not last_terminal_index:             # <<<<<<<<<<<<<<
@@ -7039,41 +7719,41 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
     __pyx_t_1 = ((!(__pyx_v_last_terminal_index != 0)) != 0);
     if (__pyx_t_1) {
 
-      /* "datrie.pyx":422
+      /* "datrie.pyx":430
  * 
  *             if not last_terminal_index:
  *                 if default is RAISE_KEY_ERROR:             # <<<<<<<<<<<<<<
  *                     raise KeyError(key)
  *                 return default
  */
-      __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 422; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 430; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
       __Pyx_GOTREF(__pyx_t_9);
       __pyx_t_1 = (__pyx_v_default == __pyx_t_9);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = (__pyx_t_1 != 0);
       if (__pyx_t_10) {
 
-        /* "datrie.pyx":423
+        /* "datrie.pyx":431
  *             if not last_terminal_index:
  *                 if default is RAISE_KEY_ERROR:
  *                     raise KeyError(key)             # <<<<<<<<<<<<<<
  *                 return default
  * 
  */
-        __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 423; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 431; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_INCREF(__pyx_v_key);
         PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_v_key);
         __Pyx_GIVEREF(__pyx_v_key);
-        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_9, NULL); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 423; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_9, NULL); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 431; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_Raise(__pyx_t_11, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 423; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 431; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
       }
 
-      /* "datrie.pyx":424
+      /* "datrie.pyx":432
  *                 if default is RAISE_KEY_ERROR:
  *                     raise KeyError(key)
  *                 return default             # <<<<<<<<<<<<<<
@@ -7086,7 +7766,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
       goto __pyx_L4_return;
     }
 
-    /* "datrie.pyx":426
+    /* "datrie.pyx":434
  *                 return default
  * 
  *             return key[:last_terminal_index], data             # <<<<<<<<<<<<<<
@@ -7096,13 +7776,13 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 426; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
-    __pyx_t_11 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_last_terminal_index); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 426; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_11 = __Pyx_PyUnicode_Substring(__pyx_v_key, 0, __pyx_v_last_terminal_index); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_data); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 426; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_data); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_12 = PyTuple_New(2); if (unlikely(!__pyx_t_12)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 426; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_12 = PyTuple_New(2); if (unlikely(!__pyx_t_12)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 434; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     __Pyx_GOTREF(__pyx_t_12);
     PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_11);
     __Pyx_GIVEREF(__pyx_t_11);
@@ -7115,21 +7795,21 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
     goto __pyx_L4_return;
   }
 
-  /* "datrie.pyx":429
+  /* "datrie.pyx":437
  * 
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):
  */
   /*finally:*/ {
     /*exception exit:*/{
       __pyx_L5_error:;
       __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0; __pyx_t_17 = 0; __pyx_t_18 = 0; __pyx_t_19 = 0;
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_17, &__pyx_t_18, &__pyx_t_19);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16) < 0)) __Pyx_ErrFetch(&__pyx_t_14, &__pyx_t_15, &__pyx_t_16);
       __Pyx_XGOTREF(__pyx_t_14);
@@ -7166,7 +7846,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
     }
   }
 
-  /* "datrie.pyx":403
+  /* "datrie.pyx":411
  *         return self._longest_prefix_item(key, default)
  * 
  *     cdef _longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -7188,8 +7868,8 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "datrie.pyx":432
- * 
+/* "datrie.pyx":439
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -7197,9 +7877,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_item(struct __pyx_obj
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_49longest_prefix_value[] = "\n        Returns the value associated with the longest key in this trie that is\n        a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, return it\n          - otherwise raise ``KeyError``\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_54longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_53longest_prefix_value[] = "\n        Returns the value associated with the longest key in this trie that is\n        a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, return it\n          - otherwise raise ``KeyError``\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_54longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_key = 0;
   PyObject *__pyx_v_default = 0;
   int __pyx_lineno = 0;
@@ -7211,7 +7891,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix_value(PyObject *__p
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_key,&__pyx_n_s_default,0};
     PyObject* values[2] = {0,0};
-    values[1] = __pyx_k__11;
+    values[1] = __pyx_k__17;
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -7233,7 +7913,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix_value(PyObject *__p
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_value") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 432; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_value") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 439; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7248,14 +7928,14 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix_value(PyObject *__p
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("longest_prefix_value", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 432; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("longest_prefix_value", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 439; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.longest_prefix_value", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 432; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_49longest_prefix_value(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 439; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_53longest_prefix_value(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
 
   /* function exit code */
   goto __pyx_L0;
@@ -7266,7 +7946,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_50longest_prefix_value(PyObject *__p
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix_value(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_53longest_prefix_value(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -7276,7 +7956,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix_value(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("longest_prefix_value", 0);
 
-  /* "datrie.pyx":441
+  /* "datrie.pyx":448
  *           - otherwise raise ``KeyError``
  *         """
  *         return self._longest_prefix_value(key, default)             # <<<<<<<<<<<<<<
@@ -7286,14 +7966,14 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix_value(struct __pyx_
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.__pyx_default = __pyx_v_default;
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_longest_prefix_value(__pyx_v_self, __pyx_v_key, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 441; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_vtab)->_longest_prefix_value(__pyx_v_self, __pyx_v_key, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 448; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":432
- * 
+  /* "datrie.pyx":439
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -7311,7 +7991,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix_value(struct __pyx_
   return __pyx_r;
 }
 
-/* "datrie.pyx":443
+/* "datrie.pyx":450
  *         return self._longest_prefix_value(key, default)
  * 
  *     cdef _longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -7320,7 +8000,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_49longest_prefix_value(struct __pyx_
  */
 
 static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_key, struct __pyx_opt_args_6datrie_8BaseTrie__longest_prefix_value *__pyx_optional_args) {
-  PyObject *__pyx_v_default = __pyx_k__12;
+  PyObject *__pyx_v_default = __pyx_k__18;
   TrieState *__pyx_v_state;
   int __pyx_v_data;
   char __pyx_v_found;
@@ -7355,7 +8035,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
     }
   }
 
-  /* "datrie.pyx":444
+  /* "datrie.pyx":451
  * 
  *     cdef _longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -7364,7 +8044,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  */
   __pyx_v_state = trie_root(__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":446
+  /* "datrie.pyx":453
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -7374,17 +8054,17 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
   __pyx_t_1 = ((__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":447
+    /* "datrie.pyx":454
  * 
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *         cdef int data = 0
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 447; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 454; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":449
+  /* "datrie.pyx":456
  *             raise MemoryError()
  * 
  *         cdef int data = 0             # <<<<<<<<<<<<<<
@@ -7393,7 +8073,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  */
   __pyx_v_data = 0;
 
-  /* "datrie.pyx":450
+  /* "datrie.pyx":457
  * 
  *         cdef int data = 0
  *         cdef char found = 0             # <<<<<<<<<<<<<<
@@ -7402,7 +8082,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  */
   __pyx_v_found = 0;
 
-  /* "datrie.pyx":452
+  /* "datrie.pyx":459
  *         cdef char found = 0
  * 
  *         try:             # <<<<<<<<<<<<<<
@@ -7411,7 +8091,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  */
   /*try:*/ {
 
-    /* "datrie.pyx":453
+    /* "datrie.pyx":460
  * 
  *         try:
  *             for ch in key:             # <<<<<<<<<<<<<<
@@ -7420,16 +8100,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  */
     if (unlikely(__pyx_v_key == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 453; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 460; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
     __Pyx_INCREF(__pyx_v_key);
     __pyx_t_2 = __pyx_v_key;
-    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 453; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 460; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
       __pyx_t_3 = __pyx_t_8;
       __pyx_v_ch = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_3);
 
-      /* "datrie.pyx":454
+      /* "datrie.pyx":461
  *         try:
  *             for ch in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> ch):             # <<<<<<<<<<<<<<
@@ -7439,7 +8119,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
       __pyx_t_1 = ((!(trie_state_walk(__pyx_v_state, ((AlphaChar)__pyx_v_ch)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":455
+        /* "datrie.pyx":462
  *             for ch in key:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> ch):
  *                     break             # <<<<<<<<<<<<<<
@@ -7449,7 +8129,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
         goto __pyx_L8_break;
       }
 
-      /* "datrie.pyx":457
+      /* "datrie.pyx":464
  *                     break
  * 
  *                 if cdatrie.trie_state_is_terminal(state):             # <<<<<<<<<<<<<<
@@ -7459,7 +8139,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
       __pyx_t_1 = (trie_state_is_terminal(__pyx_v_state) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":458
+        /* "datrie.pyx":465
  * 
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     found = 1             # <<<<<<<<<<<<<<
@@ -7468,7 +8148,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  */
         __pyx_v_found = 1;
 
-        /* "datrie.pyx":459
+        /* "datrie.pyx":466
  *                 if cdatrie.trie_state_is_terminal(state):
  *                     found = 1
  *                     data = cdatrie.trie_state_get_terminal_data(state)             # <<<<<<<<<<<<<<
@@ -7483,7 +8163,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
     __pyx_L8_break:;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "datrie.pyx":461
+    /* "datrie.pyx":468
  *                     data = cdatrie.trie_state_get_terminal_data(state)
  * 
  *             if not found:             # <<<<<<<<<<<<<<
@@ -7493,41 +8173,41 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
     __pyx_t_1 = ((!(__pyx_v_found != 0)) != 0);
     if (__pyx_t_1) {
 
-      /* "datrie.pyx":462
+      /* "datrie.pyx":469
  * 
  *             if not found:
  *                 if default is RAISE_KEY_ERROR:             # <<<<<<<<<<<<<<
  *                     raise KeyError(key)
  *                 return default
  */
-      __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 462; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      __pyx_t_9 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 469; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
       __Pyx_GOTREF(__pyx_t_9);
       __pyx_t_1 = (__pyx_v_default == __pyx_t_9);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __pyx_t_10 = (__pyx_t_1 != 0);
       if (__pyx_t_10) {
 
-        /* "datrie.pyx":463
+        /* "datrie.pyx":470
  *             if not found:
  *                 if default is RAISE_KEY_ERROR:
  *                     raise KeyError(key)             # <<<<<<<<<<<<<<
  *                 return default
  * 
  */
-        __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 463; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_9 = PyTuple_New(1); if (unlikely(!__pyx_t_9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 470; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_INCREF(__pyx_v_key);
         PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_v_key);
         __Pyx_GIVEREF(__pyx_v_key);
-        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_9, NULL); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 463; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_9, NULL); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 470; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_Raise(__pyx_t_11, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 463; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 470; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
       }
 
-      /* "datrie.pyx":464
+      /* "datrie.pyx":471
  *                 if default is RAISE_KEY_ERROR:
  *                     raise KeyError(key)
  *                 return default             # <<<<<<<<<<<<<<
@@ -7540,7 +8220,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
       goto __pyx_L4_return;
     }
 
-    /* "datrie.pyx":466
+    /* "datrie.pyx":473
  *                 return default
  * 
  *             return data             # <<<<<<<<<<<<<<
@@ -7548,27 +8228,27 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  *         finally:
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_data); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 466; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_data); if (unlikely(!__pyx_t_11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 473; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     __Pyx_GOTREF(__pyx_t_11);
     __pyx_r = __pyx_t_11;
     __pyx_t_11 = 0;
     goto __pyx_L4_return;
   }
 
-  /* "datrie.pyx":469
+  /* "datrie.pyx":476
  * 
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def has_keys_with_prefix(self, unicode prefix):
  */
   /*finally:*/ {
     /*exception exit:*/{
       __pyx_L5_error:;
       __pyx_t_13 = 0; __pyx_t_14 = 0; __pyx_t_15 = 0; __pyx_t_16 = 0; __pyx_t_17 = 0; __pyx_t_18 = 0;
+      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (PY_MAJOR_VERSION >= 3) __Pyx_ExceptionSwap(&__pyx_t_16, &__pyx_t_17, &__pyx_t_18);
       if ((PY_MAJOR_VERSION < 3) || unlikely(__Pyx_GetException(&__pyx_t_13, &__pyx_t_14, &__pyx_t_15) < 0)) __Pyx_ErrFetch(&__pyx_t_13, &__pyx_t_14, &__pyx_t_15);
       __Pyx_XGOTREF(__pyx_t_13);
@@ -7605,7 +8285,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
     }
   }
 
-  /* "datrie.pyx":443
+  /* "datrie.pyx":450
  *         return self._longest_prefix_value(key, default)
  * 
  *     cdef _longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -7626,8 +8306,8 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "datrie.pyx":473
- * 
+/* "datrie.pyx":478
+ *             cdatrie.trie_state_free(state)
  * 
  *     def has_keys_with_prefix(self, unicode prefix):             # <<<<<<<<<<<<<<
  *         """
@@ -7635,17 +8315,17 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__longest_prefix_value(struct __pyx_ob
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_52has_keys_with_prefix(PyObject *__pyx_v_self, PyObject *__pyx_v_prefix); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_51has_keys_with_prefix[] = "\n        Returns True if any key in the trie begins with ``prefix``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_52has_keys_with_prefix(PyObject *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_56has_keys_with_prefix(PyObject *__pyx_v_self, PyObject *__pyx_v_prefix); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_55has_keys_with_prefix[] = "\n        Returns True if any key in the trie begins with ``prefix``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_56has_keys_with_prefix(PyObject *__pyx_v_self, PyObject *__pyx_v_prefix) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("has_keys_with_prefix (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 473; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_prefix));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 478; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_55has_keys_with_prefix(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), ((PyObject*)__pyx_v_prefix));
 
   /* function exit code */
   goto __pyx_L0;
@@ -7656,7 +8336,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_52has_keys_with_prefix(PyObject *__p
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_55has_keys_with_prefix(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
   TrieState *__pyx_v_state;
   Py_UCS4 __pyx_v_char;
   PyObject *__pyx_r = NULL;
@@ -7681,7 +8361,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("has_keys_with_prefix", 0);
 
-  /* "datrie.pyx":477
+  /* "datrie.pyx":482
  *         Returns True if any key in the trie begins with ``prefix``.
  *         """
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)             # <<<<<<<<<<<<<<
@@ -7690,7 +8370,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
  */
   __pyx_v_state = trie_root(__pyx_v_self->_c_trie);
 
-  /* "datrie.pyx":478
+  /* "datrie.pyx":483
  *         """
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  *         if state == NULL:             # <<<<<<<<<<<<<<
@@ -7700,17 +8380,17 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
   __pyx_t_1 = ((__pyx_v_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":479
+    /* "datrie.pyx":484
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  *         if state == NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  *         try:
  *             for char in prefix:
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 479; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 484; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":480
+  /* "datrie.pyx":485
  *         if state == NULL:
  *             raise MemoryError()
  *         try:             # <<<<<<<<<<<<<<
@@ -7719,7 +8399,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
  */
   /*try:*/ {
 
-    /* "datrie.pyx":481
+    /* "datrie.pyx":486
  *             raise MemoryError()
  *         try:
  *             for char in prefix:             # <<<<<<<<<<<<<<
@@ -7728,16 +8408,16 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
  */
     if (unlikely(__pyx_v_prefix == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 481; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 486; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     }
     __Pyx_INCREF(__pyx_v_prefix);
     __pyx_t_2 = __pyx_v_prefix;
-    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 481; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
+    __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_2, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 486; __pyx_clineno = __LINE__; goto __pyx_L5_error;}
     for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
       __pyx_t_3 = __pyx_t_8;
       __pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_3);
 
-      /* "datrie.pyx":482
+      /* "datrie.pyx":487
  *         try:
  *             for char in prefix:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):             # <<<<<<<<<<<<<<
@@ -7747,7 +8427,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
       __pyx_t_1 = ((!(trie_state_walk(__pyx_v_state, ((AlphaChar)__pyx_v_char)) != 0)) != 0);
       if (__pyx_t_1) {
 
-        /* "datrie.pyx":483
+        /* "datrie.pyx":488
  *             for char in prefix:
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return False             # <<<<<<<<<<<<<<
@@ -7763,7 +8443,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "datrie.pyx":484
+    /* "datrie.pyx":489
  *                 if not cdatrie.trie_state_walk(state, <cdatrie.AlphaChar> char):
  *                     return False
  *             return True             # <<<<<<<<<<<<<<
@@ -7776,7 +8456,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
     goto __pyx_L4_return;
   }
 
-  /* "datrie.pyx":486
+  /* "datrie.pyx":491
  *             return True
  *         finally:
  *             cdatrie.trie_state_free(state)             # <<<<<<<<<<<<<<
@@ -7824,8 +8504,8 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
     }
   }
 
-  /* "datrie.pyx":473
- * 
+  /* "datrie.pyx":478
+ *             cdatrie.trie_state_free(state)
  * 
  *     def has_keys_with_prefix(self, unicode prefix):             # <<<<<<<<<<<<<<
  *         """
@@ -7843,7 +8523,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
   return __pyx_r;
 }
 
-/* "datrie.pyx":488
+/* "datrie.pyx":493
  *             cdatrie.trie_state_free(state)
  * 
  *     cpdef items(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -7851,7 +8531,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_51has_keys_with_prefix(struct __pyx_
  *         Returns a list of this trie's items (``(key,value)`` tuples).
  */
 
-static PyObject *__pyx_pw_6datrie_8BaseTrie_54items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_58items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_8BaseTrie_items *__pyx_optional_args) {
   PyObject *__pyx_v_prefix = ((PyObject*)Py_None);
   int __pyx_v_success;
@@ -7881,9 +8561,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_items); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_items); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_54items)) {
+    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_58items)) {
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -7897,16 +8577,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_prefix);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_prefix);
         __Pyx_GIVEREF(__pyx_v_prefix);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -7919,37 +8599,37 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":496
+  /* "datrie.pyx":501
  *         """
  *         cdef bint success
  *         cdef list res = []             # <<<<<<<<<<<<<<
  *         cdef BaseState state = BaseState(self)
  * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 496; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 501; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_res = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":497
+  /* "datrie.pyx":502
  *         cdef bint success
  *         cdef list res = []
  *         cdef BaseState state = BaseState(self)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is not None:
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 497; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 502; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 497; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 502; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_state = ((struct __pyx_obj_6datrie_BaseState *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":499
+  /* "datrie.pyx":504
  *         cdef BaseState state = BaseState(self)
  * 
  *         if prefix is not None:             # <<<<<<<<<<<<<<
@@ -7960,20 +8640,20 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "datrie.pyx":500
+    /* "datrie.pyx":505
  * 
  *         if prefix is not None:
  *             success = state.walk(prefix)             # <<<<<<<<<<<<<<
  *             if not success:
  *                 return res
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 500; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 505; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 500; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 505; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_success = __pyx_t_7;
 
-    /* "datrie.pyx":501
+    /* "datrie.pyx":506
  *         if prefix is not None:
  *             success = state.walk(prefix)
  *             if not success:             # <<<<<<<<<<<<<<
@@ -7983,7 +8663,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
     __pyx_t_7 = ((!(__pyx_v_success != 0)) != 0);
     if (__pyx_t_7) {
 
-      /* "datrie.pyx":502
+      /* "datrie.pyx":507
  *             success = state.walk(prefix)
  *             if not success:
  *                 return res             # <<<<<<<<<<<<<<
@@ -7999,25 +8679,25 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":504
+  /* "datrie.pyx":509
  *                 return res
  * 
  *         cdef BaseIterator iter = BaseIterator(state)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is None:
  */
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 504; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 509; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_state));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_state));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_state));
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 504; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 509; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_iter = ((struct __pyx_obj_6datrie_BaseIterator *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":506
+  /* "datrie.pyx":511
  *         cdef BaseIterator iter = BaseIterator(state)
  * 
  *         if prefix is None:             # <<<<<<<<<<<<<<
@@ -8028,7 +8708,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
   __pyx_t_6 = (__pyx_t_7 != 0);
   if (__pyx_t_6) {
 
-    /* "datrie.pyx":507
+    /* "datrie.pyx":512
  * 
  *         if prefix is None:
  *             while iter.next():             # <<<<<<<<<<<<<<
@@ -8039,18 +8719,18 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
       __pyx_t_6 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
       if (!__pyx_t_6) break;
 
-      /* "datrie.pyx":508
+      /* "datrie.pyx":513
  *         if prefix is None:
  *             while iter.next():
  *                 res.append((iter.key(), iter.data()))             # <<<<<<<<<<<<<<
  *         else:
  *             while iter.next():
  */
-      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 508; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 513; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 508; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 513; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 508; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 513; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
       __Pyx_GIVEREF(__pyx_t_1);
@@ -8058,14 +8738,14 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
       __Pyx_GIVEREF(__pyx_t_2);
       __pyx_t_1 = 0;
       __pyx_t_2 = 0;
-      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_3); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 508; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_3); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 513; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
     goto __pyx_L5;
   }
   /*else*/ {
 
-    /* "datrie.pyx":510
+    /* "datrie.pyx":515
  *                 res.append((iter.key(), iter.data()))
  *         else:
  *             while iter.next():             # <<<<<<<<<<<<<<
@@ -8076,21 +8756,21 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
       __pyx_t_6 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
       if (!__pyx_t_6) break;
 
-      /* "datrie.pyx":511
+      /* "datrie.pyx":516
  *         else:
  *             while iter.next():
  *                 res.append((prefix+iter.key(), iter.data()))             # <<<<<<<<<<<<<<
  * 
  *         return res
  */
-      __pyx_t_3 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 511; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_2 = __Pyx_PyUnicode_ConcatSafe(__pyx_v_prefix, __pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 511; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = __Pyx_PyUnicode_ConcatSafe(__pyx_v_prefix, __pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0)); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 511; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0)); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 511; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
       PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_2);
@@ -8098,25 +8778,25 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
       __Pyx_GIVEREF(__pyx_t_3);
       __pyx_t_2 = 0;
       __pyx_t_3 = 0;
-      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 511; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
   }
   __pyx_L5:;
 
-  /* "datrie.pyx":513
+  /* "datrie.pyx":518
  *                 res.append((prefix+iter.key(), iter.data()))
  * 
  *         return res             # <<<<<<<<<<<<<<
  * 
- * 
+ *     cpdef keys(self, unicode prefix=None):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_res);
   __pyx_r = __pyx_v_res;
   goto __pyx_L0;
 
-  /* "datrie.pyx":488
+  /* "datrie.pyx":493
  *             cdatrie.trie_state_free(state)
  * 
  *     cpdef items(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -8143,9 +8823,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_items(struct __pyx_obj_6datrie_BaseTr
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_54items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_53items[] = "\n        Returns a list of this trie's items (``(key,value)`` tuples).\n\n        If ``prefix`` is not None, returns only the items\n        associated with keys prefixed by ``prefix``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_54items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_58items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_57items[] = "\n        Returns a list of this trie's items (``(key,value)`` tuples).\n\n        If ``prefix`` is not None, returns only the items\n        associated with keys prefixed by ``prefix``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_58items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_prefix = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -8174,7 +8854,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_54items(PyObject *__pyx_v_self, PyOb
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "items") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "items") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -8187,14 +8867,14 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_54items(PyObject *__pyx_v_self, PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("items", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("items", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.items", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_53items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_57items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
 
   /* function exit code */
   goto __pyx_L0;
@@ -8205,7 +8885,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_54items(PyObject *__pyx_v_self, PyOb
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_53items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_57items(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8217,7 +8897,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_53items(struct __pyx_obj_6datrie_Bas
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.prefix = __pyx_v_prefix;
-  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->items(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 488; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->items(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 493; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -8234,15 +8914,15 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_53items(struct __pyx_obj_6datrie_Bas
   return __pyx_r;
 }
 
-/* "datrie.pyx":516
- * 
+/* "datrie.pyx":520
+ *         return res
  * 
  *     cpdef keys(self, unicode prefix=None):             # <<<<<<<<<<<<<<
  *         """
  *         Returns a list of this trie's keys.
  */
 
-static PyObject *__pyx_pw_6datrie_8BaseTrie_56keys(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_60keys(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_8BaseTrie_keys *__pyx_optional_args) {
   PyObject *__pyx_v_prefix = ((PyObject*)Py_None);
   int __pyx_v_success;
@@ -8272,9 +8952,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_keys); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_keys); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_56keys)) {
+    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_60keys)) {
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -8288,16 +8968,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_prefix);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_prefix);
         __Pyx_GIVEREF(__pyx_v_prefix);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -8310,37 +8990,37 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":523
+  /* "datrie.pyx":527
  *         """
  *         cdef bint success
  *         cdef list res = []             # <<<<<<<<<<<<<<
  *         cdef BaseState state = BaseState(self)
  * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 523; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 527; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_res = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":524
+  /* "datrie.pyx":528
  *         cdef bint success
  *         cdef list res = []
  *         cdef BaseState state = BaseState(self)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is not None:
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 524; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 528; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 524; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 528; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_state = ((struct __pyx_obj_6datrie_BaseState *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":526
+  /* "datrie.pyx":530
  *         cdef BaseState state = BaseState(self)
  * 
  *         if prefix is not None:             # <<<<<<<<<<<<<<
@@ -8351,20 +9031,20 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "datrie.pyx":527
+    /* "datrie.pyx":531
  * 
  *         if prefix is not None:
  *             success = state.walk(prefix)             # <<<<<<<<<<<<<<
  *             if not success:
  *                 return res
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 527; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 531; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 527; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 531; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_success = __pyx_t_7;
 
-    /* "datrie.pyx":528
+    /* "datrie.pyx":532
  *         if prefix is not None:
  *             success = state.walk(prefix)
  *             if not success:             # <<<<<<<<<<<<<<
@@ -8374,7 +9054,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
     __pyx_t_7 = ((!(__pyx_v_success != 0)) != 0);
     if (__pyx_t_7) {
 
-      /* "datrie.pyx":529
+      /* "datrie.pyx":533
  *             success = state.walk(prefix)
  *             if not success:
  *                 return res             # <<<<<<<<<<<<<<
@@ -8390,25 +9070,25 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":531
+  /* "datrie.pyx":535
  *                 return res
  * 
  *         cdef BaseIterator iter = BaseIterator(state)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is None:
  */
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 531; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 535; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_state));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_state));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_state));
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 531; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 535; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_iter = ((struct __pyx_obj_6datrie_BaseIterator *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":533
+  /* "datrie.pyx":537
  *         cdef BaseIterator iter = BaseIterator(state)
  * 
  *         if prefix is None:             # <<<<<<<<<<<<<<
@@ -8419,7 +9099,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
   __pyx_t_6 = (__pyx_t_7 != 0);
   if (__pyx_t_6) {
 
-    /* "datrie.pyx":534
+    /* "datrie.pyx":538
  * 
  *         if prefix is None:
  *             while iter.next():             # <<<<<<<<<<<<<<
@@ -8430,23 +9110,23 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
       __pyx_t_6 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
       if (!__pyx_t_6) break;
 
-      /* "datrie.pyx":535
+      /* "datrie.pyx":539
  *         if prefix is None:
  *             while iter.next():
  *                 res.append(iter.key())             # <<<<<<<<<<<<<<
  *         else:
  *             while iter.next():
  */
-      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 535; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 539; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 535; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 539; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
     goto __pyx_L5;
   }
   /*else*/ {
 
-    /* "datrie.pyx":537
+    /* "datrie.pyx":541
  *                 res.append(iter.key())
  *         else:
  *             while iter.next():             # <<<<<<<<<<<<<<
@@ -8457,25 +9137,25 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
       __pyx_t_6 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
       if (!__pyx_t_6) break;
 
-      /* "datrie.pyx":538
+      /* "datrie.pyx":542
  *         else:
  *             while iter.next():
  *                 res.append(prefix+iter.key())             # <<<<<<<<<<<<<<
  * 
  *         return res
  */
-      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 538; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = __Pyx_PyUnicode_ConcatSafe(__pyx_v_prefix, __pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 538; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = __Pyx_PyUnicode_ConcatSafe(__pyx_v_prefix, __pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_2); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 538; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_2); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
   }
   __pyx_L5:;
 
-  /* "datrie.pyx":540
+  /* "datrie.pyx":544
  *                 res.append(prefix+iter.key())
  * 
  *         return res             # <<<<<<<<<<<<<<
@@ -8487,8 +9167,8 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
   __pyx_r = __pyx_v_res;
   goto __pyx_L0;
 
-  /* "datrie.pyx":516
- * 
+  /* "datrie.pyx":520
+ *         return res
  * 
  *     cpdef keys(self, unicode prefix=None):             # <<<<<<<<<<<<<<
  *         """
@@ -8514,9 +9194,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_keys(struct __pyx_obj_6datrie_BaseTri
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_56keys(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_55keys[] = "\n        Returns a list of this trie's keys.\n\n        If ``prefix`` is not None, returns only the keys prefixed by ``prefix``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_56keys(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_60keys(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_59keys[] = "\n        Returns a list of this trie's keys.\n\n        If ``prefix`` is not None, returns only the keys prefixed by ``prefix``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_60keys(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_prefix = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -8545,7 +9225,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_56keys(PyObject *__pyx_v_self, PyObj
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "keys") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "keys") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -8558,14 +9238,14 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_56keys(PyObject *__pyx_v_self, PyObj
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("keys", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("keys", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.keys", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_55keys(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_59keys(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
 
   /* function exit code */
   goto __pyx_L0;
@@ -8576,7 +9256,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_56keys(PyObject *__pyx_v_self, PyObj
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_55keys(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_59keys(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8588,7 +9268,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_55keys(struct __pyx_obj_6datrie_Base
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.prefix = __pyx_v_prefix;
-  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->keys(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 516; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->keys(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 520; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -8605,7 +9285,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_55keys(struct __pyx_obj_6datrie_Base
   return __pyx_r;
 }
 
-/* "datrie.pyx":542
+/* "datrie.pyx":546
  *         return res
  * 
  *     cpdef values(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -8613,7 +9293,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_55keys(struct __pyx_obj_6datrie_Base
  *         Returns a list of this trie's values.
  */
 
-static PyObject *__pyx_pw_6datrie_8BaseTrie_58values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_8BaseTrie_62values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_8BaseTrie_values *__pyx_optional_args) {
   PyObject *__pyx_v_prefix = ((PyObject*)Py_None);
   int __pyx_v_success;
@@ -8643,9 +9323,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_values); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_values); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_58values)) {
+    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8BaseTrie_62values)) {
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -8659,16 +9339,16 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_prefix);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_prefix);
         __Pyx_GIVEREF(__pyx_v_prefix);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -8681,37 +9361,37 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":550
+  /* "datrie.pyx":554
  *         """
  *         cdef bint success
  *         cdef list res = []             # <<<<<<<<<<<<<<
  *         cdef BaseState state = BaseState(self)
  * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 550; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 554; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_res = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":551
+  /* "datrie.pyx":555
  *         cdef bint success
  *         cdef list res = []
  *         cdef BaseState state = BaseState(self)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is not None:
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 551; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 555; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 551; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 555; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_state = ((struct __pyx_obj_6datrie_BaseState *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":553
+  /* "datrie.pyx":557
  *         cdef BaseState state = BaseState(self)
  * 
  *         if prefix is not None:             # <<<<<<<<<<<<<<
@@ -8722,20 +9402,20 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "datrie.pyx":554
+    /* "datrie.pyx":558
  * 
  *         if prefix is not None:
  *             success = state.walk(prefix)             # <<<<<<<<<<<<<<
  *             if not success:
  *                 return res
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 554; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 558; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 554; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 558; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_success = __pyx_t_7;
 
-    /* "datrie.pyx":555
+    /* "datrie.pyx":559
  *         if prefix is not None:
  *             success = state.walk(prefix)
  *             if not success:             # <<<<<<<<<<<<<<
@@ -8745,7 +9425,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
     __pyx_t_7 = ((!(__pyx_v_success != 0)) != 0);
     if (__pyx_t_7) {
 
-      /* "datrie.pyx":556
+      /* "datrie.pyx":560
  *             success = state.walk(prefix)
  *             if not success:
  *                 return res             # <<<<<<<<<<<<<<
@@ -8761,25 +9441,25 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":558
+  /* "datrie.pyx":562
  *                 return res
  * 
  *         cdef BaseIterator iter = BaseIterator(state)             # <<<<<<<<<<<<<<
  *         while iter.next():
  *             res.append(iter.data())
  */
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 558; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 562; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_state));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_state));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_state));
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 558; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 562; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_iter = ((struct __pyx_obj_6datrie_BaseIterator *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":559
+  /* "datrie.pyx":563
  * 
  *         cdef BaseIterator iter = BaseIterator(state)
  *         while iter.next():             # <<<<<<<<<<<<<<
@@ -8790,20 +9470,20 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
     __pyx_t_7 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
     if (!__pyx_t_7) break;
 
-    /* "datrie.pyx":560
+    /* "datrie.pyx":564
  *         cdef BaseIterator iter = BaseIterator(state)
  *         while iter.next():
  *             res.append(iter.data())             # <<<<<<<<<<<<<<
  *         return res
  * 
  */
-    __pyx_t_1 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 560; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyInt_From_TrieData(((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 564; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 560; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_8 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_8 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 564; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":561
+  /* "datrie.pyx":565
  *         while iter.next():
  *             res.append(iter.data())
  *         return res             # <<<<<<<<<<<<<<
@@ -8815,7 +9495,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
   __pyx_r = __pyx_v_res;
   goto __pyx_L0;
 
-  /* "datrie.pyx":542
+  /* "datrie.pyx":546
  *         return res
  * 
  *     cpdef values(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -8842,9 +9522,9 @@ static PyObject *__pyx_f_6datrie_8BaseTrie_values(struct __pyx_obj_6datrie_BaseT
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_8BaseTrie_58values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_8BaseTrie_57values[] = "\n        Returns a list of this trie's values.\n\n        If ``prefix`` is not None, returns only the values\n        associated with keys prefixed by ``prefix``.\n        ";
-static PyObject *__pyx_pw_6datrie_8BaseTrie_58values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_8BaseTrie_62values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_8BaseTrie_61values[] = "\n        Returns a list of this trie's values.\n\n        If ``prefix`` is not None, returns only the values\n        associated with keys prefixed by ``prefix``.\n        ";
+static PyObject *__pyx_pw_6datrie_8BaseTrie_62values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_prefix = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -8873,7 +9553,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_58values(PyObject *__pyx_v_self, PyO
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "values") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "values") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -8886,14 +9566,14 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_58values(PyObject *__pyx_v_self, PyO
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("values", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("values", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.BaseTrie.values", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_8BaseTrie_57values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_8BaseTrie_61values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_prefix);
 
   /* function exit code */
   goto __pyx_L0;
@@ -8904,7 +9584,7 @@ static PyObject *__pyx_pw_6datrie_8BaseTrie_58values(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_8BaseTrie_57values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pf_6datrie_8BaseTrie_61values(struct __pyx_obj_6datrie_BaseTrie *__pyx_v_self, PyObject *__pyx_v_prefix) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8916,7 +9596,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_57values(struct __pyx_obj_6datrie_Ba
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.prefix = __pyx_v_prefix;
-  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->values(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 542; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_vtabptr_6datrie_BaseTrie->values(__pyx_v_self, 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 546; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -8933,7 +9613,7 @@ static PyObject *__pyx_pf_6datrie_8BaseTrie_57values(struct __pyx_obj_6datrie_Ba
   return __pyx_r;
 }
 
-/* "datrie.pyx":563
+/* "datrie.pyx":567
  *         return res
  * 
  *     cdef _index_to_value(self, cdatrie.TrieData index):             # <<<<<<<<<<<<<<
@@ -8950,7 +9630,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__index_to_value(CYTHON_UNUSED struct 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_index_to_value", 0);
 
-  /* "datrie.pyx":564
+  /* "datrie.pyx":568
  * 
  *     cdef _index_to_value(self, cdatrie.TrieData index):
  *         return index             # <<<<<<<<<<<<<<
@@ -8958,13 +9638,13 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__index_to_value(CYTHON_UNUSED struct 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_TrieData(__pyx_v_index); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 564; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_TrieData(__pyx_v_index); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 568; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":563
+  /* "datrie.pyx":567
  *         return res
  * 
  *     cdef _index_to_value(self, cdatrie.TrieData index):             # <<<<<<<<<<<<<<
@@ -8983,7 +9663,7 @@ static PyObject *__pyx_f_6datrie_8BaseTrie__index_to_value(CYTHON_UNUSED struct 
   return __pyx_r;
 }
 
-/* "datrie.pyx":575
+/* "datrie.pyx":579
  *     cdef list _values
  * 
  *     def __init__(self, alphabet=None, ranges=None, AlphaMap alpha_map=None, _create=True):             # <<<<<<<<<<<<<<
@@ -9050,7 +9730,7 @@ static int __pyx_pw_6datrie_4Trie_1__init__(PyObject *__pyx_v_self, PyObject *__
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 575; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 579; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -9069,13 +9749,13 @@ static int __pyx_pw_6datrie_4Trie_1__init__(PyObject *__pyx_v_self, PyObject *__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 575; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 4, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 579; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.Trie.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_alpha_map), __pyx_ptype_6datrie_AlphaMap, 1, "alpha_map", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 575; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_alpha_map), __pyx_ptype_6datrie_AlphaMap, 1, "alpha_map", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 579; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_4Trie___init__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_alphabet, __pyx_v_ranges, __pyx_v_alpha_map, __pyx_v__create);
 
   /* function exit code */
@@ -9100,14 +9780,14 @@ static int __pyx_pf_6datrie_4Trie___init__(struct __pyx_obj_6datrie_Trie *__pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "datrie.pyx":584
+  /* "datrie.pyx":587
+ *         or ``alpha_map`` (:class:`datrie.AlphaMap` instance).
  *         """
- * 
  *         self._values = []             # <<<<<<<<<<<<<<
  *         super(Trie, self).__init__(alphabet, ranges, alpha_map, _create)
  * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 584; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 587; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v_self->_values);
@@ -9115,14 +9795,14 @@ static int __pyx_pf_6datrie_4Trie___init__(struct __pyx_obj_6datrie_Trie *__pyx_
   __pyx_v_self->_values = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":585
- * 
+  /* "datrie.pyx":588
+ *         """
  *         self._values = []
  *         super(Trie, self).__init__(alphabet, ranges, alpha_map, _create)             # <<<<<<<<<<<<<<
  * 
- *     def __getitem__(self, unicode key):
+ *     def __reduce__(self):
  */
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 585; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 588; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
@@ -9130,10 +9810,10 @@ static int __pyx_pf_6datrie_4Trie___init__(struct __pyx_obj_6datrie_Trie *__pyx_
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 585; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 588; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_init); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 585; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_init); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 588; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -9148,7 +9828,7 @@ static int __pyx_pf_6datrie_4Trie___init__(struct __pyx_obj_6datrie_Trie *__pyx_
       __pyx_t_4 = 1;
     }
   }
-  __pyx_t_5 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 585; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = PyTuple_New(4+__pyx_t_4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 588; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
   if (__pyx_t_3) {
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
@@ -9165,13 +9845,13 @@ static int __pyx_pf_6datrie_4Trie___init__(struct __pyx_obj_6datrie_Trie *__pyx_
   __Pyx_INCREF(__pyx_v__create);
   PyTuple_SET_ITEM(__pyx_t_5, 3+__pyx_t_4, __pyx_v__create);
   __Pyx_GIVEREF(__pyx_v__create);
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 585; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 588; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "datrie.pyx":575
+  /* "datrie.pyx":579
  *     cdef list _values
  * 
  *     def __init__(self, alphabet=None, ranges=None, AlphaMap alpha_map=None, _create=True):             # <<<<<<<<<<<<<<
@@ -9194,25 +9874,400 @@ static int __pyx_pf_6datrie_4Trie___init__(struct __pyx_obj_6datrie_Trie *__pyx_
   return __pyx_r;
 }
 
-/* "datrie.pyx":587
+/* "datrie.pyx":590
  *         super(Trie, self).__init__(alphabet, ranges, alpha_map, _create)
  * 
- *     def __getitem__(self, unicode key):             # <<<<<<<<<<<<<<
- *         cdef cdatrie.TrieData index = self._getitem(key)
- *         return self._values[index]
+ *     def __reduce__(self):             # <<<<<<<<<<<<<<
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_3__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static PyObject *__pyx_pw_6datrie_4Trie_3__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_4Trie_3__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_3__reduce__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__reduce__ (wrapper)", 0);
+  __pyx_r = __pyx_pf_6datrie_4Trie_2__reduce__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_6datrie_4Trie_2__reduce__(struct __pyx_obj_6datrie_Trie *__pyx_v_self) {
+  PyObject *__pyx_v_f = NULL;
+  PyObject *__pyx_v_state = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
+  Py_ssize_t __pyx_t_9;
+  PyObject *__pyx_t_10 = NULL;
+  int __pyx_t_11;
+  int __pyx_t_12;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("__reduce__", 0);
+
+  /* "datrie.pyx":591
+ * 
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             self.write(f)
+ *             pickle.dump(self._values, f)
+ */
+  /*with:*/ {
+    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_tempfile); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_NamedTemporaryFile); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_2)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_2);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    if (__pyx_t_2) {
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    } else {
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    if (__pyx_t_5) {
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    } else {
+      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __pyx_t_3;
+    __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    /*try:*/ {
+      {
+        __Pyx_ExceptionSave(&__pyx_t_6, &__pyx_t_7, &__pyx_t_8);
+        __Pyx_XGOTREF(__pyx_t_6);
+        __Pyx_XGOTREF(__pyx_t_7);
+        __Pyx_XGOTREF(__pyx_t_8);
+        /*try:*/ {
+          __pyx_v_f = __pyx_t_2;
+          __pyx_t_2 = 0;
+
+          /* "datrie.pyx":592
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)             # <<<<<<<<<<<<<<
+ *             pickle.dump(self._values, f)
+ *             f.seek(0)
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_write); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 592; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_3 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_3)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_3);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          if (!__pyx_t_3) {
+            __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_f); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 592; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+          } else {
+            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 592; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_5);
+            PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
+            __Pyx_INCREF(__pyx_v_f);
+            PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_f);
+            __Pyx_GIVEREF(__pyx_v_f);
+            __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 592; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          }
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+          /* "datrie.pyx":593
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)
+ *             pickle.dump(self._values, f)             # <<<<<<<<<<<<<<
+ *             f.seek(0)
+ *             state = f.read()
+ */
+          __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_pickle); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 593; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dump); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 593; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __pyx_t_1 = NULL;
+          __pyx_t_9 = 0;
+          if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_5))) {
+            __pyx_t_1 = PyMethod_GET_SELF(__pyx_t_5);
+            if (likely(__pyx_t_1)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+              __Pyx_INCREF(__pyx_t_1);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_5, function);
+              __pyx_t_9 = 1;
+            }
+          }
+          __pyx_t_3 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 593; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_3);
+          if (__pyx_t_1) {
+            PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1); __Pyx_GIVEREF(__pyx_t_1); __pyx_t_1 = NULL;
+          }
+          __Pyx_INCREF(__pyx_v_self->_values);
+          PyTuple_SET_ITEM(__pyx_t_3, 0+__pyx_t_9, __pyx_v_self->_values);
+          __Pyx_GIVEREF(__pyx_v_self->_values);
+          __Pyx_INCREF(__pyx_v_f);
+          PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_9, __pyx_v_f);
+          __Pyx_GIVEREF(__pyx_v_f);
+          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 593; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+          /* "datrie.pyx":594
+ *             self.write(f)
+ *             pickle.dump(self._values, f)
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             state = f.read()
+ *             return Trie, (None, None, None, False), state
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_seek); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 594; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 594; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+          /* "datrie.pyx":595
+ *             pickle.dump(self._values, f)
+ *             f.seek(0)
+ *             state = f.read()             # <<<<<<<<<<<<<<
+ *             return Trie, (None, None, None, False), state
+ * 
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 595; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_3 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
+            if (likely(__pyx_t_3)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+              __Pyx_INCREF(__pyx_t_3);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_2, function);
+            }
+          }
+          if (__pyx_t_3) {
+            __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 595; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          } else {
+            __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 595; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          }
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __pyx_v_state = __pyx_t_5;
+          __pyx_t_5 = 0;
+
+          /* "datrie.pyx":596
+ *             f.seek(0)
+ *             state = f.read()
+ *             return Trie, (None, None, None, False), state             # <<<<<<<<<<<<<<
+ * 
+ *     def __setstate__(self, bytes state):
+ */
+          __Pyx_XDECREF(__pyx_r);
+          __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 596; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_INCREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
+          PyTuple_SET_ITEM(__pyx_t_5, 0, ((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
+          __Pyx_GIVEREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
+          __Pyx_INCREF(__pyx_tuple__20);
+          PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_tuple__20);
+          __Pyx_GIVEREF(__pyx_tuple__20);
+          __Pyx_INCREF(__pyx_v_state);
+          PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_v_state);
+          __Pyx_GIVEREF(__pyx_v_state);
+          __pyx_r = __pyx_t_5;
+          __pyx_t_5 = 0;
+          goto __pyx_L11_try_return;
+        }
+        __pyx_L7_error:;
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+        __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+        /* "datrie.pyx":591
+ * 
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             self.write(f)
+ *             pickle.dump(self._values, f)
+ */
+        /*except:*/ {
+          __Pyx_AddTraceback("datrie.Trie.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          if (__Pyx_GetException(&__pyx_t_5, &__pyx_t_2, &__pyx_t_3) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_1 = PyTuple_Pack(3, __pyx_t_5, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          if (unlikely(!__pyx_t_10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_10);
+          __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_10);
+          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+          if (__pyx_t_11 < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __pyx_t_12 = ((!(__pyx_t_11 != 0)) != 0);
+          if (__pyx_t_12) {
+            __Pyx_GIVEREF(__pyx_t_5);
+            __Pyx_GIVEREF(__pyx_t_2);
+            __Pyx_XGIVEREF(__pyx_t_3);
+            __Pyx_ErrRestore(__pyx_t_5, __pyx_t_2, __pyx_t_3);
+            __pyx_t_5 = 0; __pyx_t_2 = 0; __pyx_t_3 = 0; 
+            {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          }
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          goto __pyx_L8_exception_handled;
+        }
+        __pyx_L9_except_error:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        goto __pyx_L1_error;
+        __pyx_L11_try_return:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        goto __pyx_L4_return;
+        __pyx_L8_exception_handled:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+      }
+    }
+    /*finally:*/ {
+      /*normal exit:*/{
+        if (__pyx_t_4) {
+          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__21, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __Pyx_GOTREF(__pyx_t_8);
+          __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+        }
+        goto __pyx_L6;
+      }
+      __pyx_L4_return: {
+        __pyx_t_8 = __pyx_r;
+        __pyx_r = 0;
+        if (__pyx_t_4) {
+          __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__22, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __Pyx_GOTREF(__pyx_t_7);
+          __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
+        }
+        __pyx_r = __pyx_t_8;
+        __pyx_t_8 = 0;
+        goto __pyx_L0;
+      }
+      __pyx_L6:;
+    }
+    goto __pyx_L18;
+    __pyx_L3_error:;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    goto __pyx_L1_error;
+    __pyx_L18:;
+  }
+
+  /* "datrie.pyx":590
+ *         super(Trie, self).__init__(alphabet, ranges, alpha_map, _create)
+ * 
+ *     def __reduce__(self):             # <<<<<<<<<<<<<<
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_AddTraceback("datrie.Trie.__reduce__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_f);
+  __Pyx_XDECREF(__pyx_v_state);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "datrie.pyx":598
+ *             return Trie, (None, None, None, False), state
+ * 
+ *     def __setstate__(self, bytes state):             # <<<<<<<<<<<<<<
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_6datrie_4Trie_5__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_state); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_5__setstate__(PyObject *__pyx_v_self, PyObject *__pyx_v_state) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__getitem__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 587; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_2__getitem__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  __Pyx_RefNannySetupContext("__setstate__ (wrapper)", 0);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), (&PyBytes_Type), 1, "state", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 598; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_4__setstate__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_state));
 
   /* function exit code */
   goto __pyx_L0;
@@ -9223,7 +10278,378 @@ static PyObject *__pyx_pw_6datrie_4Trie_3__getitem__(PyObject *__pyx_v_self, PyO
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_2__getitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_4Trie_4__setstate__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_state) {
+  PyObject *__pyx_v_f = NULL;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *__pyx_t_4 = NULL;
+  PyObject *__pyx_t_5 = NULL;
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
+  Trie *__pyx_t_9;
+  PyObject *__pyx_t_10 = NULL;
+  int __pyx_t_11;
+  int __pyx_t_12;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("__setstate__", 0);
+
+  /* "datrie.pyx":599
+ * 
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL             # <<<<<<<<<<<<<<
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             f.write(state)
+ */
+  #ifndef CYTHON_WITHOUT_ASSERTIONS
+  if (unlikely(!Py_OptimizeFlag)) {
+    if (unlikely(!((__pyx_v_self->__pyx_base._c_trie == NULL) != 0))) {
+      PyErr_SetNone(PyExc_AssertionError);
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 599; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    }
+  }
+  #endif
+
+  /* "datrie.pyx":600
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             f.write(state)
+ *             f.flush()
+ */
+  /*with:*/ {
+    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_tempfile); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_NamedTemporaryFile); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_3))) {
+      __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
+      if (likely(__pyx_t_2)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
+        __Pyx_INCREF(__pyx_t_2);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_3, function);
+      }
+    }
+    if (__pyx_t_2) {
+      __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    } else {
+      __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __pyx_t_4 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_5 = NULL;
+    if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
+      __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
+      if (likely(__pyx_t_5)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_2);
+        __Pyx_INCREF(__pyx_t_5);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_2, function);
+      }
+    }
+    if (__pyx_t_5) {
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    } else {
+      __pyx_t_3 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    }
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __pyx_t_3;
+    __pyx_t_3 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    /*try:*/ {
+      {
+        __Pyx_ExceptionSave(&__pyx_t_6, &__pyx_t_7, &__pyx_t_8);
+        __Pyx_XGOTREF(__pyx_t_6);
+        __Pyx_XGOTREF(__pyx_t_7);
+        __Pyx_XGOTREF(__pyx_t_8);
+        /*try:*/ {
+          __pyx_v_f = __pyx_t_2;
+          __pyx_t_2 = 0;
+
+          /* "datrie.pyx":601
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             f.write(state)             # <<<<<<<<<<<<<<
+ *             f.flush()
+ *             f.seek(0)
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 601; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_3 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_3)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_3);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          if (!__pyx_t_3) {
+            __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_state); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 601; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+          } else {
+            __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 601; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_5);
+            PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
+            __Pyx_INCREF(__pyx_v_state);
+            PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_state);
+            __Pyx_GIVEREF(__pyx_v_state);
+            __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 601; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_2);
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          }
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+          /* "datrie.pyx":602
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             f.write(state)
+ *             f.flush()             # <<<<<<<<<<<<<<
+ *             f.seek(0)
+ *             self._c_trie = _load_from_file(f)
+ */
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_flush); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 602; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __pyx_t_5 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
+            __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_1);
+            if (likely(__pyx_t_5)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_1);
+              __Pyx_INCREF(__pyx_t_5);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_1, function);
+            }
+          }
+          if (__pyx_t_5) {
+            __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 602; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          } else {
+            __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 602; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          }
+          __Pyx_GOTREF(__pyx_t_2);
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+          /* "datrie.pyx":603
+ *             f.write(state)
+ *             f.flush()
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             self._c_trie = _load_from_file(f)
+ *             self._values = pickle.load(f)
+ */
+          __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_seek); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 603; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 603; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+          /* "datrie.pyx":604
+ *             f.flush()
+ *             f.seek(0)
+ *             self._c_trie = _load_from_file(f)             # <<<<<<<<<<<<<<
+ *             self._values = pickle.load(f)
+ * 
+ */
+          __pyx_t_9 = __pyx_f_6datrie__load_from_file(__pyx_v_f); if (unlikely(__pyx_t_9 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 604; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __pyx_v_self->__pyx_base._c_trie = __pyx_t_9;
+
+          /* "datrie.pyx":605
+ *             f.seek(0)
+ *             self._c_trie = _load_from_file(f)
+ *             self._values = pickle.load(f)             # <<<<<<<<<<<<<<
+ * 
+ *     def __getitem__(self, unicode key):
+ */
+          __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_pickle); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 605; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 605; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          __pyx_t_2 = NULL;
+          if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_5))) {
+            __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
+            if (likely(__pyx_t_2)) {
+              PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+              __Pyx_INCREF(__pyx_t_2);
+              __Pyx_INCREF(function);
+              __Pyx_DECREF_SET(__pyx_t_5, function);
+            }
+          }
+          if (!__pyx_t_2) {
+            __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_f); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 605; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_1);
+          } else {
+            __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 605; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_3);
+            PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2); __Pyx_GIVEREF(__pyx_t_2); __pyx_t_2 = NULL;
+            __Pyx_INCREF(__pyx_v_f);
+            PyTuple_SET_ITEM(__pyx_t_3, 0+1, __pyx_v_f);
+            __Pyx_GIVEREF(__pyx_v_f);
+            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 605; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+            __Pyx_GOTREF(__pyx_t_1);
+            __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          }
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          if (!(likely(PyList_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_1)->tp_name), 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 605; __pyx_clineno = __LINE__; goto __pyx_L7_error;}
+          __Pyx_GIVEREF(__pyx_t_1);
+          __Pyx_GOTREF(__pyx_v_self->_values);
+          __Pyx_DECREF(__pyx_v_self->_values);
+          __pyx_v_self->_values = ((PyObject*)__pyx_t_1);
+          __pyx_t_1 = 0;
+        }
+        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+        __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+        __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
+        goto __pyx_L14_try_end;
+        __pyx_L7_error:;
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+        /* "datrie.pyx":600
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             f.write(state)
+ *             f.flush()
+ */
+        /*except:*/ {
+          __Pyx_AddTraceback("datrie.Trie.__setstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+          if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_5, &__pyx_t_3) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_1);
+          __Pyx_GOTREF(__pyx_t_5);
+          __Pyx_GOTREF(__pyx_t_3);
+          __pyx_t_2 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_2);
+          __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+          if (unlikely(!__pyx_t_10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __Pyx_GOTREF(__pyx_t_10);
+          __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_10);
+          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+          if (__pyx_t_11 < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          __pyx_t_12 = ((!(__pyx_t_11 != 0)) != 0);
+          if (__pyx_t_12) {
+            __Pyx_GIVEREF(__pyx_t_1);
+            __Pyx_GIVEREF(__pyx_t_5);
+            __Pyx_XGIVEREF(__pyx_t_3);
+            __Pyx_ErrRestore(__pyx_t_1, __pyx_t_5, __pyx_t_3);
+            __pyx_t_1 = 0; __pyx_t_5 = 0; __pyx_t_3 = 0; 
+            {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L9_except_error;}
+          }
+          __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+          goto __pyx_L8_exception_handled;
+        }
+        __pyx_L9_except_error:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        goto __pyx_L1_error;
+        __pyx_L8_exception_handled:;
+        __Pyx_XGIVEREF(__pyx_t_6);
+        __Pyx_XGIVEREF(__pyx_t_7);
+        __Pyx_XGIVEREF(__pyx_t_8);
+        __Pyx_ExceptionReset(__pyx_t_6, __pyx_t_7, __pyx_t_8);
+        __pyx_L14_try_end:;
+      }
+    }
+    /*finally:*/ {
+      /*normal exit:*/{
+        if (__pyx_t_4) {
+          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__24, NULL);
+          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+          if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __Pyx_GOTREF(__pyx_t_8);
+          __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+        }
+        goto __pyx_L6;
+      }
+      __pyx_L6:;
+    }
+    goto __pyx_L18;
+    __pyx_L3_error:;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    goto __pyx_L1_error;
+    __pyx_L18:;
+  }
+
+  /* "datrie.pyx":598
+ *             return Trie, (None, None, None, False), state
+ * 
+ *     def __setstate__(self, bytes state):             # <<<<<<<<<<<<<<
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:
+ */
+
+  /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_AddTraceback("datrie.Trie.__setstate__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_f);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "datrie.pyx":607
+ *             self._values = pickle.load(f)
+ * 
+ *     def __getitem__(self, unicode key):             # <<<<<<<<<<<<<<
+ *         cdef cdatrie.TrieData index = self._getitem(key)
+ *         return self._values[index]
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_6datrie_4Trie_7__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_7__getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+  CYTHON_UNUSED int __pyx_lineno = 0;
+  CYTHON_UNUSED const char *__pyx_filename = NULL;
+  CYTHON_UNUSED int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("__getitem__ (wrapper)", 0);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 607; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_6__getitem__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+
+  /* function exit code */
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_6datrie_4Trie_6__getitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
   TrieData __pyx_v_index;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -9234,17 +10660,17 @@ static PyObject *__pyx_pf_6datrie_4Trie_2__getitem__(struct __pyx_obj_6datrie_Tr
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__getitem__", 0);
 
-  /* "datrie.pyx":588
+  /* "datrie.pyx":608
  * 
  *     def __getitem__(self, unicode key):
  *         cdef cdatrie.TrieData index = self._getitem(key)             # <<<<<<<<<<<<<<
  *         return self._values[index]
  * 
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._getitem(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 588; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._getitem(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 608; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_v_index = __pyx_t_1;
 
-  /* "datrie.pyx":589
+  /* "datrie.pyx":609
  *     def __getitem__(self, unicode key):
  *         cdef cdatrie.TrieData index = self._getitem(key)
  *         return self._values[index]             # <<<<<<<<<<<<<<
@@ -9254,16 +10680,16 @@ static PyObject *__pyx_pf_6datrie_4Trie_2__getitem__(struct __pyx_obj_6datrie_Tr
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_self->_values == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 589; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 609; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_v_index, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 589; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_v_index, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 609; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":587
- *         super(Trie, self).__init__(alphabet, ranges, alpha_map, _create)
+  /* "datrie.pyx":607
+ *             self._values = pickle.load(f)
  * 
  *     def __getitem__(self, unicode key):             # <<<<<<<<<<<<<<
  *         cdef cdatrie.TrieData index = self._getitem(key)
@@ -9281,7 +10707,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_2__getitem__(struct __pyx_obj_6datrie_Tr
   return __pyx_r;
 }
 
-/* "datrie.pyx":591
+/* "datrie.pyx":611
  *         return self._values[index]
  * 
  *     def __setitem__(self, unicode key, object value):             # <<<<<<<<<<<<<<
@@ -9290,16 +10716,16 @@ static PyObject *__pyx_pf_6datrie_4Trie_2__getitem__(struct __pyx_obj_6datrie_Tr
  */
 
 /* Python wrapper */
-static int __pyx_pw_6datrie_4Trie_5__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_6datrie_4Trie_5__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value) {
+static int __pyx_pw_6datrie_4Trie_9__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_6datrie_4Trie_9__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setitem__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_4__setitem__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key), ((PyObject *)__pyx_v_value));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 611; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_8__setitem__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   goto __pyx_L0;
@@ -9310,7 +10736,7 @@ static int __pyx_pw_6datrie_4Trie_5__setitem__(PyObject *__pyx_v_self, PyObject 
   return __pyx_r;
 }
 
-static int __pyx_pf_6datrie_4Trie_4__setitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value) {
+static int __pyx_pf_6datrie_4Trie_8__setitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value) {
   TrieData __pyx_v_next_index;
   TrieData __pyx_v_index;
   int __pyx_r;
@@ -9324,7 +10750,7 @@ static int __pyx_pf_6datrie_4Trie_4__setitem__(struct __pyx_obj_6datrie_Trie *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__setitem__", 0);
 
-  /* "datrie.pyx":592
+  /* "datrie.pyx":612
  * 
  *     def __setitem__(self, unicode key, object value):
  *         cdef cdatrie.TrieData next_index = len(self._values)             # <<<<<<<<<<<<<<
@@ -9335,63 +10761,63 @@ static int __pyx_pf_6datrie_4Trie_4__setitem__(struct __pyx_obj_6datrie_Trie *__
   __Pyx_INCREF(__pyx_t_1);
   if (unlikely(__pyx_t_1 == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 592; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 612; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __pyx_t_2 = PyList_GET_SIZE(__pyx_t_1); if (unlikely(__pyx_t_2 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 592; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyList_GET_SIZE(__pyx_t_1); if (unlikely(__pyx_t_2 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 612; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_next_index = __pyx_t_2;
 
-  /* "datrie.pyx":593
+  /* "datrie.pyx":613
  *     def __setitem__(self, unicode key, object value):
  *         cdef cdatrie.TrieData next_index = len(self._values)
  *         cdef cdatrie.TrieData index = self._setdefault(key, next_index)             # <<<<<<<<<<<<<<
  *         if index == next_index:
- *             self._values.append(value) # insert
+ *             self._values.append(value)   # insert
  */
   __pyx_v_index = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._setdefault(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_next_index);
 
-  /* "datrie.pyx":594
+  /* "datrie.pyx":614
  *         cdef cdatrie.TrieData next_index = len(self._values)
  *         cdef cdatrie.TrieData index = self._setdefault(key, next_index)
  *         if index == next_index:             # <<<<<<<<<<<<<<
- *             self._values.append(value) # insert
+ *             self._values.append(value)   # insert
  *         else:
  */
   __pyx_t_3 = ((__pyx_v_index == __pyx_v_next_index) != 0);
   if (__pyx_t_3) {
 
-    /* "datrie.pyx":595
+    /* "datrie.pyx":615
  *         cdef cdatrie.TrieData index = self._setdefault(key, next_index)
  *         if index == next_index:
- *             self._values.append(value) # insert             # <<<<<<<<<<<<<<
+ *             self._values.append(value)   # insert             # <<<<<<<<<<<<<<
  *         else:
- *             self._values[index] = value # update
+ *             self._values[index] = value  # update
  */
     if (unlikely(__pyx_v_self->_values == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%s'", "append");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 595; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 615; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    __pyx_t_4 = __Pyx_PyList_Append(__pyx_v_self->_values, __pyx_v_value); if (unlikely(__pyx_t_4 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 595; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = __Pyx_PyList_Append(__pyx_v_self->_values, __pyx_v_value); if (unlikely(__pyx_t_4 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 615; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     goto __pyx_L3;
   }
   /*else*/ {
 
-    /* "datrie.pyx":597
- *             self._values.append(value) # insert
+    /* "datrie.pyx":617
+ *             self._values.append(value)   # insert
  *         else:
- *             self._values[index] = value # update             # <<<<<<<<<<<<<<
+ *             self._values[index] = value  # update             # <<<<<<<<<<<<<<
  * 
  *     def setdefault(self, unicode key, object value):
  */
     if (unlikely(__pyx_v_self->_values == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 597; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 617; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    if (unlikely(__Pyx_SetItemInt(__pyx_v_self->_values, __pyx_v_index, __pyx_v_value, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 597; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    if (unlikely(__Pyx_SetItemInt(__pyx_v_self->_values, __pyx_v_index, __pyx_v_value, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 617; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":591
+  /* "datrie.pyx":611
  *         return self._values[index]
  * 
  *     def __setitem__(self, unicode key, object value):             # <<<<<<<<<<<<<<
@@ -9411,8 +10837,8 @@ static int __pyx_pf_6datrie_4Trie_4__setitem__(struct __pyx_obj_6datrie_Trie *__
   return __pyx_r;
 }
 
-/* "datrie.pyx":599
- *             self._values[index] = value # update
+/* "datrie.pyx":619
+ *             self._values[index] = value  # update
  * 
  *     def setdefault(self, unicode key, object value):             # <<<<<<<<<<<<<<
  *         cdef cdatrie.TrieData next_index = len(self._values)
@@ -9420,8 +10846,8 @@ static int __pyx_pf_6datrie_4Trie_4__setitem__(struct __pyx_obj_6datrie_Trie *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_7setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_6datrie_4Trie_7setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_4Trie_11setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_11setdefault(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_key = 0;
   PyObject *__pyx_v_value = 0;
   int __pyx_lineno = 0;
@@ -9450,11 +10876,11 @@ static PyObject *__pyx_pw_6datrie_4Trie_7setdefault(PyObject *__pyx_v_self, PyOb
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 599; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 619; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "setdefault") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 599; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "setdefault") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 619; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -9467,14 +10893,14 @@ static PyObject *__pyx_pw_6datrie_4Trie_7setdefault(PyObject *__pyx_v_self, PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 599; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("setdefault", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 619; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.Trie.setdefault", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 599; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_6setdefault(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_key, __pyx_v_value);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 619; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_10setdefault(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_key, __pyx_v_value);
 
   /* function exit code */
   goto __pyx_L0;
@@ -9485,7 +10911,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_7setdefault(PyObject *__pyx_v_self, PyOb
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value) {
+static PyObject *__pyx_pf_6datrie_4Trie_10setdefault(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_value) {
   TrieData __pyx_v_next_index;
   TrieData __pyx_v_index;
   PyObject *__pyx_r = NULL;
@@ -9499,7 +10925,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("setdefault", 0);
 
-  /* "datrie.pyx":600
+  /* "datrie.pyx":620
  * 
  *     def setdefault(self, unicode key, object value):
  *         cdef cdatrie.TrieData next_index = len(self._values)             # <<<<<<<<<<<<<<
@@ -9510,13 +10936,13 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
   __Pyx_INCREF(__pyx_t_1);
   if (unlikely(__pyx_t_1 == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 620; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __pyx_t_2 = PyList_GET_SIZE(__pyx_t_1); if (unlikely(__pyx_t_2 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyList_GET_SIZE(__pyx_t_1); if (unlikely(__pyx_t_2 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 620; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_next_index = __pyx_t_2;
 
-  /* "datrie.pyx":601
+  /* "datrie.pyx":621
  *     def setdefault(self, unicode key, object value):
  *         cdef cdatrie.TrieData next_index = len(self._values)
  *         cdef cdatrie.TrieData index = self._setdefault(key, next_index)             # <<<<<<<<<<<<<<
@@ -9525,7 +10951,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
  */
   __pyx_v_index = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._setdefault(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, __pyx_v_next_index);
 
-  /* "datrie.pyx":603
+  /* "datrie.pyx":623
  *         cdef cdatrie.TrieData index = self._setdefault(key, next_index)
  * 
  *         if index == next_index:             # <<<<<<<<<<<<<<
@@ -9535,7 +10961,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
   __pyx_t_3 = ((__pyx_v_index == __pyx_v_next_index) != 0);
   if (__pyx_t_3) {
 
-    /* "datrie.pyx":604
+    /* "datrie.pyx":624
  * 
  *         if index == next_index:
  *             self._values.append(value) # insert             # <<<<<<<<<<<<<<
@@ -9544,11 +10970,11 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
  */
     if (unlikely(__pyx_v_self->_values == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%s'", "append");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 604; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 624; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    __pyx_t_4 = __Pyx_PyList_Append(__pyx_v_self->_values, __pyx_v_value); if (unlikely(__pyx_t_4 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 604; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = __Pyx_PyList_Append(__pyx_v_self->_values, __pyx_v_value); if (unlikely(__pyx_t_4 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 624; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "datrie.pyx":605
+    /* "datrie.pyx":625
  *         if index == next_index:
  *             self._values.append(value) # insert
  *             return value             # <<<<<<<<<<<<<<
@@ -9562,7 +10988,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
   }
   /*else*/ {
 
-    /* "datrie.pyx":607
+    /* "datrie.pyx":627
  *             return value
  *         else:
  *             return self._values[index] # lookup             # <<<<<<<<<<<<<<
@@ -9572,17 +10998,17 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
     __Pyx_XDECREF(__pyx_r);
     if (unlikely(__pyx_v_self->_values == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 607; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 627; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_v_index, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 607; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_v_index, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 627; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
   }
 
-  /* "datrie.pyx":599
- *             self._values[index] = value # update
+  /* "datrie.pyx":619
+ *             self._values[index] = value  # update
  * 
  *     def setdefault(self, unicode key, object value):             # <<<<<<<<<<<<<<
  *         cdef cdatrie.TrieData next_index = len(self._values)
@@ -9600,7 +11026,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
   return __pyx_r;
 }
 
-/* "datrie.pyx":609
+/* "datrie.pyx":629
  *             return self._values[index] # lookup
  * 
  *     def __delitem__(self, unicode key):             # <<<<<<<<<<<<<<
@@ -9609,16 +11035,16 @@ static PyObject *__pyx_pf_6datrie_4Trie_6setdefault(struct __pyx_obj_6datrie_Tri
  */
 
 /* Python wrapper */
-static int __pyx_pw_6datrie_4Trie_9__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static int __pyx_pw_6datrie_4Trie_9__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static int __pyx_pw_6datrie_4Trie_13__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static int __pyx_pw_6datrie_4Trie_13__delitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__delitem__ (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 609; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_8__delitem__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 629; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_12__delitem__(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -9629,7 +11055,7 @@ static int __pyx_pw_6datrie_4Trie_9__delitem__(PyObject *__pyx_v_self, PyObject 
   return __pyx_r;
 }
 
-static int __pyx_pf_6datrie_4Trie_8__delitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
+static int __pyx_pf_6datrie_4Trie_12__delitem__(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
   TrieData __pyx_v_index;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
@@ -9642,33 +11068,33 @@ static int __pyx_pf_6datrie_4Trie_8__delitem__(struct __pyx_obj_6datrie_Trie *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__delitem__", 0);
 
-  /* "datrie.pyx":611
+  /* "datrie.pyx":631
  *     def __delitem__(self, unicode key):
  *         # XXX: this could be faster (key is encoded twice here)
  *         cdef cdatrie.TrieData index = self._getitem(key)             # <<<<<<<<<<<<<<
  *         self._values[index] = DELETED_OBJECT
  *         if not self._delitem(key):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._getitem(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 611; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._getitem(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 631; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_v_index = __pyx_t_1;
 
-  /* "datrie.pyx":612
+  /* "datrie.pyx":632
  *         # XXX: this could be faster (key is encoded twice here)
  *         cdef cdatrie.TrieData index = self._getitem(key)
  *         self._values[index] = DELETED_OBJECT             # <<<<<<<<<<<<<<
  *         if not self._delitem(key):
  *             raise KeyError(key)
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_DELETED_OBJECT); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 612; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_DELETED_OBJECT); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 632; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   if (unlikely(__pyx_v_self->_values == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 612; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 632; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  if (unlikely(__Pyx_SetItemInt(__pyx_v_self->_values, __pyx_v_index, __pyx_t_2, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 612; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(__Pyx_SetItemInt(__pyx_v_self->_values, __pyx_v_index, __pyx_t_2, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1) < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 632; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":613
+  /* "datrie.pyx":633
  *         cdef cdatrie.TrieData index = self._getitem(key)
  *         self._values[index] = DELETED_OBJECT
  *         if not self._delitem(key):             # <<<<<<<<<<<<<<
@@ -9678,27 +11104,27 @@ static int __pyx_pf_6datrie_4Trie_8__delitem__(struct __pyx_obj_6datrie_Trie *__
   __pyx_t_3 = ((!(((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._delitem(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, 0) != 0)) != 0);
   if (__pyx_t_3) {
 
-    /* "datrie.pyx":614
+    /* "datrie.pyx":634
  *         self._values[index] = DELETED_OBJECT
  *         if not self._delitem(key):
  *             raise KeyError(key)             # <<<<<<<<<<<<<<
  * 
  *     def write(self, f):
  */
-    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 614; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 634; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_key);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_key);
     __Pyx_GIVEREF(__pyx_v_key);
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 614; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 634; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 614; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 634; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":609
+  /* "datrie.pyx":629
  *             return self._values[index] # lookup
  * 
  *     def __delitem__(self, unicode key):             # <<<<<<<<<<<<<<
@@ -9719,7 +11145,7 @@ static int __pyx_pf_6datrie_4Trie_8__delitem__(struct __pyx_obj_6datrie_Trie *__
   return __pyx_r;
 }
 
-/* "datrie.pyx":616
+/* "datrie.pyx":636
  *             raise KeyError(key)
  * 
  *     def write(self, f):             # <<<<<<<<<<<<<<
@@ -9728,20 +11154,20 @@ static int __pyx_pf_6datrie_4Trie_8__delitem__(struct __pyx_obj_6datrie_Trie *__
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_11write(PyObject *__pyx_v_self, PyObject *__pyx_v_f); /*proto*/
-static char __pyx_doc_6datrie_4Trie_10write[] = "\n        Writes a trie to a file. File-like objects without real\n        file descriptors are not supported.\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_11write(PyObject *__pyx_v_self, PyObject *__pyx_v_f) {
+static PyObject *__pyx_pw_6datrie_4Trie_15write(PyObject *__pyx_v_self, PyObject *__pyx_v_f); /*proto*/
+static char __pyx_doc_6datrie_4Trie_14write[] = "\n        Writes a trie to a file. File-like objects without real\n        file descriptors are not supported.\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_15write(PyObject *__pyx_v_self, PyObject *__pyx_v_f) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("write (wrapper)", 0);
-  __pyx_r = __pyx_pf_6datrie_4Trie_10write(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject *)__pyx_v_f));
+  __pyx_r = __pyx_pf_6datrie_4Trie_14write(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject *)__pyx_v_f));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_f) {
+static PyObject *__pyx_pf_6datrie_4Trie_14write(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_f) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9753,14 +11179,14 @@ static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("write", 0);
 
-  /* "datrie.pyx":621
+  /* "datrie.pyx":641
  *         file descriptors are not supported.
  *         """
  *         super(Trie, self).write(f)             # <<<<<<<<<<<<<<
  *         pickle.dump(self._values, f, protocol=2)
  * 
  */
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 621; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 641; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
@@ -9768,10 +11194,10 @@ static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *_
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 621; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 641; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 621; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_write); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 641; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -9785,35 +11211,35 @@ static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *_
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_f); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 621; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_f); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 641; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
   } else {
-    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 621; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 641; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_v_f);
     PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_f);
     __Pyx_GIVEREF(__pyx_v_f);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 621; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 641; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "datrie.pyx":622
+  /* "datrie.pyx":642
  *         """
  *         super(Trie, self).write(f)
  *         pickle.dump(self._values, f, protocol=2)             # <<<<<<<<<<<<<<
  * 
  *     @classmethod
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_pickle); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 622; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_pickle); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 642; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dump); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 622; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dump); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 642; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 622; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 642; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_self->_values);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_self->_values);
@@ -9821,17 +11247,17 @@ static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *_
   __Pyx_INCREF(__pyx_v_f);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_v_f);
   __Pyx_GIVEREF(__pyx_v_f);
-  __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 622; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = PyDict_New(); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 642; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_protocol, __pyx_int_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 622; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 622; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_protocol, __pyx_int_2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 642; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 642; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "datrie.pyx":616
+  /* "datrie.pyx":636
  *             raise KeyError(key)
  * 
  *     def write(self, f):             # <<<<<<<<<<<<<<
@@ -9855,7 +11281,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *_
   return __pyx_r;
 }
 
-/* "datrie.pyx":625
+/* "datrie.pyx":645
  * 
  *     @classmethod
  *     def read(cls, f):             # <<<<<<<<<<<<<<
@@ -9864,20 +11290,20 @@ static PyObject *__pyx_pf_6datrie_4Trie_10write(struct __pyx_obj_6datrie_Trie *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_13read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f); /*proto*/
-static char __pyx_doc_6datrie_4Trie_12read[] = "\n        Creates a new Trie by reading it from file.\n        File-like objects without real file descriptors are not supported.\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_13read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f) {
+static PyObject *__pyx_pw_6datrie_4Trie_17read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f); /*proto*/
+static char __pyx_doc_6datrie_4Trie_16read[] = "\n        Creates a new Trie by reading it from file.\n        File-like objects without real file descriptors are not supported.\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_17read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("read (wrapper)", 0);
-  __pyx_r = __pyx_pf_6datrie_4Trie_12read(((PyObject*)__pyx_v_cls), ((PyObject *)__pyx_v_f));
+  __pyx_r = __pyx_pf_6datrie_4Trie_16read(((PyObject*)__pyx_v_cls), ((PyObject *)__pyx_v_f));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_12read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f) {
+static PyObject *__pyx_pf_6datrie_4Trie_16read(PyObject *__pyx_v_cls, PyObject *__pyx_v_f) {
   struct __pyx_obj_6datrie_Trie *__pyx_v_trie = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -9890,14 +11316,14 @@ static PyObject *__pyx_pf_6datrie_4Trie_12read(PyObject *__pyx_v_cls, PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("read", 0);
 
-  /* "datrie.pyx":630
+  /* "datrie.pyx":650
  *         File-like objects without real file descriptors are not supported.
  *         """
  *         cdef Trie trie = super(Trie, cls).read(f)             # <<<<<<<<<<<<<<
  *         trie._values = pickle.load(f)
  *         return trie
  */
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 630; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
@@ -9905,10 +11331,10 @@ static PyObject *__pyx_pf_6datrie_4Trie_12read(PyObject *__pyx_v_cls, PyObject *
   __Pyx_INCREF(((PyObject *)__pyx_v_cls));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_v_cls));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_cls));
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 630; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_read); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 630; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_read); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -9922,34 +11348,34 @@ static PyObject *__pyx_pf_6datrie_4Trie_12read(PyObject *__pyx_v_cls, PyObject *
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_f); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 630; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_f); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
   } else {
-    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 630; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_v_f);
     PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_f);
     __Pyx_GIVEREF(__pyx_v_f);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 630; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_6datrie_Trie))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 630; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_6datrie_Trie))))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_v_trie = ((struct __pyx_obj_6datrie_Trie *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":631
+  /* "datrie.pyx":651
  *         """
  *         cdef Trie trie = super(Trie, cls).read(f)
  *         trie._values = pickle.load(f)             # <<<<<<<<<<<<<<
  *         return trie
  * 
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_pickle); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 631; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_pickle); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 631; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_load); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -9963,40 +11389,40 @@ static PyObject *__pyx_pf_6datrie_4Trie_12read(PyObject *__pyx_v_cls, PyObject *
     }
   }
   if (!__pyx_t_2) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_f); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 631; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_f); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
   } else {
-    __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 631; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = PyTuple_New(1+1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2); __Pyx_GIVEREF(__pyx_t_2); __pyx_t_2 = NULL;
     __Pyx_INCREF(__pyx_v_f);
     PyTuple_SET_ITEM(__pyx_t_3, 0+1, __pyx_v_f);
     __Pyx_GIVEREF(__pyx_v_f);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 631; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(PyList_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_1)->tp_name), 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 631; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (!(likely(PyList_CheckExact(__pyx_t_1))||((__pyx_t_1) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "list", Py_TYPE(__pyx_t_1)->tp_name), 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GIVEREF(__pyx_t_1);
   __Pyx_GOTREF(__pyx_v_trie->_values);
   __Pyx_DECREF(__pyx_v_trie->_values);
   __pyx_v_trie->_values = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":632
+  /* "datrie.pyx":652
  *         cdef Trie trie = super(Trie, cls).read(f)
  *         trie._values = pickle.load(f)
  *         return trie             # <<<<<<<<<<<<<<
  * 
- * 
+ *     cpdef items(self, unicode prefix=None):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(((PyObject *)__pyx_v_trie));
   __pyx_r = ((PyObject *)__pyx_v_trie);
   goto __pyx_L0;
 
-  /* "datrie.pyx":625
+  /* "datrie.pyx":645
  * 
  *     @classmethod
  *     def read(cls, f):             # <<<<<<<<<<<<<<
@@ -10019,15 +11445,15 @@ static PyObject *__pyx_pf_6datrie_4Trie_12read(PyObject *__pyx_v_cls, PyObject *
   return __pyx_r;
 }
 
-/* "datrie.pyx":635
- * 
+/* "datrie.pyx":654
+ *         return trie
  * 
  *     cpdef items(self, unicode prefix=None):             # <<<<<<<<<<<<<<
  *         """
  *         Returns a list of this trie's items (``(key,value)`` tuples).
  */
 
-static PyObject *__pyx_pw_6datrie_4Trie_15items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_19items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_4Trie_items *__pyx_optional_args) {
   PyObject *__pyx_v_prefix = ((PyObject*)Py_None);
   int __pyx_v_success;
@@ -10058,9 +11484,9 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_items); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_items); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_4Trie_15items)) {
+    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_4Trie_19items)) {
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -10074,16 +11500,16 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_prefix);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_prefix);
         __Pyx_GIVEREF(__pyx_v_prefix);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -10096,37 +11522,37 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":650
+  /* "datrie.pyx":669
  * 
  *         cdef bint success
  *         cdef list res = []             # <<<<<<<<<<<<<<
  *         cdef BaseState state = BaseState(self)
  * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 650; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_res = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":651
+  /* "datrie.pyx":670
  *         cdef bint success
  *         cdef list res = []
  *         cdef BaseState state = BaseState(self)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is not None:
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 670; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 651; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 670; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_state = ((struct __pyx_obj_6datrie_BaseState *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":653
+  /* "datrie.pyx":672
  *         cdef BaseState state = BaseState(self)
  * 
  *         if prefix is not None:             # <<<<<<<<<<<<<<
@@ -10137,20 +11563,20 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "datrie.pyx":654
+    /* "datrie.pyx":673
  * 
  *         if prefix is not None:
  *             success = state.walk(prefix)             # <<<<<<<<<<<<<<
  *             if not success:
  *                 return res
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 673; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 673; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_success = __pyx_t_7;
 
-    /* "datrie.pyx":655
+    /* "datrie.pyx":674
  *         if prefix is not None:
  *             success = state.walk(prefix)
  *             if not success:             # <<<<<<<<<<<<<<
@@ -10160,7 +11586,7 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
     __pyx_t_7 = ((!(__pyx_v_success != 0)) != 0);
     if (__pyx_t_7) {
 
-      /* "datrie.pyx":656
+      /* "datrie.pyx":675
  *             success = state.walk(prefix)
  *             if not success:
  *                 return res             # <<<<<<<<<<<<<<
@@ -10176,25 +11602,25 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":658
+  /* "datrie.pyx":677
  *                 return res
  * 
  *         cdef BaseIterator iter = BaseIterator(state)             # <<<<<<<<<<<<<<
  * 
  *         if prefix is None:
  */
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 658; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 677; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_state));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_state));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_state));
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 658; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 677; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_iter = ((struct __pyx_obj_6datrie_BaseIterator *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":660
+  /* "datrie.pyx":679
  *         cdef BaseIterator iter = BaseIterator(state)
  * 
  *         if prefix is None:             # <<<<<<<<<<<<<<
@@ -10205,7 +11631,7 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
   __pyx_t_6 = (__pyx_t_7 != 0);
   if (__pyx_t_6) {
 
-    /* "datrie.pyx":661
+    /* "datrie.pyx":680
  * 
  *         if prefix is None:
  *             while iter.next():             # <<<<<<<<<<<<<<
@@ -10216,23 +11642,23 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
       __pyx_t_6 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
       if (!__pyx_t_6) break;
 
-      /* "datrie.pyx":662
+      /* "datrie.pyx":681
  *         if prefix is None:
  *             while iter.next():
  *                 res.append((iter.key(), self._values[iter.data()]))             # <<<<<<<<<<<<<<
  *         else:
  *             while iter.next():
  */
-      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 662; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 681; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
       if (unlikely(__pyx_v_self->_values == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 662; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 681; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __pyx_t_8 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0);
-      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_t_8, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 662; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+      __pyx_t_2 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_t_8, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 681; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 662; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 681; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
       __Pyx_GIVEREF(__pyx_t_1);
@@ -10240,14 +11666,14 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
       __Pyx_GIVEREF(__pyx_t_2);
       __pyx_t_1 = 0;
       __pyx_t_2 = 0;
-      __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_3); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 662; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_3); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 681; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
     goto __pyx_L5;
   }
   /*else*/ {
 
-    /* "datrie.pyx":664
+    /* "datrie.pyx":683
  *                 res.append((iter.key(), self._values[iter.data()]))
  *         else:
  *             while iter.next():             # <<<<<<<<<<<<<<
@@ -10258,26 +11684,26 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
       __pyx_t_6 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
       if (!__pyx_t_6) break;
 
-      /* "datrie.pyx":665
+      /* "datrie.pyx":684
  *         else:
  *             while iter.next():
  *                 res.append((prefix+iter.key(), self._values[iter.data()]))             # <<<<<<<<<<<<<<
  * 
  *         return res
  */
-      __pyx_t_3 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 665; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.key(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_2 = __Pyx_PyUnicode_ConcatSafe(__pyx_v_prefix, __pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 665; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = __Pyx_PyUnicode_ConcatSafe(__pyx_v_prefix, __pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       if (unlikely(__pyx_v_self->_values == Py_None)) {
         PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 665; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __pyx_t_8 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0);
-      __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_t_8, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_3 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 665; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+      __pyx_t_3 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_t_8, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_3 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 665; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
       PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_2);
@@ -10285,13 +11711,13 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
       __Pyx_GIVEREF(__pyx_t_3);
       __pyx_t_2 = 0;
       __pyx_t_3 = 0;
-      __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 665; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
   }
   __pyx_L5:;
 
-  /* "datrie.pyx":667
+  /* "datrie.pyx":686
  *                 res.append((prefix+iter.key(), self._values[iter.data()]))
  * 
  *         return res             # <<<<<<<<<<<<<<
@@ -10303,8 +11729,8 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
   __pyx_r = __pyx_v_res;
   goto __pyx_L0;
 
-  /* "datrie.pyx":635
- * 
+  /* "datrie.pyx":654
+ *         return trie
  * 
  *     cpdef items(self, unicode prefix=None):             # <<<<<<<<<<<<<<
  *         """
@@ -10330,9 +11756,9 @@ static PyObject *__pyx_f_6datrie_4Trie_items(struct __pyx_obj_6datrie_Trie *__py
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_15items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_4Trie_14items[] = "\n        Returns a list of this trie's items (``(key,value)`` tuples).\n\n        If ``prefix`` is not None, returns only the items\n        associated with keys prefixed by ``prefix``.\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_15items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_4Trie_19items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_4Trie_18items[] = "\n        Returns a list of this trie's items (``(key,value)`` tuples).\n\n        If ``prefix`` is not None, returns only the items\n        associated with keys prefixed by ``prefix``.\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_19items(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_prefix = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -10361,7 +11787,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_15items(PyObject *__pyx_v_self, PyObject
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "items") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "items") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -10374,14 +11800,14 @@ static PyObject *__pyx_pw_6datrie_4Trie_15items(PyObject *__pyx_v_self, PyObject
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("items", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("items", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.Trie.items", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_14items(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_prefix);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_18items(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_prefix);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10392,7 +11818,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_15items(PyObject *__pyx_v_self, PyObject
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_14items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pf_6datrie_4Trie_18items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10404,7 +11830,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_14items(struct __pyx_obj_6datrie_Trie *_
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.prefix = __pyx_v_prefix;
-  __pyx_t_1 = __pyx_vtabptr_6datrie_Trie->__pyx_base.items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 635; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_vtabptr_6datrie_Trie->__pyx_base.items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 654; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10421,7 +11847,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_14items(struct __pyx_obj_6datrie_Trie *_
   return __pyx_r;
 }
 
-/* "datrie.pyx":669
+/* "datrie.pyx":688
  *         return res
  * 
  *     cpdef values(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -10429,7 +11855,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_14items(struct __pyx_obj_6datrie_Trie *_
  *         Returns a list of this trie's values.
  */
 
-static PyObject *__pyx_pw_6datrie_4Trie_17values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_21values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_4Trie_values *__pyx_optional_args) {
   PyObject *__pyx_v_prefix = ((PyObject*)Py_None);
   PyObject *__pyx_v_res = 0;
@@ -10460,9 +11886,9 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_values); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_values); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_4Trie_17values)) {
+    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_4Trie_21values)) {
       __Pyx_XDECREF(__pyx_r);
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -10476,16 +11902,16 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_prefix); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_prefix);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_prefix);
         __Pyx_GIVEREF(__pyx_v_prefix);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -10498,37 +11924,37 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":683
+  /* "datrie.pyx":702
  *         # but inlined for speed.
  * 
  *         cdef list res = []             # <<<<<<<<<<<<<<
  *         cdef BaseState state = BaseState(self)
  *         cdef bint success
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 683; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 702; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_res = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":684
+  /* "datrie.pyx":703
  * 
  *         cdef list res = []
  *         cdef BaseState state = BaseState(self)             # <<<<<<<<<<<<<<
  *         cdef bint success
  * 
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 703; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject *)__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject *)__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_self));
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 684; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseState)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 703; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_state = ((struct __pyx_obj_6datrie_BaseState *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":687
+  /* "datrie.pyx":706
  *         cdef bint success
  * 
  *         if prefix is not None:             # <<<<<<<<<<<<<<
@@ -10539,20 +11965,20 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "datrie.pyx":688
+    /* "datrie.pyx":707
  * 
  *         if prefix is not None:
  *             success = state.walk(prefix)             # <<<<<<<<<<<<<<
  *             if not success:
  *                 return res
  */
-    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_BaseState *)__pyx_v_state->__pyx_base.__pyx_vtab)->__pyx_base.walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state), __pyx_v_prefix, 0); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 707; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 707; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_success = __pyx_t_7;
 
-    /* "datrie.pyx":689
+    /* "datrie.pyx":708
  *         if prefix is not None:
  *             success = state.walk(prefix)
  *             if not success:             # <<<<<<<<<<<<<<
@@ -10562,7 +11988,7 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
     __pyx_t_7 = ((!(__pyx_v_success != 0)) != 0);
     if (__pyx_t_7) {
 
-      /* "datrie.pyx":690
+      /* "datrie.pyx":709
  *             success = state.walk(prefix)
  *             if not success:
  *                 return res             # <<<<<<<<<<<<<<
@@ -10578,25 +12004,25 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":692
+  /* "datrie.pyx":711
  *                 return res
  * 
  *         cdef BaseIterator iter = BaseIterator(state)             # <<<<<<<<<<<<<<
  * 
  *         while iter.next():
  */
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 692; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 711; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)__pyx_v_state));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)__pyx_v_state));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_state));
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 692; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_BaseIterator)), __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 711; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_iter = ((struct __pyx_obj_6datrie_BaseIterator *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "datrie.pyx":694
+  /* "datrie.pyx":713
  *         cdef BaseIterator iter = BaseIterator(state)
  * 
  *         while iter.next():             # <<<<<<<<<<<<<<
@@ -10607,7 +12033,7 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
     __pyx_t_7 = (((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->__pyx_base.next(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_iter), 0) != 0);
     if (!__pyx_t_7) break;
 
-    /* "datrie.pyx":695
+    /* "datrie.pyx":714
  * 
  *         while iter.next():
  *             res.append(self._values[iter.data()])             # <<<<<<<<<<<<<<
@@ -10616,28 +12042,28 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
  */
     if (unlikely(__pyx_v_self->_values == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 695; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 714; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
     __pyx_t_8 = ((struct __pyx_vtabstruct_6datrie_BaseIterator *)__pyx_v_iter->__pyx_base.__pyx_vtab)->data(__pyx_v_iter, 0);
-    __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_t_8, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 695; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_t_8, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 714; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 695; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_res, __pyx_t_1); if (unlikely(__pyx_t_9 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 714; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":697
+  /* "datrie.pyx":716
  *             res.append(self._values[iter.data()])
  * 
  *         return res             # <<<<<<<<<<<<<<
  * 
- * 
+ *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_res);
   __pyx_r = __pyx_v_res;
   goto __pyx_L0;
 
-  /* "datrie.pyx":669
+  /* "datrie.pyx":688
  *         return res
  * 
  *     cpdef values(self, unicode prefix=None):             # <<<<<<<<<<<<<<
@@ -10664,9 +12090,9 @@ static PyObject *__pyx_f_6datrie_4Trie_values(struct __pyx_obj_6datrie_Trie *__p
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_17values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_4Trie_16values[] = "\n        Returns a list of this trie's values.\n\n        If ``prefix`` is not None, returns only the values\n        associated with keys prefixed by ``prefix``.\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_17values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_4Trie_21values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_4Trie_20values[] = "\n        Returns a list of this trie's values.\n\n        If ``prefix`` is not None, returns only the values\n        associated with keys prefixed by ``prefix``.\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_21values(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_prefix = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -10695,7 +12121,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_17values(PyObject *__pyx_v_self, PyObjec
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "values") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "values") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -10708,14 +12134,14 @@ static PyObject *__pyx_pw_6datrie_4Trie_17values(PyObject *__pyx_v_self, PyObjec
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("values", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("values", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.Trie.values", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_16values(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_prefix);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_prefix), (&PyUnicode_Type), 1, "prefix", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_20values(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_prefix);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10726,7 +12152,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_17values(PyObject *__pyx_v_self, PyObjec
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_16values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix) {
+static PyObject *__pyx_pf_6datrie_4Trie_20values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_prefix) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10738,7 +12164,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_16values(struct __pyx_obj_6datrie_Trie *
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_2.__pyx_n = 1;
   __pyx_t_2.prefix = __pyx_v_prefix;
-  __pyx_t_1 = __pyx_vtabptr_6datrie_Trie->__pyx_base.values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 669; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_vtabptr_6datrie_Trie->__pyx_base.values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), 1, &__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 688; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10755,8 +12181,8 @@ static PyObject *__pyx_pf_6datrie_4Trie_16values(struct __pyx_obj_6datrie_Trie *
   return __pyx_r;
 }
 
-/* "datrie.pyx":700
- * 
+/* "datrie.pyx":718
+ *         return res
  * 
  *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -10764,9 +12190,9 @@ static PyObject *__pyx_pf_6datrie_4Trie_16values(struct __pyx_obj_6datrie_Trie *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_19longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_4Trie_18longest_prefix_item[] = "\n        Returns the item (``(key,value)`` tuple) associated with the longest\n        key in this trie that is a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, returns it,\n          - otherwise raises ``KeyError``.\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_19longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_4Trie_23longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_4Trie_22longest_prefix_item[] = "\n        Returns the item (``(key,value)`` tuple) associated with the longest\n        key in this trie that is a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, returns it,\n          - otherwise raises ``KeyError``.\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_23longest_prefix_item(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_key = 0;
   PyObject *__pyx_v_default = 0;
   int __pyx_lineno = 0;
@@ -10778,7 +12204,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_19longest_prefix_item(PyObject *__pyx_v_
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_key,&__pyx_n_s_default,0};
     PyObject* values[2] = {0,0};
-    values[1] = __pyx_k__13;
+    values[1] = __pyx_k__25;
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -10800,7 +12226,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_19longest_prefix_item(PyObject *__pyx_v_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_item") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 700; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_item") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 718; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -10815,14 +12241,14 @@ static PyObject *__pyx_pw_6datrie_4Trie_19longest_prefix_item(PyObject *__pyx_v_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("longest_prefix_item", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 700; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("longest_prefix_item", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 718; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.Trie.longest_prefix_item", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 700; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_18longest_prefix_item(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 718; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_22longest_prefix_item(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10833,7 +12259,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_19longest_prefix_item(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
+static PyObject *__pyx_pf_6datrie_4Trie_22longest_prefix_item(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
   PyObject *__pyx_v_res = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -10848,72 +12274,72 @@ static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("longest_prefix_item", 0);
 
-  /* "datrie.pyx":709
+  /* "datrie.pyx":727
  *           - otherwise raises ``KeyError``.
  *         """
  *         cdef res = self._longest_prefix_item(key, RERAISE_KEY_ERROR)             # <<<<<<<<<<<<<<
  *         if res is RERAISE_KEY_ERROR: # error
  *             if default is RAISE_KEY_ERROR:
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 709; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 727; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3.__pyx_n = 1;
   __pyx_t_3.__pyx_default = __pyx_t_1;
-  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._longest_prefix_item(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, &__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 709; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._longest_prefix_item(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, &__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 727; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_res = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":710
+  /* "datrie.pyx":728
  *         """
  *         cdef res = self._longest_prefix_item(key, RERAISE_KEY_ERROR)
  *         if res is RERAISE_KEY_ERROR: # error             # <<<<<<<<<<<<<<
  *             if default is RAISE_KEY_ERROR:
  *                 raise KeyError(key)
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 710; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 728; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = (__pyx_v_res == __pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "datrie.pyx":711
+    /* "datrie.pyx":729
  *         cdef res = self._longest_prefix_item(key, RERAISE_KEY_ERROR)
  *         if res is RERAISE_KEY_ERROR: # error
  *             if default is RAISE_KEY_ERROR:             # <<<<<<<<<<<<<<
  *                 raise KeyError(key)
  *             return default
  */
-    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 711; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 729; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_5 = (__pyx_v_default == __pyx_t_2);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_4 = (__pyx_t_5 != 0);
     if (__pyx_t_4) {
 
-      /* "datrie.pyx":712
+      /* "datrie.pyx":730
  *         if res is RERAISE_KEY_ERROR: # error
  *             if default is RAISE_KEY_ERROR:
  *                 raise KeyError(key)             # <<<<<<<<<<<<<<
  *             return default
  * 
  */
-      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 712; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 730; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_v_key);
       PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_key);
       __Pyx_GIVEREF(__pyx_v_key);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 712; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 730; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 712; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 730; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
 
-    /* "datrie.pyx":713
+    /* "datrie.pyx":731
  *             if default is RAISE_KEY_ERROR:
  *                 raise KeyError(key)
  *             return default             # <<<<<<<<<<<<<<
@@ -10926,7 +12352,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6
     goto __pyx_L0;
   }
 
-  /* "datrie.pyx":715
+  /* "datrie.pyx":733
  *             return default
  * 
  *         return res[0], self._values[res[1]]             # <<<<<<<<<<<<<<
@@ -10934,18 +12360,18 @@ static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6
  *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_res, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 715; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_res, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 733; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_1);
   if (unlikely(__pyx_v_self->_values == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 715; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 733; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_res, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 715; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_res, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 733; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = PyObject_GetItem(__pyx_v_self->_values, __pyx_t_2); if (unlikely(__pyx_t_6 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 715; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_6 = PyObject_GetItem(__pyx_v_self->_values, __pyx_t_2); if (unlikely(__pyx_t_6 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 733; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 715; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 733; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
@@ -10957,8 +12383,8 @@ static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":700
- * 
+  /* "datrie.pyx":718
+ *         return res
  * 
  *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
@@ -10979,7 +12405,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6
   return __pyx_r;
 }
 
-/* "datrie.pyx":717
+/* "datrie.pyx":735
  *         return res[0], self._values[res[1]]
  * 
  *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -10988,9 +12414,9 @@ static PyObject *__pyx_pf_6datrie_4Trie_18longest_prefix_item(struct __pyx_obj_6
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_21longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_6datrie_4Trie_20longest_prefix_value[] = "\n        Returns the value associated with the longest key in this trie that is\n        a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, return it\n          - otherwise raise ``KeyError``\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_21longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_6datrie_4Trie_25longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_6datrie_4Trie_24longest_prefix_value[] = "\n        Returns the value associated with the longest key in this trie that is\n        a prefix of ``key``.\n\n        If the trie doesn't contain any prefix of ``key``:\n          - if ``default`` is given, return it\n          - otherwise raise ``KeyError``\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_25longest_prefix_value(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_key = 0;
   PyObject *__pyx_v_default = 0;
   int __pyx_lineno = 0;
@@ -11002,7 +12428,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_21longest_prefix_value(PyObject *__pyx_v
   {
     static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_key,&__pyx_n_s_default,0};
     PyObject* values[2] = {0,0};
-    values[1] = __pyx_k__14;
+    values[1] = __pyx_k__26;
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
@@ -11024,7 +12450,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_21longest_prefix_value(PyObject *__pyx_v
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_value") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 717; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "longest_prefix_value") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 735; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -11039,14 +12465,14 @@ static PyObject *__pyx_pw_6datrie_4Trie_21longest_prefix_value(PyObject *__pyx_v
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("longest_prefix_value", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 717; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("longest_prefix_value", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 735; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.Trie.longest_prefix_value", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 717; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_20longest_prefix_value(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 735; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_24longest_prefix_value(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), __pyx_v_key, __pyx_v_default);
 
   /* function exit code */
   goto __pyx_L0;
@@ -11057,7 +12483,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_21longest_prefix_value(PyObject *__pyx_v
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_20longest_prefix_value(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
+static PyObject *__pyx_pf_6datrie_4Trie_24longest_prefix_value(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_default) {
   PyObject *__pyx_v_res = 0;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11071,72 +12497,72 @@ static PyObject *__pyx_pf_6datrie_4Trie_20longest_prefix_value(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("longest_prefix_value", 0);
 
-  /* "datrie.pyx":726
+  /* "datrie.pyx":744
  *           - otherwise raise ``KeyError``
  *         """
  *         cdef res = self._longest_prefix_value(key, RERAISE_KEY_ERROR)             # <<<<<<<<<<<<<<
  *         if res is RERAISE_KEY_ERROR: # error
  *             if default is RAISE_KEY_ERROR:
  */
-  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 726; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 744; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3.__pyx_n = 1;
   __pyx_t_3.__pyx_default = __pyx_t_1;
-  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._longest_prefix_value(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, &__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 726; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._longest_prefix_value(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key, &__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 744; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_res = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "datrie.pyx":727
+  /* "datrie.pyx":745
  *         """
  *         cdef res = self._longest_prefix_value(key, RERAISE_KEY_ERROR)
  *         if res is RERAISE_KEY_ERROR: # error             # <<<<<<<<<<<<<<
  *             if default is RAISE_KEY_ERROR:
  *                 raise KeyError(key)
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 727; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RERAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 745; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = (__pyx_v_res == __pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "datrie.pyx":728
+    /* "datrie.pyx":746
  *         cdef res = self._longest_prefix_value(key, RERAISE_KEY_ERROR)
  *         if res is RERAISE_KEY_ERROR: # error
  *             if default is RAISE_KEY_ERROR:             # <<<<<<<<<<<<<<
  *                 raise KeyError(key)
  *             return default
  */
-    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 728; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 746; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_5 = (__pyx_v_default == __pyx_t_2);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_4 = (__pyx_t_5 != 0);
     if (__pyx_t_4) {
 
-      /* "datrie.pyx":729
+      /* "datrie.pyx":747
  *         if res is RERAISE_KEY_ERROR: # error
  *             if default is RAISE_KEY_ERROR:
  *                 raise KeyError(key)             # <<<<<<<<<<<<<<
  *             return default
  * 
  */
-      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 729; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 747; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_v_key);
       PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_key);
       __Pyx_GIVEREF(__pyx_v_key);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 729; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_KeyError, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 747; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_Raise(__pyx_t_1, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 729; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 747; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
 
-    /* "datrie.pyx":730
+    /* "datrie.pyx":748
  *             if default is RAISE_KEY_ERROR:
  *                 raise KeyError(key)
  *             return default             # <<<<<<<<<<<<<<
@@ -11149,7 +12575,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_20longest_prefix_value(struct __pyx_obj_
     goto __pyx_L0;
   }
 
-  /* "datrie.pyx":732
+  /* "datrie.pyx":750
  *             return default
  * 
  *         return self._values[res]             # <<<<<<<<<<<<<<
@@ -11159,15 +12585,15 @@ static PyObject *__pyx_pf_6datrie_4Trie_20longest_prefix_value(struct __pyx_obj_
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_self->_values == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 732; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 750; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __pyx_t_1 = PyObject_GetItem(__pyx_v_self->_values, __pyx_v_res); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 732; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_1 = PyObject_GetItem(__pyx_v_self->_values, __pyx_v_res); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 750; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":717
+  /* "datrie.pyx":735
  *         return res[0], self._values[res[1]]
  * 
  *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
@@ -11188,7 +12614,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_20longest_prefix_value(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "datrie.pyx":734
+/* "datrie.pyx":752
  *         return self._values[res]
  * 
  *     def prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -11197,17 +12623,17 @@ static PyObject *__pyx_pf_6datrie_4Trie_20longest_prefix_value(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_23prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_4Trie_22prefix_items[] = "\n        Returns a list of the items (``(key,value)`` tuples)\n        of this trie that are associated with keys that are\n        prefixes of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_23prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_4Trie_27prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_4Trie_26prefix_items[] = "\n        Returns a list of the items (``(key,value)`` tuples)\n        of this trie that are associated with keys that are\n        prefixes of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_27prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("prefix_items (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 734; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_22prefix_items(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 752; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_26prefix_items(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -11218,7 +12644,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_23prefix_items(PyObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_4Trie_26prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_v_k = NULL;
   PyObject *__pyx_v_v = NULL;
   PyObject *__pyx_r = NULL;
@@ -11236,7 +12662,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("prefix_items", 0);
 
-  /* "datrie.pyx":740
+  /* "datrie.pyx":758
  *         prefixes of ``key``.
  *         '''
  *         return [(k, self._values[v]) for (k, v) in self._prefix_items(key)]             # <<<<<<<<<<<<<<
@@ -11244,22 +12670,22 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
  *     def iter_prefix_items(self, unicode key):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._prefix_items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._prefix_items(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   if (unlikely(__pyx_t_2 == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
     #if CYTHON_COMPILING_IN_CPYTHON
-    __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     #else
-    __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     #endif
     if ((likely(PyTuple_CheckExact(__pyx_t_2))) || (PyList_CheckExact(__pyx_t_2))) {
       PyObject* sequence = __pyx_t_2;
@@ -11271,7 +12697,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       #if CYTHON_COMPILING_IN_CPYTHON
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -11284,15 +12710,15 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_6 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -11300,7 +12726,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
       __Pyx_GOTREF(__pyx_t_5);
       index = 1; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L6_unpacking_done;
@@ -11308,7 +12734,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_k, __pyx_t_5);
@@ -11317,11 +12743,11 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
     __pyx_t_6 = 0;
     if (unlikely(__pyx_v_self->_values == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    __pyx_t_2 = PyObject_GetItem(__pyx_v_self->_values, __pyx_v_v); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_2 = PyObject_GetItem(__pyx_v_self->_values, __pyx_v_v); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_v_k);
     PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_v_k);
@@ -11329,7 +12755,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
     PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_2);
     __pyx_t_2 = 0;
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_6))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 740; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_6))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -11337,7 +12763,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":734
+  /* "datrie.pyx":752
  *         return self._values[res]
  * 
  *     def prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -11362,9 +12788,9 @@ static PyObject *__pyx_pf_6datrie_4Trie_22prefix_items(struct __pyx_obj_6datrie_
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_6datrie_4Trie_30generator3(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "datrie.pyx":742
+/* "datrie.pyx":760
  *         return [(k, self._values[v]) for (k, v) in self._prefix_items(key)]
  * 
  *     def iter_prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -11373,16 +12799,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_25iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static PyObject *__pyx_pw_6datrie_4Trie_25iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_4Trie_29iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_29iter_prefix_items(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("iter_prefix_items (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 742; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_24iter_prefix_items(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 760; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_28iter_prefix_items(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -11393,7 +12819,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_25iter_prefix_items(PyObject *__pyx_v_se
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_24iter_prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_4Trie_28iter_prefix_items(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
   struct __pyx_obj_6datrie___pyx_scope_struct_3_iter_prefix_items *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11414,7 +12840,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_24iter_prefix_items(struct __pyx_obj_6da
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_key);
   {
-    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_4Trie_26generator3, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_items, __pyx_n_s_Trie_iter_prefix_items); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 742; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_4Trie_30generator3, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_items, __pyx_n_s_Trie_iter_prefix_items); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 760; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -11430,7 +12856,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_24iter_prefix_items(struct __pyx_obj_6da
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_6datrie_4Trie_30generator3(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
 {
   struct __pyx_obj_6datrie___pyx_scope_struct_3_iter_prefix_items *__pyx_cur_scope = ((struct __pyx_obj_6datrie___pyx_scope_struct_3_iter_prefix_items *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
@@ -11455,16 +12881,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 742; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 760; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":743
+  /* "datrie.pyx":761
  * 
  *     def iter_prefix_items(self, unicode key):
  *         for k, v in super(Trie, self).iter_prefix_items(key):             # <<<<<<<<<<<<<<
  *             yield k, self._values[v]
  * 
  */
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
@@ -11472,10 +12898,10 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_cur_scope->__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_cur_scope->__pyx_v_self));
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_iter_prefix_items); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_iter_prefix_items); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -11489,16 +12915,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_cur_scope->__pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_cur_scope->__pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
   } else {
-    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
     PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_cur_scope->__pyx_v_key);
     __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_key);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
@@ -11507,9 +12933,9 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -11517,16 +12943,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       }
     } else {
@@ -11535,7 +12961,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         }
         break;
       }
@@ -11551,7 +12977,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       #if CYTHON_COMPILING_IN_CPYTHON
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -11564,15 +12990,15 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_3);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -11580,7 +13006,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_3 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_3)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_3);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L7_unpacking_done;
@@ -11588,7 +13014,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 743; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_k);
@@ -11600,7 +13026,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
     __Pyx_GIVEREF(__pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "datrie.pyx":744
+    /* "datrie.pyx":762
  *     def iter_prefix_items(self, unicode key):
  *         for k, v in super(Trie, self).iter_prefix_items(key):
  *             yield k, self._values[v]             # <<<<<<<<<<<<<<
@@ -11609,11 +13035,11 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
  */
     if (unlikely(__pyx_cur_scope->__pyx_v_self->_values == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 744; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 762; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    __pyx_t_1 = PyObject_GetItem(__pyx_cur_scope->__pyx_v_self->_values, __pyx_cur_scope->__pyx_v_v); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 744; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_1 = PyObject_GetItem(__pyx_cur_scope->__pyx_v_self->_values, __pyx_cur_scope->__pyx_v_v); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 762; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 744; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 762; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_k);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_cur_scope->__pyx_v_k);
@@ -11638,9 +13064,9 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
     __Pyx_XGOTREF(__pyx_t_2);
     __pyx_t_5 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_6 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 744; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 762; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "datrie.pyx":743
+    /* "datrie.pyx":761
  * 
  *     def iter_prefix_items(self, unicode key):
  *         for k, v in super(Trie, self).iter_prefix_items(key):             # <<<<<<<<<<<<<<
@@ -11650,7 +13076,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":742
+  /* "datrie.pyx":760
  *         return [(k, self._values[v]) for (k, v) in self._prefix_items(key)]
  * 
  *     def iter_prefix_items(self, unicode key):             # <<<<<<<<<<<<<<
@@ -11676,7 +13102,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
   return NULL;
 }
 
-/* "datrie.pyx":746
+/* "datrie.pyx":764
  *             yield k, self._values[v]
  * 
  *     def prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -11685,17 +13111,17 @@ static PyObject *__pyx_gb_6datrie_4Trie_26generator3(__pyx_GeneratorObject *__py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_28prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static char __pyx_doc_6datrie_4Trie_27prefix_values[] = "\n        Returns a list of the values of this trie that are associated\n        with keys that are prefixes of ``key``.\n        ";
-static PyObject *__pyx_pw_6datrie_4Trie_28prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_4Trie_32prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static char __pyx_doc_6datrie_4Trie_31prefix_values[] = "\n        Returns a list of the values of this trie that are associated\n        with keys that are prefixes of ``key``.\n        ";
+static PyObject *__pyx_pw_6datrie_4Trie_32prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("prefix_values (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 746; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_27prefix_values(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 764; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_31prefix_values(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -11706,7 +13132,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_28prefix_values(PyObject *__pyx_v_self, 
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_27prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_4Trie_31prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_v_v = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11719,7 +13145,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_27prefix_values(struct __pyx_obj_6datrie
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("prefix_values", 0);
 
-  /* "datrie.pyx":751
+  /* "datrie.pyx":769
  *         with keys that are prefixes of ``key``.
  *         '''
  *         return [self._values[v] for v in self._prefix_values(key)]             # <<<<<<<<<<<<<<
@@ -11727,32 +13153,32 @@ static PyObject *__pyx_pf_6datrie_4Trie_27prefix_values(struct __pyx_obj_6datrie
  *     def iter_prefix_values(self, unicode key):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._prefix_values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = ((struct __pyx_vtabstruct_6datrie_Trie *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._prefix_values(((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_self), __pyx_v_key); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   if (unlikely(__pyx_t_2 == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   for (;;) {
     if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
     #if CYTHON_COMPILING_IN_CPYTHON
-    __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     #else
-    __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     #endif
     __Pyx_XDECREF_SET(__pyx_v_v, __pyx_t_2);
     __pyx_t_2 = 0;
     if (unlikely(__pyx_v_self->_values == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    __pyx_t_2 = PyObject_GetItem(__pyx_v_self->_values, __pyx_v_v); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_2 = PyObject_GetItem(__pyx_v_self->_values, __pyx_v_v); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_2);
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_2))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 751; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_2))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 769; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -11760,7 +13186,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_27prefix_values(struct __pyx_obj_6datrie
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":746
+  /* "datrie.pyx":764
  *             yield k, self._values[v]
  * 
  *     def prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -11781,9 +13207,9 @@ static PyObject *__pyx_pf_6datrie_4Trie_27prefix_values(struct __pyx_obj_6datrie
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_6datrie_4Trie_35generator4(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "datrie.pyx":753
+/* "datrie.pyx":771
  *         return [self._values[v] for v in self._prefix_values(key)]
  * 
  *     def iter_prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -11792,16 +13218,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6datrie_4Trie_30iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
-static PyObject *__pyx_pw_6datrie_4Trie_30iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pw_6datrie_4Trie_34iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key); /*proto*/
+static PyObject *__pyx_pw_6datrie_4Trie_34iter_prefix_values(PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   CYTHON_UNUSED int __pyx_lineno = 0;
   CYTHON_UNUSED const char *__pyx_filename = NULL;
   CYTHON_UNUSED int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("iter_prefix_values (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 753; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_r = __pyx_pf_6datrie_4Trie_29iter_prefix_values(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_key), (&PyUnicode_Type), 1, "key", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 771; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_r = __pyx_pf_6datrie_4Trie_33iter_prefix_values(((struct __pyx_obj_6datrie_Trie *)__pyx_v_self), ((PyObject*)__pyx_v_key));
 
   /* function exit code */
   goto __pyx_L0;
@@ -11812,7 +13238,7 @@ static PyObject *__pyx_pw_6datrie_4Trie_30iter_prefix_values(PyObject *__pyx_v_s
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6datrie_4Trie_29iter_prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_6datrie_4Trie_33iter_prefix_values(struct __pyx_obj_6datrie_Trie *__pyx_v_self, PyObject *__pyx_v_key) {
   struct __pyx_obj_6datrie___pyx_scope_struct_4_iter_prefix_values *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11833,7 +13259,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_29iter_prefix_values(struct __pyx_obj_6d
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_key);
   {
-    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_4Trie_31generator4, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_values, __pyx_n_s_Trie_iter_prefix_values); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 753; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_4Trie_35generator4, (PyObject *) __pyx_cur_scope, __pyx_n_s_iter_prefix_values, __pyx_n_s_Trie_iter_prefix_values); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 771; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -11849,7 +13275,7 @@ static PyObject *__pyx_pf_6datrie_4Trie_29iter_prefix_values(struct __pyx_obj_6d
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_6datrie_4Trie_35generator4(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
 {
   struct __pyx_obj_6datrie___pyx_scope_struct_4_iter_prefix_values *__pyx_cur_scope = ((struct __pyx_obj_6datrie___pyx_scope_struct_4_iter_prefix_values *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
@@ -11872,16 +13298,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 753; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 771; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":754
+  /* "datrie.pyx":772
  * 
  *     def iter_prefix_values(self, unicode key):
  *         for v in super(Trie, self).iter_prefix_values(key):             # <<<<<<<<<<<<<<
  *             yield self._values[v]
  * 
  */
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
   PyTuple_SET_ITEM(__pyx_t_2, 0, ((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)));
@@ -11889,10 +13315,10 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_v_self));
   PyTuple_SET_ITEM(__pyx_t_2, 1, ((PyObject *)__pyx_cur_scope->__pyx_v_self));
   __Pyx_GIVEREF(((PyObject *)__pyx_cur_scope->__pyx_v_self));
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_super, __pyx_t_2, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_iter_prefix_values); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_iter_prefix_values); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -11906,16 +13332,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_cur_scope->__pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_cur_scope->__pyx_v_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
   } else {
-    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_key);
     PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_cur_scope->__pyx_v_key);
     __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_key);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
@@ -11924,9 +13350,9 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -11934,16 +13360,16 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       }
     } else {
@@ -11952,7 +13378,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 754; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 772; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         }
         break;
       }
@@ -11963,7 +13389,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "datrie.pyx":755
+    /* "datrie.pyx":773
  *     def iter_prefix_values(self, unicode key):
  *         for v in super(Trie, self).iter_prefix_values(key):
  *             yield self._values[v]             # <<<<<<<<<<<<<<
@@ -11972,9 +13398,9 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
  */
     if (unlikely(__pyx_cur_scope->__pyx_v_self->_values == Py_None)) {
       PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 755; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 773; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
-    __pyx_t_1 = PyObject_GetItem(__pyx_cur_scope->__pyx_v_self->_values, __pyx_cur_scope->__pyx_v_v); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 755; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_1 = PyObject_GetItem(__pyx_cur_scope->__pyx_v_self->_values, __pyx_cur_scope->__pyx_v_v); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 773; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
@@ -11993,9 +13419,9 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
     __Pyx_XGOTREF(__pyx_t_2);
     __pyx_t_5 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_6 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 755; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 773; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "datrie.pyx":754
+    /* "datrie.pyx":772
  * 
  *     def iter_prefix_values(self, unicode key):
  *         for v in super(Trie, self).iter_prefix_values(key):             # <<<<<<<<<<<<<<
@@ -12005,7 +13431,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":753
+  /* "datrie.pyx":771
  *         return [self._values[v] for v in self._prefix_values(key)]
  * 
  *     def iter_prefix_values(self, unicode key):             # <<<<<<<<<<<<<<
@@ -12030,7 +13456,7 @@ static PyObject *__pyx_gb_6datrie_4Trie_31generator4(__pyx_GeneratorObject *__py
   return NULL;
 }
 
-/* "datrie.pyx":757
+/* "datrie.pyx":775
  *             yield self._values[v]
  * 
  *     cdef _index_to_value(self, cdatrie.TrieData index):             # <<<<<<<<<<<<<<
@@ -12047,7 +13473,7 @@ static PyObject *__pyx_f_6datrie_4Trie__index_to_value(struct __pyx_obj_6datrie_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_index_to_value", 0);
 
-  /* "datrie.pyx":758
+  /* "datrie.pyx":776
  * 
  *     cdef _index_to_value(self, cdatrie.TrieData index):
  *         return self._values[index]             # <<<<<<<<<<<<<<
@@ -12057,15 +13483,15 @@ static PyObject *__pyx_f_6datrie_4Trie__index_to_value(struct __pyx_obj_6datrie_
   __Pyx_XDECREF(__pyx_r);
   if (unlikely(__pyx_v_self->_values == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not subscriptable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 776; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_v_index, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 758; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_v_self->_values, __pyx_v_index, TrieData, 1, __Pyx_PyInt_From_TrieData, 1, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 776; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":757
+  /* "datrie.pyx":775
  *             yield self._values[v]
  * 
  *     cdef _index_to_value(self, cdatrie.TrieData index):             # <<<<<<<<<<<<<<
@@ -12084,7 +13510,7 @@ static PyObject *__pyx_f_6datrie_4Trie__index_to_value(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":765
+/* "datrie.pyx":783
  *     cdef BaseTrie _trie
  * 
  *     def __cinit__(self, BaseTrie trie):             # <<<<<<<<<<<<<<
@@ -12120,7 +13546,7 @@ static int __pyx_pw_6datrie_10_TrieState_1__cinit__(PyObject *__pyx_v_self, PyOb
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 765; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 783; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -12131,13 +13557,13 @@ static int __pyx_pw_6datrie_10_TrieState_1__cinit__(PyObject *__pyx_v_self, PyOb
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 765; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 783; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie._TrieState.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_trie), __pyx_ptype_6datrie_BaseTrie, 1, "trie", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 765; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_trie), __pyx_ptype_6datrie_BaseTrie, 1, "trie", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 783; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_10_TrieState___cinit__(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_self), __pyx_v_trie);
 
   /* function exit code */
@@ -12158,7 +13584,7 @@ static int __pyx_pf_6datrie_10_TrieState___cinit__(struct __pyx_obj_6datrie__Tri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "datrie.pyx":766
+  /* "datrie.pyx":784
  * 
  *     def __cinit__(self, BaseTrie trie):
  *         self._state = cdatrie.trie_root(trie._c_trie)             # <<<<<<<<<<<<<<
@@ -12167,7 +13593,7 @@ static int __pyx_pf_6datrie_10_TrieState___cinit__(struct __pyx_obj_6datrie__Tri
  */
   __pyx_v_self->_state = trie_root(__pyx_v_trie->_c_trie);
 
-  /* "datrie.pyx":767
+  /* "datrie.pyx":785
  *     def __cinit__(self, BaseTrie trie):
  *         self._state = cdatrie.trie_root(trie._c_trie)
  *         if self._state is NULL:             # <<<<<<<<<<<<<<
@@ -12177,17 +13603,17 @@ static int __pyx_pf_6datrie_10_TrieState___cinit__(struct __pyx_obj_6datrie__Tri
   __pyx_t_1 = ((__pyx_v_self->_state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":768
+    /* "datrie.pyx":786
  *         self._state = cdatrie.trie_root(trie._c_trie)
  *         if self._state is NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  *         self._trie = trie
  * 
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 768; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 786; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":769
+  /* "datrie.pyx":787
  *         if self._state is NULL:
  *             raise MemoryError()
  *         self._trie = trie             # <<<<<<<<<<<<<<
@@ -12200,7 +13626,7 @@ static int __pyx_pf_6datrie_10_TrieState___cinit__(struct __pyx_obj_6datrie__Tri
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_trie));
   __pyx_v_self->_trie = __pyx_v_trie;
 
-  /* "datrie.pyx":765
+  /* "datrie.pyx":783
  *     cdef BaseTrie _trie
  * 
  *     def __cinit__(self, BaseTrie trie):             # <<<<<<<<<<<<<<
@@ -12219,7 +13645,7 @@ static int __pyx_pf_6datrie_10_TrieState___cinit__(struct __pyx_obj_6datrie__Tri
   return __pyx_r;
 }
 
-/* "datrie.pyx":771
+/* "datrie.pyx":789
  *         self._trie = trie
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -12243,7 +13669,7 @@ static void __pyx_pf_6datrie_10_TrieState_2__dealloc__(struct __pyx_obj_6datrie_
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "datrie.pyx":772
+  /* "datrie.pyx":790
  * 
  *     def __dealloc__(self):
  *         if self._state is not NULL:             # <<<<<<<<<<<<<<
@@ -12253,7 +13679,7 @@ static void __pyx_pf_6datrie_10_TrieState_2__dealloc__(struct __pyx_obj_6datrie_
   __pyx_t_1 = ((__pyx_v_self->_state != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":773
+    /* "datrie.pyx":791
  *     def __dealloc__(self):
  *         if self._state is not NULL:
  *             cdatrie.trie_state_free(self._state)             # <<<<<<<<<<<<<<
@@ -12265,7 +13691,7 @@ static void __pyx_pf_6datrie_10_TrieState_2__dealloc__(struct __pyx_obj_6datrie_
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":771
+  /* "datrie.pyx":789
  *         self._trie = trie
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -12277,7 +13703,7 @@ static void __pyx_pf_6datrie_10_TrieState_2__dealloc__(struct __pyx_obj_6datrie_
   __Pyx_RefNannyFinishContext();
 }
 
-/* "datrie.pyx":775
+/* "datrie.pyx":793
  *             cdatrie.trie_state_free(self._state)
  * 
  *     cpdef walk(self, unicode to):             # <<<<<<<<<<<<<<
@@ -12311,7 +13737,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_walk(struct __pyx_obj_6datrie__Tri
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_walk); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 775; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_walk); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 793; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_10_TrieState_5walk)) {
       __Pyx_XDECREF(__pyx_r);
@@ -12327,16 +13753,16 @@ static PyObject *__pyx_f_6datrie_10_TrieState_walk(struct __pyx_obj_6datrie__Tri
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_to); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 775; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_to); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 793; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 775; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 793; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(__pyx_v_to);
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, __pyx_v_to);
         __Pyx_GIVEREF(__pyx_v_to);
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 775; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 793; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -12349,7 +13775,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_walk(struct __pyx_obj_6datrie__Tri
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":777
+  /* "datrie.pyx":795
  *     cpdef walk(self, unicode to):
  *         cdef bint res
  *         for ch in to:             # <<<<<<<<<<<<<<
@@ -12358,16 +13784,16 @@ static PyObject *__pyx_f_6datrie_10_TrieState_walk(struct __pyx_obj_6datrie__Tri
  */
   if (unlikely(__pyx_v_to == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 777; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 795; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_INCREF(__pyx_v_to);
   __pyx_t_6 = __pyx_v_to;
-  __pyx_t_11 = __Pyx_init_unicode_iteration(__pyx_t_6, (&__pyx_t_8), (&__pyx_t_9), (&__pyx_t_10)); if (unlikely(__pyx_t_11 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 777; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_11 = __Pyx_init_unicode_iteration(__pyx_t_6, (&__pyx_t_8), (&__pyx_t_9), (&__pyx_t_10)); if (unlikely(__pyx_t_11 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 795; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   for (__pyx_t_12 = 0; __pyx_t_12 < __pyx_t_8; __pyx_t_12++) {
     __pyx_t_7 = __pyx_t_12;
     __pyx_v_ch = __Pyx_PyUnicode_READ(__pyx_t_10, __pyx_t_9, __pyx_t_7);
 
-    /* "datrie.pyx":778
+    /* "datrie.pyx":796
  *         cdef bint res
  *         for ch in to:
  *             if not self.walk_char(<cdatrie.AlphaChar> ch):             # <<<<<<<<<<<<<<
@@ -12377,7 +13803,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_walk(struct __pyx_obj_6datrie__Tri
     __pyx_t_13 = ((!(((struct __pyx_vtabstruct_6datrie__TrieState *)__pyx_v_self->__pyx_vtab)->walk_char(__pyx_v_self, ((AlphaChar)__pyx_v_ch)) != 0)) != 0);
     if (__pyx_t_13) {
 
-      /* "datrie.pyx":779
+      /* "datrie.pyx":797
  *         for ch in to:
  *             if not self.walk_char(<cdatrie.AlphaChar> ch):
  *                 return False             # <<<<<<<<<<<<<<
@@ -12393,7 +13819,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_walk(struct __pyx_obj_6datrie__Tri
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "datrie.pyx":780
+  /* "datrie.pyx":798
  *             if not self.walk_char(<cdatrie.AlphaChar> ch):
  *                 return False
  *         return True             # <<<<<<<<<<<<<<
@@ -12405,7 +13831,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_walk(struct __pyx_obj_6datrie__Tri
   __pyx_r = Py_True;
   goto __pyx_L0;
 
-  /* "datrie.pyx":775
+  /* "datrie.pyx":793
  *             cdatrie.trie_state_free(self._state)
  * 
  *     cpdef walk(self, unicode to):             # <<<<<<<<<<<<<<
@@ -12438,7 +13864,7 @@ static PyObject *__pyx_pw_6datrie_10_TrieState_5walk(PyObject *__pyx_v_self, PyO
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("walk (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_to), (&PyUnicode_Type), 1, "to", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 775; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_to), (&PyUnicode_Type), 1, "to", 1))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 793; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_10_TrieState_4walk(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_self), ((PyObject*)__pyx_v_to));
 
   /* function exit code */
@@ -12459,7 +13885,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_4walk(struct __pyx_obj_6datrie__T
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("walk", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6datrie_10_TrieState_walk(__pyx_v_self, __pyx_v_to, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 775; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_f_6datrie_10_TrieState_walk(__pyx_v_self, __pyx_v_to, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 793; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12476,7 +13902,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_4walk(struct __pyx_obj_6datrie__T
   return __pyx_r;
 }
 
-/* "datrie.pyx":782
+/* "datrie.pyx":800
  *         return True
  * 
  *     cdef bint walk_char(self, cdatrie.AlphaChar char):             # <<<<<<<<<<<<<<
@@ -12489,7 +13915,7 @@ static int __pyx_f_6datrie_10_TrieState_walk_char(struct __pyx_obj_6datrie__Trie
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("walk_char", 0);
 
-  /* "datrie.pyx":788
+  /* "datrie.pyx":806
  *         Returns boolean value indicating the success of the walk.
  *         """
  *         return cdatrie.trie_state_walk(self._state, char)             # <<<<<<<<<<<<<<
@@ -12499,7 +13925,7 @@ static int __pyx_f_6datrie_10_TrieState_walk_char(struct __pyx_obj_6datrie__Trie
   __pyx_r = trie_state_walk(__pyx_v_self->_state, __pyx_v_char);
   goto __pyx_L0;
 
-  /* "datrie.pyx":782
+  /* "datrie.pyx":800
  *         return True
  * 
  *     cdef bint walk_char(self, cdatrie.AlphaChar char):             # <<<<<<<<<<<<<<
@@ -12513,7 +13939,7 @@ static int __pyx_f_6datrie_10_TrieState_walk_char(struct __pyx_obj_6datrie__Trie
   return __pyx_r;
 }
 
-/* "datrie.pyx":790
+/* "datrie.pyx":808
  *         return cdatrie.trie_state_walk(self._state, char)
  * 
  *     cpdef copy_to(self, _TrieState state):             # <<<<<<<<<<<<<<
@@ -12538,7 +13964,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_copy_to(struct __pyx_obj_6datrie__
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_copy_to); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 790; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_copy_to); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 808; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_10_TrieState_7copy_to)) {
       __Pyx_XDECREF(__pyx_r);
@@ -12554,16 +13980,16 @@ static PyObject *__pyx_f_6datrie_10_TrieState_copy_to(struct __pyx_obj_6datrie__
         }
       }
       if (!__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_state)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 790; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, ((PyObject *)__pyx_v_state)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 808; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
       } else {
-        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 790; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_5 = PyTuple_New(1+1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 808; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_5);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __Pyx_GIVEREF(__pyx_t_4); __pyx_t_4 = NULL;
         __Pyx_INCREF(((PyObject *)__pyx_v_state));
         PyTuple_SET_ITEM(__pyx_t_5, 0+1, ((PyObject *)__pyx_v_state));
         __Pyx_GIVEREF(((PyObject *)__pyx_v_state));
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 790; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 808; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -12576,7 +14002,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_copy_to(struct __pyx_obj_6datrie__
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":792
+  /* "datrie.pyx":810
  *     cpdef copy_to(self, _TrieState state):
  *         """ Copies trie state to another """
  *         cdatrie.trie_state_copy(state._state, self._state)             # <<<<<<<<<<<<<<
@@ -12585,7 +14011,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_copy_to(struct __pyx_obj_6datrie__
  */
   trie_state_copy(__pyx_v_state->_state, __pyx_v_self->_state);
 
-  /* "datrie.pyx":790
+  /* "datrie.pyx":808
  *         return cdatrie.trie_state_walk(self._state, char)
  * 
  *     cpdef copy_to(self, _TrieState state):             # <<<<<<<<<<<<<<
@@ -12620,7 +14046,7 @@ static PyObject *__pyx_pw_6datrie_10_TrieState_7copy_to(PyObject *__pyx_v_self, 
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("copy_to (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), __pyx_ptype_6datrie__TrieState, 1, "state", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 790; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), __pyx_ptype_6datrie__TrieState, 1, "state", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 808; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_10_TrieState_6copy_to(((struct __pyx_obj_6datrie__TrieState *)__pyx_v_self), ((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state));
 
   /* function exit code */
@@ -12641,7 +14067,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_6copy_to(struct __pyx_obj_6datrie
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("copy_to", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6datrie_10_TrieState_copy_to(__pyx_v_self, __pyx_v_state, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 790; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_f_6datrie_10_TrieState_copy_to(__pyx_v_self, __pyx_v_state, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 808; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12658,7 +14084,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_6copy_to(struct __pyx_obj_6datrie
   return __pyx_r;
 }
 
-/* "datrie.pyx":794
+/* "datrie.pyx":812
  *         cdatrie.trie_state_copy(state._state, self._state)
  * 
  *     cpdef rewind(self):             # <<<<<<<<<<<<<<
@@ -12682,7 +14108,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_rewind(struct __pyx_obj_6datrie__T
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_rewind); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 794; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_rewind); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 812; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_10_TrieState_9rewind)) {
       __Pyx_XDECREF(__pyx_r);
@@ -12698,10 +14124,10 @@ static PyObject *__pyx_f_6datrie_10_TrieState_rewind(struct __pyx_obj_6datrie__T
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 794; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 812; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 794; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 812; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -12713,7 +14139,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_rewind(struct __pyx_obj_6datrie__T
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":796
+  /* "datrie.pyx":814
  *     cpdef rewind(self):
  *         """ Puts the state at root """
  *         cdatrie.trie_state_rewind(self._state)             # <<<<<<<<<<<<<<
@@ -12722,7 +14148,7 @@ static PyObject *__pyx_f_6datrie_10_TrieState_rewind(struct __pyx_obj_6datrie__T
  */
   trie_state_rewind(__pyx_v_self->_state);
 
-  /* "datrie.pyx":794
+  /* "datrie.pyx":812
  *         cdatrie.trie_state_copy(state._state, self._state)
  * 
  *     cpdef rewind(self):             # <<<<<<<<<<<<<<
@@ -12769,7 +14195,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_8rewind(struct __pyx_obj_6datrie_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("rewind", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6datrie_10_TrieState_rewind(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 794; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_f_6datrie_10_TrieState_rewind(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 812; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12786,7 +14212,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_8rewind(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":798
+/* "datrie.pyx":816
  *         cdatrie.trie_state_rewind(self._state)
  * 
  *     cpdef bint is_terminal(self):             # <<<<<<<<<<<<<<
@@ -12811,7 +14237,7 @@ static int __pyx_f_6datrie_10_TrieState_is_terminal(struct __pyx_obj_6datrie__Tr
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_terminal); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 798; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_terminal); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 816; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_10_TrieState_11is_terminal)) {
       __Pyx_INCREF(__pyx_t_1);
@@ -12826,14 +14252,14 @@ static int __pyx_f_6datrie_10_TrieState_is_terminal(struct __pyx_obj_6datrie__Tr
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 798; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 816; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 798; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 816; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 798; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 816; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_5;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -12842,7 +14268,7 @@ static int __pyx_f_6datrie_10_TrieState_is_terminal(struct __pyx_obj_6datrie__Tr
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":799
+  /* "datrie.pyx":817
  * 
  *     cpdef bint is_terminal(self):
  *         return cdatrie.trie_state_is_terminal(self._state)             # <<<<<<<<<<<<<<
@@ -12852,7 +14278,7 @@ static int __pyx_f_6datrie_10_TrieState_is_terminal(struct __pyx_obj_6datrie__Tr
   __pyx_r = trie_state_is_terminal(__pyx_v_self->_state);
   goto __pyx_L0;
 
-  /* "datrie.pyx":798
+  /* "datrie.pyx":816
  *         cdatrie.trie_state_rewind(self._state)
  * 
  *     cpdef bint is_terminal(self):             # <<<<<<<<<<<<<<
@@ -12895,7 +14321,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_10is_terminal(struct __pyx_obj_6d
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_terminal", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_10_TrieState_is_terminal(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 798; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_10_TrieState_is_terminal(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 816; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -12912,7 +14338,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_10is_terminal(struct __pyx_obj_6d
   return __pyx_r;
 }
 
-/* "datrie.pyx":801
+/* "datrie.pyx":819
  *         return cdatrie.trie_state_is_terminal(self._state)
  * 
  *     cpdef bint is_single(self):             # <<<<<<<<<<<<<<
@@ -12937,7 +14363,7 @@ static int __pyx_f_6datrie_10_TrieState_is_single(struct __pyx_obj_6datrie__Trie
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_single); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 801; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_single); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 819; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_10_TrieState_13is_single)) {
       __Pyx_INCREF(__pyx_t_1);
@@ -12952,14 +14378,14 @@ static int __pyx_f_6datrie_10_TrieState_is_single(struct __pyx_obj_6datrie__Trie
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 801; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 819; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 801; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 819; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 801; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 819; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_5;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -12968,7 +14394,7 @@ static int __pyx_f_6datrie_10_TrieState_is_single(struct __pyx_obj_6datrie__Trie
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":802
+  /* "datrie.pyx":820
  * 
  *     cpdef bint is_single(self):
  *         return cdatrie.trie_state_is_single(self._state)             # <<<<<<<<<<<<<<
@@ -12978,7 +14404,7 @@ static int __pyx_f_6datrie_10_TrieState_is_single(struct __pyx_obj_6datrie__Trie
   __pyx_r = trie_state_is_single(__pyx_v_self->_state);
   goto __pyx_L0;
 
-  /* "datrie.pyx":801
+  /* "datrie.pyx":819
  *         return cdatrie.trie_state_is_terminal(self._state)
  * 
  *     cpdef bint is_single(self):             # <<<<<<<<<<<<<<
@@ -13021,7 +14447,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_12is_single(struct __pyx_obj_6dat
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_single", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_10_TrieState_is_single(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 801; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_10_TrieState_is_single(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 819; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13038,7 +14464,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_12is_single(struct __pyx_obj_6dat
   return __pyx_r;
 }
 
-/* "datrie.pyx":804
+/* "datrie.pyx":822
  *         return cdatrie.trie_state_is_single(self._state)
  * 
  *     cpdef bint is_leaf(self):             # <<<<<<<<<<<<<<
@@ -13063,7 +14489,7 @@ static int __pyx_f_6datrie_10_TrieState_is_leaf(struct __pyx_obj_6datrie__TrieSt
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_leaf); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 804; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_is_leaf); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 822; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_10_TrieState_15is_leaf)) {
       __Pyx_INCREF(__pyx_t_1);
@@ -13078,14 +14504,14 @@ static int __pyx_f_6datrie_10_TrieState_is_leaf(struct __pyx_obj_6datrie__TrieSt
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 804; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 822; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 804; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 822; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 804; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 822; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_5;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -13094,7 +14520,7 @@ static int __pyx_f_6datrie_10_TrieState_is_leaf(struct __pyx_obj_6datrie__TrieSt
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":805
+  /* "datrie.pyx":823
  * 
  *     cpdef bint is_leaf(self):
  *         return cdatrie.trie_state_is_leaf(self._state)             # <<<<<<<<<<<<<<
@@ -13104,7 +14530,7 @@ static int __pyx_f_6datrie_10_TrieState_is_leaf(struct __pyx_obj_6datrie__TrieSt
   __pyx_r = trie_state_is_leaf(__pyx_v_self->_state);
   goto __pyx_L0;
 
-  /* "datrie.pyx":804
+  /* "datrie.pyx":822
  *         return cdatrie.trie_state_is_single(self._state)
  * 
  *     cpdef bint is_leaf(self):             # <<<<<<<<<<<<<<
@@ -13147,7 +14573,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_14is_leaf(struct __pyx_obj_6datri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("is_leaf", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_10_TrieState_is_leaf(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 804; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_10_TrieState_is_leaf(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 822; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13164,12 +14590,12 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_14is_leaf(struct __pyx_obj_6datri
   return __pyx_r;
 }
 
-/* "datrie.pyx":807
+/* "datrie.pyx":825
  *         return cdatrie.trie_state_is_leaf(self._state)
  * 
  *     def __unicode__(self):             # <<<<<<<<<<<<<<
- * 
  *         return u"data:%d, term:%s, leaf:%s, single: %s" % (
+ *             self.data(),
  */
 
 /* Python wrapper */
@@ -13198,23 +14624,23 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_16__unicode__(struct __pyx_obj_6d
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__unicode__", 0);
 
-  /* "datrie.pyx":809
- *     def __unicode__(self):
+  /* "datrie.pyx":826
  * 
+ *     def __unicode__(self):
  *         return u"data:%d, term:%s, leaf:%s, single: %s" % (             # <<<<<<<<<<<<<<
  *             self.data(),
  *             self.is_terminal(),
  */
   __Pyx_XDECREF(__pyx_r);
 
-  /* "datrie.pyx":810
- * 
+  /* "datrie.pyx":827
+ *     def __unicode__(self):
  *         return u"data:%d, term:%s, leaf:%s, single: %s" % (
  *             self.data(),             # <<<<<<<<<<<<<<
  *             self.is_terminal(),
  *             self.is_leaf(),
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 810; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 827; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
@@ -13227,52 +14653,52 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_16__unicode__(struct __pyx_obj_6d
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 810; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 827; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 810; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 827; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":811
+  /* "datrie.pyx":828
  *         return u"data:%d, term:%s, leaf:%s, single: %s" % (
  *             self.data(),
  *             self.is_terminal(),             # <<<<<<<<<<<<<<
  *             self.is_leaf(),
  *             self.is_single(),
  */
-  __pyx_t_2 = __Pyx_PyBool_FromLong(((struct __pyx_vtabstruct_6datrie__TrieState *)__pyx_v_self->__pyx_vtab)->is_terminal(__pyx_v_self, 0)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 811; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyBool_FromLong(((struct __pyx_vtabstruct_6datrie__TrieState *)__pyx_v_self->__pyx_vtab)->is_terminal(__pyx_v_self, 0)); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 828; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "datrie.pyx":812
+  /* "datrie.pyx":829
  *             self.data(),
  *             self.is_terminal(),
  *             self.is_leaf(),             # <<<<<<<<<<<<<<
  *             self.is_single(),
  *         )
  */
-  __pyx_t_3 = __Pyx_PyBool_FromLong(((struct __pyx_vtabstruct_6datrie__TrieState *)__pyx_v_self->__pyx_vtab)->is_leaf(__pyx_v_self, 0)); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 812; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyBool_FromLong(((struct __pyx_vtabstruct_6datrie__TrieState *)__pyx_v_self->__pyx_vtab)->is_leaf(__pyx_v_self, 0)); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 829; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "datrie.pyx":813
+  /* "datrie.pyx":830
  *             self.is_terminal(),
  *             self.is_leaf(),
  *             self.is_single(),             # <<<<<<<<<<<<<<
  *         )
  * 
  */
-  __pyx_t_4 = __Pyx_PyBool_FromLong(((struct __pyx_vtabstruct_6datrie__TrieState *)__pyx_v_self->__pyx_vtab)->is_single(__pyx_v_self, 0)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 813; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyBool_FromLong(((struct __pyx_vtabstruct_6datrie__TrieState *)__pyx_v_self->__pyx_vtab)->is_single(__pyx_v_self, 0)); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 830; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "datrie.pyx":810
- * 
+  /* "datrie.pyx":827
+ *     def __unicode__(self):
  *         return u"data:%d, term:%s, leaf:%s, single: %s" % (
  *             self.data(),             # <<<<<<<<<<<<<<
  *             self.is_terminal(),
  *             self.is_leaf(),
  */
-  __pyx_t_5 = PyTuple_New(4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 810; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = PyTuple_New(4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 827; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_1);
@@ -13287,26 +14713,26 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_16__unicode__(struct __pyx_obj_6d
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
 
-  /* "datrie.pyx":809
- *     def __unicode__(self):
+  /* "datrie.pyx":826
  * 
+ *     def __unicode__(self):
  *         return u"data:%d, term:%s, leaf:%s, single: %s" % (             # <<<<<<<<<<<<<<
  *             self.data(),
  *             self.is_terminal(),
  */
-  __pyx_t_4 = PyUnicode_Format(__pyx_kp_u_data_d_term_s_leaf_s_single_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 809; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = PyUnicode_Format(__pyx_kp_u_data_d_term_s_leaf_s_single_s, __pyx_t_5); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 826; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":807
+  /* "datrie.pyx":825
  *         return cdatrie.trie_state_is_leaf(self._state)
  * 
  *     def __unicode__(self):             # <<<<<<<<<<<<<<
- * 
  *         return u"data:%d, term:%s, leaf:%s, single: %s" % (
+ *             self.data(),
  */
 
   /* function exit code */
@@ -13324,7 +14750,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_16__unicode__(struct __pyx_obj_6d
   return __pyx_r;
 }
 
-/* "datrie.pyx":816
+/* "datrie.pyx":833
  *         )
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -13356,7 +14782,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_18__repr__(struct __pyx_obj_6datr
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__repr__", 0);
 
-  /* "datrie.pyx":817
+  /* "datrie.pyx":834
  * 
  *     def __repr__(self):
  *         return self.__unicode__()  # XXX: this is incorrect under Python 2.x             # <<<<<<<<<<<<<<
@@ -13364,7 +14790,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_18__repr__(struct __pyx_obj_6datr
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_unicode); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 817; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_unicode); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 834; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
@@ -13377,10 +14803,10 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_18__repr__(struct __pyx_obj_6datr
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 817; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 834; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 817; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 834; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -13388,7 +14814,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_18__repr__(struct __pyx_obj_6datr
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":816
+  /* "datrie.pyx":833
  *         )
  * 
  *     def __repr__(self):             # <<<<<<<<<<<<<<
@@ -13409,7 +14835,7 @@ static PyObject *__pyx_pf_6datrie_10_TrieState_18__repr__(struct __pyx_obj_6datr
   return __pyx_r;
 }
 
-/* "datrie.pyx":824
+/* "datrie.pyx":841
  *     cdatrie.TrieState wrapper. It can be used for custom trie traversal.
  *     """
  *     cpdef int data(self):             # <<<<<<<<<<<<<<
@@ -13434,7 +14860,7 @@ static int __pyx_f_6datrie_9BaseState_data(struct __pyx_obj_6datrie_BaseState *_
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 824; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_9BaseState_1data)) {
       __Pyx_INCREF(__pyx_t_1);
@@ -13449,14 +14875,14 @@ static int __pyx_f_6datrie_9BaseState_data(struct __pyx_obj_6datrie_BaseState *_
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 824; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 824; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 824; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = __Pyx_PyInt_As_int(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_5;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -13465,7 +14891,7 @@ static int __pyx_f_6datrie_9BaseState_data(struct __pyx_obj_6datrie_BaseState *_
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":825
+  /* "datrie.pyx":842
  *     """
  *     cpdef int data(self):
  *         return cdatrie.trie_state_get_terminal_data(self._state)             # <<<<<<<<<<<<<<
@@ -13475,7 +14901,7 @@ static int __pyx_f_6datrie_9BaseState_data(struct __pyx_obj_6datrie_BaseState *_
   __pyx_r = trie_state_get_terminal_data(__pyx_v_self->__pyx_base._state);
   goto __pyx_L0;
 
-  /* "datrie.pyx":824
+  /* "datrie.pyx":841
  *     cdatrie.TrieState wrapper. It can be used for custom trie traversal.
  *     """
  *     cpdef int data(self):             # <<<<<<<<<<<<<<
@@ -13518,7 +14944,7 @@ static PyObject *__pyx_pf_6datrie_9BaseState_data(struct __pyx_obj_6datrie_BaseS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("data", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_f_6datrie_9BaseState_data(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 824; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_f_6datrie_9BaseState_data(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13535,7 +14961,7 @@ static PyObject *__pyx_pf_6datrie_9BaseState_data(struct __pyx_obj_6datrie_BaseS
   return __pyx_r;
 }
 
-/* "datrie.pyx":830
+/* "datrie.pyx":847
  * cdef class State(_TrieState):
  * 
  *     def __cinit__(self, Trie trie): # this is overriden for extra type check             # <<<<<<<<<<<<<<
@@ -13571,7 +14997,7 @@ static int __pyx_pw_6datrie_5State_1__cinit__(PyObject *__pyx_v_self, PyObject *
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 830; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 847; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -13582,13 +15008,13 @@ static int __pyx_pw_6datrie_5State_1__cinit__(PyObject *__pyx_v_self, PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 830; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 847; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.State.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_trie), __pyx_ptype_6datrie_Trie, 1, "trie", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 830; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_trie), __pyx_ptype_6datrie_Trie, 1, "trie", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 847; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_5State___cinit__(((struct __pyx_obj_6datrie_State *)__pyx_v_self), __pyx_v_trie);
 
   /* function exit code */
@@ -13609,7 +15035,7 @@ static int __pyx_pf_6datrie_5State___cinit__(struct __pyx_obj_6datrie_State *__p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "datrie.pyx":831
+  /* "datrie.pyx":848
  * 
  *     def __cinit__(self, Trie trie): # this is overriden for extra type check
  *         self._state = cdatrie.trie_root(trie._c_trie)             # <<<<<<<<<<<<<<
@@ -13618,7 +15044,7 @@ static int __pyx_pf_6datrie_5State___cinit__(struct __pyx_obj_6datrie_State *__p
  */
   __pyx_v_self->__pyx_base._state = trie_root(__pyx_v_trie->__pyx_base._c_trie);
 
-  /* "datrie.pyx":832
+  /* "datrie.pyx":849
  *     def __cinit__(self, Trie trie): # this is overriden for extra type check
  *         self._state = cdatrie.trie_root(trie._c_trie)
  *         if self._state is NULL:             # <<<<<<<<<<<<<<
@@ -13628,17 +15054,17 @@ static int __pyx_pf_6datrie_5State___cinit__(struct __pyx_obj_6datrie_State *__p
   __pyx_t_1 = ((__pyx_v_self->__pyx_base._state == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":833
+    /* "datrie.pyx":850
  *         self._state = cdatrie.trie_root(trie._c_trie)
  *         if self._state is NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  *         self._trie = trie
  * 
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 833; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 850; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":834
+  /* "datrie.pyx":851
  *         if self._state is NULL:
  *             raise MemoryError()
  *         self._trie = trie             # <<<<<<<<<<<<<<
@@ -13651,7 +15077,7 @@ static int __pyx_pf_6datrie_5State___cinit__(struct __pyx_obj_6datrie_State *__p
   __Pyx_DECREF(((PyObject *)__pyx_v_self->__pyx_base._trie));
   __pyx_v_self->__pyx_base._trie = ((struct __pyx_obj_6datrie_BaseTrie *)__pyx_v_trie);
 
-  /* "datrie.pyx":830
+  /* "datrie.pyx":847
  * cdef class State(_TrieState):
  * 
  *     def __cinit__(self, Trie trie): # this is overriden for extra type check             # <<<<<<<<<<<<<<
@@ -13670,7 +15096,7 @@ static int __pyx_pf_6datrie_5State___cinit__(struct __pyx_obj_6datrie_State *__p
   return __pyx_r;
 }
 
-/* "datrie.pyx":836
+/* "datrie.pyx":853
  *         self._trie = trie
  * 
  *     cpdef data(self):             # <<<<<<<<<<<<<<
@@ -13695,7 +15121,7 @@ static PyObject *__pyx_f_6datrie_5State_data(struct __pyx_obj_6datrie_State *__p
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 836; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 853; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_5State_3data)) {
       __Pyx_XDECREF(__pyx_r);
@@ -13711,10 +15137,10 @@ static PyObject *__pyx_f_6datrie_5State_data(struct __pyx_obj_6datrie_State *__p
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 836; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 853; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 836; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 853; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -13726,7 +15152,7 @@ static PyObject *__pyx_f_6datrie_5State_data(struct __pyx_obj_6datrie_State *__p
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":837
+  /* "datrie.pyx":854
  * 
  *     cpdef data(self):
  *         cdef cdatrie.TrieData data = cdatrie.trie_state_get_terminal_data(self._state)             # <<<<<<<<<<<<<<
@@ -13735,7 +15161,7 @@ static PyObject *__pyx_f_6datrie_5State_data(struct __pyx_obj_6datrie_State *__p
  */
   __pyx_v_data = trie_state_get_terminal_data(__pyx_v_self->__pyx_base._state);
 
-  /* "datrie.pyx":838
+  /* "datrie.pyx":855
  *     cpdef data(self):
  *         cdef cdatrie.TrieData data = cdatrie.trie_state_get_terminal_data(self._state)
  *         return self._trie._index_to_value(data)             # <<<<<<<<<<<<<<
@@ -13743,13 +15169,13 @@ static PyObject *__pyx_f_6datrie_5State_data(struct __pyx_obj_6datrie_State *__p
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_base._trie->__pyx_vtab)->_index_to_value(__pyx_v_self->__pyx_base._trie, __pyx_v_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 838; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_base._trie->__pyx_vtab)->_index_to_value(__pyx_v_self->__pyx_base._trie, __pyx_v_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 855; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":836
+  /* "datrie.pyx":853
  *         self._trie = trie
  * 
  *     cpdef data(self):             # <<<<<<<<<<<<<<
@@ -13793,7 +15219,7 @@ static PyObject *__pyx_pf_6datrie_5State_2data(struct __pyx_obj_6datrie_State *_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("data", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6datrie_5State_data(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 836; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_f_6datrie_5State_data(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 853; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -13810,7 +15236,7 @@ static PyObject *__pyx_pf_6datrie_5State_2data(struct __pyx_obj_6datrie_State *_
   return __pyx_r;
 }
 
-/* "datrie.pyx":845
+/* "datrie.pyx":862
  *     cdef _TrieState _root
  * 
  *     def __cinit__(self, _TrieState state):             # <<<<<<<<<<<<<<
@@ -13846,7 +15272,7 @@ static int __pyx_pw_6datrie_13_TrieIterator_1__cinit__(PyObject *__pyx_v_self, P
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 845; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 862; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -13857,13 +15283,13 @@ static int __pyx_pw_6datrie_13_TrieIterator_1__cinit__(PyObject *__pyx_v_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 845; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 862; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie._TrieIterator.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), __pyx_ptype_6datrie__TrieState, 1, "state", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 845; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), __pyx_ptype_6datrie__TrieState, 1, "state", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 862; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_13_TrieIterator___cinit__(((struct __pyx_obj_6datrie__TrieIterator *)__pyx_v_self), __pyx_v_state);
 
   /* function exit code */
@@ -13884,7 +15310,7 @@ static int __pyx_pf_6datrie_13_TrieIterator___cinit__(struct __pyx_obj_6datrie__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "datrie.pyx":846
+  /* "datrie.pyx":863
  * 
  *     def __cinit__(self, _TrieState state):
  *         self._root = state # prevent garbage collection of state             # <<<<<<<<<<<<<<
@@ -13897,7 +15323,7 @@ static int __pyx_pf_6datrie_13_TrieIterator___cinit__(struct __pyx_obj_6datrie__
   __Pyx_DECREF(((PyObject *)__pyx_v_self->_root));
   __pyx_v_self->_root = __pyx_v_state;
 
-  /* "datrie.pyx":847
+  /* "datrie.pyx":864
  *     def __cinit__(self, _TrieState state):
  *         self._root = state # prevent garbage collection of state
  *         self._iter = cdatrie.trie_iterator_new(state._state)             # <<<<<<<<<<<<<<
@@ -13906,7 +15332,7 @@ static int __pyx_pf_6datrie_13_TrieIterator___cinit__(struct __pyx_obj_6datrie__
  */
   __pyx_v_self->_iter = trie_iterator_new(__pyx_v_state->_state);
 
-  /* "datrie.pyx":848
+  /* "datrie.pyx":865
  *         self._root = state # prevent garbage collection of state
  *         self._iter = cdatrie.trie_iterator_new(state._state)
  *         if self._iter is NULL:             # <<<<<<<<<<<<<<
@@ -13916,17 +15342,17 @@ static int __pyx_pf_6datrie_13_TrieIterator___cinit__(struct __pyx_obj_6datrie__
   __pyx_t_1 = ((__pyx_v_self->_iter == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":849
+    /* "datrie.pyx":866
  *         self._iter = cdatrie.trie_iterator_new(state._state)
  *         if self._iter is NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(self):
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 849; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 866; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":845
+  /* "datrie.pyx":862
  *     cdef _TrieState _root
  * 
  *     def __cinit__(self, _TrieState state):             # <<<<<<<<<<<<<<
@@ -13945,7 +15371,7 @@ static int __pyx_pf_6datrie_13_TrieIterator___cinit__(struct __pyx_obj_6datrie__
   return __pyx_r;
 }
 
-/* "datrie.pyx":851
+/* "datrie.pyx":868
  *             raise MemoryError()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -13969,7 +15395,7 @@ static void __pyx_pf_6datrie_13_TrieIterator_2__dealloc__(struct __pyx_obj_6datr
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "datrie.pyx":852
+  /* "datrie.pyx":869
  * 
  *     def __dealloc__(self):
  *         if self._iter is not NULL:             # <<<<<<<<<<<<<<
@@ -13979,7 +15405,7 @@ static void __pyx_pf_6datrie_13_TrieIterator_2__dealloc__(struct __pyx_obj_6datr
   __pyx_t_1 = ((__pyx_v_self->_iter != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":853
+    /* "datrie.pyx":870
  *     def __dealloc__(self):
  *         if self._iter is not NULL:
  *             cdatrie.trie_iterator_free(self._iter)             # <<<<<<<<<<<<<<
@@ -13991,7 +15417,7 @@ static void __pyx_pf_6datrie_13_TrieIterator_2__dealloc__(struct __pyx_obj_6datr
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":851
+  /* "datrie.pyx":868
  *             raise MemoryError()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -14003,7 +15429,7 @@ static void __pyx_pf_6datrie_13_TrieIterator_2__dealloc__(struct __pyx_obj_6datr
   __Pyx_RefNannyFinishContext();
 }
 
-/* "datrie.pyx":855
+/* "datrie.pyx":872
  *             cdatrie.trie_iterator_free(self._iter)
  * 
  *     cpdef bint next(self):             # <<<<<<<<<<<<<<
@@ -14028,7 +15454,7 @@ static int __pyx_f_6datrie_13_TrieIterator_next(struct __pyx_obj_6datrie__TrieIt
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_next); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 855; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_next); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 872; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_13_TrieIterator_5next)) {
       __Pyx_INCREF(__pyx_t_1);
@@ -14043,14 +15469,14 @@ static int __pyx_f_6datrie_13_TrieIterator_next(struct __pyx_obj_6datrie__TrieIt
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 855; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 872; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 855; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 872; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 855; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_5 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 872; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_5;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14059,7 +15485,7 @@ static int __pyx_f_6datrie_13_TrieIterator_next(struct __pyx_obj_6datrie__TrieIt
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":856
+  /* "datrie.pyx":873
  * 
  *     cpdef bint next(self):
  *         return cdatrie.trie_iterator_next(self._iter)             # <<<<<<<<<<<<<<
@@ -14069,7 +15495,7 @@ static int __pyx_f_6datrie_13_TrieIterator_next(struct __pyx_obj_6datrie__TrieIt
   __pyx_r = trie_iterator_next(__pyx_v_self->_iter);
   goto __pyx_L0;
 
-  /* "datrie.pyx":855
+  /* "datrie.pyx":872
  *             cdatrie.trie_iterator_free(self._iter)
  * 
  *     cpdef bint next(self):             # <<<<<<<<<<<<<<
@@ -14112,7 +15538,7 @@ static PyObject *__pyx_pf_6datrie_13_TrieIterator_4next(struct __pyx_obj_6datrie
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("next", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_13_TrieIterator_next(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 855; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyBool_FromLong(__pyx_f_6datrie_13_TrieIterator_next(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 872; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -14129,7 +15555,7 @@ static PyObject *__pyx_pf_6datrie_13_TrieIterator_4next(struct __pyx_obj_6datrie
   return __pyx_r;
 }
 
-/* "datrie.pyx":858
+/* "datrie.pyx":875
  *         return cdatrie.trie_iterator_next(self._iter)
  * 
  *     cpdef unicode key(self):             # <<<<<<<<<<<<<<
@@ -14164,7 +15590,7 @@ static PyObject *__pyx_f_6datrie_13_TrieIterator_key(struct __pyx_obj_6datrie__T
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_key); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_13_TrieIterator_7key)) {
       __Pyx_XDECREF(__pyx_r);
@@ -14180,14 +15606,14 @@ static PyObject *__pyx_f_6datrie_13_TrieIterator_key(struct __pyx_obj_6datrie__T
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (!(likely(PyUnicode_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_2)->tp_name), 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      if (!(likely(PyUnicode_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_2)->tp_name), 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_r = ((PyObject*)__pyx_t_2);
       __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14196,7 +15622,7 @@ static PyObject *__pyx_f_6datrie_13_TrieIterator_key(struct __pyx_obj_6datrie__T
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":859
+  /* "datrie.pyx":876
  * 
  *     cpdef unicode key(self):
  *         cdef cdatrie.AlphaChar* key = cdatrie.trie_iterator_get_key(self._iter)             # <<<<<<<<<<<<<<
@@ -14205,7 +15631,7 @@ static PyObject *__pyx_f_6datrie_13_TrieIterator_key(struct __pyx_obj_6datrie__T
  */
   __pyx_v_key = trie_iterator_get_key(__pyx_v_self->_iter);
 
-  /* "datrie.pyx":860
+  /* "datrie.pyx":877
  *     cpdef unicode key(self):
  *         cdef cdatrie.AlphaChar* key = cdatrie.trie_iterator_get_key(self._iter)
  *         try:             # <<<<<<<<<<<<<<
@@ -14214,7 +15640,7 @@ static PyObject *__pyx_f_6datrie_13_TrieIterator_key(struct __pyx_obj_6datrie__T
  */
   /*try:*/ {
 
-    /* "datrie.pyx":861
+    /* "datrie.pyx":878
  *         cdef cdatrie.AlphaChar* key = cdatrie.trie_iterator_get_key(self._iter)
  *         try:
  *             return unicode_from_alpha_char(key)             # <<<<<<<<<<<<<<
@@ -14222,14 +15648,14 @@ static PyObject *__pyx_f_6datrie_13_TrieIterator_key(struct __pyx_obj_6datrie__T
  *             free(key)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __pyx_f_6datrie_unicode_from_alpha_char(__pyx_v_key, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 861; __pyx_clineno = __LINE__; goto __pyx_L4_error;}
+    __pyx_t_1 = __pyx_f_6datrie_unicode_from_alpha_char(__pyx_v_key, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 878; __pyx_clineno = __LINE__; goto __pyx_L4_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = ((PyObject*)__pyx_t_1);
     __pyx_t_1 = 0;
     goto __pyx_L3_return;
   }
 
-  /* "datrie.pyx":863
+  /* "datrie.pyx":880
  *             return unicode_from_alpha_char(key)
  *         finally:
  *             free(key)             # <<<<<<<<<<<<<<
@@ -14280,7 +15706,7 @@ static PyObject *__pyx_f_6datrie_13_TrieIterator_key(struct __pyx_obj_6datrie__T
     }
   }
 
-  /* "datrie.pyx":858
+  /* "datrie.pyx":875
  *         return cdatrie.trie_iterator_next(self._iter)
  * 
  *     cpdef unicode key(self):             # <<<<<<<<<<<<<<
@@ -14324,7 +15750,7 @@ static PyObject *__pyx_pf_6datrie_13_TrieIterator_6key(struct __pyx_obj_6datrie_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("key", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6datrie_13_TrieIterator_key(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_f_6datrie_13_TrieIterator_key(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -14341,7 +15767,7 @@ static PyObject *__pyx_pf_6datrie_13_TrieIterator_6key(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":871
+/* "datrie.pyx":888
  *     traversal.
  *     """
  *     cpdef cdatrie.TrieData data(self):             # <<<<<<<<<<<<<<
@@ -14366,7 +15792,7 @@ static TrieData __pyx_f_6datrie_12BaseIterator_data(struct __pyx_obj_6datrie_Bas
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 871; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 888; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_12BaseIterator_1data)) {
       __Pyx_INCREF(__pyx_t_1);
@@ -14381,14 +15807,14 @@ static TrieData __pyx_f_6datrie_12BaseIterator_data(struct __pyx_obj_6datrie_Bas
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 871; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 888; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 871; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 888; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_5 = __Pyx_PyInt_As_TrieData(__pyx_t_2); if (unlikely((__pyx_t_5 == (TrieData)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 871; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = __Pyx_PyInt_As_TrieData(__pyx_t_2); if (unlikely((__pyx_t_5 == (TrieData)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 888; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_5;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -14397,7 +15823,7 @@ static TrieData __pyx_f_6datrie_12BaseIterator_data(struct __pyx_obj_6datrie_Bas
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":872
+  /* "datrie.pyx":889
  *     """
  *     cpdef cdatrie.TrieData data(self):
  *         return cdatrie.trie_iterator_get_data(self._iter)             # <<<<<<<<<<<<<<
@@ -14407,7 +15833,7 @@ static TrieData __pyx_f_6datrie_12BaseIterator_data(struct __pyx_obj_6datrie_Bas
   __pyx_r = trie_iterator_get_data(__pyx_v_self->__pyx_base._iter);
   goto __pyx_L0;
 
-  /* "datrie.pyx":871
+  /* "datrie.pyx":888
  *     traversal.
  *     """
  *     cpdef cdatrie.TrieData data(self):             # <<<<<<<<<<<<<<
@@ -14450,7 +15876,7 @@ static PyObject *__pyx_pf_6datrie_12BaseIterator_data(struct __pyx_obj_6datrie_B
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("data", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_TrieData(__pyx_f_6datrie_12BaseIterator_data(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 871; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyInt_From_TrieData(__pyx_f_6datrie_12BaseIterator_data(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 888; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -14467,7 +15893,7 @@ static PyObject *__pyx_pf_6datrie_12BaseIterator_data(struct __pyx_obj_6datrie_B
   return __pyx_r;
 }
 
-/* "datrie.pyx":880
+/* "datrie.pyx":897
  *     traversal.
  *     """
  *     def __cinit__(self, State state): # this is overriden for extra type check             # <<<<<<<<<<<<<<
@@ -14503,7 +15929,7 @@ static int __pyx_pw_6datrie_8Iterator_1__cinit__(PyObject *__pyx_v_self, PyObjec
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 880; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 897; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -14514,13 +15940,13 @@ static int __pyx_pw_6datrie_8Iterator_1__cinit__(PyObject *__pyx_v_self, PyObjec
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 880; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 897; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.Iterator.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), __pyx_ptype_6datrie_State, 1, "state", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 880; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_state), __pyx_ptype_6datrie_State, 1, "state", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 897; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_8Iterator___cinit__(((struct __pyx_obj_6datrie_Iterator *)__pyx_v_self), __pyx_v_state);
 
   /* function exit code */
@@ -14541,7 +15967,7 @@ static int __pyx_pf_6datrie_8Iterator___cinit__(struct __pyx_obj_6datrie_Iterato
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "datrie.pyx":881
+  /* "datrie.pyx":898
  *     """
  *     def __cinit__(self, State state): # this is overriden for extra type check
  *         self._root = state # prevent garbage collection of state             # <<<<<<<<<<<<<<
@@ -14554,7 +15980,7 @@ static int __pyx_pf_6datrie_8Iterator___cinit__(struct __pyx_obj_6datrie_Iterato
   __Pyx_DECREF(((PyObject *)__pyx_v_self->__pyx_base._root));
   __pyx_v_self->__pyx_base._root = ((struct __pyx_obj_6datrie__TrieState *)__pyx_v_state);
 
-  /* "datrie.pyx":882
+  /* "datrie.pyx":899
  *     def __cinit__(self, State state): # this is overriden for extra type check
  *         self._root = state # prevent garbage collection of state
  *         self._iter = cdatrie.trie_iterator_new(state._state)             # <<<<<<<<<<<<<<
@@ -14563,7 +15989,7 @@ static int __pyx_pf_6datrie_8Iterator___cinit__(struct __pyx_obj_6datrie_Iterato
  */
   __pyx_v_self->__pyx_base._iter = trie_iterator_new(__pyx_v_state->__pyx_base._state);
 
-  /* "datrie.pyx":883
+  /* "datrie.pyx":900
  *         self._root = state # prevent garbage collection of state
  *         self._iter = cdatrie.trie_iterator_new(state._state)
  *         if self._iter is NULL:             # <<<<<<<<<<<<<<
@@ -14573,17 +15999,17 @@ static int __pyx_pf_6datrie_8Iterator___cinit__(struct __pyx_obj_6datrie_Iterato
   __pyx_t_1 = ((__pyx_v_self->__pyx_base._iter == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":884
+    /* "datrie.pyx":901
  *         self._iter = cdatrie.trie_iterator_new(state._state)
  *         if self._iter is NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *     cpdef data(self):
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 884; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 901; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":880
+  /* "datrie.pyx":897
  *     traversal.
  *     """
  *     def __cinit__(self, State state): # this is overriden for extra type check             # <<<<<<<<<<<<<<
@@ -14602,7 +16028,7 @@ static int __pyx_pf_6datrie_8Iterator___cinit__(struct __pyx_obj_6datrie_Iterato
   return __pyx_r;
 }
 
-/* "datrie.pyx":886
+/* "datrie.pyx":903
  *             raise MemoryError()
  * 
  *     cpdef data(self):             # <<<<<<<<<<<<<<
@@ -14627,7 +16053,7 @@ static PyObject *__pyx_f_6datrie_8Iterator_data(struct __pyx_obj_6datrie_Iterato
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 886; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 903; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8Iterator_3data)) {
       __Pyx_XDECREF(__pyx_r);
@@ -14643,10 +16069,10 @@ static PyObject *__pyx_f_6datrie_8Iterator_data(struct __pyx_obj_6datrie_Iterato
         }
       }
       if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 886; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 903; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 886; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 903; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -14658,7 +16084,7 @@ static PyObject *__pyx_f_6datrie_8Iterator_data(struct __pyx_obj_6datrie_Iterato
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":887
+  /* "datrie.pyx":904
  * 
  *     cpdef data(self):
  *         cdef cdatrie.TrieData data = cdatrie.trie_iterator_get_data(self._iter)             # <<<<<<<<<<<<<<
@@ -14667,7 +16093,7 @@ static PyObject *__pyx_f_6datrie_8Iterator_data(struct __pyx_obj_6datrie_Iterato
  */
   __pyx_v_data = trie_iterator_get_data(__pyx_v_self->__pyx_base._iter);
 
-  /* "datrie.pyx":888
+  /* "datrie.pyx":905
  *     cpdef data(self):
  *         cdef cdatrie.TrieData data = cdatrie.trie_iterator_get_data(self._iter)
  *         return self._root._trie._index_to_value(data)             # <<<<<<<<<<<<<<
@@ -14675,13 +16101,13 @@ static PyObject *__pyx_f_6datrie_8Iterator_data(struct __pyx_obj_6datrie_Iterato
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_base._root->_trie->__pyx_vtab)->_index_to_value(__pyx_v_self->__pyx_base._root->_trie, __pyx_v_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 888; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_BaseTrie *)__pyx_v_self->__pyx_base._root->_trie->__pyx_vtab)->_index_to_value(__pyx_v_self->__pyx_base._root->_trie, __pyx_v_data); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 905; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":886
+  /* "datrie.pyx":903
  *             raise MemoryError()
  * 
  *     cpdef data(self):             # <<<<<<<<<<<<<<
@@ -14725,7 +16151,7 @@ static PyObject *__pyx_pf_6datrie_8Iterator_2data(struct __pyx_obj_6datrie_Itera
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("data", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6datrie_8Iterator_data(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 886; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_f_6datrie_8Iterator_data(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 903; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -14742,7 +16168,7 @@ static PyObject *__pyx_pf_6datrie_8Iterator_2data(struct __pyx_obj_6datrie_Itera
   return __pyx_r;
 }
 
-/* "datrie.pyx":891
+/* "datrie.pyx":908
  * 
  * 
  * cdef (cdatrie.Trie* ) _load_from_file(f) except NULL:             # <<<<<<<<<<<<<<
@@ -14769,14 +16195,14 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_load_from_file", 0);
 
-  /* "datrie.pyx":892
+  /* "datrie.pyx":909
  * 
  * cdef (cdatrie.Trie* ) _load_from_file(f) except NULL:
  *     cdef int fd = f.fileno()             # <<<<<<<<<<<<<<
  *     cdef stdio.FILE* f_ptr = stdio_ext.fdopen(fd, "r")
  *     if f_ptr == NULL:
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_fileno); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 892; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_fileno); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 909; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_2))) {
@@ -14789,18 +16215,18 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
     }
   }
   if (__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 892; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 909; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   } else {
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 892; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 909; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 892; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyInt_As_int(__pyx_t_1); if (unlikely((__pyx_t_4 == (int)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 909; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_fd = __pyx_t_4;
 
-  /* "datrie.pyx":893
+  /* "datrie.pyx":910
  * cdef (cdatrie.Trie* ) _load_from_file(f) except NULL:
  *     cdef int fd = f.fileno()
  *     cdef stdio.FILE* f_ptr = stdio_ext.fdopen(fd, "r")             # <<<<<<<<<<<<<<
@@ -14809,7 +16235,7 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
  */
   __pyx_v_f_ptr = fdopen(__pyx_v_fd, __pyx_k_r);
 
-  /* "datrie.pyx":894
+  /* "datrie.pyx":911
  *     cdef int fd = f.fileno()
  *     cdef stdio.FILE* f_ptr = stdio_ext.fdopen(fd, "r")
  *     if f_ptr == NULL:             # <<<<<<<<<<<<<<
@@ -14819,21 +16245,21 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
   __pyx_t_5 = ((__pyx_v_f_ptr == NULL) != 0);
   if (__pyx_t_5) {
 
-    /* "datrie.pyx":895
+    /* "datrie.pyx":912
  *     cdef stdio.FILE* f_ptr = stdio_ext.fdopen(fd, "r")
  *     if f_ptr == NULL:
  *         raise IOError()             # <<<<<<<<<<<<<<
  *     cdef cdatrie.Trie* trie = cdatrie.trie_fread(f_ptr)
  *     if trie == NULL:
  */
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_builtin_IOError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 895; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_builtin_IOError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 912; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 895; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 912; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":896
+  /* "datrie.pyx":913
  *     if f_ptr == NULL:
  *         raise IOError()
  *     cdef cdatrie.Trie* trie = cdatrie.trie_fread(f_ptr)             # <<<<<<<<<<<<<<
@@ -14842,7 +16268,7 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
  */
   __pyx_v_trie = trie_fread(__pyx_v_f_ptr);
 
-  /* "datrie.pyx":897
+  /* "datrie.pyx":914
  *         raise IOError()
  *     cdef cdatrie.Trie* trie = cdatrie.trie_fread(f_ptr)
  *     if trie == NULL:             # <<<<<<<<<<<<<<
@@ -14852,24 +16278,24 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
   __pyx_t_5 = ((__pyx_v_trie == NULL) != 0);
   if (__pyx_t_5) {
 
-    /* "datrie.pyx":898
+    /* "datrie.pyx":915
  *     cdef cdatrie.Trie* trie = cdatrie.trie_fread(f_ptr)
  *     if trie == NULL:
  *         raise DatrieError("Can't load trie from stream")             # <<<<<<<<<<<<<<
  * 
  *     cdef int f_pos = stdio.ftell(f_ptr)
  */
-    __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_DatrieError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 898; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_DatrieError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 915; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 898; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 915; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 898; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 915; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":900
+  /* "datrie.pyx":917
  *         raise DatrieError("Can't load trie from stream")
  * 
  *     cdef int f_pos = stdio.ftell(f_ptr)             # <<<<<<<<<<<<<<
@@ -14878,16 +16304,16 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
  */
   __pyx_v_f_pos = ftell(__pyx_v_f_ptr);
 
-  /* "datrie.pyx":901
+  /* "datrie.pyx":918
  * 
  *     cdef int f_pos = stdio.ftell(f_ptr)
  *     f.seek(f_pos)             # <<<<<<<<<<<<<<
  * 
  *     return trie
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_seek); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 901; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_f, __pyx_n_s_seek); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 918; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_f_pos); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 901; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_f_pos); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 918; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_6 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_1))) {
@@ -14900,24 +16326,24 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 901; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 918; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else {
-    __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 901; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 918; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __Pyx_GIVEREF(__pyx_t_6); __pyx_t_6 = NULL;
     PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 901; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_7, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 918; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":903
+  /* "datrie.pyx":920
  *     f.seek(f_pos)
  * 
  *     return trie             # <<<<<<<<<<<<<<
@@ -14927,7 +16353,7 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
   __pyx_r = __pyx_v_trie;
   goto __pyx_L0;
 
-  /* "datrie.pyx":891
+  /* "datrie.pyx":908
  * 
  * 
  * cdef (cdatrie.Trie* ) _load_from_file(f) except NULL:             # <<<<<<<<<<<<<<
@@ -14949,7 +16375,7 @@ static Trie *__pyx_f_6datrie__load_from_file(PyObject *__pyx_v_f) {
   return __pyx_r;
 }
 
-/* "datrie.pyx":933
+/* "datrie.pyx":950
  *     cdef cdatrie.AlphaMap *_c_alpha_map
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -14982,7 +16408,7 @@ static int __pyx_pf_6datrie_8AlphaMap___cinit__(struct __pyx_obj_6datrie_AlphaMa
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "datrie.pyx":934
+  /* "datrie.pyx":951
  * 
  *     def __cinit__(self):
  *         self._c_alpha_map = cdatrie.alpha_map_new()             # <<<<<<<<<<<<<<
@@ -14991,7 +16417,7 @@ static int __pyx_pf_6datrie_8AlphaMap___cinit__(struct __pyx_obj_6datrie_AlphaMa
  */
   __pyx_v_self->_c_alpha_map = alpha_map_new();
 
-  /* "datrie.pyx":935
+  /* "datrie.pyx":952
  *     def __cinit__(self):
  *         self._c_alpha_map = cdatrie.alpha_map_new()
  *         if self._c_alpha_map is NULL:             # <<<<<<<<<<<<<<
@@ -15001,17 +16427,17 @@ static int __pyx_pf_6datrie_8AlphaMap___cinit__(struct __pyx_obj_6datrie_AlphaMa
   __pyx_t_1 = ((__pyx_v_self->_c_alpha_map == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":936
+    /* "datrie.pyx":953
  *         self._c_alpha_map = cdatrie.alpha_map_new()
  *         if self._c_alpha_map is NULL:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *     def __dealloc__(self):
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 936; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 953; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":933
+  /* "datrie.pyx":950
  *     cdef cdatrie.AlphaMap *_c_alpha_map
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -15030,7 +16456,7 @@ static int __pyx_pf_6datrie_8AlphaMap___cinit__(struct __pyx_obj_6datrie_AlphaMa
   return __pyx_r;
 }
 
-/* "datrie.pyx":938
+/* "datrie.pyx":955
  *             raise MemoryError()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -15054,7 +16480,7 @@ static void __pyx_pf_6datrie_8AlphaMap_2__dealloc__(struct __pyx_obj_6datrie_Alp
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "datrie.pyx":939
+  /* "datrie.pyx":956
  * 
  *     def __dealloc__(self):
  *         if self._c_alpha_map is not NULL:             # <<<<<<<<<<<<<<
@@ -15064,7 +16490,7 @@ static void __pyx_pf_6datrie_8AlphaMap_2__dealloc__(struct __pyx_obj_6datrie_Alp
   __pyx_t_1 = ((__pyx_v_self->_c_alpha_map != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":940
+    /* "datrie.pyx":957
  *     def __dealloc__(self):
  *         if self._c_alpha_map is not NULL:
  *             cdatrie.alpha_map_free(self._c_alpha_map)             # <<<<<<<<<<<<<<
@@ -15076,7 +16502,7 @@ static void __pyx_pf_6datrie_8AlphaMap_2__dealloc__(struct __pyx_obj_6datrie_Alp
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":938
+  /* "datrie.pyx":955
  *             raise MemoryError()
  * 
  *     def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -15088,7 +16514,7 @@ static void __pyx_pf_6datrie_8AlphaMap_2__dealloc__(struct __pyx_obj_6datrie_Alp
   __Pyx_RefNannyFinishContext();
 }
 
-/* "datrie.pyx":942
+/* "datrie.pyx":959
  *             cdatrie.alpha_map_free(self._c_alpha_map)
  * 
  *     def __init__(self, alphabet=None, ranges=None):             # <<<<<<<<<<<<<<
@@ -15135,7 +16561,7 @@ static int __pyx_pw_6datrie_8AlphaMap_5__init__(PyObject *__pyx_v_self, PyObject
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 942; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 959; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -15150,7 +16576,7 @@ static int __pyx_pw_6datrie_8AlphaMap_5__init__(PyObject *__pyx_v_self, PyObject
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 942; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 959; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.AlphaMap.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -15180,7 +16606,7 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "datrie.pyx":943
+  /* "datrie.pyx":960
  * 
  *     def __init__(self, alphabet=None, ranges=None):
  *         if ranges is not None:             # <<<<<<<<<<<<<<
@@ -15191,7 +16617,7 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "datrie.pyx":944
+    /* "datrie.pyx":961
  *     def __init__(self, alphabet=None, ranges=None):
  *         if ranges is not None:
  *             for range in ranges:             # <<<<<<<<<<<<<<
@@ -15202,25 +16628,25 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
       __pyx_t_3 = __pyx_v_ranges; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
       __pyx_t_5 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_ranges); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 944; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_v_ranges); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 944; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     }
     for (;;) {
       if (likely(!__pyx_t_5)) {
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_COMPILING_IN_CPYTHON
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 944; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 944; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_COMPILING_IN_CPYTHON
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 944; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_6); __pyx_t_4++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 944; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
           #endif
         }
       } else {
@@ -15229,7 +16655,7 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 944; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+            else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 961; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
           }
           break;
         }
@@ -15238,24 +16664,24 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
       __Pyx_XDECREF_SET(__pyx_v_range, __pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "datrie.pyx":945
+      /* "datrie.pyx":962
  *         if ranges is not None:
  *             for range in ranges:
  *                 self.add_range(*range)             # <<<<<<<<<<<<<<
  * 
  *         if alphabet is not None:
  */
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add_range); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 945; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add_range); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 962; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_7 = PySequence_Tuple(__pyx_v_range); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 945; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_7 = PySequence_Tuple(__pyx_v_range); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 962; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, NULL); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 945; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, NULL); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 962; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-      /* "datrie.pyx":944
+      /* "datrie.pyx":961
  *     def __init__(self, alphabet=None, ranges=None):
  *         if ranges is not None:
  *             for range in ranges:             # <<<<<<<<<<<<<<
@@ -15268,7 +16694,7 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":947
+  /* "datrie.pyx":964
  *                 self.add_range(*range)
  * 
  *         if alphabet is not None:             # <<<<<<<<<<<<<<
@@ -15279,14 +16705,14 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":948
+    /* "datrie.pyx":965
  * 
  *         if alphabet is not None:
  *             self.add_alphabet(alphabet)             # <<<<<<<<<<<<<<
  * 
  *     def add_alphabet(self, alphabet):
  */
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add_alphabet); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 948; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add_alphabet); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_7 = NULL;
     if (CYTHON_COMPILING_IN_CPYTHON && likely(PyMethod_Check(__pyx_t_8))) {
@@ -15299,16 +16725,16 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
       }
     }
     if (!__pyx_t_7) {
-      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_v_alphabet); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 948; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_v_alphabet); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
     } else {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 948; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_6);
       PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_7); __Pyx_GIVEREF(__pyx_t_7); __pyx_t_7 = NULL;
       __Pyx_INCREF(__pyx_v_alphabet);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_v_alphabet);
       __Pyx_GIVEREF(__pyx_v_alphabet);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 948; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -15318,7 +16744,7 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
   }
   __pyx_L6:;
 
-  /* "datrie.pyx":942
+  /* "datrie.pyx":959
  *             cdatrie.alpha_map_free(self._c_alpha_map)
  * 
  *     def __init__(self, alphabet=None, ranges=None):             # <<<<<<<<<<<<<<
@@ -15342,7 +16768,7 @@ static int __pyx_pf_6datrie_8AlphaMap_4__init__(struct __pyx_obj_6datrie_AlphaMa
   return __pyx_r;
 }
 
-/* "datrie.pyx":950
+/* "datrie.pyx":967
  *             self.add_alphabet(alphabet)
  * 
  *     def add_alphabet(self, alphabet):             # <<<<<<<<<<<<<<
@@ -15384,14 +16810,14 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("add_alphabet", 0);
 
-  /* "datrie.pyx":954
+  /* "datrie.pyx":971
  *         Adds all chars from iterable to the alphabet set.
  *         """
  *         for begin, end in alphabet_to_ranges(alphabet):             # <<<<<<<<<<<<<<
  *             self._add_range(begin, end)
  * 
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_alphabet_to_ranges); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_alphabet_to_ranges); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -15404,16 +16830,16 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
     }
   }
   if (!__pyx_t_3) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_alphabet); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_alphabet); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
   } else {
-    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3); __Pyx_GIVEREF(__pyx_t_3); __pyx_t_3 = NULL;
     __Pyx_INCREF(__pyx_v_alphabet);
     PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_v_alphabet);
     __Pyx_GIVEREF(__pyx_v_alphabet);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
@@ -15422,9 +16848,9 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_5 = 0;
     __pyx_t_6 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_5 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_6 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -15432,16 +16858,16 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_5); __Pyx_INCREF(__pyx_t_1); __pyx_t_5++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       }
     } else {
@@ -15450,7 +16876,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         }
         break;
       }
@@ -15466,7 +16892,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       #if CYTHON_COMPILING_IN_CPYTHON
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -15479,15 +16905,15 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_3);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -15495,7 +16921,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_3 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_3)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_3);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L6_unpacking_done;
@@ -15503,7 +16929,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 954; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 971; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_begin, __pyx_t_4);
@@ -15511,20 +16937,20 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
     __Pyx_XDECREF_SET(__pyx_v_end, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "datrie.pyx":955
+    /* "datrie.pyx":972
  *         """
  *         for begin, end in alphabet_to_ranges(alphabet):
  *             self._add_range(begin, end)             # <<<<<<<<<<<<<<
  * 
  *     def add_range(self, begin, end):
  */
-    __pyx_t_9 = __Pyx_PyInt_As_AlphaChar(__pyx_v_begin); if (unlikely((__pyx_t_9 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 955; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __pyx_t_10 = __Pyx_PyInt_As_AlphaChar(__pyx_v_end); if (unlikely((__pyx_t_10 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 955; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-    __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_AlphaMap *)__pyx_v_self->__pyx_vtab)->_add_range(__pyx_v_self, __pyx_t_9, __pyx_t_10, 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 955; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_9 = __Pyx_PyInt_As_AlphaChar(__pyx_v_begin); if (unlikely((__pyx_t_9 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_10 = __Pyx_PyInt_As_AlphaChar(__pyx_v_end); if (unlikely((__pyx_t_10 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_AlphaMap *)__pyx_v_self->__pyx_vtab)->_add_range(__pyx_v_self, __pyx_t_9, __pyx_t_10, 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "datrie.pyx":954
+    /* "datrie.pyx":971
  *         Adds all chars from iterable to the alphabet set.
  *         """
  *         for begin, end in alphabet_to_ranges(alphabet):             # <<<<<<<<<<<<<<
@@ -15534,7 +16960,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":950
+  /* "datrie.pyx":967
  *             self.add_alphabet(alphabet)
  * 
  *     def add_alphabet(self, alphabet):             # <<<<<<<<<<<<<<
@@ -15561,7 +16987,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_6add_alphabet(struct __pyx_obj_6datr
   return __pyx_r;
 }
 
-/* "datrie.pyx":957
+/* "datrie.pyx":974
  *             self._add_range(begin, end)
  * 
  *     def add_range(self, begin, end):             # <<<<<<<<<<<<<<
@@ -15601,11 +17027,11 @@ static PyObject *__pyx_pw_6datrie_8AlphaMap_9add_range(PyObject *__pyx_v_self, P
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_end)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("add_range", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 957; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("add_range", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 974; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "add_range") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 957; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "add_range") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 974; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -15618,7 +17044,7 @@ static PyObject *__pyx_pw_6datrie_8AlphaMap_9add_range(PyObject *__pyx_v_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("add_range", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 957; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("add_range", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 974; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.AlphaMap.add_range", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -15643,38 +17069,38 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_8add_range(struct __pyx_obj_6datrie_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("add_range", 0);
 
-  /* "datrie.pyx":965
+  /* "datrie.pyx":982
  *         ``end`` - the last character of the range.
  *         """
  *         self._add_range(ord(begin), ord(end))             # <<<<<<<<<<<<<<
  * 
  *     cpdef _add_range(self, cdatrie.AlphaChar begin, cdatrie.AlphaChar end):
  */
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_begin);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_begin);
   __Pyx_GIVEREF(__pyx_v_begin);
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ord, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ord, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyInt_As_AlphaChar(__pyx_t_2); if (unlikely((__pyx_t_3 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyInt_As_AlphaChar(__pyx_t_2); if (unlikely((__pyx_t_3 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_end);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_end);
   __Pyx_GIVEREF(__pyx_v_end);
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ord, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_ord, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_4 = __Pyx_PyInt_As_AlphaChar(__pyx_t_1); if (unlikely((__pyx_t_4 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyInt_As_AlphaChar(__pyx_t_1); if (unlikely((__pyx_t_4 == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_AlphaMap *)__pyx_v_self->__pyx_vtab)->_add_range(__pyx_v_self, __pyx_t_3, __pyx_t_4, 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = ((struct __pyx_vtabstruct_6datrie_AlphaMap *)__pyx_v_self->__pyx_vtab)->_add_range(__pyx_v_self, __pyx_t_3, __pyx_t_4, 0); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "datrie.pyx":957
+  /* "datrie.pyx":974
  *             self._add_range(begin, end)
  * 
  *     def add_range(self, begin, end):             # <<<<<<<<<<<<<<
@@ -15696,7 +17122,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_8add_range(struct __pyx_obj_6datrie_
   return __pyx_r;
 }
 
-/* "datrie.pyx":967
+/* "datrie.pyx":984
  *         self._add_range(ord(begin), ord(end))
  * 
  *     cpdef _add_range(self, cdatrie.AlphaChar begin, cdatrie.AlphaChar end):             # <<<<<<<<<<<<<<
@@ -15726,13 +17152,13 @@ static PyObject *__pyx_f_6datrie_8AlphaMap__add_range(struct __pyx_obj_6datrie_A
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
   else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add_range_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_add_range_2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_6datrie_8AlphaMap_11_add_range)) {
       __Pyx_XDECREF(__pyx_r);
-      __pyx_t_3 = __Pyx_PyInt_From_AlphaChar(__pyx_v_begin); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = __Pyx_PyInt_From_AlphaChar(__pyx_v_begin); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyInt_From_AlphaChar(__pyx_v_end); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_4 = __Pyx_PyInt_From_AlphaChar(__pyx_v_end); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_5 = __pyx_t_1; __pyx_t_6 = NULL;
@@ -15747,7 +17173,7 @@ static PyObject *__pyx_f_6datrie_8AlphaMap__add_range(struct __pyx_obj_6datrie_A
           __pyx_t_7 = 1;
         }
       }
-      __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_8);
       if (__pyx_t_6) {
         PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6); __Pyx_GIVEREF(__pyx_t_6); __pyx_t_6 = NULL;
@@ -15758,7 +17184,7 @@ static PyObject *__pyx_f_6datrie_8AlphaMap__add_range(struct __pyx_obj_6datrie_A
       __Pyx_GIVEREF(__pyx_t_4);
       __pyx_t_3 = 0;
       __pyx_t_4 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -15770,7 +17196,7 @@ static PyObject *__pyx_f_6datrie_8AlphaMap__add_range(struct __pyx_obj_6datrie_A
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "datrie.pyx":968
+  /* "datrie.pyx":985
  * 
  *     cpdef _add_range(self, cdatrie.AlphaChar begin, cdatrie.AlphaChar end):
  *         if begin > end:             # <<<<<<<<<<<<<<
@@ -15780,24 +17206,24 @@ static PyObject *__pyx_f_6datrie_8AlphaMap__add_range(struct __pyx_obj_6datrie_A
   __pyx_t_9 = ((__pyx_v_begin > __pyx_v_end) != 0);
   if (__pyx_t_9) {
 
-    /* "datrie.pyx":969
+    /* "datrie.pyx":986
  *     cpdef _add_range(self, cdatrie.AlphaChar begin, cdatrie.AlphaChar end):
  *         if begin > end:
  *             raise DatrieError('range begin > end')             # <<<<<<<<<<<<<<
  *         code = cdatrie.alpha_map_add_range(self._c_alpha_map, begin, end)
  *         if code != 0:
  */
-    __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_DatrieError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 969; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_DatrieError); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 986; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 969; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 986; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 969; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 986; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":970
+  /* "datrie.pyx":987
  *         if begin > end:
  *             raise DatrieError('range begin > end')
  *         code = cdatrie.alpha_map_add_range(self._c_alpha_map, begin, end)             # <<<<<<<<<<<<<<
@@ -15806,7 +17232,7 @@ static PyObject *__pyx_f_6datrie_8AlphaMap__add_range(struct __pyx_obj_6datrie_A
  */
   __pyx_v_code = alpha_map_add_range(__pyx_v_self->_c_alpha_map, __pyx_v_begin, __pyx_v_end);
 
-  /* "datrie.pyx":971
+  /* "datrie.pyx":988
  *             raise DatrieError('range begin > end')
  *         code = cdatrie.alpha_map_add_range(self._c_alpha_map, begin, end)
  *         if code != 0:             # <<<<<<<<<<<<<<
@@ -15816,17 +17242,17 @@ static PyObject *__pyx_f_6datrie_8AlphaMap__add_range(struct __pyx_obj_6datrie_A
   __pyx_t_9 = ((__pyx_v_code != 0) != 0);
   if (__pyx_t_9) {
 
-    /* "datrie.pyx":972
+    /* "datrie.pyx":989
  *         code = cdatrie.alpha_map_add_range(self._c_alpha_map, begin, end)
  *         if code != 0:
  *             raise MemoryError()             # <<<<<<<<<<<<<<
  * 
- * cdef cdatrie.AlphaChar* new_alpha_char_from_unicode(unicode txt):
+ * 
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 972; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 989; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":967
+  /* "datrie.pyx":984
  *         self._add_range(ord(begin), ord(end))
  * 
  *     cpdef _add_range(self, cdatrie.AlphaChar begin, cdatrie.AlphaChar end):             # <<<<<<<<<<<<<<
@@ -15884,11 +17310,11 @@ static PyObject *__pyx_pw_6datrie_8AlphaMap_11_add_range(PyObject *__pyx_v_self,
         case  1:
         if (likely((values[1] = PyDict_GetItem(__pyx_kwds, __pyx_n_s_end)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("_add_range", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+          __Pyx_RaiseArgtupleInvalid("_add_range", 1, 2, 2, 1); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_add_range") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "_add_range") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -15896,12 +17322,12 @@ static PyObject *__pyx_pw_6datrie_8AlphaMap_11_add_range(PyObject *__pyx_v_self,
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_begin = __Pyx_PyInt_As_AlphaChar(values[0]); if (unlikely((__pyx_v_begin == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
-    __pyx_v_end = __Pyx_PyInt_As_AlphaChar(values[1]); if (unlikely((__pyx_v_end == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_begin = __Pyx_PyInt_As_AlphaChar(values[0]); if (unlikely((__pyx_v_begin == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+    __pyx_v_end = __Pyx_PyInt_As_AlphaChar(values[1]); if (unlikely((__pyx_v_end == (AlphaChar)-1) && PyErr_Occurred())) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("_add_range", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("_add_range", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.AlphaMap._add_range", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -15923,7 +17349,7 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_10_add_range(struct __pyx_obj_6datri
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_add_range", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_6datrie_8AlphaMap__add_range(__pyx_v_self, __pyx_v_begin, __pyx_v_end, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 967; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __pyx_f_6datrie_8AlphaMap__add_range(__pyx_v_self, __pyx_v_begin, __pyx_v_end, 1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 984; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -15940,8 +17366,8 @@ static PyObject *__pyx_pf_6datrie_8AlphaMap_10_add_range(struct __pyx_obj_6datri
   return __pyx_r;
 }
 
-/* "datrie.pyx":974
- *             raise MemoryError()
+/* "datrie.pyx":992
+ * 
  * 
  * cdef cdatrie.AlphaChar* new_alpha_char_from_unicode(unicode txt):             # <<<<<<<<<<<<<<
  *     """
@@ -15969,7 +17395,7 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("new_alpha_char_from_unicode", 0);
 
-  /* "datrie.pyx":981
+  /* "datrie.pyx":999
  *     The caller should free the result of this function.
  *     """
  *     cdef int txt_len = len(txt)             # <<<<<<<<<<<<<<
@@ -15978,12 +17404,12 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
  */
   if (unlikely(__pyx_v_txt == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "object of type 'NoneType' has no len()");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 999; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
-  __pyx_t_1 = __Pyx_PyUnicode_GET_LENGTH(__pyx_v_txt); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 981; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyUnicode_GET_LENGTH(__pyx_v_txt); if (unlikely(__pyx_t_1 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 999; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_v_txt_len = __pyx_t_1;
 
-  /* "datrie.pyx":982
+  /* "datrie.pyx":1000
  *     """
  *     cdef int txt_len = len(txt)
  *     cdef int size = (txt_len + 1) * sizeof(cdatrie.AlphaChar)             # <<<<<<<<<<<<<<
@@ -15992,7 +17418,7 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
  */
   __pyx_v_size = ((__pyx_v_txt_len + 1) * (sizeof(AlphaChar)));
 
-  /* "datrie.pyx":985
+  /* "datrie.pyx":1003
  * 
  *     # allocate buffer
  *     cdef cdatrie.AlphaChar* data = <cdatrie.AlphaChar*> malloc(size)             # <<<<<<<<<<<<<<
@@ -16001,7 +17427,7 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
  */
   __pyx_v_data = ((AlphaChar *)malloc(__pyx_v_size));
 
-  /* "datrie.pyx":986
+  /* "datrie.pyx":1004
  *     # allocate buffer
  *     cdef cdatrie.AlphaChar* data = <cdatrie.AlphaChar*> malloc(size)
  *     if data is NULL:             # <<<<<<<<<<<<<<
@@ -16011,17 +17437,17 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
   __pyx_t_2 = ((__pyx_v_data == NULL) != 0);
   if (__pyx_t_2) {
 
-    /* "datrie.pyx":987
+    /* "datrie.pyx":1005
  *     cdef cdatrie.AlphaChar* data = <cdatrie.AlphaChar*> malloc(size)
  *     if data is NULL:
  *         raise MemoryError()             # <<<<<<<<<<<<<<
  * 
  *     # Copy text contents to buffer.
  */
-    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 987; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyErr_NoMemory(); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1005; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
 
-  /* "datrie.pyx":999
+  /* "datrie.pyx":1017
  *     # but the following is much (say 10x) faster and this
  *     # function is really in a hot spot.
  *     cdef int i = 0             # <<<<<<<<<<<<<<
@@ -16030,7 +17456,7 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
  */
   __pyx_v_i = 0;
 
-  /* "datrie.pyx":1000
+  /* "datrie.pyx":1018
  *     # function is really in a hot spot.
  *     cdef int i = 0
  *     for char in txt:             # <<<<<<<<<<<<<<
@@ -16039,16 +17465,16 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
  */
   if (unlikely(__pyx_v_txt == Py_None)) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' is not iterable");
-    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1018; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_INCREF(__pyx_v_txt);
   __pyx_t_3 = __pyx_v_txt;
-  __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1000; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_init_unicode_iteration(__pyx_t_3, (&__pyx_t_4), (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(__pyx_t_7 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1018; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_4; __pyx_t_8++) {
     __pyx_t_1 = __pyx_t_8;
     __pyx_v_char = __Pyx_PyUnicode_READ(__pyx_t_6, __pyx_t_5, __pyx_t_1);
 
-    /* "datrie.pyx":1001
+    /* "datrie.pyx":1019
  *     cdef int i = 0
  *     for char in txt:
  *         data[i] = <cdatrie.AlphaChar> char             # <<<<<<<<<<<<<<
@@ -16057,7 +17483,7 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
  */
     (__pyx_v_data[__pyx_v_i]) = ((AlphaChar)__pyx_v_char);
 
-    /* "datrie.pyx":1002
+    /* "datrie.pyx":1020
  *     for char in txt:
  *         data[i] = <cdatrie.AlphaChar> char
  *         i+=1             # <<<<<<<<<<<<<<
@@ -16068,7 +17494,7 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "datrie.pyx":1005
+  /* "datrie.pyx":1023
  * 
  *     # Buffer must be null-terminated (last 4 bytes must be zero).
  *     data[txt_len] = 0             # <<<<<<<<<<<<<<
@@ -16077,18 +17503,18 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
  */
   (__pyx_v_data[__pyx_v_txt_len]) = 0;
 
-  /* "datrie.pyx":1006
+  /* "datrie.pyx":1024
  *     # Buffer must be null-terminated (last 4 bytes must be zero).
  *     data[txt_len] = 0
  *     return data             # <<<<<<<<<<<<<<
  * 
- * cdef unicode unicode_from_alpha_char(cdatrie.AlphaChar* key, int len=0):
+ * 
  */
   __pyx_r = __pyx_v_data;
   goto __pyx_L0;
 
-  /* "datrie.pyx":974
- *             raise MemoryError()
+  /* "datrie.pyx":992
+ * 
  * 
  * cdef cdatrie.AlphaChar* new_alpha_char_from_unicode(unicode txt):             # <<<<<<<<<<<<<<
  *     """
@@ -16105,8 +17531,8 @@ static AlphaChar *__pyx_f_6datrie_new_alpha_char_from_unicode(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "datrie.pyx":1008
- *     return data
+/* "datrie.pyx":1027
+ * 
  * 
  * cdef unicode unicode_from_alpha_char(cdatrie.AlphaChar* key, int len=0):             # <<<<<<<<<<<<<<
  *     """
@@ -16131,7 +17557,7 @@ static PyObject *__pyx_f_6datrie_unicode_from_alpha_char(AlphaChar *__pyx_v_key,
     }
   }
 
-  /* "datrie.pyx":1012
+  /* "datrie.pyx":1031
  *     Converts libdatrie's AlphaChar* to Python unicode.
  *     """
  *     cdef int length = len             # <<<<<<<<<<<<<<
@@ -16140,7 +17566,7 @@ static PyObject *__pyx_f_6datrie_unicode_from_alpha_char(AlphaChar *__pyx_v_key,
  */
   __pyx_v_length = __pyx_v_len;
 
-  /* "datrie.pyx":1013
+  /* "datrie.pyx":1032
  *     """
  *     cdef int length = len
  *     if length == 0:             # <<<<<<<<<<<<<<
@@ -16150,7 +17576,7 @@ static PyObject *__pyx_f_6datrie_unicode_from_alpha_char(AlphaChar *__pyx_v_key,
   __pyx_t_1 = ((__pyx_v_length == 0) != 0);
   if (__pyx_t_1) {
 
-    /* "datrie.pyx":1014
+    /* "datrie.pyx":1033
  *     cdef int length = len
  *     if length == 0:
  *         length = cdatrie.alpha_char_strlen(key)*sizeof(cdatrie.AlphaChar)             # <<<<<<<<<<<<<<
@@ -16162,7 +17588,7 @@ static PyObject *__pyx_f_6datrie_unicode_from_alpha_char(AlphaChar *__pyx_v_key,
   }
   __pyx_L3:;
 
-  /* "datrie.pyx":1015
+  /* "datrie.pyx":1034
  *     if length == 0:
  *         length = cdatrie.alpha_char_strlen(key)*sizeof(cdatrie.AlphaChar)
  *     cdef char* c_str = <char*> key             # <<<<<<<<<<<<<<
@@ -16171,7 +17597,7 @@ static PyObject *__pyx_f_6datrie_unicode_from_alpha_char(AlphaChar *__pyx_v_key,
  */
   __pyx_v_c_str = ((char *)__pyx_v_key);
 
-  /* "datrie.pyx":1016
+  /* "datrie.pyx":1035
  *         length = cdatrie.alpha_char_strlen(key)*sizeof(cdatrie.AlphaChar)
  *     cdef char* c_str = <char*> key
  *     return c_str[:length].decode('utf_32_le')             # <<<<<<<<<<<<<<
@@ -16179,15 +17605,15 @@ static PyObject *__pyx_f_6datrie_unicode_from_alpha_char(AlphaChar *__pyx_v_key,
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_decode_c_string(__pyx_v_c_str, 0, __pyx_v_length, __pyx_k_utf_32_le, NULL, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1016; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_decode_c_string(__pyx_v_c_str, 0, __pyx_v_length, __pyx_k_utf_32_le, NULL, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1035; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  if (!(likely(PyUnicode_CheckExact(__pyx_t_2))||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_2)->tp_name), 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1016; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (!(likely(PyUnicode_CheckExact(__pyx_t_2))||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "unicode", Py_TYPE(__pyx_t_2)->tp_name), 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1035; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":1008
- *     return data
+  /* "datrie.pyx":1027
+ * 
  * 
  * cdef unicode unicode_from_alpha_char(cdatrie.AlphaChar* key, int len=0):             # <<<<<<<<<<<<<<
  *     """
@@ -16206,7 +17632,7 @@ static PyObject *__pyx_f_6datrie_unicode_from_alpha_char(AlphaChar *__pyx_v_key,
 }
 static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "datrie.pyx":1019
+/* "datrie.pyx":1038
  * 
  * 
  * def to_ranges(lst):             # <<<<<<<<<<<<<<
@@ -16229,7 +17655,7 @@ static PyObject *__pyx_pw_6datrie_1to_ranges(PyObject *__pyx_self, PyObject *__p
   return __pyx_r;
 }
 
-/* "datrie.pyx":1027
+/* "datrie.pyx":1046
  *     [(1, 3), (5, 6)]
  *     """
  *     for a, b in itertools.groupby(enumerate(lst), lambda t: t[1] - t[0]):             # <<<<<<<<<<<<<<
@@ -16262,11 +17688,11 @@ static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("lambda1", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_t, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_t, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_t, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_t, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyNumber_Subtract(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = PyNumber_Subtract(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -16287,7 +17713,7 @@ static PyObject *__pyx_lambda_funcdef_lambda1(CYTHON_UNUSED PyObject *__pyx_self
   return __pyx_r;
 }
 
-/* "datrie.pyx":1019
+/* "datrie.pyx":1038
  * 
  * 
  * def to_ranges(lst):             # <<<<<<<<<<<<<<
@@ -16313,7 +17739,7 @@ static PyObject *__pyx_pf_6datrie_to_ranges(CYTHON_UNUSED PyObject *__pyx_self, 
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_lst);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_lst);
   {
-    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_2generator5, (PyObject *) __pyx_cur_scope, __pyx_n_s_to_ranges, __pyx_n_s_to_ranges); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1019; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_2generator5, (PyObject *) __pyx_cur_scope, __pyx_n_s_to_ranges, __pyx_n_s_to_ranges); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -16355,29 +17781,29 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1019; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":1027
+  /* "datrie.pyx":1046
  *     [(1, 3), (5, 6)]
  *     """
  *     for a, b in itertools.groupby(enumerate(lst), lambda t: t[1] - t[0]):             # <<<<<<<<<<<<<<
  *         b = list(b)
  *         yield b[0][1], b[-1][1]
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_itertools); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_itertools); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_groupby); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_groupby); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_lst);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_cur_scope->__pyx_v_lst);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_lst);
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_enumerate, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_enumerate, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6datrie_9to_ranges_lambda1, 0, __pyx_n_s_to_ranges_locals_lambda, NULL, __pyx_n_s_datrie, __pyx_d, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_CyFunction_NewEx(&__pyx_mdef_6datrie_9to_ranges_lambda1, 0, __pyx_n_s_to_ranges_locals_lambda, NULL, __pyx_n_s_datrie, __pyx_d, NULL); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -16391,7 +17817,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
       __pyx_t_6 = 1;
     }
   }
-  __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
   if (__pyx_t_5) {
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __Pyx_GIVEREF(__pyx_t_5); __pyx_t_5 = NULL;
@@ -16402,7 +17828,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
   __Pyx_GIVEREF(__pyx_t_2);
   __pyx_t_4 = 0;
   __pyx_t_2 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -16410,9 +17836,9 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
     __pyx_t_3 = __pyx_t_1; __Pyx_INCREF(__pyx_t_3); __pyx_t_6 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_8 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -16420,16 +17846,16 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
       if (likely(PyList_CheckExact(__pyx_t_3))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       }
     } else {
@@ -16438,7 +17864,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         }
         break;
       }
@@ -16454,7 +17880,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       #if CYTHON_COMPILING_IN_CPYTHON
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -16467,15 +17893,15 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
       __Pyx_INCREF(__pyx_t_7);
       __Pyx_INCREF(__pyx_t_2);
       #else
-      __pyx_t_7 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_7 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_2);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -16483,7 +17909,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
       __Pyx_GOTREF(__pyx_t_7);
       index = 1; __pyx_t_2 = __pyx_t_9(__pyx_t_4); if (unlikely(!__pyx_t_2)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_2);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_4), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       goto __pyx_L7_unpacking_done;
@@ -16491,7 +17917,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_a);
@@ -16503,38 +17929,38 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
     __Pyx_GIVEREF(__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "datrie.pyx":1028
+    /* "datrie.pyx":1047
  *     """
  *     for a, b in itertools.groupby(enumerate(lst), lambda t: t[1] - t[0]):
  *         b = list(b)             # <<<<<<<<<<<<<<
  *         yield b[0][1], b[-1][1]
  * 
  */
-    __pyx_t_1 = PySequence_List(__pyx_cur_scope->__pyx_v_b); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1028; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = PySequence_List(__pyx_cur_scope->__pyx_v_b); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1047; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GOTREF(__pyx_cur_scope->__pyx_v_b);
     __Pyx_DECREF_SET(__pyx_cur_scope->__pyx_v_b, __pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "datrie.pyx":1029
+    /* "datrie.pyx":1048
  *     for a, b in itertools.groupby(enumerate(lst), lambda t: t[1] - t[0]):
  *         b = list(b)
  *         yield b[0][1], b[-1][1]             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __pyx_t_1 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_b, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1029; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_1 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_b, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1048; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1029; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_1, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_2 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1048; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_b, -1, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1029; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_1 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_b, -1, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(__pyx_t_1 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1048; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = __Pyx_GetItemInt(__pyx_t_1, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_7 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1029; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
+    __pyx_t_7 = __Pyx_GetItemInt(__pyx_t_1, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(__pyx_t_7 == NULL)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1048; __pyx_clineno = __LINE__; goto __pyx_L1_error;};
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1029; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1048; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_2);
@@ -16559,9 +17985,9 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
     __Pyx_XGOTREF(__pyx_t_3);
     __pyx_t_6 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_8 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1029; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1048; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "datrie.pyx":1027
+    /* "datrie.pyx":1046
  *     [(1, 3), (5, 6)]
  *     """
  *     for a, b in itertools.groupby(enumerate(lst), lambda t: t[1] - t[0]):             # <<<<<<<<<<<<<<
@@ -16571,7 +17997,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "datrie.pyx":1019
+  /* "datrie.pyx":1038
  * 
  * 
  * def to_ranges(lst):             # <<<<<<<<<<<<<<
@@ -16599,7 +18025,7 @@ static PyObject *__pyx_gb_6datrie_2generator5(__pyx_GeneratorObject *__pyx_gener
 }
 static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "datrie.pyx":1032
+/* "datrie.pyx":1051
  * 
  * 
  * def alphabet_to_ranges(alphabet):             # <<<<<<<<<<<<<<
@@ -16639,7 +18065,7 @@ static PyObject *__pyx_pf_6datrie_3alphabet_to_ranges(CYTHON_UNUSED PyObject *__
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_alphabet);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_alphabet);
   {
-    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_5generator6, (PyObject *) __pyx_cur_scope, __pyx_n_s_alphabet_to_ranges, __pyx_n_s_alphabet_to_ranges); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1032; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_GeneratorObject *gen = __Pyx_Generator_New((__pyx_generator_body_t) __pyx_gb_6datrie_5generator6, (PyObject *) __pyx_cur_scope, __pyx_n_s_alphabet_to_ranges, __pyx_n_s_alphabet_to_ranges); if (unlikely(!gen)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1051; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -16681,20 +18107,20 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1032; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1051; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":1033
+  /* "datrie.pyx":1052
  * 
  * def alphabet_to_ranges(alphabet):
  *     for begin, end in to_ranges(sorted(map(ord, iter(alphabet)))):             # <<<<<<<<<<<<<<
  *         yield begin, end
  * 
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_to_ranges); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_to_ranges); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_alphabet); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_alphabet); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_INCREF(__pyx_builtin_ord);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_builtin_ord);
@@ -16702,15 +18128,15 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
   PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_4);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_map, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PySequence_List(__pyx_t_4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = PySequence_List(__pyx_t_4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_3 = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
-  __pyx_t_6 = PyList_Sort(__pyx_t_3); if (unlikely(__pyx_t_6 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = PyList_Sort(__pyx_t_3); if (unlikely(__pyx_t_6 == -1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_t_5 = NULL;
   if (CYTHON_COMPILING_IN_CPYTHON && unlikely(PyMethod_Check(__pyx_t_2))) {
     __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_2);
@@ -16722,17 +18148,17 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else {
-    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5); __Pyx_GIVEREF(__pyx_t_5); __pyx_t_5 = NULL;
     PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
@@ -16741,9 +18167,9 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_7 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_7 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_7 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_8 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -16751,16 +18177,16 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       } else {
         if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_COMPILING_IN_CPYTHON
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         #endif
       }
     } else {
@@ -16769,7 +18195,7 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(exc_type == PyExc_StopIteration || PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+          else {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
         }
         break;
       }
@@ -16785,7 +18211,7 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+        {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       }
       #if CYTHON_COMPILING_IN_CPYTHON
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -16798,15 +18224,15 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
       __Pyx_INCREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_t_3);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_3);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_5)->tp_iternext;
@@ -16814,7 +18240,7 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
       __Pyx_GOTREF(__pyx_t_4);
       index = 1; __pyx_t_3 = __pyx_t_9(__pyx_t_5); if (unlikely(!__pyx_t_3)) goto __pyx_L6_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_3);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_5), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_5), 2) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       goto __pyx_L7_unpacking_done;
@@ -16822,7 +18248,7 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+      {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
       __pyx_L7_unpacking_done:;
     }
     __Pyx_XGOTREF(__pyx_cur_scope->__pyx_v_begin);
@@ -16834,14 +18260,14 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
     __Pyx_GIVEREF(__pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "datrie.pyx":1034
+    /* "datrie.pyx":1053
  * def alphabet_to_ranges(alphabet):
  *     for begin, end in to_ranges(sorted(map(ord, iter(alphabet)))):
  *         yield begin, end             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1034; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1053; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_begin);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_cur_scope->__pyx_v_begin);
@@ -16866,9 +18292,9 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
     __Pyx_XGOTREF(__pyx_t_2);
     __pyx_t_7 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_8 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1034; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    if (unlikely(!__pyx_sent_value)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1053; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-    /* "datrie.pyx":1033
+    /* "datrie.pyx":1052
  * 
  * def alphabet_to_ranges(alphabet):
  *     for begin, end in to_ranges(sorted(map(ord, iter(alphabet)))):             # <<<<<<<<<<<<<<
@@ -16878,7 +18304,7 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":1032
+  /* "datrie.pyx":1051
  * 
  * 
  * def alphabet_to_ranges(alphabet):             # <<<<<<<<<<<<<<
@@ -16904,7 +18330,7 @@ static PyObject *__pyx_gb_6datrie_5generator6(__pyx_GeneratorObject *__pyx_gener
   return NULL;
 }
 
-/* "datrie.pyx":1037
+/* "datrie.pyx":1056
  * 
  * 
  * def new(alphabet=None, ranges=None, AlphaMap alpha_map=None):             # <<<<<<<<<<<<<<
@@ -16960,7 +18386,7 @@ static PyObject *__pyx_pw_6datrie_7new(PyObject *__pyx_self, PyObject *__pyx_arg
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "new") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1037; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "new") < 0)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1056; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -16977,13 +18403,13 @@ static PyObject *__pyx_pw_6datrie_7new(PyObject *__pyx_self, PyObject *__pyx_arg
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("new", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1037; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
+  __Pyx_RaiseArgtupleInvalid("new", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1056; __pyx_clineno = __LINE__; goto __pyx_L3_error;}
   __pyx_L3_error:;
   __Pyx_AddTraceback("datrie.new", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_alpha_map), __pyx_ptype_6datrie_AlphaMap, 1, "alpha_map", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1037; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_alpha_map), __pyx_ptype_6datrie_AlphaMap, 1, "alpha_map", 0))) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1056; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_r = __pyx_pf_6datrie_6new(__pyx_self, __pyx_v_alphabet, __pyx_v_ranges, __pyx_v_alpha_map);
 
   /* function exit code */
@@ -17008,20 +18434,20 @@ static PyObject *__pyx_pf_6datrie_6new(CYTHON_UNUSED PyObject *__pyx_self, PyObj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("new", 0);
 
-  /* "datrie.pyx":1038
+  /* "datrie.pyx":1057
  * 
  * def new(alphabet=None, ranges=None, AlphaMap alpha_map=None):
  *     warnings.warn('datrie.new is deprecated; please use datrie.Trie.',             # <<<<<<<<<<<<<<
  *                   DeprecationWarning)
  *     return Trie(alphabet, ranges, alpha_map)
  */
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_warnings); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_warnings); if (unlikely(!__pyx_t_2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1057; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_warn); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_warn); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1057; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "datrie.pyx":1039
+  /* "datrie.pyx":1058
  * def new(alphabet=None, ranges=None, AlphaMap alpha_map=None):
  *     warnings.warn('datrie.new is deprecated; please use datrie.Trie.',
  *                   DeprecationWarning)             # <<<<<<<<<<<<<<
@@ -17039,7 +18465,7 @@ static PyObject *__pyx_pf_6datrie_6new(CYTHON_UNUSED PyObject *__pyx_self, PyObj
       __pyx_t_4 = 1;
     }
   }
-  __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_5 = PyTuple_New(2+__pyx_t_4); if (unlikely(!__pyx_t_5)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1057; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_5);
   if (__pyx_t_2) {
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2); __Pyx_GIVEREF(__pyx_t_2); __pyx_t_2 = NULL;
@@ -17050,19 +18476,19 @@ static PyObject *__pyx_pf_6datrie_6new(CYTHON_UNUSED PyObject *__pyx_self, PyObj
   __Pyx_INCREF(__pyx_builtin_DeprecationWarning);
   PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_4, __pyx_builtin_DeprecationWarning);
   __Pyx_GIVEREF(__pyx_builtin_DeprecationWarning);
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1057; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "datrie.pyx":1040
+  /* "datrie.pyx":1059
  *     warnings.warn('datrie.new is deprecated; please use datrie.Trie.',
  *                   DeprecationWarning)
  *     return Trie(alphabet, ranges, alpha_map)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1040; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1059; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_alphabet);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_alphabet);
@@ -17073,14 +18499,14 @@ static PyObject *__pyx_pf_6datrie_6new(CYTHON_UNUSED PyObject *__pyx_self, PyObj
   __Pyx_INCREF(((PyObject *)__pyx_v_alpha_map));
   PyTuple_SET_ITEM(__pyx_t_1, 2, ((PyObject *)__pyx_v_alpha_map));
   __Pyx_GIVEREF(((PyObject *)__pyx_v_alpha_map));
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1040; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)((PyObject*)__pyx_ptype_6datrie_Trie)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1059; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "datrie.pyx":1037
+  /* "datrie.pyx":1056
  * 
  * 
  * def new(alphabet=None, ranges=None, AlphaMap alpha_map=None):             # <<<<<<<<<<<<<<
@@ -17143,10 +18569,10 @@ static PyObject *__pyx_sq_item_6datrie_BaseTrie(PyObject *o, Py_ssize_t i) {
 
 static int __pyx_mp_ass_subscript_6datrie_BaseTrie(PyObject *o, PyObject *i, PyObject *v) {
   if (v) {
-    return __pyx_pw_6datrie_8BaseTrie_15__setitem__(o, i, v);
+    return __pyx_pw_6datrie_8BaseTrie_19__setitem__(o, i, v);
   }
   else {
-    return __pyx_pw_6datrie_8BaseTrie_21__delitem__(o, i);
+    return __pyx_pw_6datrie_8BaseTrie_25__delitem__(o, i);
   }
 }
 
@@ -17156,41 +18582,43 @@ static PyMethodDef __pyx_methods_6datrie_BaseTrie[] = {
   {"write", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_9write, METH_O, __pyx_doc_6datrie_8BaseTrie_8write},
   {"load", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_11load, METH_O, __pyx_doc_6datrie_8BaseTrie_10load},
   {"read", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_13read, METH_O, __pyx_doc_6datrie_8BaseTrie_12read},
-  {"_delitem", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_23_delitem, METH_O, __pyx_doc_6datrie_8BaseTrie_22_delitem},
-  {"setdefault", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_27setdefault, METH_VARARGS|METH_KEYWORDS, 0},
-  {"iter_prefixes", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_29iter_prefixes, METH_O, __pyx_doc_6datrie_8BaseTrie_28iter_prefixes},
-  {"iter_prefix_items", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_32iter_prefix_items, METH_O, __pyx_doc_6datrie_8BaseTrie_31iter_prefix_items},
-  {"iter_prefix_values", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_35iter_prefix_values, METH_O, __pyx_doc_6datrie_8BaseTrie_34iter_prefix_values},
-  {"prefixes", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_38prefixes, METH_O, __pyx_doc_6datrie_8BaseTrie_37prefixes},
-  {"suffixes", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_40suffixes, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_39suffixes},
-  {"prefix_items", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_42prefix_items, METH_O, __pyx_doc_6datrie_8BaseTrie_41prefix_items},
-  {"prefix_values", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_44prefix_values, METH_O, __pyx_doc_6datrie_8BaseTrie_43prefix_values},
-  {"longest_prefix", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_46longest_prefix, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_45longest_prefix},
-  {"longest_prefix_item", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_48longest_prefix_item, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_47longest_prefix_item},
-  {"longest_prefix_value", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_50longest_prefix_value, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_49longest_prefix_value},
-  {"has_keys_with_prefix", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_52has_keys_with_prefix, METH_O, __pyx_doc_6datrie_8BaseTrie_51has_keys_with_prefix},
-  {"items", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_54items, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_53items},
-  {"keys", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_56keys, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_55keys},
-  {"values", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_58values, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_57values},
+  {"__reduce__", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_15__reduce__, METH_NOARGS, 0},
+  {"__setstate__", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_17__setstate__, METH_O, 0},
+  {"_delitem", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_27_delitem, METH_O, __pyx_doc_6datrie_8BaseTrie_26_delitem},
+  {"setdefault", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_31setdefault, METH_VARARGS|METH_KEYWORDS, 0},
+  {"iter_prefixes", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_33iter_prefixes, METH_O, __pyx_doc_6datrie_8BaseTrie_32iter_prefixes},
+  {"iter_prefix_items", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_36iter_prefix_items, METH_O, __pyx_doc_6datrie_8BaseTrie_35iter_prefix_items},
+  {"iter_prefix_values", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_39iter_prefix_values, METH_O, __pyx_doc_6datrie_8BaseTrie_38iter_prefix_values},
+  {"prefixes", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_42prefixes, METH_O, __pyx_doc_6datrie_8BaseTrie_41prefixes},
+  {"suffixes", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_44suffixes, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_43suffixes},
+  {"prefix_items", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_46prefix_items, METH_O, __pyx_doc_6datrie_8BaseTrie_45prefix_items},
+  {"prefix_values", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_48prefix_values, METH_O, __pyx_doc_6datrie_8BaseTrie_47prefix_values},
+  {"longest_prefix", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_50longest_prefix, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_49longest_prefix},
+  {"longest_prefix_item", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_52longest_prefix_item, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_51longest_prefix_item},
+  {"longest_prefix_value", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_54longest_prefix_value, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_53longest_prefix_value},
+  {"has_keys_with_prefix", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_56has_keys_with_prefix, METH_O, __pyx_doc_6datrie_8BaseTrie_55has_keys_with_prefix},
+  {"items", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_58items, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_57items},
+  {"keys", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_60keys, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_59keys},
+  {"values", (PyCFunction)__pyx_pw_6datrie_8BaseTrie_62values, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_8BaseTrie_61values},
   {0, 0, 0, 0}
 };
 
 static PySequenceMethods __pyx_tp_as_sequence_BaseTrie = {
-  __pyx_pw_6datrie_8BaseTrie_25__len__, /*sq_length*/
+  __pyx_pw_6datrie_8BaseTrie_29__len__, /*sq_length*/
   0, /*sq_concat*/
   0, /*sq_repeat*/
   __pyx_sq_item_6datrie_BaseTrie, /*sq_item*/
   0, /*sq_slice*/
   0, /*sq_ass_item*/
   0, /*sq_ass_slice*/
-  __pyx_pw_6datrie_8BaseTrie_19__contains__, /*sq_contains*/
+  __pyx_pw_6datrie_8BaseTrie_23__contains__, /*sq_contains*/
   0, /*sq_inplace_concat*/
   0, /*sq_inplace_repeat*/
 };
 
 static PyMappingMethods __pyx_tp_as_mapping_BaseTrie = {
-  __pyx_pw_6datrie_8BaseTrie_25__len__, /*mp_length*/
-  __pyx_pw_6datrie_8BaseTrie_17__getitem__, /*mp_subscript*/
+  __pyx_pw_6datrie_8BaseTrie_29__len__, /*mp_length*/
+  __pyx_pw_6datrie_8BaseTrie_21__getitem__, /*mp_subscript*/
   __pyx_mp_ass_subscript_6datrie_BaseTrie, /*mp_ass_subscript*/
 };
 
@@ -17307,31 +18735,33 @@ static PyObject *__pyx_sq_item_6datrie_Trie(PyObject *o, Py_ssize_t i) {
 
 static int __pyx_mp_ass_subscript_6datrie_Trie(PyObject *o, PyObject *i, PyObject *v) {
   if (v) {
-    return __pyx_pw_6datrie_4Trie_5__setitem__(o, i, v);
+    return __pyx_pw_6datrie_4Trie_9__setitem__(o, i, v);
   }
   else {
-    return __pyx_pw_6datrie_4Trie_9__delitem__(o, i);
+    return __pyx_pw_6datrie_4Trie_13__delitem__(o, i);
   }
 }
 
 static PyMethodDef __pyx_methods_6datrie_Trie[] = {
-  {"setdefault", (PyCFunction)__pyx_pw_6datrie_4Trie_7setdefault, METH_VARARGS|METH_KEYWORDS, 0},
-  {"write", (PyCFunction)__pyx_pw_6datrie_4Trie_11write, METH_O, __pyx_doc_6datrie_4Trie_10write},
-  {"read", (PyCFunction)__pyx_pw_6datrie_4Trie_13read, METH_O, __pyx_doc_6datrie_4Trie_12read},
-  {"items", (PyCFunction)__pyx_pw_6datrie_4Trie_15items, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_14items},
-  {"values", (PyCFunction)__pyx_pw_6datrie_4Trie_17values, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_16values},
-  {"longest_prefix_item", (PyCFunction)__pyx_pw_6datrie_4Trie_19longest_prefix_item, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_18longest_prefix_item},
-  {"longest_prefix_value", (PyCFunction)__pyx_pw_6datrie_4Trie_21longest_prefix_value, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_20longest_prefix_value},
-  {"prefix_items", (PyCFunction)__pyx_pw_6datrie_4Trie_23prefix_items, METH_O, __pyx_doc_6datrie_4Trie_22prefix_items},
-  {"iter_prefix_items", (PyCFunction)__pyx_pw_6datrie_4Trie_25iter_prefix_items, METH_O, 0},
-  {"prefix_values", (PyCFunction)__pyx_pw_6datrie_4Trie_28prefix_values, METH_O, __pyx_doc_6datrie_4Trie_27prefix_values},
-  {"iter_prefix_values", (PyCFunction)__pyx_pw_6datrie_4Trie_30iter_prefix_values, METH_O, 0},
+  {"__reduce__", (PyCFunction)__pyx_pw_6datrie_4Trie_3__reduce__, METH_NOARGS, 0},
+  {"__setstate__", (PyCFunction)__pyx_pw_6datrie_4Trie_5__setstate__, METH_O, 0},
+  {"setdefault", (PyCFunction)__pyx_pw_6datrie_4Trie_11setdefault, METH_VARARGS|METH_KEYWORDS, 0},
+  {"write", (PyCFunction)__pyx_pw_6datrie_4Trie_15write, METH_O, __pyx_doc_6datrie_4Trie_14write},
+  {"read", (PyCFunction)__pyx_pw_6datrie_4Trie_17read, METH_O, __pyx_doc_6datrie_4Trie_16read},
+  {"items", (PyCFunction)__pyx_pw_6datrie_4Trie_19items, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_18items},
+  {"values", (PyCFunction)__pyx_pw_6datrie_4Trie_21values, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_20values},
+  {"longest_prefix_item", (PyCFunction)__pyx_pw_6datrie_4Trie_23longest_prefix_item, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_22longest_prefix_item},
+  {"longest_prefix_value", (PyCFunction)__pyx_pw_6datrie_4Trie_25longest_prefix_value, METH_VARARGS|METH_KEYWORDS, __pyx_doc_6datrie_4Trie_24longest_prefix_value},
+  {"prefix_items", (PyCFunction)__pyx_pw_6datrie_4Trie_27prefix_items, METH_O, __pyx_doc_6datrie_4Trie_26prefix_items},
+  {"iter_prefix_items", (PyCFunction)__pyx_pw_6datrie_4Trie_29iter_prefix_items, METH_O, 0},
+  {"prefix_values", (PyCFunction)__pyx_pw_6datrie_4Trie_32prefix_values, METH_O, __pyx_doc_6datrie_4Trie_31prefix_values},
+  {"iter_prefix_values", (PyCFunction)__pyx_pw_6datrie_4Trie_34iter_prefix_values, METH_O, 0},
   {0, 0, 0, 0}
 };
 
 static PySequenceMethods __pyx_tp_as_sequence_Trie = {
   #if CYTHON_COMPILING_IN_PYPY
-  __pyx_pw_6datrie_8BaseTrie_25__len__, /*sq_length*/
+  __pyx_pw_6datrie_8BaseTrie_29__len__, /*sq_length*/
   #else
   0, /*sq_length*/
   #endif
@@ -17342,7 +18772,7 @@ static PySequenceMethods __pyx_tp_as_sequence_Trie = {
   0, /*sq_ass_item*/
   0, /*sq_ass_slice*/
   #if CYTHON_COMPILING_IN_PYPY
-  __pyx_pw_6datrie_8BaseTrie_19__contains__, /*sq_contains*/
+  __pyx_pw_6datrie_8BaseTrie_23__contains__, /*sq_contains*/
   #else
   0, /*sq_contains*/
   #endif
@@ -17352,11 +18782,11 @@ static PySequenceMethods __pyx_tp_as_sequence_Trie = {
 
 static PyMappingMethods __pyx_tp_as_mapping_Trie = {
   #if CYTHON_COMPILING_IN_PYPY
-  __pyx_pw_6datrie_8BaseTrie_25__len__, /*mp_length*/
+  __pyx_pw_6datrie_8BaseTrie_29__len__, /*mp_length*/
   #else
   0, /*mp_length*/
   #endif
-  __pyx_pw_6datrie_4Trie_3__getitem__, /*mp_subscript*/
+  __pyx_pw_6datrie_4Trie_7__getitem__, /*mp_subscript*/
   __pyx_mp_ass_subscript_6datrie_Trie, /*mp_ass_subscript*/
 };
 
@@ -18908,13 +20338,14 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s, __pyx_k_J_dev_workspace_pythonxy_xy_27_s, sizeof(__pyx_k_J_dev_workspace_pythonxy_xy_27_s), 0, 0, 1, 0},
   {&__pyx_n_s_KeyError, __pyx_k_KeyError, sizeof(__pyx_k_KeyError), 0, 0, 1, 1},
   {&__pyx_n_s_MemoryError, __pyx_k_MemoryError, sizeof(__pyx_k_MemoryError), 0, 0, 1, 1},
+  {&__pyx_n_s_NamedTemporaryFile, __pyx_k_NamedTemporaryFile, sizeof(__pyx_k_NamedTemporaryFile), 0, 0, 1, 1},
   {&__pyx_kp_s_Please_provide_alphabet_ranges_o, __pyx_k_Please_provide_alphabet_ranges_o, sizeof(__pyx_k_Please_provide_alphabet_ranges_o), 0, 0, 1, 0},
   {&__pyx_n_s_RAISE_KEY_ERROR, __pyx_k_RAISE_KEY_ERROR, sizeof(__pyx_k_RAISE_KEY_ERROR), 0, 0, 1, 1},
   {&__pyx_n_s_RERAISE_KEY_ERROR, __pyx_k_RERAISE_KEY_ERROR, sizeof(__pyx_k_RERAISE_KEY_ERROR), 0, 0, 1, 1},
   {&__pyx_n_s_Trie_iter_prefix_items, __pyx_k_Trie_iter_prefix_items, sizeof(__pyx_k_Trie_iter_prefix_items), 0, 0, 1, 1},
   {&__pyx_n_s_Trie_iter_prefix_values, __pyx_k_Trie_iter_prefix_values, sizeof(__pyx_k_Trie_iter_prefix_values), 0, 0, 1, 1},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
-  {&__pyx_kp_u__7, __pyx_k__7, sizeof(__pyx_k__7), 0, 1, 0, 0},
+  {&__pyx_kp_u__13, __pyx_k__13, sizeof(__pyx_k__13), 0, 1, 0, 0},
   {&__pyx_n_s_a, __pyx_k_a, sizeof(__pyx_k_a), 0, 0, 1, 1},
   {&__pyx_n_s_add_alphabet, __pyx_k_add_alphabet, sizeof(__pyx_k_add_alphabet), 0, 0, 1, 1},
   {&__pyx_n_s_add_range, __pyx_k_add_range, sizeof(__pyx_k_add_range), 0, 0, 1, 1},
@@ -18985,10 +20416,11 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_suffixes, __pyx_k_suffixes, sizeof(__pyx_k_suffixes), 0, 0, 1, 1},
   {&__pyx_n_s_super, __pyx_k_super, sizeof(__pyx_k_super), 0, 0, 1, 1},
   {&__pyx_n_s_sys, __pyx_k_sys, sizeof(__pyx_k_sys), 0, 0, 1, 1},
+  {&__pyx_n_s_tempfile, __pyx_k_tempfile, sizeof(__pyx_k_tempfile), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_throw, __pyx_k_throw, sizeof(__pyx_k_throw), 0, 0, 1, 1},
   {&__pyx_n_s_to_ranges, __pyx_k_to_ranges, sizeof(__pyx_k_to_ranges), 0, 0, 1, 1},
-  {&__pyx_kp_u_to_ranges_line_1019, __pyx_k_to_ranges_line_1019, sizeof(__pyx_k_to_ranges_line_1019), 0, 1, 0, 0},
+  {&__pyx_kp_u_to_ranges_line_1038, __pyx_k_to_ranges_line_1038, sizeof(__pyx_k_to_ranges_line_1038), 0, 1, 0, 0},
   {&__pyx_n_s_to_ranges_locals_lambda, __pyx_k_to_ranges_locals_lambda, sizeof(__pyx_k_to_ranges_locals_lambda), 0, 0, 1, 1},
   {&__pyx_n_s_trie, __pyx_k_trie, sizeof(__pyx_k_trie), 0, 0, 1, 1},
   {&__pyx_n_s_unicode, __pyx_k_unicode, sizeof(__pyx_k_unicode), 0, 0, 1, 1},
@@ -19002,19 +20434,19 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 19; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_Exception = __Pyx_GetBuiltinName(__pyx_n_s_Exception); if (!__pyx_builtin_Exception) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 22; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_object = __Pyx_GetBuiltinName(__pyx_n_s_object); if (!__pyx_builtin_object) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 61; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_IOError = __Pyx_GetBuiltinName(__pyx_n_s_IOError); if (!__pyx_builtin_IOError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 90; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_KeyError = __Pyx_GetBuiltinName(__pyx_n_s_KeyError); if (!__pyx_builtin_KeyError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 142; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_super = __Pyx_GetBuiltinName(__pyx_n_s_super); if (!__pyx_builtin_super) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 585; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_ord = __Pyx_GetBuiltinName(__pyx_n_s_ord); if (!__pyx_builtin_ord) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 965; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1027; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_map = __Pyx_GetBuiltinName(__pyx_n_s_map); if (!__pyx_builtin_map) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1033; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __pyx_builtin_DeprecationWarning = __Pyx_GetBuiltinName(__pyx_n_s_DeprecationWarning); if (!__pyx_builtin_DeprecationWarning) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1039; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 20; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_Exception = __Pyx_GetBuiltinName(__pyx_n_s_Exception); if (!__pyx_builtin_Exception) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 23; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_object = __Pyx_GetBuiltinName(__pyx_n_s_object); if (!__pyx_builtin_object) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 26; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 55; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 62; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_IOError = __Pyx_GetBuiltinName(__pyx_n_s_IOError); if (!__pyx_builtin_IOError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_KeyError = __Pyx_GetBuiltinName(__pyx_n_s_KeyError); if (!__pyx_builtin_KeyError) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 157; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_super = __Pyx_GetBuiltinName(__pyx_n_s_super); if (!__pyx_builtin_super) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 588; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_ord = __Pyx_GetBuiltinName(__pyx_n_s_ord); if (!__pyx_builtin_ord) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 982; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1046; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_map = __Pyx_GetBuiltinName(__pyx_n_s_map); if (!__pyx_builtin_map) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1052; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_builtin_DeprecationWarning = __Pyx_GetBuiltinName(__pyx_n_s_DeprecationWarning); if (!__pyx_builtin_DeprecationWarning) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1058; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -19024,47 +20456,47 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "datrie.pyx":54
+  /* "datrie.pyx":55
  * 
  *         if alphabet is None and ranges is None and alpha_map is None:
  *             raise ValueError("Please provide alphabet, ranges or alpha_map argument.")             # <<<<<<<<<<<<<<
  * 
  *         if alpha_map is None:
  */
-  __pyx_tuple_ = PyTuple_Pack(1, __pyx_kp_s_Please_provide_alphabet_ranges_o); if (unlikely(!__pyx_tuple_)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 54; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple_ = PyTuple_Pack(1, __pyx_kp_s_Please_provide_alphabet_ranges_o); if (unlikely(!__pyx_tuple_)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 55; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "datrie.pyx":78
+  /* "datrie.pyx":79
  *         Saves this trie.
  *         """
  *         with open(path, "wb", 0) as f:             # <<<<<<<<<<<<<<
  *             self.write(f)
  * 
  */
-  __pyx_tuple__2 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 78; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__2 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__2)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 79; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "datrie.pyx":90
+  /* "datrie.pyx":91
  *         cdef stdio.FILE* f_ptr = stdio_ext.fdopen(f.fileno(), "w")
  *         if f_ptr == NULL:
  *             raise IOError("Can't open file descriptor")             # <<<<<<<<<<<<<<
  * 
  *         cdef int res = cdatrie.trie_fwrite(self._c_trie, f_ptr)
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Can_t_open_file_descriptor); if (unlikely(!__pyx_tuple__3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 90; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Can_t_open_file_descriptor); if (unlikely(!__pyx_tuple__3)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 91; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "datrie.pyx":94
+  /* "datrie.pyx":95
  *         cdef int res = cdatrie.trie_fwrite(self._c_trie, f_ptr)
  *         if res == -1:
  *             raise IOError("Can't write to file")             # <<<<<<<<<<<<<<
  * 
  *         stdio.fflush(f_ptr)
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Can_t_write_to_file); if (unlikely(!__pyx_tuple__4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 94; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Can_t_write_to_file); if (unlikely(!__pyx_tuple__4)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 95; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
@@ -19082,63 +20514,179 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "datrie.pyx":898
+  /* "datrie.pyx":122
+ *         with tempfile.NamedTemporaryFile() as f:
+ *             self.write(f)
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             state = f.read()
+ *             return BaseTrie, (None, None, None, False), state
+ */
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_int_0); if (unlikely(!__pyx_tuple__7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 122; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__7);
+  __Pyx_GIVEREF(__pyx_tuple__7);
+
+  /* "datrie.pyx":124
+ *             f.seek(0)
+ *             state = f.read()
+ *             return BaseTrie, (None, None, None, False), state             # <<<<<<<<<<<<<<
+ * 
+ *     def __setstate__(self, bytes state):
+ */
+  __pyx_tuple__8 = PyTuple_Pack(4, Py_None, Py_None, Py_None, Py_False); if (unlikely(!__pyx_tuple__8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 124; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__8);
+  __Pyx_GIVEREF(__pyx_tuple__8);
+
+  /* "datrie.pyx":120
+ * 
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             self.write(f)
+ *             f.seek(0)
+ */
+  __pyx_tuple__9 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__9)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__9);
+  __Pyx_GIVEREF(__pyx_tuple__9);
+  __pyx_tuple__10 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__10)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 120; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__10);
+  __Pyx_GIVEREF(__pyx_tuple__10);
+
+  /* "datrie.pyx":131
+ *             f.write(state)
+ *             f.flush()
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             self._c_trie = _load_from_file(f)
+ * 
+ */
+  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_int_0); if (unlikely(!__pyx_tuple__11)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 131; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__11);
+  __Pyx_GIVEREF(__pyx_tuple__11);
+
+  /* "datrie.pyx":128
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             f.write(state)
+ *             f.flush()
+ */
+  __pyx_tuple__12 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__12)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 128; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__12);
+  __Pyx_GIVEREF(__pyx_tuple__12);
+
+  /* "datrie.pyx":594
+ *             self.write(f)
+ *             pickle.dump(self._values, f)
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             state = f.read()
+ *             return Trie, (None, None, None, False), state
+ */
+  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_int_0); if (unlikely(!__pyx_tuple__19)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 594; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__19);
+  __Pyx_GIVEREF(__pyx_tuple__19);
+
+  /* "datrie.pyx":596
+ *             f.seek(0)
+ *             state = f.read()
+ *             return Trie, (None, None, None, False), state             # <<<<<<<<<<<<<<
+ * 
+ *     def __setstate__(self, bytes state):
+ */
+  __pyx_tuple__20 = PyTuple_Pack(4, Py_None, Py_None, Py_None, Py_False); if (unlikely(!__pyx_tuple__20)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 596; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__20);
+  __Pyx_GIVEREF(__pyx_tuple__20);
+
+  /* "datrie.pyx":591
+ * 
+ *     def __reduce__(self):
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             self.write(f)
+ *             pickle.dump(self._values, f)
+ */
+  __pyx_tuple__21 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__21)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__21);
+  __Pyx_GIVEREF(__pyx_tuple__21);
+  __pyx_tuple__22 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__22)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 591; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__22);
+  __Pyx_GIVEREF(__pyx_tuple__22);
+
+  /* "datrie.pyx":603
+ *             f.write(state)
+ *             f.flush()
+ *             f.seek(0)             # <<<<<<<<<<<<<<
+ *             self._c_trie = _load_from_file(f)
+ *             self._values = pickle.load(f)
+ */
+  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_int_0); if (unlikely(!__pyx_tuple__23)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 603; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__23);
+  __Pyx_GIVEREF(__pyx_tuple__23);
+
+  /* "datrie.pyx":600
+ *     def __setstate__(self, bytes state):
+ *         assert self._c_trie is NULL
+ *         with tempfile.NamedTemporaryFile() as f:             # <<<<<<<<<<<<<<
+ *             f.write(state)
+ *             f.flush()
+ */
+  __pyx_tuple__24 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__24)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 600; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
+
+  /* "datrie.pyx":915
  *     cdef cdatrie.Trie* trie = cdatrie.trie_fread(f_ptr)
  *     if trie == NULL:
  *         raise DatrieError("Can't load trie from stream")             # <<<<<<<<<<<<<<
  * 
  *     cdef int f_pos = stdio.ftell(f_ptr)
  */
-  __pyx_tuple__15 = PyTuple_Pack(1, __pyx_kp_s_Can_t_load_trie_from_stream); if (unlikely(!__pyx_tuple__15)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 898; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__15);
-  __Pyx_GIVEREF(__pyx_tuple__15);
+  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_Can_t_load_trie_from_stream); if (unlikely(!__pyx_tuple__27)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 915; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__27);
+  __Pyx_GIVEREF(__pyx_tuple__27);
 
-  /* "datrie.pyx":969
+  /* "datrie.pyx":986
  *     cpdef _add_range(self, cdatrie.AlphaChar begin, cdatrie.AlphaChar end):
  *         if begin > end:
  *             raise DatrieError('range begin > end')             # <<<<<<<<<<<<<<
  *         code = cdatrie.alpha_map_add_range(self._c_alpha_map, begin, end)
  *         if code != 0:
  */
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_range_begin_end); if (unlikely(!__pyx_tuple__16)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 969; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__16);
-  __Pyx_GIVEREF(__pyx_tuple__16);
+  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_range_begin_end); if (unlikely(!__pyx_tuple__28)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 986; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__28);
+  __Pyx_GIVEREF(__pyx_tuple__28);
 
-  /* "datrie.pyx":1019
+  /* "datrie.pyx":1038
  * 
  * 
  * def to_ranges(lst):             # <<<<<<<<<<<<<<
  *     """
  *     Converts a list of numbers to a list of ranges::
  */
-  __pyx_tuple__17 = PyTuple_Pack(3, __pyx_n_s_lst, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__17)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1019; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__17);
-  __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s, __pyx_n_s_to_ranges, 1019, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1019; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__29 = PyTuple_Pack(3, __pyx_n_s_lst, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__29)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__29);
+  __Pyx_GIVEREF(__pyx_tuple__29);
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s, __pyx_n_s_to_ranges, 1038, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":1032
+  /* "datrie.pyx":1051
  * 
  * 
  * def alphabet_to_ranges(alphabet):             # <<<<<<<<<<<<<<
  *     for begin, end in to_ranges(sorted(map(ord, iter(alphabet)))):
  *         yield begin, end
  */
-  __pyx_tuple__19 = PyTuple_Pack(3, __pyx_n_s_alphabet, __pyx_n_s_begin, __pyx_n_s_end); if (unlikely(!__pyx_tuple__19)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1032; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__19);
-  __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s, __pyx_n_s_alphabet_to_ranges, 1032, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1032; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__31 = PyTuple_Pack(3, __pyx_n_s_alphabet, __pyx_n_s_begin, __pyx_n_s_end); if (unlikely(!__pyx_tuple__31)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1051; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__31);
+  __Pyx_GIVEREF(__pyx_tuple__31);
+  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s, __pyx_n_s_alphabet_to_ranges, 1051, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1051; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
 
-  /* "datrie.pyx":1037
+  /* "datrie.pyx":1056
  * 
  * 
  * def new(alphabet=None, ranges=None, AlphaMap alpha_map=None):             # <<<<<<<<<<<<<<
  *     warnings.warn('datrie.new is deprecated; please use datrie.Trie.',
  *                   DeprecationWarning)
  */
-  __pyx_tuple__21 = PyTuple_Pack(3, __pyx_n_s_alphabet, __pyx_n_s_ranges, __pyx_n_s_alpha_map); if (unlikely(!__pyx_tuple__21)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1037; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  __Pyx_GOTREF(__pyx_tuple__21);
-  __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s, __pyx_n_s_new, 1037, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1037; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_tuple__33 = PyTuple_Pack(3, __pyx_n_s_alphabet, __pyx_n_s_ranges, __pyx_n_s_alpha_map); if (unlikely(!__pyx_tuple__33)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1056; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_tuple__33);
+  __Pyx_GIVEREF(__pyx_tuple__33);
+  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, 0, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_J_dev_workspace_pythonxy_xy_27_s, __pyx_n_s_new, 1056, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1056; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -19258,11 +20806,11 @@ PyMODINIT_FUNC PyInit_datrie(void)
   __pyx_vtable_6datrie_BaseTrie.keys = (PyObject *(*)(struct __pyx_obj_6datrie_BaseTrie *, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_8BaseTrie_keys *__pyx_optional_args))__pyx_f_6datrie_8BaseTrie_keys;
   __pyx_vtable_6datrie_BaseTrie.values = (PyObject *(*)(struct __pyx_obj_6datrie_BaseTrie *, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_8BaseTrie_values *__pyx_optional_args))__pyx_f_6datrie_8BaseTrie_values;
   __pyx_vtable_6datrie_BaseTrie._index_to_value = (PyObject *(*)(struct __pyx_obj_6datrie_BaseTrie *, TrieData))__pyx_f_6datrie_8BaseTrie__index_to_value;
-  if (PyType_Ready(&__pyx_type_6datrie_BaseTrie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie_BaseTrie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie_BaseTrie.tp_print = 0;
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6datrie_BaseTrie, "__init__"); if (unlikely(!wrapper)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6datrie_BaseTrie, "__init__"); if (unlikely(!wrapper)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6datrie_8BaseTrie___init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6datrie_8BaseTrie___init__.doc = __pyx_doc_6datrie_8BaseTrie___init__;
@@ -19270,8 +20818,8 @@ PyMODINIT_FUNC PyInit_datrie(void)
     }
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_type_6datrie_BaseTrie.tp_dict, __pyx_vtabptr_6datrie_BaseTrie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "BaseTrie", (PyObject *)&__pyx_type_6datrie_BaseTrie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 30; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie_BaseTrie.tp_dict, __pyx_vtabptr_6datrie_BaseTrie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "BaseTrie", (PyObject *)&__pyx_type_6datrie_BaseTrie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 31; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie_BaseTrie = &__pyx_type_6datrie_BaseTrie;
   __pyx_vtabptr_6datrie_Trie = &__pyx_vtable_6datrie_Trie;
   __pyx_vtable_6datrie_Trie.__pyx_base = *__pyx_vtabptr_6datrie_BaseTrie;
@@ -19279,11 +20827,11 @@ PyMODINIT_FUNC PyInit_datrie(void)
   __pyx_vtable_6datrie_Trie.__pyx_base.values = (PyObject *(*)(struct __pyx_obj_6datrie_BaseTrie *, int __pyx_skip_dispatch, struct __pyx_opt_args_6datrie_8BaseTrie_values *__pyx_optional_args))__pyx_f_6datrie_4Trie_values;
   __pyx_vtable_6datrie_Trie.__pyx_base._index_to_value = (PyObject *(*)(struct __pyx_obj_6datrie_BaseTrie *, TrieData))__pyx_f_6datrie_4Trie__index_to_value;
   __pyx_type_6datrie_Trie.tp_base = __pyx_ptype_6datrie_BaseTrie;
-  if (PyType_Ready(&__pyx_type_6datrie_Trie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 567; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie_Trie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 571; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie_Trie.tp_print = 0;
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6datrie_Trie, "__init__"); if (unlikely(!wrapper)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 567; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_6datrie_Trie, "__init__"); if (unlikely(!wrapper)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 571; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_6datrie_4Trie___init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_6datrie_4Trie___init__.doc = __pyx_doc_6datrie_4Trie___init__;
@@ -19291,8 +20839,8 @@ PyMODINIT_FUNC PyInit_datrie(void)
     }
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_type_6datrie_Trie.tp_dict, __pyx_vtabptr_6datrie_Trie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 567; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "Trie", (PyObject *)&__pyx_type_6datrie_Trie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 567; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie_Trie.tp_dict, __pyx_vtabptr_6datrie_Trie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 571; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "Trie", (PyObject *)&__pyx_type_6datrie_Trie) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 571; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie_Trie = &__pyx_type_6datrie_Trie;
   __pyx_vtabptr_6datrie__TrieState = &__pyx_vtable_6datrie__TrieState;
   __pyx_vtable_6datrie__TrieState.walk = (PyObject *(*)(struct __pyx_obj_6datrie__TrieState *, PyObject *, int __pyx_skip_dispatch))__pyx_f_6datrie_10_TrieState_walk;
@@ -19302,81 +20850,81 @@ PyMODINIT_FUNC PyInit_datrie(void)
   __pyx_vtable_6datrie__TrieState.is_terminal = (int (*)(struct __pyx_obj_6datrie__TrieState *, int __pyx_skip_dispatch))__pyx_f_6datrie_10_TrieState_is_terminal;
   __pyx_vtable_6datrie__TrieState.is_single = (int (*)(struct __pyx_obj_6datrie__TrieState *, int __pyx_skip_dispatch))__pyx_f_6datrie_10_TrieState_is_single;
   __pyx_vtable_6datrie__TrieState.is_leaf = (int (*)(struct __pyx_obj_6datrie__TrieState *, int __pyx_skip_dispatch))__pyx_f_6datrie_10_TrieState_is_leaf;
-  if (PyType_Ready(&__pyx_type_6datrie__TrieState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie__TrieState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 779; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie__TrieState.tp_print = 0;
-  if (__Pyx_SetVtable(__pyx_type_6datrie__TrieState.tp_dict, __pyx_vtabptr_6datrie__TrieState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "_TrieState", (PyObject *)&__pyx_type_6datrie__TrieState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 761; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie__TrieState.tp_dict, __pyx_vtabptr_6datrie__TrieState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 779; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "_TrieState", (PyObject *)&__pyx_type_6datrie__TrieState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 779; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie__TrieState = &__pyx_type_6datrie__TrieState;
   __pyx_vtabptr_6datrie_BaseState = &__pyx_vtable_6datrie_BaseState;
   __pyx_vtable_6datrie_BaseState.__pyx_base = *__pyx_vtabptr_6datrie__TrieState;
   __pyx_vtable_6datrie_BaseState.data = (int (*)(struct __pyx_obj_6datrie_BaseState *, int __pyx_skip_dispatch))__pyx_f_6datrie_9BaseState_data;
   __pyx_type_6datrie_BaseState.tp_base = __pyx_ptype_6datrie__TrieState;
-  if (PyType_Ready(&__pyx_type_6datrie_BaseState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 820; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie_BaseState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 837; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie_BaseState.tp_print = 0;
-  if (__Pyx_SetVtable(__pyx_type_6datrie_BaseState.tp_dict, __pyx_vtabptr_6datrie_BaseState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 820; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "BaseState", (PyObject *)&__pyx_type_6datrie_BaseState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 820; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie_BaseState.tp_dict, __pyx_vtabptr_6datrie_BaseState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 837; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "BaseState", (PyObject *)&__pyx_type_6datrie_BaseState) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 837; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie_BaseState = &__pyx_type_6datrie_BaseState;
   __pyx_vtabptr_6datrie_State = &__pyx_vtable_6datrie_State;
   __pyx_vtable_6datrie_State.__pyx_base = *__pyx_vtabptr_6datrie__TrieState;
   __pyx_vtable_6datrie_State.data = (PyObject *(*)(struct __pyx_obj_6datrie_State *, int __pyx_skip_dispatch))__pyx_f_6datrie_5State_data;
   __pyx_type_6datrie_State.tp_base = __pyx_ptype_6datrie__TrieState;
-  if (PyType_Ready(&__pyx_type_6datrie_State) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 828; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie_State) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 845; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie_State.tp_print = 0;
-  if (__Pyx_SetVtable(__pyx_type_6datrie_State.tp_dict, __pyx_vtabptr_6datrie_State) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 828; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "State", (PyObject *)&__pyx_type_6datrie_State) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 828; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie_State.tp_dict, __pyx_vtabptr_6datrie_State) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 845; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "State", (PyObject *)&__pyx_type_6datrie_State) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 845; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie_State = &__pyx_type_6datrie_State;
   __pyx_vtabptr_6datrie__TrieIterator = &__pyx_vtable_6datrie__TrieIterator;
   __pyx_vtable_6datrie__TrieIterator.next = (int (*)(struct __pyx_obj_6datrie__TrieIterator *, int __pyx_skip_dispatch))__pyx_f_6datrie_13_TrieIterator_next;
   __pyx_vtable_6datrie__TrieIterator.key = (PyObject *(*)(struct __pyx_obj_6datrie__TrieIterator *, int __pyx_skip_dispatch))__pyx_f_6datrie_13_TrieIterator_key;
-  if (PyType_Ready(&__pyx_type_6datrie__TrieIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie__TrieIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie__TrieIterator.tp_print = 0;
-  if (__Pyx_SetVtable(__pyx_type_6datrie__TrieIterator.tp_dict, __pyx_vtabptr_6datrie__TrieIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "_TrieIterator", (PyObject *)&__pyx_type_6datrie__TrieIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 841; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie__TrieIterator.tp_dict, __pyx_vtabptr_6datrie__TrieIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "_TrieIterator", (PyObject *)&__pyx_type_6datrie__TrieIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 858; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie__TrieIterator = &__pyx_type_6datrie__TrieIterator;
   __pyx_vtabptr_6datrie_BaseIterator = &__pyx_vtable_6datrie_BaseIterator;
   __pyx_vtable_6datrie_BaseIterator.__pyx_base = *__pyx_vtabptr_6datrie__TrieIterator;
   __pyx_vtable_6datrie_BaseIterator.data = (TrieData (*)(struct __pyx_obj_6datrie_BaseIterator *, int __pyx_skip_dispatch))__pyx_f_6datrie_12BaseIterator_data;
   __pyx_type_6datrie_BaseIterator.tp_base = __pyx_ptype_6datrie__TrieIterator;
-  if (PyType_Ready(&__pyx_type_6datrie_BaseIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 866; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie_BaseIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 883; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie_BaseIterator.tp_print = 0;
-  if (__Pyx_SetVtable(__pyx_type_6datrie_BaseIterator.tp_dict, __pyx_vtabptr_6datrie_BaseIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 866; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "BaseIterator", (PyObject *)&__pyx_type_6datrie_BaseIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 866; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie_BaseIterator.tp_dict, __pyx_vtabptr_6datrie_BaseIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 883; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "BaseIterator", (PyObject *)&__pyx_type_6datrie_BaseIterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 883; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie_BaseIterator = &__pyx_type_6datrie_BaseIterator;
   __pyx_vtabptr_6datrie_Iterator = &__pyx_vtable_6datrie_Iterator;
   __pyx_vtable_6datrie_Iterator.__pyx_base = *__pyx_vtabptr_6datrie__TrieIterator;
   __pyx_vtable_6datrie_Iterator.data = (PyObject *(*)(struct __pyx_obj_6datrie_Iterator *, int __pyx_skip_dispatch))__pyx_f_6datrie_8Iterator_data;
   __pyx_type_6datrie_Iterator.tp_base = __pyx_ptype_6datrie__TrieIterator;
-  if (PyType_Ready(&__pyx_type_6datrie_Iterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie_Iterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 892; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie_Iterator.tp_print = 0;
-  if (__Pyx_SetVtable(__pyx_type_6datrie_Iterator.tp_dict, __pyx_vtabptr_6datrie_Iterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "Iterator", (PyObject *)&__pyx_type_6datrie_Iterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 875; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie_Iterator.tp_dict, __pyx_vtabptr_6datrie_Iterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 892; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "Iterator", (PyObject *)&__pyx_type_6datrie_Iterator) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 892; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie_Iterator = &__pyx_type_6datrie_Iterator;
   __pyx_vtabptr_6datrie_AlphaMap = &__pyx_vtable_6datrie_AlphaMap;
   __pyx_vtable_6datrie_AlphaMap._add_range = (PyObject *(*)(struct __pyx_obj_6datrie_AlphaMap *, AlphaChar, AlphaChar, int __pyx_skip_dispatch))__pyx_f_6datrie_8AlphaMap__add_range;
-  if (PyType_Ready(&__pyx_type_6datrie_AlphaMap) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 917; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie_AlphaMap) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 934; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie_AlphaMap.tp_print = 0;
-  if (__Pyx_SetVtable(__pyx_type_6datrie_AlphaMap.tp_dict, __pyx_vtabptr_6datrie_AlphaMap) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 917; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
-  if (PyObject_SetAttrString(__pyx_m, "AlphaMap", (PyObject *)&__pyx_type_6datrie_AlphaMap) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 917; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (__Pyx_SetVtable(__pyx_type_6datrie_AlphaMap.tp_dict, __pyx_vtabptr_6datrie_AlphaMap) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 934; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyObject_SetAttrString(__pyx_m, "AlphaMap", (PyObject *)&__pyx_type_6datrie_AlphaMap) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 934; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_ptype_6datrie_AlphaMap = &__pyx_type_6datrie_AlphaMap;
-  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct__iter_prefixes) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 198; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct__iter_prefixes) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 212; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie___pyx_scope_struct__iter_prefixes.tp_print = 0;
   __pyx_ptype_6datrie___pyx_scope_struct__iter_prefixes = &__pyx_type_6datrie___pyx_scope_struct__iter_prefixes;
-  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_1_iter_prefix_items) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 218; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_1_iter_prefix_items) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 232; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie___pyx_scope_struct_1_iter_prefix_items.tp_print = 0;
   __pyx_ptype_6datrie___pyx_scope_struct_1_iter_prefix_items = &__pyx_type_6datrie___pyx_scope_struct_1_iter_prefix_items;
-  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_2_iter_prefix_values) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 239; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_2_iter_prefix_values) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 253; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie___pyx_scope_struct_2_iter_prefix_values.tp_print = 0;
   __pyx_ptype_6datrie___pyx_scope_struct_2_iter_prefix_values = &__pyx_type_6datrie___pyx_scope_struct_2_iter_prefix_values;
-  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_3_iter_prefix_items) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 742; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_3_iter_prefix_items) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 760; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie___pyx_scope_struct_3_iter_prefix_items.tp_print = 0;
   __pyx_ptype_6datrie___pyx_scope_struct_3_iter_prefix_items = &__pyx_type_6datrie___pyx_scope_struct_3_iter_prefix_items;
-  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_4_iter_prefix_values) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 753; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_4_iter_prefix_values) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 771; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie___pyx_scope_struct_4_iter_prefix_values.tp_print = 0;
   __pyx_ptype_6datrie___pyx_scope_struct_4_iter_prefix_values = &__pyx_type_6datrie___pyx_scope_struct_4_iter_prefix_values;
-  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_5_to_ranges) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1019; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_5_to_ranges) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie___pyx_scope_struct_5_to_ranges.tp_print = 0;
   __pyx_ptype_6datrie___pyx_scope_struct_5_to_ranges = &__pyx_type_6datrie___pyx_scope_struct_5_to_ranges;
-  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_6_alphabet_to_ranges) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1032; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyType_Ready(&__pyx_type_6datrie___pyx_scope_struct_6_alphabet_to_ranges) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1051; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __pyx_type_6datrie___pyx_scope_struct_6_alphabet_to_ranges.tp_print = 0;
   __pyx_ptype_6datrie___pyx_scope_struct_6_alphabet_to_ranges = &__pyx_type_6datrie___pyx_scope_struct_6_alphabet_to_ranges;
   /*--- Type import code ---*/
@@ -19387,41 +20935,53 @@ PyMODINIT_FUNC PyInit_datrie(void)
   /* "datrie.pyx":13
  * cimport cdatrie
  * 
- * import warnings             # <<<<<<<<<<<<<<
+ * import itertools             # <<<<<<<<<<<<<<
+ * import warnings
  * import sys
- * import itertools
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_warnings, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 13; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_itertools, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 13; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_warnings, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 13; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_itertools, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 13; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "datrie.pyx":14
  * 
- * import warnings
- * import sys             # <<<<<<<<<<<<<<
  * import itertools
- * 
+ * import warnings             # <<<<<<<<<<<<<<
+ * import sys
+ * import tempfile
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 14; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_warnings, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 14; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sys, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 14; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_warnings, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 14; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "datrie.pyx":15
+ * import itertools
+ * import warnings
+ * import sys             # <<<<<<<<<<<<<<
+ * import tempfile
+ * 
+ */
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_sys, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 15; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sys, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 15; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "datrie.pyx":16
  * import warnings
  * import sys
- * import itertools             # <<<<<<<<<<<<<<
+ * import tempfile             # <<<<<<<<<<<<<<
  * 
  * try:
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_itertools, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 15; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_tempfile, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 16; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_itertools, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 15; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_tempfile, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 16; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "datrie.pyx":17
- * import itertools
+  /* "datrie.pyx":18
+ * import tempfile
  * 
  * try:             # <<<<<<<<<<<<<<
  *     import cPickle as pickle
@@ -19434,16 +20994,16 @@ PyMODINIT_FUNC PyInit_datrie(void)
     __Pyx_XGOTREF(__pyx_t_4);
     /*try:*/ {
 
-      /* "datrie.pyx":18
+      /* "datrie.pyx":19
  * 
  * try:
  *     import cPickle as pickle             # <<<<<<<<<<<<<<
  * except ImportError:
  *     import pickle
  */
-      __pyx_t_1 = __Pyx_Import(__pyx_n_s_cPickle, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 18; __pyx_clineno = __LINE__; goto __pyx_L2_error;}
+      __pyx_t_1 = __Pyx_Import(__pyx_n_s_cPickle, 0, -1); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 19; __pyx_clineno = __LINE__; goto __pyx_L2_error;}
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_pickle, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 18; __pyx_clineno = __LINE__; goto __pyx_L2_error;}
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_pickle, __pyx_t_1) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 19; __pyx_clineno = __LINE__; goto __pyx_L2_error;}
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -19453,7 +21013,7 @@ PyMODINIT_FUNC PyInit_datrie(void)
     __pyx_L2_error:;
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "datrie.pyx":19
+    /* "datrie.pyx":20
  * try:
  *     import cPickle as pickle
  * except ImportError:             # <<<<<<<<<<<<<<
@@ -19463,21 +21023,21 @@ PyMODINIT_FUNC PyInit_datrie(void)
     __pyx_t_5 = PyErr_ExceptionMatches(__pyx_builtin_ImportError);
     if (__pyx_t_5) {
       __Pyx_AddTraceback("datrie", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_6, &__pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 19; __pyx_clineno = __LINE__; goto __pyx_L4_except_error;}
+      if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_6, &__pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 20; __pyx_clineno = __LINE__; goto __pyx_L4_except_error;}
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "datrie.pyx":20
+      /* "datrie.pyx":21
  *     import cPickle as pickle
  * except ImportError:
  *     import pickle             # <<<<<<<<<<<<<<
  * 
  * class DatrieError(Exception):
  */
-      __pyx_t_8 = __Pyx_Import(__pyx_n_s_pickle, 0, -1); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 20; __pyx_clineno = __LINE__; goto __pyx_L4_except_error;}
+      __pyx_t_8 = __Pyx_Import(__pyx_n_s_pickle, 0, -1); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 21; __pyx_clineno = __LINE__; goto __pyx_L4_except_error;}
       __Pyx_GOTREF(__pyx_t_8);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_pickle, __pyx_t_8) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 20; __pyx_clineno = __LINE__; goto __pyx_L4_except_error;}
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_pickle, __pyx_t_8) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 21; __pyx_clineno = __LINE__; goto __pyx_L4_except_error;}
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -19499,64 +21059,64 @@ PyMODINIT_FUNC PyInit_datrie(void)
     __pyx_L9_try_end:;
   }
 
-  /* "datrie.pyx":22
+  /* "datrie.pyx":23
  *     import pickle
  * 
  * class DatrieError(Exception):             # <<<<<<<<<<<<<<
  *     pass
  * 
  */
-  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 22; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 23; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_INCREF(__pyx_builtin_Exception);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_builtin_Exception);
   __Pyx_GIVEREF(__pyx_builtin_Exception);
-  __pyx_t_6 = __Pyx_CalculateMetaclass(NULL, __pyx_t_7); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 22; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = __Pyx_CalculateMetaclass(NULL, __pyx_t_7); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 23; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare(__pyx_t_6, __pyx_t_7, __pyx_n_s_DatrieError, __pyx_n_s_DatrieError, (PyObject *) NULL, __pyx_n_s_datrie, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 22; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare(__pyx_t_6, __pyx_t_7, __pyx_n_s_DatrieError, __pyx_n_s_DatrieError, (PyObject *) NULL, __pyx_n_s_datrie, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 23; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = __Pyx_Py3ClassCreate(__pyx_t_6, __pyx_n_s_DatrieError, __pyx_t_7, __pyx_t_1, NULL, 0, 1); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 22; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_8 = __Pyx_Py3ClassCreate(__pyx_t_6, __pyx_n_s_DatrieError, __pyx_t_7, __pyx_t_1, NULL, 0, 1); if (unlikely(!__pyx_t_8)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 23; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_8);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DatrieError, __pyx_t_8) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 22; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DatrieError, __pyx_t_8) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 23; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "datrie.pyx":25
+  /* "datrie.pyx":26
  *     pass
  * 
  * RAISE_KEY_ERROR = object()             # <<<<<<<<<<<<<<
  * RERAISE_KEY_ERROR = object()
  * DELETED_OBJECT = object()
  */
-  __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_builtin_object); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_builtin_object); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 26; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_RAISE_KEY_ERROR, __pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 25; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_RAISE_KEY_ERROR, __pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 26; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "datrie.pyx":26
+  /* "datrie.pyx":27
  * 
  * RAISE_KEY_ERROR = object()
  * RERAISE_KEY_ERROR = object()             # <<<<<<<<<<<<<<
  * DELETED_OBJECT = object()
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_builtin_object); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 26; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_builtin_object); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 27; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_RERAISE_KEY_ERROR, __pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 26; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_RERAISE_KEY_ERROR, __pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 27; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "datrie.pyx":27
+  /* "datrie.pyx":28
  * RAISE_KEY_ERROR = object()
  * RERAISE_KEY_ERROR = object()
  * DELETED_OBJECT = object()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_builtin_object); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 27; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_builtin_object); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DELETED_OBJECT, __pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 27; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DELETED_OBJECT, __pyx_t_7) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 28; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
   /* "datrie.pyx":100
@@ -19570,7 +21130,7 @@ PyMODINIT_FUNC PyInit_datrie(void)
   __Pyx_GOTREF(__pyx_t_7);
 
   /* "datrie.pyx":99
- * 
+ *         stdio.fflush(f_ptr)
  * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def load(cls, path):
@@ -19607,155 +21167,155 @@ PyMODINIT_FUNC PyInit_datrie(void)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   PyType_Modified(__pyx_ptype_6datrie_BaseTrie);
 
-  /* "datrie.pyx":358
- * 
+  /* "datrie.pyx":367
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
  *         Returns the longest key in this trie that is a prefix of ``key``.
  */
-  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 358; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 367; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_k__8 = __pyx_t_7;
+  __pyx_k__14 = __pyx_t_7;
   __Pyx_GIVEREF(__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "datrie.pyx":392
- * 
+  /* "datrie.pyx":400
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
  *         Returns the item (``(key,value)`` tuple) associated with the longest
  */
-  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 392; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 400; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_k__9 = __pyx_t_7;
+  __pyx_k__15 = __pyx_t_7;
   __Pyx_GIVEREF(__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "datrie.pyx":403
+  /* "datrie.pyx":411
  *         return self._longest_prefix_item(key, default)
  * 
  *     cdef _longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  */
-  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 403; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 411; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_k__10 = __pyx_t_7;
+  __pyx_k__16 = __pyx_t_7;
   __Pyx_GIVEREF(__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "datrie.pyx":432
- * 
+  /* "datrie.pyx":439
+ *             cdatrie.trie_state_free(state)
  * 
  *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
  *         Returns the value associated with the longest key in this trie that is
  */
-  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 432; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 439; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_k__11 = __pyx_t_7;
+  __pyx_k__17 = __pyx_t_7;
   __Pyx_GIVEREF(__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "datrie.pyx":443
+  /* "datrie.pyx":450
  *         return self._longest_prefix_value(key, default)
  * 
  *     cdef _longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         cdef cdatrie.TrieState* state = cdatrie.trie_root(self._c_trie)
  * 
  */
-  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 443; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 450; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_k__12 = __pyx_t_7;
+  __pyx_k__18 = __pyx_t_7;
   __Pyx_GIVEREF(__pyx_t_7);
   __pyx_t_7 = 0;
 
-  /* "datrie.pyx":625
+  /* "datrie.pyx":645
  * 
  *     @classmethod
  *     def read(cls, f):             # <<<<<<<<<<<<<<
  *         """
  *         Creates a new Trie by reading it from file.
  */
-  __pyx_t_7 = __Pyx_GetNameInClass((PyObject *)__pyx_ptype_6datrie_Trie, __pyx_n_s_read); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 625; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_7 = __Pyx_GetNameInClass((PyObject *)__pyx_ptype_6datrie_Trie, __pyx_n_s_read); if (unlikely(!__pyx_t_7)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 645; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_7);
 
-  /* "datrie.pyx":624
+  /* "datrie.pyx":644
  *         pickle.dump(self._values, f, protocol=2)
  * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def read(cls, f):
  *         """
  */
-  __pyx_t_6 = __Pyx_Method_ClassMethod(__pyx_t_7); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 624; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = __Pyx_Method_ClassMethod(__pyx_t_7); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 644; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (PyDict_SetItem((PyObject *)__pyx_ptype_6datrie_Trie->tp_dict, __pyx_n_s_read, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 625; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem((PyObject *)__pyx_ptype_6datrie_Trie->tp_dict, __pyx_n_s_read, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 645; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   PyType_Modified(__pyx_ptype_6datrie_Trie);
 
-  /* "datrie.pyx":700
- * 
+  /* "datrie.pyx":718
+ *         return res
  * 
  *     def longest_prefix_item(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
  *         Returns the item (``(key,value)`` tuple) associated with the longest
  */
-  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 700; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 718; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_k__13 = __pyx_t_6;
+  __pyx_k__25 = __pyx_t_6;
   __Pyx_GIVEREF(__pyx_t_6);
   __pyx_t_6 = 0;
 
-  /* "datrie.pyx":717
+  /* "datrie.pyx":735
  *         return res[0], self._values[res[1]]
  * 
  *     def longest_prefix_value(self, unicode key, default=RAISE_KEY_ERROR):             # <<<<<<<<<<<<<<
  *         """
  *         Returns the value associated with the longest key in this trie that is
  */
-  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 717; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = __Pyx_GetModuleGlobalName(__pyx_n_s_RAISE_KEY_ERROR); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 735; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_k__14 = __pyx_t_6;
+  __pyx_k__26 = __pyx_t_6;
   __Pyx_GIVEREF(__pyx_t_6);
   __pyx_t_6 = 0;
 
-  /* "datrie.pyx":1019
+  /* "datrie.pyx":1038
  * 
  * 
  * def to_ranges(lst):             # <<<<<<<<<<<<<<
  *     """
  *     Converts a list of numbers to a list of ranges::
  */
-  __pyx_t_6 = PyCFunction_NewEx(&__pyx_mdef_6datrie_1to_ranges, NULL, __pyx_n_s_datrie); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1019; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = PyCFunction_NewEx(&__pyx_mdef_6datrie_1to_ranges, NULL, __pyx_n_s_datrie); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_to_ranges, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1019; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_to_ranges, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1038; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "datrie.pyx":1032
+  /* "datrie.pyx":1051
  * 
  * 
  * def alphabet_to_ranges(alphabet):             # <<<<<<<<<<<<<<
  *     for begin, end in to_ranges(sorted(map(ord, iter(alphabet)))):
  *         yield begin, end
  */
-  __pyx_t_6 = PyCFunction_NewEx(&__pyx_mdef_6datrie_4alphabet_to_ranges, NULL, __pyx_n_s_datrie); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1032; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = PyCFunction_NewEx(&__pyx_mdef_6datrie_4alphabet_to_ranges, NULL, __pyx_n_s_datrie); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1051; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_alphabet_to_ranges, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1032; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_alphabet_to_ranges, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1051; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "datrie.pyx":1037
+  /* "datrie.pyx":1056
  * 
  * 
  * def new(alphabet=None, ranges=None, AlphaMap alpha_map=None):             # <<<<<<<<<<<<<<
  *     warnings.warn('datrie.new is deprecated; please use datrie.Trie.',
  *                   DeprecationWarning)
  */
-  __pyx_t_6 = PyCFunction_NewEx(&__pyx_mdef_6datrie_7new, NULL, __pyx_n_s_datrie); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1037; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  __pyx_t_6 = PyCFunction_NewEx(&__pyx_mdef_6datrie_7new, NULL, __pyx_n_s_datrie); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1056; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_new, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1037; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_new, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1056; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
   /* "datrie.pyx":1
@@ -19765,7 +21325,7 @@ PyMODINIT_FUNC PyInit_datrie(void)
  */
   __pyx_t_6 = PyDict_New(); if (unlikely(!__pyx_t_6)) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_6, __pyx_kp_u_to_ranges_line_1019, __pyx_kp_u_Converts_a_list_of_numbers_to_a) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
+  if (PyDict_SetItem(__pyx_t_6, __pyx_kp_u_to_ranges_line_1038, __pyx_kp_u_Converts_a_list_of_numbers_to_a) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_6) < 0) {__pyx_filename = __pyx_f[0]; __pyx_lineno = 1; __pyx_clineno = __LINE__; goto __pyx_L1_error;}
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
@@ -20387,6 +21947,23 @@ static CYTHON_INLINE int __Pyx_TypeTest(PyObject *obj, PyTypeObject *type) {
     return 0;
 }
 
+static CYTHON_INLINE PyObject *__Pyx_GetModuleGlobalName(PyObject *name) {
+    PyObject *result;
+#if CYTHON_COMPILING_IN_CPYTHON
+    result = PyDict_GetItem(__pyx_d, name);
+    if (likely(result)) {
+        Py_INCREF(result);
+    } else {
+#else
+    result = PyObject_GetItem(__pyx_d, name);
+    if (!result) {
+        PyErr_Clear();
+#endif
+        result = __Pyx_GetBuiltinName(name);
+    }
+    return result;
+}
+
 static CYTHON_INLINE int __Pyx_init_unicode_iteration(
     PyObject* ustring, Py_ssize_t *length, void** data, int *kind) {
 #if CYTHON_PEP393_ENABLED
@@ -20444,23 +22021,6 @@ static CYTHON_INLINE void __Pyx_ExceptionSwap(PyObject **type, PyObject **value,
     *type = tmp_type;
     *value = tmp_value;
     *tb = tmp_tb;
-}
-
-static CYTHON_INLINE PyObject *__Pyx_GetModuleGlobalName(PyObject *name) {
-    PyObject *result;
-#if CYTHON_COMPILING_IN_CPYTHON
-    result = PyDict_GetItem(__pyx_d, name);
-    if (likely(result)) {
-        Py_INCREF(result);
-    } else {
-#else
-    result = PyObject_GetItem(__pyx_d, name);
-    if (!result) {
-        PyErr_Clear();
-#endif
-        result = __Pyx_GetBuiltinName(name);
-    }
-    return result;
 }
 
 static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Generic(PyObject *o, PyObject* j) {
